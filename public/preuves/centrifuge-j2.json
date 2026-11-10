@@ -1,0 +1,76 @@
+{
+  "portee": "Lecture réelle de l’indexeur Centrifuge testnet. Aucune lecture RPC indépendante du bloc, connexion wallet ou participation établie par cette preuve.",
+  "requete": {
+    "url": "https://api-v3-test.cfg.embrio.tech",
+    "methode": "POST",
+    "query": "{\n  pools(where: { id: \"281474976720670\" }, limit: 1) {\n    items { id name centrifugeId isActive tokens { items { id name symbol } } }\n  }\n  vaults(where: { poolId: \"281474976720670\", centrifugeId: \"1\" }, limit: 10) {\n    items { id poolId tokenId assetAddress centrifugeId isActive }\n  }\n}"
+  },
+  "observation": {
+    "observeLe": "2026-11-01T07:21:15.774Z",
+    "source": "https://api-v3-test.cfg.embrio.tech",
+    "environnement": "testnet",
+    "pool": {
+      "id": "281474976720670",
+      "nom": "Centrifuge RWA Test Pool (Testnet)",
+      "actif": true
+    },
+    "part": {
+      "id": "0x000100000000271e0000000000000001",
+      "nom": "RWAt Testnet",
+      "symbole": "RWAt"
+    },
+    "coffre": {
+      "adresse": "0x3e14f2fbb5e0de284598b08b04cf1e4f6fbf40f7",
+      "actif": true,
+      "actifDepot": "0x3aaaa86458d576bafcb1b7ed290434f0696da65c"
+    }
+  },
+  "reponse": {
+    "data": {
+      "vaults": {
+        "items": [
+          {
+            "id": "0x3e14f2fbb5e0de284598b08b04cf1e4f6fbf40f7",
+            "poolId": "281474976720670",
+            "tokenId": "0x000100000000271e0000000000000001",
+            "assetAddress": "0x3aaaa86458d576bafcb1b7ed290434f0696da65c",
+            "centrifugeId": "1",
+            "isActive": true
+          },
+          {
+            "id": "0x8ddd3ca4c98c77e8d37bcf75bd22cc74d18033d6",
+            "poolId": "281474976720670",
+            "tokenId": "0x000100000000271e0000000000000001",
+            "assetAddress": "0x6087be184317bee3fb15228c59a5845bac2aeb9d",
+            "centrifugeId": "1",
+            "isActive": true
+          }
+        ]
+      },
+      "pools": {
+        "items": [
+          {
+            "id": "281474976720670",
+            "name": "Centrifuge RWA Test Pool (Testnet)",
+            "centrifugeId": "1",
+            "isActive": true,
+            "tokens": {
+              "items": [
+                {
+                  "id": "0x000100000000271e0000000000000001",
+                  "name": "RWAt Testnet",
+                  "symbol": "RWAt"
+                },
+                {
+                  "id": "0x000100000000271e0000000000000002",
+                  "name": "deRWA Testnet",
+                  "symbol": "deRWAt"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

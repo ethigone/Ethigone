@@ -1,0 +1,882 @@
+{
+  "version": "6",
+  "dialect": "sqlite",
+  "id": "02c19aaa-c27d-4177-8050-8127ad853fa6",
+  "prevId": "1e110fb9-20aa-40bc-a3d2-7fe47a0ca6d3",
+  "tables": {
+    "documents": {
+      "name": "documents",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "utilisateur_id": {
+          "name": "utilisateur_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "participation_id": {
+          "name": "participation_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "titre": {
+          "name": "titre",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "contenu": {
+          "name": "contenu",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "document_proprietaire_unique": {
+          "name": "document_proprietaire_unique",
+          "columns": [
+            "id",
+            "utilisateur_id"
+          ],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {
+        "documents_utilisateur_id_utilisateurs_id_fk": {
+          "name": "documents_utilisateur_id_utilisateurs_id_fk",
+          "tableFrom": "documents",
+          "tableTo": "utilisateurs",
+          "columnsFrom": [
+            "utilisateur_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "documents_participation_id_participations_id_fk": {
+          "name": "documents_participation_id_participations_id_fk",
+          "tableFrom": "documents",
+          "tableTo": "participations",
+          "columnsFrom": [
+            "participation_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "documents_participation_id_utilisateur_id_participations_id_utilisateur_id_fk": {
+          "name": "documents_participation_id_utilisateur_id_participations_id_utilisateur_id_fk",
+          "tableFrom": "documents",
+          "tableTo": "participations",
+          "columnsFrom": [
+            "participation_id",
+            "utilisateur_id"
+          ],
+          "columnsTo": [
+            "id",
+            "utilisateur_id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "historique": {
+      "name": "historique",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "utilisateur_id": {
+          "name": "utilisateur_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "projet_slug": {
+          "name": "projet_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "participation_id": {
+          "name": "participation_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "operation_id": {
+          "name": "operation_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "document_id": {
+          "name": "document_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "libelle": {
+          "name": "libelle",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "date": {
+          "name": "date",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "historique_utilisateur_id_utilisateurs_id_fk": {
+          "name": "historique_utilisateur_id_utilisateurs_id_fk",
+          "tableFrom": "historique",
+          "tableTo": "utilisateurs",
+          "columnsFrom": [
+            "utilisateur_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "historique_projet_slug_projets_slug_fk": {
+          "name": "historique_projet_slug_projets_slug_fk",
+          "tableFrom": "historique",
+          "tableTo": "projets",
+          "columnsFrom": [
+            "projet_slug"
+          ],
+          "columnsTo": [
+            "slug"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "historique_participation_id_participations_id_fk": {
+          "name": "historique_participation_id_participations_id_fk",
+          "tableFrom": "historique",
+          "tableTo": "participations",
+          "columnsFrom": [
+            "participation_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "historique_operation_id_operations_id_fk": {
+          "name": "historique_operation_id_operations_id_fk",
+          "tableFrom": "historique",
+          "tableTo": "operations",
+          "columnsFrom": [
+            "operation_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "historique_document_id_documents_id_fk": {
+          "name": "historique_document_id_documents_id_fk",
+          "tableFrom": "historique",
+          "tableTo": "documents",
+          "columnsFrom": [
+            "document_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "historique_document_id_utilisateur_id_documents_id_utilisateur_id_fk": {
+          "name": "historique_document_id_utilisateur_id_documents_id_utilisateur_id_fk",
+          "tableFrom": "historique",
+          "tableTo": "documents",
+          "columnsFrom": [
+            "document_id",
+            "utilisateur_id"
+          ],
+          "columnsTo": [
+            "id",
+            "utilisateur_id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "historique_participation_id_utilisateur_id_participations_id_utilisateur_id_fk": {
+          "name": "historique_participation_id_utilisateur_id_participations_id_utilisateur_id_fk",
+          "tableFrom": "historique",
+          "tableTo": "participations",
+          "columnsFrom": [
+            "participation_id",
+            "utilisateur_id"
+          ],
+          "columnsTo": [
+            "id",
+            "utilisateur_id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "historique_proprietaire": {
+          "name": "historique_proprietaire",
+          "value": "(\"historique\".\"participation_id\" IS NULL AND \"historique\".\"document_id\" IS NULL) OR \"historique\".\"utilisateur_id\" IS NOT NULL"
+        }
+      }
+    },
+    "operateurs": {
+      "name": "operateurs",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "projet_slug": {
+          "name": "projet_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "libelle": {
+          "name": "libelle",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "fictif": {
+          "name": "fictif",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": 1
+        }
+      },
+      "indexes": {
+        "operateurs_projet_slug_unique": {
+          "name": "operateurs_projet_slug_unique",
+          "columns": [
+            "projet_slug"
+          ],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {
+        "operateurs_projet_slug_projets_slug_fk": {
+          "name": "operateurs_projet_slug_projets_slug_fk",
+          "tableFrom": "operateurs",
+          "tableTo": "projets",
+          "columnsFrom": [
+            "projet_slug"
+          ],
+          "columnsTo": [
+            "slug"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "operateur_fictif": {
+          "name": "operateur_fictif",
+          "value": "\"operateurs\".\"fictif\" = 1"
+        }
+      }
+    },
+    "operations": {
+      "name": "operations",
+      "columns": {
+        "regles_id": {
+          "name": "regles_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "projet_slug": {
+          "name": "projet_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "libelle": {
+          "name": "libelle",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "montant_centimes": {
+          "name": "montant_centimes",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "devise": {
+          "name": "devise",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "'EUR'"
+        },
+        "fictif": {
+          "name": "fictif",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": 1
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "operations_projet_slug_projets_slug_fk": {
+          "name": "operations_projet_slug_projets_slug_fk",
+          "tableFrom": "operations",
+          "tableTo": "projets",
+          "columnsFrom": [
+            "projet_slug"
+          ],
+          "columnsTo": [
+            "slug"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "operations_regles_id_projet_slug_versions_regles_id_projet_slug_fk": {
+          "name": "operations_regles_id_projet_slug_versions_regles_id_projet_slug_fk",
+          "tableFrom": "operations",
+          "tableTo": "versions_regles",
+          "columnsFrom": [
+            "regles_id",
+            "projet_slug"
+          ],
+          "columnsTo": [
+            "id",
+            "projet_slug"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "operation_demo": {
+          "name": "operation_demo",
+          "value": "\n    \"operations\".\"fictif\" = 1 AND \"operations\".\"devise\" = 'EUR' AND typeof(\"operations\".\"montant_centimes\") = 'integer'\n    AND \"operations\".\"montant_centimes\" BETWEEN 0 AND 9007199254740991\n  "
+        }
+      }
+    },
+    "participations": {
+      "name": "participations",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "utilisateur_id": {
+          "name": "utilisateur_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "projet_slug": {
+          "name": "projet_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "regles_id": {
+          "name": "regles_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "libelle": {
+          "name": "libelle",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "montant_centimes": {
+          "name": "montant_centimes",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "devise": {
+          "name": "devise",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "'EUR'"
+        },
+        "fictif": {
+          "name": "fictif",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": 1
+        }
+      },
+      "indexes": {
+        "participation_proprietaire_unique": {
+          "name": "participation_proprietaire_unique",
+          "columns": [
+            "id",
+            "utilisateur_id"
+          ],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {
+        "participations_utilisateur_id_utilisateurs_id_fk": {
+          "name": "participations_utilisateur_id_utilisateurs_id_fk",
+          "tableFrom": "participations",
+          "tableTo": "utilisateurs",
+          "columnsFrom": [
+            "utilisateur_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "participations_projet_slug_projets_slug_fk": {
+          "name": "participations_projet_slug_projets_slug_fk",
+          "tableFrom": "participations",
+          "tableTo": "projets",
+          "columnsFrom": [
+            "projet_slug"
+          ],
+          "columnsTo": [
+            "slug"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "participations_regles_id_projet_slug_versions_regles_id_projet_slug_fk": {
+          "name": "participations_regles_id_projet_slug_versions_regles_id_projet_slug_fk",
+          "tableFrom": "participations",
+          "tableTo": "versions_regles",
+          "columnsFrom": [
+            "regles_id",
+            "projet_slug"
+          ],
+          "columnsTo": [
+            "id",
+            "projet_slug"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "participation_demo": {
+          "name": "participation_demo",
+          "value": "\n    \"participations\".\"fictif\" = 1 AND \"participations\".\"devise\" = 'EUR' AND typeof(\"participations\".\"montant_centimes\") = 'integer'\n    AND \"participations\".\"montant_centimes\" BETWEEN 1 AND 9007199254740991\n  "
+        }
+      }
+    },
+    "projets": {
+      "name": "projets",
+      "columns": {
+        "slug": {
+          "name": "slug",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "reference": {
+          "name": "reference",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "nom": {
+          "name": "nom",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "materiel": {
+          "name": "materiel",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "quantite": {
+          "name": "quantite",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "prix_unitaire_centimes": {
+          "name": "prix_unitaire_centimes",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "devise": {
+          "name": "devise",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "fictif": {
+          "name": "fictif",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "couts": {
+          "name": "couts",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "risques": {
+          "name": "risques",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "etapes": {
+          "name": "etapes",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "projets_reference_unique": {
+          "name": "projets_reference_unique",
+          "columns": [
+            "reference"
+          ],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "quantite_positive": {
+          "name": "quantite_positive",
+          "value": "\"projets\".\"quantite\" > 0"
+        },
+        "prix_positif": {
+          "name": "prix_positif",
+          "value": "\"projets\".\"prix_unitaire_centimes\" > 0"
+        },
+        "demo_uniquement": {
+          "name": "demo_uniquement",
+          "value": "\"projets\".\"fictif\" = 1"
+        }
+      }
+    },
+    "suivis": {
+      "name": "suivis",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "utilisateur_id": {
+          "name": "utilisateur_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "projet_slug": {
+          "name": "projet_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "suivi_personnel_unique": {
+          "name": "suivi_personnel_unique",
+          "columns": [
+            "utilisateur_id",
+            "projet_slug"
+          ],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {
+        "suivis_utilisateur_id_utilisateurs_id_fk": {
+          "name": "suivis_utilisateur_id_utilisateurs_id_fk",
+          "tableFrom": "suivis",
+          "tableTo": "utilisateurs",
+          "columnsFrom": [
+            "utilisateur_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "suivis_projet_slug_projets_slug_fk": {
+          "name": "suivis_projet_slug_projets_slug_fk",
+          "tableFrom": "suivis",
+          "tableTo": "projets",
+          "columnsFrom": [
+            "projet_slug"
+          ],
+          "columnsTo": [
+            "slug"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "utilisateurs": {
+      "name": "utilisateurs",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "identite_sites": {
+          "name": "identite_sites",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "identite_fictive": {
+          "name": "identite_fictive",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "libelle": {
+          "name": "libelle",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "role": {
+          "name": "role",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "liaison_admin": {
+          "name": "liaison_admin",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "utilisateurs_identite_sites_unique": {
+          "name": "utilisateurs_identite_sites_unique",
+          "columns": [
+            "identite_sites"
+          ],
+          "isUnique": true
+        },
+        "utilisateurs_identite_fictive_unique": {
+          "name": "utilisateurs_identite_fictive_unique",
+          "columns": [
+            "identite_fictive"
+          ],
+          "isUnique": true
+        },
+        "utilisateurs_liaison_admin_unique": {
+          "name": "utilisateurs_liaison_admin_unique",
+          "columns": [
+            "liaison_admin"
+          ],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {
+        "identite_disjointe": {
+          "name": "identite_disjointe",
+          "value": "(\"utilisateurs\".\"identite_sites\" IS NOT NULL AND \"utilisateurs\".\"identite_fictive\" IS NULL) OR (\"utilisateurs\".\"identite_sites\" IS NULL AND \"utilisateurs\".\"identite_fictive\" IS NOT NULL)"
+        },
+        "role_valide": {
+          "name": "role_valide",
+          "value": "\"utilisateurs\".\"role\" IN ('investisseur','administrateur')"
+        },
+        "admin_reel_unique": {
+          "name": "admin_reel_unique",
+          "value": "(\"utilisateurs\".\"role\" = 'administrateur' AND \"utilisateurs\".\"identite_sites\" IS NOT NULL AND \"utilisateurs\".\"liaison_admin\" IS NOT NULL AND \"utilisateurs\".\"liaison_admin\" = 1) OR (\"utilisateurs\".\"role\" = 'investisseur' AND \"utilisateurs\".\"liaison_admin\" IS NULL)"
+        }
+      }
+    },
+    "versions_regles": {
+      "name": "versions_regles",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "projet_slug": {
+          "name": "projet_slug",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "contenu": {
+          "name": "contenu",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "version_projet_unique": {
+          "name": "version_projet_unique",
+          "columns": [
+            "id",
+            "projet_slug"
+          ],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {
+        "versions_regles_projet_slug_projets_slug_fk": {
+          "name": "versions_regles_projet_slug_projets_slug_fk",
+          "tableFrom": "versions_regles",
+          "tableTo": "projets",
+          "columnsFrom": [
+            "projet_slug"
+          ],
+          "columnsTo": [
+            "slug"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    }
+  },
+  "views": {},
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  },
+  "internal": {
+    "indexes": {}
+  }
+}

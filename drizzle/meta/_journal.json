@@ -1,0 +1,48 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1793432451735,
+      "tag": "0000_socle_projet_demo",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1793692227015,
+      "tag": "0001_registre_j4",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1793778731915,
+      "tag": "0002_participation_j5",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1793863191879,
+      "tag": "0003_gestion_j6",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1793950093557,
+      "tag": "0004_silent_talisman",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1794036025484,
+      "tag": "0005_flowery_thunderbird",
+      "breakpoints": true
+    }
+  ]
+}

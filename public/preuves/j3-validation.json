@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-11-02T09:29:30.039778+00:00",
+  "scope": "J3 demonstration only; no transfer, no certification, no professional legal opinion",
+  "checks": {
+    "typescript": "passed after BigInt literal compatibility fix",
+    "page_rendering": "6 server-rendered pages",
+    "local_links_and_anchors": 92,
+    "D1_reopen_persistence": true,
+    "D1_duplicate_initialization": false,
+    "economics": "3 exact scenarios; 81 variants; totals, rounding, invalid inputs, precision limits, total loss, SSR",
+    "wallet": "simulated EIP-1193 only; regression passed",
+    "centrifuge_api": "mocked regression passed; no new live indexer proof claimed"
+  },
+  "scenarios_eur": [
+    {
+      "id": "benefice",
+      "cash": 11700,
+      "receivables": 0,
+      "machines": 15000,
+      "economic_result": 2700,
+      "illustrative_cap": 2700,
+      "authorized_payment": 0
+    },
+    {
+      "id": "perte",
+      "cash": 2700,
+      "receivables": 0,
+      "machines": 14000,
+      "economic_result": -7300,
+      "illustrative_cap": 0,
+      "authorized_payment": 0
+    },
+    {
+      "id": "retard",
+      "cash": 2700,
+      "receivables": 9000,
+      "machines": 15000,
+      "economic_result": 2700,
+      "illustrative_cap": 0,
+      "authorized_payment": 0
+    }
+  ],
+  "review": {
+    "builder_model": "gpt-6.1-sol",
+    "reviewer_model": "gpt-6-astra",
+    "reviewer_scope": [
+      "app/regles/page.tsx",
+      "app/charia/page.tsx",
+      "src/economie/demo.ts",
+      "src/economie/sources.ts",
+      "src/ui/scenarios-demo.tsx"
+    ],
+    "result": "No blocker found for this limited fictitious demonstration; not external validation"
+  },
+  "limitations": [
+    "No browser/mobile/click verification: sites-preview daemon missing at start and status",
+    "No transaction or wallet extension test",
+    "All economic inputs fictitious; pre-tax simplified asset variation, receivables assumed collectible, no remaining liabilities",
+    "Sources and access limitations in src/economie/sources.ts"
+  ]
+}

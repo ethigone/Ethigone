@@ -1,0 +1,47 @@
+{
+  "slug": "atelier-lavage",
+  "nom": "Atelier Lavage",
+  "reference": "EQ-001",
+  "quantite": 12,
+  "prixUnitaireCentimes": 150000,
+  "devise": "EUR",
+  "fictif": true,
+  "materiel": "Lave-linge professionnels",
+  "couts": [
+    "Transport, installation et reprise des machines",
+    "Entretien, pièces et réparations",
+    "Assurance et gestion des contrats de location"
+  ],
+  "risques": [
+    {
+      "titre": "Machines sans locataire",
+      "detail": "Une machine disponible entre deux contrats ne produit aucun loyer. Le transport et le stockage continuent de coûter."
+    },
+    {
+      "titre": "Panne ou impayé",
+      "detail": "Une réparation imprévue ou un loyer impayé réduit l’argent disponible. Une partie du capital pourrait être perdue."
+    },
+    {
+      "titre": "Usure et revente",
+      "detail": "La valeur du matériel peut baisser plus vite que prévu. Une estimation de revente ne met aucun argent en caisse."
+    }
+  ],
+  "etapes": [
+    {
+      "titre": "Identifier le lot",
+      "detail": "Établir le devis et relever la référence de chaque machine à sa livraison."
+    },
+    {
+      "titre": "Louer les machines",
+      "detail": "Placer le matériel en résidence collective. Le contrat précise le loyer, la durée et les frais à la charge de chacun."
+    },
+    {
+      "titre": "Suivre les encaissements",
+      "detail": "Rapprocher les loyers réellement reçus des contrats et rattacher chaque facture d’entretien à la machine concernée."
+    },
+    {
+      "titre": "Arrêter les comptes",
+      "detail": "Examiner les charges, l’usure du parc et la trésorerie. Une distribution éventuelle dépend du résultat, des liquidités disponibles et des règles validées."
+    }
+  ]
+}

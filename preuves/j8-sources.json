@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-07",
+  "portee": "Ressources documentaires pour une recherche future d'opérateurs. Aucun contact, achat de fichier, candidat réel ou partenariat.",
+  "sources": [
+    {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/R60912?lang=fr",
+      "usage": "Point d'entrée et possibilités de recherche de l'Annuaire des Entreprises.",
+      "preuve": "Page officielle retrouvée via recherche, vérifiée le 10 octobre 2025 selon l'éditeur. Consultation lors de J8 le 7 novembre 2026."
+    },
+    {
+      "url": "https://annuaire-entreprises.data.gouv.fr/faq/donnees-financieres",
+      "usage": "Origine INPI et confidentialité possible de certaines données financières.",
+      "preuve": "Texte primaire retourné par deux recherches. Ouverture directe renvoie 403 dans cet environnement. Ne pas prétendre avoir téléchargé des comptes ou vérifié une entreprise."
+    },
+    {
+      "url": "https://www.cci.fr/ressources/booster-son-business/trouver-des-clients-partenaires-fournisseurs/annuaire-des-entreprises-de-france",
+      "usage": "Recherche territoriale d'entreprises actives.",
+      "preuve": "Page officielle ouverte et lue le 7 novembre 2026. Aucun achat, export ou demande de contact."
+    },
+    {
+      "url": "https://www.ffpb.fr/",
+      "usage": "Compréhension du réseau professionnel des pressings et blanchisseries.",
+      "preuve": "Site de la fédération ouvert le 7 novembre 2026. La compétence location de machines reste à examiner."
+    },
+    {
+      "url": "https://www.geist.fr/ladhesion-au-geist/liste-des-adherents-associes/",
+      "usage": "Répertoire de fournisseurs de la filière location-entretien textile.",
+      "preuve": "Page du réseau ouverte le 7 novembre 2026. Aucun fournisseur désigné comme opérateur ETHIGONE."
+    }
+  ],
+  "conception": "Critères et étapes proposées par ETHIGONE pour préparer un dossier. La région française est un exemple de source, pas un pays d'implantation arrêté. Existence légale, solvabilité, capacité opérationnelle et avis charia/juridique demandent des vérifications distinctes."
+}
