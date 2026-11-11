@@ -1,0 +1,1218 @@
+{
+  "schema_version": "1.0",
+  "document_id": "ETHIGONE-M3-J1-NICHES",
+  "as_of": "2026-11-11",
+  "language": "fr",
+  "purpose": "Présélection documentaire pour J2 ; aucune niche ni opération financière validée.",
+  "statuses": [
+    "CONFIRMÉ",
+    "HYPOTHÈSE",
+    "RISQUE",
+    "À VÉRIFIER",
+    "PROPOSITION",
+    "DÉCIDÉ",
+    "REJETÉ"
+  ],
+  "provenance_rule": "source_attribuee confirme uniquement l’existence du contenu publié ; analyse_ethigone désigne une interprétation, un risque ou un test proposé. Les source_ids contextualisent cette analyse et ne signifient pas qu’une source la valide.",
+  "scope": {
+    "status": "DÉCIDÉ",
+    "text": "Modèle 3 décidé : entreprises/opérations ciblées et particuliers éligibles, notamment détenteurs de stablecoins. Éligibilité, conversion et architecture de collecte hors validation J1. Aucune niche décidée ; importation facultative.",
+    "source_ids": [
+      "CTX-M3"
+    ],
+    "basis": "analyse_ethigone"
+  },
+  "global_limits": [
+    {
+      "status": "À VÉRIFIER",
+      "text": "Aucune source ne démontre un besoin de financement résiduel, une marge nette ou une volonté de travailler avec ETHIGONE. Aucun prix, volume, taux ni rendement retenu.",
+      "source_ids": [
+        "CTX-M3"
+      ],
+      "basis": "analyse_ethigone"
+    },
+    {
+      "status": "CONFIRMÉ",
+      "text": "Aucun partenaire acquis, aucun démarchage ni transaction. Aucun montage charia ou juridique validé ; ni fonds, SPV ou juridiction imposés.",
+      "source_ids": [
+        "CTX-M3"
+      ],
+      "basis": "analyse_ethigone"
+    },
+    {
+      "status": "PROPOSITION",
+      "text": "Toute pièce opérationnelle future devra rester dans un espace privé ; dépôt public limité à descriptions et exemples anonymisés.",
+      "source_ids": [
+        "CTX-M3"
+      ],
+      "basis": "analyse_ethigone"
+    }
+  ],
+  "selection_method": {
+    "status": "PROPOSITION",
+    "text": "Prioriser la facilité de documenter un lot existant, une commande B2B et une réception ; diversité des inconnues à tester. Aucun score de rentabilité ou taux de succès. Les trois pistes retenues ne sont pas réputées meilleures économiquement.",
+    "source_ids": [
+      "CTX-M3"
+    ],
+    "basis": "analyse_ethigone"
+  },
+  "selected_niche_ids": [
+    "N01",
+    "N02",
+    "N03"
+  ],
+  "sources": [
+    {
+      "id": "CTX-M3",
+      "title": "Décision utilisateur du 11 novembre 2026, reprise dans le programme autorisé",
+      "type": "mandat",
+      "url": null,
+      "published_or_updated_at": null,
+      "accessed_at": "2026-11-11",
+      "observation": "Modèle 3 décidé ; niches non décidées ; importation facultative ; conformité charia indispensable.",
+      "limits": "Contexte de mission, pas preuve externe.",
+      "local_reference": "../PLAN_7_JOURS.md"
+    },
+    {
+      "id": "S01",
+      "title": "SIEBEC — Médias & consommables",
+      "type": "entreprise",
+      "url": "https://www.siebec.com/fr/produits/medias-consommables/",
+      "published_or_updated_at": null,
+      "accessed_at": "2026-11-11",
+      "observation": "SIEBEC présente cartouches et poches de filtration dans son catalogue.",
+      "limits": "Déclaration commerciale ; ni commande ni besoin de financement démontré."
+    },
+    {
+      "id": "S02",
+      "title": "Arden Plast — applications et emballages",
+      "type": "entreprise",
+      "url": "https://www.arden-plast.com/",
+      "published_or_updated_at": null,
+      "accessed_at": "2026-11-11",
+      "observation": "Arden Plast présente calages, intercalaires, caisses et bacs ; annonce des séries ponctuelles ou récurrentes.",
+      "limits": "Déclaration commerciale ; aucune fréquence client ou rentabilité démontrée."
+    },
+    {
+      "id": "S03",
+      "title": "DAE — Premier marché interministériel de matériels informatiques reconditionnés",
+      "type": "autorite",
+      "url": "https://www.economie.gouv.fr/dae/materiels-informatiques-reconditionnes-un-premier-marche-interministeriel",
+      "published_or_updated_at": "2026-09-16",
+      "accessed_at": "2026-11-11",
+      "observation": "La DAE rapporte un marché notifié en juillet et août 2026 portant sur portables, moniteurs et ordinateurs macOS reconditionnés.",
+      "limits": "Marché déjà attribué ; preuve d’achat dans ce segment, pas débouché accessible à ETHIGONE."
+    },
+    {
+      "id": "S04",
+      "title": "Ecodair — Parc professionnel",
+      "type": "entreprise",
+      "url": "https://www.ecodair.com/ceder-parc-informatique",
+      "published_or_updated_at": null,
+      "accessed_at": "2026-11-11",
+      "observation": "Ecodair présente reprise de parcs, reconditionnement et vente de gammes professionnelles.",
+      "limits": "Déclaration commerciale attribuée ; performances et garanties à vérifier sur contrat réel."
+    },
+    {
+      "id": "S05",
+      "title": "ANSSI / MesServicesCyber — Recommandations pour le reconditionnement des ordinateurs",
+      "type": "autorite",
+      "url": "https://messervices.cyber.gouv.fr/guides/recommandations-pour-le-reconditionnement-des-ordinateurs-de-bureau-ou-portables",
+      "published_or_updated_at": "2023-10-03",
+      "accessed_at": "2026-11-11",
+      "observation": "Le guide identifie les risques de compromission et de fuite d’information lors de l’acquisition et de la cession.",
+      "limits": "Source technique plus ancienne toujours disponible ; ne pas reprendre ses anciens quotas de commande publique comme droit actuel."
+    },
+    {
+      "id": "S06",
+      "title": "ma cantine — Fiche Vesto",
+      "type": "annuaire_public_declaratif",
+      "url": "https://ma-cantine.agriculture.gouv.fr/acteurs-de-l-eco-systeme/110--Vesto/",
+      "published_or_updated_at": null,
+      "accessed_at": "2026-11-11",
+      "observation": "La fiche de Vesto décrit achat, reconditionnement et revente de matériel de restauration.",
+      "limits": "Texte déclaratif de l’acteur hébergé sur portail public, trouvé dans l’index de recherche ; page complète non rendue sans JavaScript. Site Vesto refusant la lecture automatisée (403). Confiance limitée à ce repérage."
+    },
+    {
+      "id": "S07",
+      "title": "DLR — Location",
+      "type": "federation",
+      "url": "https://www.dlr.fr/location/",
+      "published_or_updated_at": null,
+      "accessed_at": "2026-11-11",
+      "observation": "DLR décrit des locations à des clients professionnels à court ou moyen terme et cite compresseurs, gerbeurs et transpalettes.",
+      "limits": "Description sectorielle ; les statistiques de marché ne sont pas utilisées."
+    },
+    {
+      "id": "S08",
+      "title": "DLR — Annuaire location",
+      "type": "annuaire_professionnel",
+      "url": "https://www.annuairedlr.fr/annuaire/location",
+      "published_or_updated_at": null,
+      "accessed_at": "2026-11-11",
+      "observation": "Annuaire consultable par activité et famille de matériels.",
+      "limits": "Fiches déclarées par les membres ; présence, taille et intérêt à vérifier ; aucun contact extrait."
+    },
+    {
+      "id": "S09",
+      "title": "Atlas Copco — Plan de maintenance préventive",
+      "type": "entreprise",
+      "url": "https://www.atlascopco.com/fr-fr/compressors/service/plans/preventive-maintenance",
+      "published_or_updated_at": null,
+      "accessed_at": "2026-11-11",
+      "observation": "Atlas Copco décrit un plan forfaitaire associant techniciens, pièces et entretien planifié.",
+      "limits": "Offre commerciale du fabricant ; aucune économie ou disponibilité promise n’est reprise comme fait."
+    },
+    {
+      "id": "S10",
+      "title": "DLR — Annuaire réparation",
+      "type": "annuaire_professionnel",
+      "url": "https://www.annuairedlr.fr/annuaire/reparation",
+      "published_or_updated_at": null,
+      "accessed_at": "2026-11-11",
+      "observation": "Annuaire de réparateurs de matériels professionnels.",
+      "limits": "Déclaratif ; ne prouve pas la disponibilité de contrats ni leur cessibilité."
+    },
+    {
+      "id": "S11",
+      "title": "SEPEM — Liste des exposants Angers",
+      "type": "organisateur",
+      "url": "https://www.sepem-industries.com/e/sepem-angers-2025/partners",
+      "published_or_updated_at": "2026-11-05",
+      "accessed_at": "2026-11-11",
+      "observation": "La page affiche une liste arrêtée au 05/11/2026 d’inscrits à Angers 2027.",
+      "limits": "URL contenant 2025 réutilisée pour 2027 ; annuaire de repérage seulement, contenu évolutif."
+    }
+  ],
+  "niches": [
+    {
+      "id": "N01",
+      "name": "Consommables industriels de filtration standards non critiques",
+      "operation_unit": {
+        "status": "PROPOSITION",
+        "text": "Un lot de poches ou cartouches identifiées, acheté puis livré à un client professionnel sur commande documentée ; pas de stock spéculatif. Les joints restent hors première investigation faute de qualification produit.",
+        "source_ids": [
+          "S01",
+          "S11"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "public_observation": {
+        "status": "CONFIRMÉ",
+        "text": "SIEBEC catalogue des médias consommables ; SEPEM permet de repérer des entreprises industrielles.",
+        "source_ids": [
+          "S01",
+          "S11"
+        ],
+        "basis": "source_attribuee"
+      },
+      "evaluation": {
+        "funding_need": {
+          "status": "HYPOTHÈSE",
+          "text": "Décalage entre paiement du fournisseur et encaissement du lot ; il peut être nul après acompte ou crédit fournisseur.",
+          "source_ids": [
+            "S01",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "frequency": {
+          "status": "HYPOTHÈSE",
+          "text": "Remplacement susceptible de se répéter ; historique de commandes nécessaire, aucun rythme retenu.",
+          "source_ids": [
+            "S01",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "asset_and_receipt_control": {
+          "status": "À VÉRIFIER",
+          "text": "Références, lots, comptage, lieu de stockage et preuve de livraison rapprochables ; une fois consommé, le produit ne constitue plus un actif récupérable. Le client peut payer le compte général de l’opérateur.",
+          "source_ids": [
+            "S01",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "customer_dependency": {
+          "status": "RISQUE",
+          "text": "Une commande ferme reste exposée au refus de conformité, à l’annulation et au défaut du client ; dépendance à mesurer par factures encaissées.",
+          "source_ids": [
+            "S01",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "alternatives": {
+          "status": "À VÉRIFIER",
+          "text": "Comparer acompte client, livraison directe et crédit fournisseur ; leasing probablement peu adapté à un consommable, à confirmer. Comparaison économique sans valider leur conformité charia.",
+          "source_ids": [
+            "S01",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "net_margin": {
+          "status": "À VÉRIFIER",
+          "text": "NON CONNUE après achat, transport, contrôle, TVA selon régime, retours, pertes, impayés, gestion et coûts de conformité.",
+          "source_ids": [
+            "S01",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "fraud": {
+          "status": "RISQUE",
+          "text": "Fausse commande, double affectation du lot, substitution de références, fournisseur lié, fausse livraison.",
+          "source_ids": [
+            "S01",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "shariah_legal": {
+          "status": "À VÉRIFIER",
+          "text": "Séquence acquisition/propriété/risque/livraison/paiement à qualifier ; ne pas transformer une avance rémunérée ou une créance en prétendue vente d’actif. Responsabilité produit à examiner ; statut non critique à démontrer par usage final.",
+          "source_ids": [
+            "S01",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "operator_access": {
+          "status": "HYPOTHÈSE",
+          "text": "Catalogues et SEPEM donnent des portes d’entrée ; accès aux décideurs et volonté de produire des pièces non démontrés.",
+          "source_ids": [
+            "S01",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        }
+      },
+      "minimum_evidence": [
+        {
+          "status": "À VÉRIFIER",
+          "text": "Commande client, spécifications validées et usage final excluant fonctions de sécurité, usages médicaux, eau potable ou contact alimentaire pour cette première piste.",
+          "source_ids": [
+            "S01",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        {
+          "status": "À VÉRIFIER",
+          "text": "Devis fournisseur, délais et modalités de paiement ; historique anonymisé de lots comparables effectivement livrés et encaissés.",
+          "source_ids": [
+            "S01",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        {
+          "status": "À VÉRIFIER",
+          "text": "Traçabilité du lot, preuve de propriété et absence de financement concurrent ; coûts complets, retours et procédure de vérification du paiement client.",
+          "source_ids": [
+            "S01",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        }
+      ],
+      "accept_if": {
+        "status": "PROPOSITION",
+        "text": "Lot standard non critique, commande authentifiable, coûts et paiements reconstituables, besoin résiduel réel après alternatives.",
+        "source_ids": [
+          "S01",
+          "S11"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "refuse_if": {
+        "status": "PROPOSITION",
+        "text": "Stock destiné à chercher un acheteur ensuite ; usage critique ; spécifications ou propriété invérifiables.",
+        "source_ids": [
+          "S01",
+          "S11"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "invalidation_test": {
+        "status": "PROPOSITION",
+        "text": "Reconstituer une commande achevée : si acompte et crédit fournisseur couvrent déjà tout le décalage, l’hypothèse de besoin de financement de cette opération tombe.",
+        "source_ids": [
+          "S01",
+          "S11"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "conclusion": {
+        "status": "PROPOSITION",
+        "text": "EXPLORER J2",
+        "source_ids": [
+          "S01",
+          "S11"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "selected_for_j2": true,
+      "net_margin": null,
+      "finance_need_verified": false
+    },
+    {
+      "id": "N02",
+      "name": "Emballages techniques B2B simples sur commandes",
+      "operation_unit": {
+        "status": "PROPOSITION",
+        "text": "Un lot d’intercalaires, calages ou bacs de protection livré sur une commande avec plan et échantillon acceptés ; commencer par une référence existante, hors emballage dangereux, alimentaire ou pharmaceutique.",
+        "source_ids": [
+          "S02",
+          "S11"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "public_observation": {
+        "status": "CONFIRMÉ",
+        "text": "Arden Plast décrit des emballages industriels et des séries ponctuelles ou récurrentes.",
+        "source_ids": [
+          "S02",
+          "S11"
+        ],
+        "basis": "source_attribuee"
+      },
+      "evaluation": {
+        "funding_need": {
+          "status": "HYPOTHÈSE",
+          "text": "Achats matière ou lot fini à payer avant règlement client ; acompte et conditions fournisseur peuvent suffire.",
+          "source_ids": [
+            "S02",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "frequency": {
+          "status": "HYPOTHÈSE",
+          "text": "Réassort possible chez un client industriel ; la récurrence annoncée par un fabricant ne prouve pas celle d’un opérateur candidat.",
+          "source_ids": [
+            "S02",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "asset_and_receipt_control": {
+          "status": "À VÉRIFIER",
+          "text": "Lot comptable et livraison documentables ; calage sur mesure difficile à revendre à un tiers. Ne pas supposer l’affectation des recettes opposable ou réalisable.",
+          "source_ids": [
+            "S02",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "customer_dependency": {
+          "status": "RISQUE",
+          "text": "Personnalisation et homologation créent une dépendance au donneur d’ordre ; une modification de plan peut bloquer le paiement.",
+          "source_ids": [
+            "S02",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "alternatives": {
+          "status": "À VÉRIFIER",
+          "text": "Acompte de lancement, paiement par jalons, crédit fournisseur ou commande directe fabricant ; leasing généralement peu pertinent pour un lot vendu, différent pour un parc de bacs réutilisables.",
+          "source_ids": [
+            "S02",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "net_margin": {
+          "status": "À VÉRIFIER",
+          "text": "NON CONNUE après matière, outillage, chutes, transport volumineux, contrôle, reprises, retours, TVA selon régime, impayés, gestion et conformité.",
+          "source_ids": [
+            "S02",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "fraud": {
+          "status": "RISQUE",
+          "text": "Bon de commande falsifié, volumes gonflés, doublon de lot, plan non accepté, facture d’outillage cachée ou fournisseur lié.",
+          "source_ids": [
+            "S02",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "shariah_legal": {
+          "status": "À VÉRIFIER",
+          "text": "Lot existant acheté-revendu et lot à fabriquer ont des séquences distinctes à examiner ; ne pas présumer leur conformité. Obligations emballages/environnement et responsabilité à qualifier pour le produit et la juridiction retenus.",
+          "source_ids": [
+            "S02",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "operator_access": {
+          "status": "HYPOTHÈSE",
+          "text": "Fabricants et exposants repérables publiquement ; accès effectif à des commandes ou ateliers non établi.",
+          "source_ids": [
+            "S02",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        }
+      },
+      "minimum_evidence": [
+        {
+          "status": "À VÉRIFIER",
+          "text": "Commande et version approuvée du plan/échantillon ; usage final et conditions de réception.",
+          "source_ids": [
+            "S02",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        {
+          "status": "À VÉRIFIER",
+          "text": "Devis matière ou lot fini, propriété de l’outillage, ventilation coûts/déchets/transport, conditions de paiement et annulation.",
+          "source_ids": [
+            "S02",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        {
+          "status": "À VÉRIFIER",
+          "text": "Dossier anonymisé achevé et encaissé avec reprises éventuelles ; inventaire et vérification de la non-double affectation du lot.",
+          "source_ids": [
+            "S02",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        }
+      ],
+      "accept_if": {
+        "status": "PROPOSITION",
+        "text": "Référence déjà fabriquée et acceptée, lot lié à une commande vérifiable, coût complet et reste à financer prouvables.",
+        "source_ids": [
+          "S02",
+          "S11"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "refuse_if": {
+        "status": "PROPOSITION",
+        "text": "Développement de produit sans réception définie ; débouché unique non engagé ; transport et reprises non chiffrables.",
+        "source_ids": [
+          "S02",
+          "S11"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "invalidation_test": {
+        "status": "PROPOSITION",
+        "text": "Comparer une commande achevée à ses encaissements et coûts : arrêter si acompte/crédit fournisseur éliminent le besoin, ou si reprises et transport rendent l’économie non démontrable.",
+        "source_ids": [
+          "S02",
+          "S11"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "conclusion": {
+        "status": "PROPOSITION",
+        "text": "EXPLORER J2",
+        "source_ids": [
+          "S02",
+          "S11"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "selected_for_j2": true,
+      "net_margin": null,
+      "finance_need_verified": false
+    },
+    {
+      "id": "N03",
+      "name": "Lots de PC professionnels reconditionnés sur commandes",
+      "operation_unit": {
+        "status": "PROPOSITION",
+        "text": "Un lot homogène de portables professionnels identifiés par numéros de série, acheté par un opérateur existant puis vendu à un client B2B identifié ; exclure pour J2 achats de palettes non testées et marchés publics à gagner.",
+        "source_ids": [
+          "S03",
+          "S04",
+          "S05"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "public_observation": {
+        "status": "CONFIRMÉ",
+        "text": "La DAE documente un achat public de matériels reconditionnés en 2026 ; Ecodair présente une activité de reprise et de revente de gammes professionnelles.",
+        "source_ids": [
+          "S03",
+          "S04",
+          "S05"
+        ],
+        "basis": "source_attribuee"
+      },
+      "evaluation": {
+        "funding_need": {
+          "status": "HYPOTHÈSE",
+          "text": "Décalage achat/reconditionnement/encaissement ; achat public observé ne prouve aucun manque de financement d’un opérateur.",
+          "source_ids": [
+            "S03",
+            "S04",
+            "S05"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "frequency": {
+          "status": "HYPOTHÈSE",
+          "text": "Renouvellements de parcs et commandes en lots possibles ; cadence propre à vérifier sur commandes encaissées.",
+          "source_ids": [
+            "S03",
+            "S04",
+            "S05"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "asset_and_receipt_control": {
+          "status": "À VÉRIFIER",
+          "text": "Numéros de série, état, inventaire et réception peuvent permettre un rapprochement ; firmware, comptes verrouillés, licences et défauts internes compliquent le contrôle. Affectation des recettes à établir.",
+          "source_ids": [
+            "S03",
+            "S04",
+            "S05"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "customer_dependency": {
+          "status": "RISQUE",
+          "text": "Commande modifiable, exigences techniques et taux de retour peuvent bloquer la réception ; le marché DAE cité est déjà attribué et ne constitue pas un prospect.",
+          "source_ids": [
+            "S03",
+            "S04",
+            "S05"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "alternatives": {
+          "status": "À VÉRIFIER",
+          "text": "Acompte B2B, crédit fournisseur, reprise avec paiement différé, location/leasing proposés par le marché à comparer ; ne pas supposer que tout montage comparable est conforme à la charia.",
+          "source_ids": [
+            "S03",
+            "S04",
+            "S05"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "net_margin": {
+          "status": "À VÉRIFIER",
+          "text": "NON CONNUE après acquisition, tests, effacement, licences, pièces/batteries, rebut, garantie/SAV, transport, TVA selon régime, impayés, gestion et conformité.",
+          "source_ids": [
+            "S03",
+            "S04",
+            "S05"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "fraud": {
+          "status": "RISQUE",
+          "text": "Matériel volé ou déjà gagé, séries dupliquées, état dégradé caché, fausses licences, certificats d’effacement non rattachés aux supports.",
+          "source_ids": [
+            "S03",
+            "S04",
+            "S05"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "shariah_legal": {
+          "status": "À VÉRIFIER",
+          "text": "Propriété réelle, achat/vente et risque supporté à examiner ; responsabilités liées au reconditionnement, aux données, licences et déchets à qualifier. L’ANSSI documente les risques cyber ; aucune conformité ne découle du seul effacement annoncé.",
+          "source_ids": [
+            "S03",
+            "S04",
+            "S05"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "operator_access": {
+          "status": "HYPOTHÈSE",
+          "text": "Des opérateurs et offres B2B sont publics ; leur accès commercial, besoin et appétit pour ETHIGONE restent inconnus.",
+          "source_ids": [
+            "S03",
+            "S04",
+            "S05"
+          ],
+          "basis": "analyse_ethigone"
+        }
+      },
+      "minimum_evidence": [
+        {
+          "status": "À VÉRIFIER",
+          "text": "Bon de commande B2B et configuration acceptée ; inventaire numéroté, provenance, preuve de propriété sans charge concurrente.",
+          "source_ids": [
+            "S03",
+            "S04",
+            "S05"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        {
+          "status": "À VÉRIFIER",
+          "text": "Rapport de tests et d’effacement lié à chaque support ; état batterie, licences, verrouillages et conditions de garantie.",
+          "source_ids": [
+            "S03",
+            "S04",
+            "S05"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        {
+          "status": "À VÉRIFIER",
+          "text": "Devis achat/reconditionnement, dossier comparable achevé avec SAV/retours et encaissement ; comparaison des acomptes/crédits existants.",
+          "source_ids": [
+            "S03",
+            "S04",
+            "S05"
+          ],
+          "basis": "analyse_ethigone"
+        }
+      ],
+      "accept_if": {
+        "status": "PROPOSITION",
+        "text": "Opérateur qui reconditionne déjà, lot testé identifiable, acheteur engagé et coûts de SAV observables.",
+        "source_ids": [
+          "S03",
+          "S04",
+          "S05"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "refuse_if": {
+        "status": "PROPOSITION",
+        "text": "Palettes non diagnostiquées, droits/provenance ou effacement non vérifiables, dépendance à un appel d’offres futur.",
+        "source_ids": [
+          "S03",
+          "S04",
+          "S05"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "invalidation_test": {
+        "status": "PROPOSITION",
+        "text": "Rapprocher séries, factures, retours et encaissements d’un lot terminé : refuser si la provenance ou le coût après SAV reste inexpliqué ; invalider le besoin si les alternatives couvrent le cycle.",
+        "source_ids": [
+          "S03",
+          "S04",
+          "S05"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "conclusion": {
+        "status": "PROPOSITION",
+        "text": "EXPLORER J2",
+        "source_ids": [
+          "S03",
+          "S04",
+          "S05"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "selected_for_j2": true,
+      "net_margin": null,
+      "finance_need_verified": false
+    },
+    {
+      "id": "N04",
+      "name": "Équipements de cuisine professionnelle reconditionnés",
+      "operation_unit": {
+        "status": "PROPOSITION",
+        "text": "Une machine identifiée déjà diagnostiquée, remise en état puis livrée et réceptionnée par un professionnel ; aucune spécialisation laverie retenue.",
+        "source_ids": [
+          "S06"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "public_observation": {
+        "status": "CONFIRMÉ",
+        "text": "La fiche Vesto sur ma cantine présente une activité d’achat, reconditionnement et revente ; c’est un repérage déclaratif, pas une validation indépendante.",
+        "source_ids": [
+          "S06"
+        ],
+        "basis": "source_attribuee"
+      },
+      "evaluation": {
+        "funding_need": {
+          "status": "HYPOTHÈSE",
+          "text": "Coût d’achat et remise en état avant revente ; aucune preuve d’un besoin résiduel.",
+          "source_ids": [
+            "S06"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "frequency": {
+          "status": "HYPOTHÈSE",
+          "text": "Transactions unitaires répétables chez un atelier existant ; historique nécessaire.",
+          "source_ids": [
+            "S06"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "asset_and_receipt_control": {
+          "status": "À VÉRIFIER",
+          "text": "Série, photos, diagnostic et réception à rapprocher ; état interne et récupération physique délicats.",
+          "source_ids": [
+            "S06"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "customer_dependency": {
+          "status": "RISQUE",
+          "text": "Acheteur unique, contraintes d’installation et mise en service, transport lourd, retours et solvabilité du restaurateur.",
+          "source_ids": [
+            "S06"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "alternatives": {
+          "status": "À VÉRIFIER",
+          "text": "Acompte, reprise, dépôt-vente, crédit fournisseur, crédit-bail/leasing à comparer selon disponibilité et conformité du montage.",
+          "source_ids": [
+            "S06"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "net_margin": {
+          "status": "À VÉRIFIER",
+          "text": "NON CONNUE après diagnostic, pièces, main-d’œuvre, énergie de test, transport, installation, garantie/SAV, TVA selon régime, pertes et conformité.",
+          "source_ids": [
+            "S06"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "fraud": {
+          "status": "RISQUE",
+          "text": "Machine non disponible ou déjà vendue, série remplacée, défaut dissimulé, fausse facture de remise en état.",
+          "source_ids": [
+            "S06"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "shariah_legal": {
+          "status": "À VÉRIFIER",
+          "text": "Propriété, contrats, responsabilité produit et installation à qualifier ; compétences et périmètres techniques, notamment froid/gaz/électricité, à vérifier selon machine. Aucune certification acquise.",
+          "source_ids": [
+            "S06"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "operator_access": {
+          "status": "HYPOTHÈSE",
+          "text": "Acteur repéré ; lecture primaire complète et accès à un atelier avec dossiers passés encore insuffisants.",
+          "source_ids": [
+            "S06"
+          ],
+          "basis": "analyse_ethigone"
+        }
+      },
+      "minimum_evidence": [
+        {
+          "status": "À VÉRIFIER",
+          "text": "Historique d’une machine achevée : provenance, séries, diagnostic, coûts réels et réception.",
+          "source_ids": [
+            "S06"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        {
+          "status": "À VÉRIFIER",
+          "text": "Compétences, assurances et répartition contractuelle du SAV/installation ; commande et encaissement client.",
+          "source_ids": [
+            "S06"
+          ],
+          "basis": "analyse_ethigone"
+        }
+      ],
+      "accept_if": {
+        "status": "PROPOSITION",
+        "text": "Atelier expérimenté, diagnostic avant engagement et dossier achevé entièrement reconstituable.",
+        "source_ids": [
+          "S06"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "refuse_if": {
+        "status": "PROPOSITION",
+        "text": "Financement d’un atelier à créer, machine sans diagnostic, SAV ouvert sans limite de responsabilité établie.",
+        "source_ids": [
+          "S06"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "invalidation_test": {
+        "status": "PROPOSITION",
+        "text": "Si diagnostic et garantie ne peuvent être bornés par un opérateur qualifié sur dossier réel, ne pas présélectionner.",
+        "source_ids": [
+          "S06"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "conclusion": {
+        "status": "PROPOSITION",
+        "text": "EN RÉSERVE",
+        "source_ids": [
+          "S06"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "selected_for_j2": false,
+      "net_margin": null,
+      "finance_need_verified": false
+    },
+    {
+      "id": "N05",
+      "name": "Location de matériels productifs à des clients existants",
+      "operation_unit": {
+        "status": "PROPOSITION",
+        "text": "Un transpalette électrique ou gerbeur identifié, acquis pour une location documentée à un client B2B existant par un loueur déjà actif ; pas de parc spéculatif.",
+        "source_ids": [
+          "S07",
+          "S08"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "public_observation": {
+        "status": "CONFIRMÉ",
+        "text": "DLR décrit la location professionnelle et des matériels de manutention ; son annuaire fournit des repères d’opérateurs.",
+        "source_ids": [
+          "S07",
+          "S08"
+        ],
+        "basis": "source_attribuee"
+      },
+      "evaluation": {
+        "funding_need": {
+          "status": "HYPOTHÈSE",
+          "text": "Achat initial d’un matériel contre encaissements étalés ; réservations, dépôts et financement existant peuvent couvrir ce besoin.",
+          "source_ids": [
+            "S07",
+            "S08"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "frequency": {
+          "status": "HYPOTHÈSE",
+          "text": "Loyers et renouvellements possibles ; taux d’utilisation, retards et vacance réels inconnus.",
+          "source_ids": [
+            "S07",
+            "S08"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "asset_and_receipt_control": {
+          "status": "À VÉRIFIER",
+          "text": "Actif sérialisé récupérable en principe ; localisation, accès, entretien et propriété sans crédit-bail concurrent à démontrer. Loyers hors contrôle automatique.",
+          "source_ids": [
+            "S07",
+            "S08"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "customer_dependency": {
+          "status": "RISQUE",
+          "text": "Défaut du locataire, vacance, usage intensif, vol, coûts de récupération et valeur résiduelle non établis.",
+          "source_ids": [
+            "S07",
+            "S08"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "alternatives": {
+          "status": "À VÉRIFIER",
+          "text": "Sous-location, location longue durée, crédit-bail/leasing, financement du constructeur ou parc existant ; comparer coût/disponibilité puis conformité charia séparément.",
+          "source_ids": [
+            "S07",
+            "S08"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "net_margin": {
+          "status": "À VÉRIFIER",
+          "text": "NON CONNUE après entretien, contrôles, assurance, transport, casse/vol, vacance, récupération, décote, TVA selon régime et conformité.",
+          "source_ids": [
+            "S07",
+            "S08"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "fraud": {
+          "status": "RISQUE",
+          "text": "Double financement, faux contrat de location, actif fantôme ou déplacé, recettes non déclarées.",
+          "source_ids": [
+            "S07",
+            "S08"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "shariah_legal": {
+          "status": "À VÉRIFIER",
+          "text": "Répartition des responsabilités propriétaire/locataire, risque de propriété, entretien, assurance et éventuelle option de vente à examiner ; une location commerciale ne suffit pas à établir une ijara conforme.",
+          "source_ids": [
+            "S07",
+            "S08"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "operator_access": {
+          "status": "HYPOTHÈSE",
+          "text": "Annuaire disponible ; accès aux relevés de parc, contrats et règlements reste inconnu.",
+          "source_ids": [
+            "S07",
+            "S08"
+          ],
+          "basis": "analyse_ethigone"
+        }
+      },
+      "minimum_evidence": [
+        {
+          "status": "À VÉRIFIER",
+          "text": "Facture et série, absence de charges concurrentes, état/contrôles et valeur de récupération justifiable.",
+          "source_ids": [
+            "S07",
+            "S08"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        {
+          "status": "À VÉRIFIER",
+          "text": "Contrat locataire existant, historique d’utilisation/loyers/maintenance, assurances et procédure d’accès-récupération.",
+          "source_ids": [
+            "S07",
+            "S08"
+          ],
+          "basis": "analyse_ethigone"
+        }
+      ],
+      "accept_if": {
+        "status": "PROPOSITION",
+        "text": "Loueur actif avec client existant et historique démontrant l’économie après vacance et entretien.",
+        "source_ids": [
+          "S07",
+          "S08"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "refuse_if": {
+        "status": "PROPOSITION",
+        "text": "Achat fondé sur utilisation future espérée ; impossibilité de récupérer ou vérifier la propriété.",
+        "source_ids": [
+          "S07",
+          "S08"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "invalidation_test": {
+        "status": "PROPOSITION",
+        "text": "Reconstituer un cycle réel incluant vacance et incident ; si les coûts et responsabilités propriétaire restent ouverts, maintenir en réserve.",
+        "source_ids": [
+          "S07",
+          "S08"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "conclusion": {
+        "status": "PROPOSITION",
+        "text": "EN RÉSERVE",
+        "source_ids": [
+          "S07",
+          "S08"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "selected_for_j2": false,
+      "net_margin": null,
+      "finance_need_verified": false
+    },
+    {
+      "id": "N06",
+      "name": "Maintenance ou installation planifiée sous contrats",
+      "operation_unit": {
+        "status": "PROPOSITION",
+        "text": "Un ordre de travail de maintenance préventive, pièces et main-d’œuvre séparées, sur un équipement existant et un contrat B2B déjà signé ; pas un carnet de contrats futur à financer.",
+        "source_ids": [
+          "S09",
+          "S10",
+          "S11"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "public_observation": {
+        "status": "CONFIRMÉ",
+        "text": "Atlas Copco présente des contrats de maintenance planifiée ; DLR et SEPEM repèrent des prestataires. Cela ne prouve pas la disponibilité d’une petite entreprise partenaire.",
+        "source_ids": [
+          "S09",
+          "S10",
+          "S11"
+        ],
+        "basis": "source_attribuee"
+      },
+      "evaluation": {
+        "funding_need": {
+          "status": "HYPOTHÈSE",
+          "text": "Pièces et salaires avant paiement d’un jalon ; acompte, échéancier et crédit fournisseur peuvent supprimer le décalage.",
+          "source_ids": [
+            "S09",
+            "S10",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "frequency": {
+          "status": "HYPOTHÈSE",
+          "text": "Interventions planifiées susceptibles de récurrence ; contrat et historique à vérifier.",
+          "source_ids": [
+            "S09",
+            "S10",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "asset_and_receipt_control": {
+          "status": "RISQUE",
+          "text": "Main-d’œuvre non récupérable ; pièces posées difficilement séparables ; recette liée au procès-verbal et aux litiges de performance.",
+          "source_ids": [
+            "S09",
+            "S10",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "customer_dependency": {
+          "status": "RISQUE",
+          "text": "Dépendance au client, techniciens clés et sous-traitants ; pénalités, reprise et indisponibilité du site possibles.",
+          "source_ids": [
+            "S09",
+            "S10",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "alternatives": {
+          "status": "À VÉRIFIER",
+          "text": "Acompte de mobilisation, paiement par jalons, crédit fournisseur ; leasing concerne éventuellement l’outillage, pas le salaire. Toute solution sur créance exige un examen distinct.",
+          "source_ids": [
+            "S09",
+            "S10",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "net_margin": {
+          "status": "À VÉRIFIER",
+          "text": "NON CONNUE après temps réel, déplacement, pièces, reprise, sous-traitance, assurance, pénalités, TVA selon régime, impayés et conformité.",
+          "source_ids": [
+            "S09",
+            "S10",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "fraud": {
+          "status": "RISQUE",
+          "text": "Ordre fictif, heures gonflées, pièces non posées, faux procès-verbal ou contrats déjà financés.",
+          "source_ids": [
+            "S09",
+            "S10",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "shariah_legal": {
+          "status": "À VÉRIFIER",
+          "text": "Objet service et créances à traiter séparément d’une vente d’actifs ; aucun montage de rémunération ou de risque adopté. Responsabilités d’intervention et qualifications à vérifier.",
+          "source_ids": [
+            "S09",
+            "S10",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        "operator_access": {
+          "status": "HYPOTHÈSE",
+          "text": "Offres publiques et annuaires disponibles ; compétences, capacité et accès à un contrat chiffré non établis.",
+          "source_ids": [
+            "S09",
+            "S10",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        }
+      },
+      "minimum_evidence": [
+        {
+          "status": "À VÉRIFIER",
+          "text": "Contrat signé, ordre de travail, périmètre, jalons et conditions de réception.",
+          "source_ids": [
+            "S09",
+            "S10",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        },
+        {
+          "status": "À VÉRIFIER",
+          "text": "Coûts réels d’un ordre achevé : temps, pièces, reprises, pénalités et encaissement ; qualifications, assurances et sous-traitance.",
+          "source_ids": [
+            "S09",
+            "S10",
+            "S11"
+          ],
+          "basis": "analyse_ethigone"
+        }
+      ],
+      "accept_if": {
+        "status": "PROPOSITION",
+        "text": "Opérateur établi, périmètre borné et réception objectivable ; besoin sur coûts précis plutôt que dette générale.",
+        "source_ids": [
+          "S09",
+          "S10",
+          "S11"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "refuse_if": {
+        "status": "PROPOSITION",
+        "text": "Projet nouveau, service critique non maîtrisé, avances destinées seulement à refinancer une créance.",
+        "source_ids": [
+          "S09",
+          "S10",
+          "S11"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "invalidation_test": {
+        "status": "PROPOSITION",
+        "text": "Comparer temps prévu/réel et réception sur une intervention passée ; dérive inexpliquée ou droits sur recette indémontrables = réserve maintenue.",
+        "source_ids": [
+          "S09",
+          "S10",
+          "S11"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "conclusion": {
+        "status": "PROPOSITION",
+        "text": "EN RÉSERVE",
+        "source_ids": [
+          "S09",
+          "S10",
+          "S11"
+        ],
+        "basis": "analyse_ethigone"
+      },
+      "selected_for_j2": false,
+      "net_margin": null,
+      "finance_need_verified": false
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "decision_modele": {
+    "statut": "DECIDE",
+    "date": "2026-11-11",
+    "modele": 3,
+    "description": "Entreprises et opérations ciblées ; particuliers éligibles, notamment détenteurs de stablecoins."
+  },
+  "niche_adoptee": null,
+  "date_limite": "2026-11-17",
+  "repertoire": "docs/strategie-modele-3",
+  "extension_automatique": false,
+  "stages": [
+    {
+      "lot": "J1",
+      "date_nominale": "2026-11-11",
+      "objet": "Domaines et niches",
+      "etat": "termine",
+      "preuves": [
+        "J1_DOMAINES.md",
+        "data/niches.json",
+        "preuves/j1-verification.json"
+      ]
+    },
+    {
+      "lot": "J2",
+      "date_nominale": "2026-11-12",
+      "objet": "Entreprises et dossiers",
+      "etat": "a_faire",
+      "preuves": []
+    },
+    {
+      "lot": "J3",
+      "date_nominale": "2026-11-13",
+      "objet": "Accès aux investisseurs",
+      "etat": "a_faire",
+      "preuves": []
+    },
+    {
+      "lot": "J4",
+      "date_nominale": "2026-11-14",
+      "objet": "Modèle économique",
+      "etat": "a_faire",
+      "preuves": []
+    },
+    {
+      "lot": "J5",
+      "date_nominale": "2026-11-15",
+      "objet": "Parcours, responsabilités et contrats",
+      "etat": "a_faire",
+      "preuves": []
+    },
+    {
+      "lot": "J6",
+      "date_nominale": "2026-11-16",
+      "objet": "Décision et validation terrain",
+      "etat": "a_faire",
+      "preuves": []
+    },
+    {
+      "lot": "J7",
+      "date_nominale": "2026-11-17",
+      "objet": "Documents HTML interactifs",
+      "etat": "a_faire",
+      "preuves": []
+    }
+  ]
+}

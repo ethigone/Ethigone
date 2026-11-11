@@ -24,6 +24,8 @@ ETHIGONE cherche à rendre ces éléments lisibles et traçables. La demande des
 
 L’import/export fait partie de l’historique du projet. Le sprint a retenu la location de matériel comme exemple de démonstration ; ce choix ne valide pas un marché ni un opérateur pour le pilote.
 
+**Décision du 11 novembre 2026 :** étudier le modèle 3, avec des entreprises et opérations ciblées et une participation accessible aux particuliers éligibles, notamment détenteurs de stablecoins. Le [programme de sept passages](docs/strategie-modele-3/README.md) documente les niches, les entreprises, les voies d'accès aux investisseurs et le modèle économique. Il prévoit à J7 des documents HTML interactifs classés dans ce dépôt. Aucune niche ni offre d'investissement réelle n'est validée par cette décision.
+
 ## Les rôles envisagés
 
 | Acteur | Rôle à examiner sur un dossier réel |

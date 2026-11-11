@@ -4,6 +4,8 @@
 
 **État au 9 novembre 2026 :** prototype privé construit, sprint terminé. Les conditions d’un pilote réel restent à établir. Cette liste ne lance aucune automatisation, prise de contact ou dépense.
 
+**Actualisation du 11 novembre 2026 :** le modèle 3 est adopté comme orientation : entreprises/opérations ciblées et particuliers éligibles, notamment détenteurs de stablecoins. Le [programme autorisé de sept passages](docs/strategie-modele-3/PLAN_7_JOURS.md) succède au sprint technique et fixe les priorités du 11 au 17 novembre ; son [état réel](docs/strategie-modele-3/CHECKPOINT.md) est suivi séparément. La liste ci-dessous conserve les limites techniques et les pistes connues au 9 novembre. Le choix d'une niche, les frais, le montage et l'accès effectif aux investisseurs restent à établir. Les documents HTML interactifs sont prévus à J7 ; aucune offre financière publique n'est ouverte.
+
 ## Lire les statuts
 
 | Statut | Sens |

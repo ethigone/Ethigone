@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "S-T1",
+      "titre": "Rapport de l’Observatoire des délais de paiement 2025",
+      "organisme": "Banque de France",
+      "url": "https://www.banque-france.fr/fr/publications-et-statistiques/publications/rapport-de-lobservatoire-des-delais-de-paiement-2025",
+      "publication": "2026-09-24",
+      "consulte_le": "2026-11-11",
+      "type": "primaire_public",
+      "constat": "Comportements de paiement hétérogènes entre tailles et secteurs ; pertinence d’examiner les cycles de trésorerie.",
+      "limite": "Agrégats nationaux : aucune preuve du besoin, de la marge ou de la préférence d’une entreprise ou d’une niche pour ETHIGONE."
+    },
+    {
+      "id": "S-T2",
+      "titre": "Le besoin en fonds de roulement (BFR)",
+      "organisme": "Bpifrance Création",
+      "url": "https://bpifrance-creation.fr/encyclopedie/etapes-creation-dune-entreprise/previsions-financieres/besoin-fonds-roulement",
+      "publication": null,
+      "consulte_le": "2026-11-11",
+      "type": "primaire_pedagogique",
+      "constat": "Le cycle stocks, créances et dettes fournisseurs explique une partie du BFR ; acomptes et délais sont des leviers à comparer.",
+      "limite": "Méthode générale, aucun devis de financement ni validation charia d’une alternative."
+    },
+    {
+      "id": "S-T3",
+      "titre": "Exercer une activité de prestataire de services de financement participatif (PSFP) en France",
+      "organisme": "AMF",
+      "url": "https://www.amf-france.org/fr/espace-professionnels/fintech/mes-relations-avec-lamf/exercer-une-activite-de-prestataire-de-services-de-financement-participatif-psfp-en-france",
+      "publication": null,
+      "consulte_le": "2026-11-11",
+      "type": "primaire_regulateur",
+      "constat": "Les services entrant dans le champ du règlement PSFP supposent un agrément et des responsabilités.",
+      "limite": "L’applicabilité dépend du montage précis ; aucune qualification juridique d’ETHIGONE ni choix de juridiction n’est conclu ici."
+    }
+  ]
+}

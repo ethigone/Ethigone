@@ -1,0 +1,33 @@
+# ETHIGONE — Modèle économique et recherche d'opérateurs
+
+**Décision du 11 novembre 2026 : modèle 3, entreprises et opérations ciblées, participation accessible aux particuliers éligibles, notamment détenteurs de stablecoins.**
+
+Ce dossier contient un travail de recherche et des simulations. Il ne présente aucune offre d'investissement. Les laveries étaient l'exemple fictif du prototype ; ni ce secteur ni l'importation ne constituent une spécialisation décidée.
+
+## Programme autorisé
+
+Sept passages bornés, du 11 au 17 novembre 2026 : [plan détaillé](PLAN_7_JOURS.md). Le premier passage est exécuté lors du lancement, les six suivants sont prévus le matin. La date indique un jalon ; seul le [checkpoint](CHECKPOINT.md) indique le travail réellement vérifié.
+
+| Document | Utilité |
+| --- | --- |
+| [J1_DOMAINES.md](J1_DOMAINES.md) | Comparaison des niches et présélection pour investigation, sans décision de financement. |
+| [data/niches.json](data/niches.json) | Fiches structurées réutilisables pour les comparaisons interactives de J7. |
+| [METHODE_VALIDATION.md](METHODE_VALIDATION.md) | Preuves attendues, alternatives à comparer et critères d'arrêt. |
+| [data/sources-transversales.json](data/sources-transversales.json) | Sources primaires et limites des constats généraux. |
+| [data/sprint.json](data/sprint.json) | Dates et état vérifié des lots. |
+| [preuves/j1-verification.json](preuves/j1-verification.json) | Contrôles de cohérence et de publication documentaire de J1. |
+
+Les livrables de J2 à J6 seront ajoutés dans ce dossier. À J7, un sous-dossier `html/` rassemblera un index de navigation, la comparaison des niches, le répertoire sourcé, les voies d'accès aux investisseurs, le simulateur économique et le parcours opérationnel. Ces HTML devront fonctionner localement sans dépendance à un serveur ni envoi de données à un tiers. Ils ne sont pas encore livrés à J1.
+
+## Lire les conclusions correctement
+
+- **DÉCIDÉ** : le modèle 3 et ce programme de sept passages.
+- **CONFIRMÉ** : un fait étayé, dans les limites et à la date de sa source.
+- **HYPOTHÈSE** : besoin de financement, préférence client ou donnée de simulation non prouvés.
+- **PROPOSITION** : choix recommandé mais non adopté.
+- **RISQUE / À VÉRIFIER** : obstacle ou information qui exige un contrôle complémentaire.
+- **REJETÉ** : option abandonnée par décision explicite. Une piste mise en réserve pour ce sprint n'est pas automatiquement rejetée.
+
+Les entreprises citées servent au repérage ou à la comparaison. Elles ne sont ni partenaires, ni demandeuses de financement confirmées. Aucun contact, achat, collecte, transfert d'actifs ou avis professionnel n'est inclus dans ce travail. La charia est non négociable ; aucun contrat, ratio, stablecoin ou montage n'est certifié par ces documents.
+
+Le dépôt est public : seules les sources publiques, les hypothèses et les simulations destinées à être partagées y sont conservées. Les coordonnées personnelles, documents commerciaux confidentiels, accès techniques et identifiants du Site privé en sont exclus.
