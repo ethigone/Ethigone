@@ -1,0 +1,519 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-12",
+  "sources": [
+    {
+      "id": "J2-F01",
+      "title": "SIEBEC — consommables",
+      "url": "https://www.siebec.com/fr/produits/medias-consommables/",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Catalogue de cartouches et poches de filtration; usines annoncées en France et au Portugal.",
+      "limit": "Déclaration de l’entreprise; ni audit, ni commande, ni besoin de financement démontré."
+    },
+    {
+      "id": "J2-F02",
+      "title": "SIEBEC — identité",
+      "url": "https://www.siebec.com/fr/mentions-legales/",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "SIEBEC SAS, Saint-Égrève, France; SIREN déclaré 499473510.",
+      "limit": "Mentions de l’éditeur; registre actuel et vendeur du lot à rapprocher."
+    },
+    {
+      "id": "J2-F03",
+      "title": "Sofise — cartouches et poches",
+      "url": "https://www.sofise-filtration.com/tous-nos-produits/filtration-liquides/cartouche-filtrante",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Offre de cartouches, capsules et poches pour filtration industrielle.",
+      "limit": "Déclaration de l’entreprise; ni audit, ni commande, ni besoin de financement démontré."
+    },
+    {
+      "id": "J2-F04",
+      "title": "Sofise — identité",
+      "url": "https://www.sofise-filtration.com/mentions-legales",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "SOFISE SOLUTIONS FILTRATION SERVICES, SASU à Vénissieux; SIREN déclaré 479400137.",
+      "limit": "Identité déclarée; registre actuel et pouvoirs non contrôlés."
+    },
+    {
+      "id": "J2-F05",
+      "title": "Pemflow — intégration Sofise",
+      "url": "https://pemflow.fr/nouvelles-entites-sofise-et-techni-filtration/",
+      "consulted_at": "2026-11-12",
+      "publication_date": "2023-11-14",
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Le groupe annonce l’intégration de Sofise et Techni-Filtration.",
+      "limit": "Annonce datée, pas un audit actuel du périmètre consolidé."
+    },
+    {
+      "id": "J2-F06",
+      "title": "FISA Filtration — cartouches",
+      "url": "https://fisafiltration.fr/cartouches/",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Le fabricant présente des cartouches standard et sur mesure, dont des références de remplacement.",
+      "limit": "Déclaration de l’entreprise; ni audit, ni commande, ni besoin de financement démontré."
+    },
+    {
+      "id": "J2-F07",
+      "title": "FISA Filtration — identité",
+      "url": "https://fisafiltration.fr/mentions-legales/",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "FISA FILTRATION, La Chapelle-d’Armentières; numéro déclaré 886080720.",
+      "limit": "Ne pas confondre avec FISA France / fisa.com, acteur des ultrasons."
+    },
+    {
+      "id": "J2-F08",
+      "title": "HIFI FILTER — liquides",
+      "url": "https://hifi-filter.com/fr/solutions/liquides/",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Gamme de cartouches, poches et corps de filtres pour différents liquides industriels.",
+      "limit": "Déclaration de l’entreprise; ni audit, ni commande, ni besoin de financement démontré."
+    },
+    {
+      "id": "J2-F09",
+      "title": "HIFI FILTER — identité groupe",
+      "url": "https://hifi-filter.com/fr/mentions-legales/",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Le site est édité par Hifi Group SA, Suisse, identifiant CHE-114.945.835.",
+      "limit": "Éditeur suisse distinct de la contrepartie commerciale française à déterminer."
+    },
+    {
+      "id": "J2-F10",
+      "title": "HIFI FILTER — implantations",
+      "url": "https://hifi-filter.com/fr/contact/",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Le site présente HIFI FILTER FRANCE à Pontarlier.",
+      "limit": "Présence déclarée; accès à un réseau de revendeurs ou à ses clients non acquis."
+    },
+    {
+      "id": "J2-F11",
+      "title": "Isofilter — poches textiles",
+      "url": "https://www.isofilter.fr/produit/chaussette-filtrante/",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Tailles standard T1 à T4, différents médias et usages industriels de filtration de liquides.",
+      "limit": "Déclaration de l’entreprise; ni audit, ni commande, ni besoin de financement démontré."
+    },
+    {
+      "id": "J2-F12",
+      "title": "Isofilter — identité",
+      "url": "https://www.isofilter.fr/mentions-legales/",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Raison sociale affichée FNA SAS, Pontivy; SIREN 348809799.",
+      "limit": "Mentions sans date de mise à jour certaine; vérifier le registre et l’entité vendeuse."
+    },
+    {
+      "id": "J2-F13",
+      "title": "Poutet — métiers et consommables",
+      "url": "https://www.poutet-filtration.com/",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Conception, fabrication, réparation et consommables dont poches et cartouches; implantation à Martigues.",
+      "limit": "Nombreux usages potentiellement critiques. Compteurs dynamiques à zéro non exploités comme données économiques."
+    },
+    {
+      "id": "J2-F14",
+      "title": "Poutet — CGV publiques",
+      "url": "https://www.poutet-filtration.com/wp-content/uploads/2025/04/CGV-poutet-filtration.pdf",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "La SAS Poutet Filtration distingue réserve de propriété jusqu’au paiement, risques de transport/livraison et paiement aux dates convenues; clauses d’intérêts de retard.",
+      "limit": "PDF non daté dans son texte; version contractuelle applicable inconnue. Aucune conclusion juridique ou charia; ne pas reprendre ces clauses automatiquement."
+    },
+    {
+      "id": "J2-E01",
+      "title": "Arden Plast — produits",
+      "url": "https://www.arden-plast.com/",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Fabrication de protections, intercalaires et caisses en polypropylène alvéolaire; adhésions ARIA Grand Est et GALIA déclarées.",
+      "limit": "Adhésion et réseau déclarés par l’entreprise; pas de liste de clients ni accès garanti."
+    },
+    {
+      "id": "J2-E02",
+      "title": "Arden Plast — identité",
+      "url": "https://www.arden-plast.com/mentions-legales/",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Arden Plast est identifié à Mouzon en France.",
+      "limit": "SIREN non extrait; raison sociale complète et registre restent à rapprocher."
+    },
+    {
+      "id": "J2-E03",
+      "title": "EDC Transmouss — activité",
+      "url": "https://www.edc-transmouss.fr/",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Fabrication de caisses carton, calages et étuis mousse; petites et moyennes séries et configurateur Boxtailors.",
+      "limit": "Boxtailors est un point d’entrée lié, pas une entreprise supplémentaire comptée ici."
+    },
+    {
+      "id": "J2-E04",
+      "title": "EDC — calage de pièce technique",
+      "url": "https://www.edc-transmouss.fr/realisations/emballage-carton-calage-piece-technique/",
+      "consulted_at": "2026-11-12",
+      "publication_date": "2026-06-15",
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Cas publié de caisse avec calage carton intégré pour pièce technique; fabrication annoncée dans l’Orne.",
+      "limit": "Illustration commerciale sans client, montant, commande ni encaissement vérifiables."
+    },
+    {
+      "id": "J2-E05",
+      "title": "Besset Boudot — FAQ",
+      "url": "https://www.besset-boudot.fr/faq-questions-responses-besset-boudot/",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Fabricant B2B de carton sur mesure à Saint-André-de-Corcy; caisses, calages et stockage/livraisons cadencées annoncés.",
+      "limit": "La spécialisation hors standard impose de sélectionner une référence déjà maîtrisée, pas un nouveau développement."
+    },
+    {
+      "id": "J2-E06",
+      "title": "Besset Boudot — identité",
+      "url": "https://www.besset-boudot.fr/mentions-legales/",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Nom Besset Boudot et SIRET 78803835400023.",
+      "limit": "Mentions déclaratives; ne pas reprendre les informations de l’hébergeur comme celles du fabricant."
+    },
+    {
+      "id": "J2-E07",
+      "title": "Turquet — industrie manufacturière",
+      "url": "https://www.turquet.com/secteurs/industrie-manufacturieres/",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Conception et fabrication d’emballages industriels, caisses et calages; atelier à Amblainville.",
+      "limit": "Déclaration de l’entreprise; ni audit, ni commande, ni besoin de financement démontré."
+    },
+    {
+      "id": "J2-E08",
+      "title": "Turquet — identité",
+      "url": "https://www.turquet.com/mentions-legales/",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Éditeur Cartonnage Turquet, Amblainville; TVA affichée FR39718200231.",
+      "limit": "Identité à rapprocher d’un registre et du contrat; absence d’extrait récent ici."
+    },
+    {
+      "id": "J2-E09",
+      "title": "Cartonnages de la Turdine — activité",
+      "url": "https://www.cartonnages-turdine.fr/",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Conception, fabrication en série, stockage et livraison à la demande de cartons pour industriels.",
+      "limit": "Une offre de stockage ne prouve pas qui le finance ni à quelle date le client paie."
+    },
+    {
+      "id": "J2-E10",
+      "title": "Cartonnages de la Turdine — identité",
+      "url": "https://www.cartonnages-turdine.fr/mentions-legales",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "CARTONNAGES DE LA TURDINE, Sarcey; SIRET déclaré 72668009300036.",
+      "limit": "Mentions lues; consultation directe du registre public refusée (403), pas de validation actuelle indépendante."
+    },
+    {
+      "id": "J2-E11",
+      "title": "CGE — activité",
+      "url": "https://www.cge.fr/",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Offre professionnelle de cartons standard, emballages personnalisés et accessoires de calage.",
+      "limit": "Déclaration de l’entreprise; ni audit, ni commande, ni besoin de financement démontré."
+    },
+    {
+      "id": "J2-E12",
+      "title": "CGE — mentions",
+      "url": "https://www.cge.fr/content/2-mentions-legales",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Propriétaire du site indiqué CGE emballages à Villeurbanne; les numéros qui suivent concernent l’hébergeur Celeonet.",
+      "limit": "SIREN de l’opérateur laissé inconnu dans cette fiche pour éviter l’attribution erronée du numéro de l’hébergeur."
+    },
+    {
+      "id": "J2-R01",
+      "title": "SEPEM Douai — exposants",
+      "url": "https://www.sepem-industries.com/e/sepem-douai-2025/partners?eventThemes=d8349c35-b48f-ef11-8473-6045bda07ccf&page=15",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_annuaire_organisateur",
+      "access": "index_et_page_discordants",
+      "observed_paraphrase": "L’index présente notamment FISA FILTRATION et FISA FRANCE séparément; la page ouverte renvoie une autre tranche alphabétique.",
+      "limit": "Pagination dynamique et index discordants; repérage seulement, activités validées ensuite sur sites propres."
+    },
+    {
+      "id": "J2-R02",
+      "title": "HAQQ — écosystème",
+      "url": "https://www.haqq.network/ecosystem",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_ecosysteme",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Zetl est présenté sous le statut Planned DeFi pour des créances de PME.",
+      "limit": "Ce libellé ne démontre ni disponibilité, ni accès à des entreprises des trois niches, ni conformité du contrat."
+    },
+    {
+      "id": "J2-R03",
+      "title": "Centrifuge — fiche historique ConsolFreight",
+      "url": "https://gov.centrifuge.io/t/issuer-consolfreight-series-4/335",
+      "consulted_at": "2026-11-12",
+      "publication_date": "2020-10-20",
+      "source_type": "primaire_declaration_emetteur",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Une fiche d’émetteur décrit le financement de commerce et transport, avec des créances et tranches de tokens.",
+      "limit": "Archive 2020 déclarative: aucun statut opérationnel 2026 vérifié. Ce n’est ni un fabricant des niches ni une voie de financement validée."
+    },
+    {
+      "id": "J2-PC01",
+      "title": "Ecodair — offre professionnels",
+      "url": "https://www.ecodair.com/pro",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "observed_paraphrase": "L'entreprise annonce reprise de parcs, effacement et vente de PC reconditionnés par ses soins en France.",
+      "limit": "Déclaration commerciale; aucun lot commandé ni besoin documenté.",
+      "access": "page_ouverte"
+    },
+    {
+      "id": "J2-PC02",
+      "title": "Ecodair — mentions légales",
+      "url": "https://www.ecodair.com/content/2-mentions-legales",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "observed_paraphrase": "Éditeur déclaré: association ECOD'AIR, RNA W751162653, SIREN 452310253.",
+      "limit": "Éditeur ne prouve pas identité du vendeur ni entité propriétaire du lot; plusieurs structures Ecodair possibles.",
+      "access": "page_ouverte"
+    },
+    {
+      "id": "J2-PC03",
+      "title": "AfB — ateliers",
+      "url": "https://www.afbshop.fr/boutiques",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "observed_paraphrase": "Le site présente ses boutiques et ateliers de reconditionnement français.",
+      "limit": "Page relue par le coordinateur; déclaratif, pas audit d’atelier.",
+      "access": "page_ouverte"
+    },
+    {
+      "id": "J2-PC04",
+      "title": "AfB — mentions légales",
+      "url": "https://www.afb-group.fr/mentions-legales/",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "observed_paraphrase": "Exploitant déclaré AfB France SAS, SIRET 53992624600031; éditeur de groupe allemand distinct.",
+      "limit": "Identité déclarée à rapprocher registre/contrat; groupe compté une seule fois.",
+      "access": "page_ouverte"
+    },
+    {
+      "id": "J2-PC05",
+      "title": "Ateliers du Bocage — processus",
+      "url": "https://boutique.ateliers-du-bocage.fr/content/10-le-reconditionnement-aux-ateliers-du-bocage",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "observed_paraphrase": "L'opérateur déclare traiter des flottes professionnelles, tester, réparer au besoin et effacer chaque équipement concerné sur son site français.",
+      "limit": "Pas de preuve individualisée de série, effacement, commande ou performance.",
+      "access": "page_ouverte"
+    },
+    {
+      "id": "J2-PC06",
+      "title": "Ateliers du Bocage — mentions légales",
+      "url": "https://ateliers-du-bocage.fr/mentions-legales",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "observed_paraphrase": "Identité déclarée: Les Ateliers du Bocage, société coopérative d'intérêt collectif à forme anonyme à capital variable, RCS Niort 385253182.",
+      "limit": "Page relue par le coordinateur; registre et pouvoirs contractuels à vérifier.",
+      "access": "page_ouverte"
+    },
+    {
+      "id": "J2-PC07",
+      "title": "Ecubel — vente",
+      "url": "https://www.ecubel.com/fr/vente",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "observed_paraphrase": "L'entreprise déclare contrôler et tester ses ordinateurs d'occasion, les reconditionner au besoin, et proposer une offre aux revendeurs.",
+      "limit": "Agrément Microsoft déclaré, non vérifié indépendamment; occasion et reconditionné à distinguer lot par lot.",
+      "access": "page_ouverte"
+    },
+    {
+      "id": "J2-PC08",
+      "title": "Ecubel — disclaimer",
+      "url": "https://www.ecubel.com/fr/disclaimer",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "observed_paraphrase": "Identité affichée: Ecubel Computer Trading SPRL, Belgique, entreprise 0832.262.869.",
+      "limit": "Forme SPRL possiblement ancienne: à actualiser via registre belge avant tout contrat.",
+      "access": "page_ouverte"
+    },
+    {
+      "id": "J2-PC09",
+      "title": "Ecubel — groupe",
+      "url": "https://www.ecubel.com/fr/de-nous",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "observed_paraphrase": "Ecubel se présente membre du Groupe ATF, au sein d'Iron Mountain Asset Lifecycle Management.",
+      "limit": "Lien de groupe déclaré; ne pas ajouter ATF comme entreprise indépendante.",
+      "access": "page_ouverte"
+    },
+    {
+      "id": "J2-PC10",
+      "title": "ITJustGood — activité",
+      "url": "https://www.itjustgood.com/qui-sommes-nous",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "observed_paraphrase": "Activité à Voiron, chaîne collecte-revente et appartenance au Groupe ATF annoncées; ancien nom Trade Discount.",
+      "limit": "Déclaration commerciale; certification et lot précis non vérifiés.",
+      "access": "page_ouverte"
+    },
+    {
+      "id": "J2-PC11",
+      "title": "ITJustGood — mentions légales",
+      "url": "https://www.itjustgood.com/mentions-legales",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "observed_paraphrase": "DIGITALEA SASU, RCS Grenoble 519216188, SIRET 51921618800036 est l'éditeur déclaré.",
+      "limit": "Page relue par le coordinateur; registre et vendeur du lot à rapprocher.",
+      "access": "page_ouverte"
+    },
+    {
+      "id": "J2-PC12",
+      "title": "ITJustGood — atelier",
+      "url": "https://www.itjustgood.com/l-atelier-du-reconditionne",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "observed_paraphrase": "ITJustGood décrit le reconditionnement de matériel informatique dans ses ateliers de Voiron.",
+      "limit": "Campagne saisonnière non datée, ne prouve pas capacité actuelle sur un lot B2B.",
+      "access": "index_recherche"
+    },
+    {
+      "id": "J2-PC13",
+      "title": "Kiatoo — mentions légales",
+      "url": "https://www.kiatoo.com/mentions-legales",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "observed_paraphrase": "Éditeur déclaré Atoutek, SIRET 80467515500019; la page annonce reconditionnement dans ses ateliers français.",
+      "limit": "Forme juridique non précisée dans l'extrait légal; identité et atelier à rapprocher du registre.",
+      "access": "page_ouverte"
+    },
+    {
+      "id": "J2-PC14",
+      "title": "Kiatoo — FAQ",
+      "url": "https://www.kiatoo.com/faq",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "observed_paraphrase": "L'entreprise affirme que ses produits sont exclusivement reconditionnés dans son atelier en France.",
+      "limit": "Déclaration commerciale; pas preuve de capacité B2B, qualité ou disponibilité.",
+      "access": "page_ouverte"
+    },
+    {
+      "id": "J2-PC15",
+      "title": "ITJustGood — CGV",
+      "url": "https://www.itjustgood.com/cgv",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "observed_paraphrase": "Les CGV désignent DIGITALEA et distinguent notamment produits reconditionnés par constructeur et ceux traités par l'opérateur.",
+      "limit": "Ne pas supposer que chaque référence vendue est reconditionnée en propre; contrat B2B à obtenir.",
+      "access": "index_recherche"
+    },
+    {
+      "id": "J2-PC16",
+      "title": "Kiatoo — espace professionnel",
+      "url": "https://www.kiatoo.com/espace-pro",
+      "consulted_at": "2026-11-12",
+      "publication_date": null,
+      "source_type": "primaire_entreprise",
+      "access": "page_ouverte",
+      "observed_paraphrase": "Offre explicitement adressée aux entreprises, boutiques informatiques, associations et administrations.",
+      "limit": "Cela corrige la réserve sur existence d’une offre B2B; quantité homogène et conditions d’une commande restent inconnues."
+    }
+  ],
+  "access_limits": [
+    {
+      "url": "https://annuaire-entreprises.data.gouv.fr/entreprise/726680093",
+      "result": "403; registre non relu directement, mentions entreprise utilisées."
+    },
+    {
+      "url": "https://annuaire-entreprises.data.gouv.fr/entreprise/comptoir-general-d-emballage-c-g-e-962505863",
+      "result": "403; rapprochement juridique non terminé, SIREN non repris."
+    },
+    {
+      "url": "https://annuaire-entreprises.data.gouv.fr/entreprise/emballages-diffusion-creation-e-d-c-424977833",
+      "result": "Inaccessible par outil; SIREN non repris."
+    },
+    {
+      "url": "https://www.itjustgood.com/htmlsitemap/",
+      "status": "429 Too Many Requests lors ouverture; index seulement. Autres pages trouvées par recherche."
+    }
+  ]
+}

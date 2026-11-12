@@ -26,8 +26,16 @@
       "lot": "J2",
       "date_nominale": "2026-11-12",
       "objet": "Entreprises et dossiers",
-      "etat": "a_faire",
-      "preuves": []
+      "etat": "termine",
+      "preuves": [
+        "J2_ENTREPRISES.md",
+        "REPERTOIRE_ENTREPRISES.md",
+        "data/entreprises.json",
+        "data/sources-j2.json",
+        "data/reperage.json",
+        "preuves/j2-verification.json"
+      ],
+      "termine_le": "2026-11-12"
     },
     {
       "lot": "J3",

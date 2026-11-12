@@ -1,0 +1,128 @@
+{
+  "lot": "J2",
+  "checked_at": "2026-11-12T07:52:13.783263+00:00",
+  "passed": true,
+  "initial_entries": 18,
+  "deduplicated_records": 17,
+  "per_niche": {
+    "N01": 6,
+    "N02": 6,
+    "N03": 5
+  },
+  "roles": {
+    "fournisseur_comparatif": 3,
+    "operateur_a_qualifier": 13,
+    "reserve_perimetre": 1
+  },
+  "sources": 45,
+  "source_access": {
+    "page_ouverte": 42,
+    "index_et_page_discordants": 1,
+    "index_recherche": 2
+  },
+  "local_markdown_links_checked": 31,
+  "private_marker_scan": "passed for documents; control-script patterns excluded",
+  "commercial_validation": "No verified financing need, interest, order or margin; false means unverified",
+  "agent_used": "gpt-6.1-sol",
+  "astra_used": false,
+  "coordinator_corrections": [
+    "ATF: Ecubel merged with ITJustGood",
+    "Kiatoo B2B page confirmed",
+    "CGE hosting identifier not attributed to operator",
+    "FISA filtration not FISA ultrasounds"
+  ],
+  "publication": "Remote head and blob hashes must be checked after commit; this report is a pre-publication content check.",
+  "limitations": [
+    "No commercial contact or investment",
+    "No financial/legal/Sharia audit",
+    "No visual test or application change",
+    "Known-group deduplication only; no full ownership audit"
+  ],
+  "manifest": [
+    {
+      "path": "CHECKPOINT.md",
+      "sha256": "52f89ce29f8cc8043d74f3bf967f1954f3c22ec935babf563763adf35b0db1b8",
+      "git_blob_sha1": "d9818b93cc4dba81ef54a4084410dbb08a01e2fe"
+    },
+    {
+      "path": "J1_DOMAINES.md",
+      "sha256": "0cd4ee5669cf861f97a63c07049ece90def7c2fafddc887238b57bed5bcfcfb5",
+      "git_blob_sha1": "88486cf50e588b0e19b960fb3ce3a631837bacfc"
+    },
+    {
+      "path": "J2_ENTREPRISES.md",
+      "sha256": "69c5926e4e9fff33629c71ac2849503eb5a680bca5390e9c52650fabd6f17fba",
+      "git_blob_sha1": "3c7c32aa27accd3d064db77ad454047c86388d28"
+    },
+    {
+      "path": "METHODE_VALIDATION.md",
+      "sha256": "7c3e2af1808ea2f97fb2c0bfe06b6d95d5608caa79bc6d86799a5df042911a8c",
+      "git_blob_sha1": "b86cf3416bf8a802461237238e7f2f10765d60db"
+    },
+    {
+      "path": "PLAN_7_JOURS.md",
+      "sha256": "f963050b15234e2f66e975a01e461abdd1dd4b4612712ff44716f05b71586532",
+      "git_blob_sha1": "d37829e0735ee6250c1c6385acdd3725f68d4a47"
+    },
+    {
+      "path": "README.md",
+      "sha256": "bf853e895a34caeb25da239db7c52c4f61fca72289c1626226026933977cdcc2",
+      "git_blob_sha1": "40dcd302dcd8489945179ccd6a90225233e5c511"
+    },
+    {
+      "path": "REPERTOIRE_ENTREPRISES.md",
+      "sha256": "5f5c6cbab599afe0840463d72d19e0ebbe2e4f398d5a8a5cfc0f10ced7f06be8",
+      "git_blob_sha1": "f4e51bae9395e3c1074d80f0de0b9753796f908a"
+    },
+    {
+      "path": "SOURCES_J2.md",
+      "sha256": "921ab8d0148e304f5561e059aefd025523c0c90e1cfdd60edfff35ed5cdd44af",
+      "git_blob_sha1": "9a3f25c33ae9e00f6d9939675e6e88723659671e"
+    },
+    {
+      "path": "data/entreprises.json",
+      "sha256": "afb701b7ac11538c855baecb66c0229e037ef36b64cc5895d88a8d6e08ebebce",
+      "git_blob_sha1": "d8ed822f7fb0ebd6e4dbef0dfb34e02c4a5f9f74"
+    },
+    {
+      "path": "data/niches.json",
+      "sha256": "a4244a79ccc2e94894b2256b935ad79fd81791e0fcc258f08c156b39b62fe9a9",
+      "git_blob_sha1": "1c4a248b31384bb557604a1f978e30d6587ca29b"
+    },
+    {
+      "path": "data/reperage.json",
+      "sha256": "54775be73d8d7a6df694ef4527d53e1cd65337e86c5c10e8daaaaaaa4f5106ef",
+      "git_blob_sha1": "79aa3c55087b92674e5406b2655cd15d334266a0"
+    },
+    {
+      "path": "data/sources-j2.json",
+      "sha256": "6ff0343a7b52c1a5ef7e9cc2fc5dfaf9b989e335da7f15e55f8fbe22a0ed9c1d",
+      "git_blob_sha1": "f6326262a9a93e2f248ab615497f1560e540c002"
+    },
+    {
+      "path": "data/sources-transversales.json",
+      "sha256": "5c9d6e7b19ff6b82aaf9333c2d70324186fba8fffe7eefb33d88a1e2d7a1c42c",
+      "git_blob_sha1": "6a549c19878cdb2d380477f58cac7de1d1914097"
+    },
+    {
+      "path": "data/sprint.json",
+      "sha256": "82f862098abe3acd62a9accd5dde1f18cb4558d3cb601b4b59f2bdada5f1e853",
+      "git_blob_sha1": "0cbb9872177035dc76f9592ed91250e0cf3a3b74"
+    },
+    {
+      "path": "preuves/j1-verification.json",
+      "sha256": "ee66cea62c4e8fd053f02c23cae858435a003f232e9e1e0902a6646e5961e4c3",
+      "git_blob_sha1": "cf7d019edf58092084feacee2cd3cff1086ad12f"
+    },
+    {
+      "path": "verifier.py",
+      "sha256": "87fe70534225ec1ec44e8c47f601dfa6dc70de37361c5ae0241de861b2a6d032",
+      "git_blob_sha1": "31287dde47a11011dec4e5e263e8c1fc38967ae6"
+    },
+    {
+      "path": "verifier_j2.py",
+      "sha256": "0edbab652dcc8b4e1da268b5099f8f1ca9353ddfff5469025c2018965802a9fe",
+      "git_blob_sha1": "93d7b811c820a10832f574fdde7723c1b3b0c92d"
+    }
+  ]
+}

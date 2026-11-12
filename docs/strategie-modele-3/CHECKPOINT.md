@@ -1,37 +1,38 @@
 # État de reprise — Modèle 3
 
-Date : **11 novembre 2026**. Programme autorisé : [sept passages](PLAN_7_JOURS.md), fin le 17 novembre sans prolongation automatique.
+Date : **12 novembre 2026**. Programme autorisé : [sept passages](PLAN_7_JOURS.md), fin le 17 novembre sans prolongation automatique.
 
 ## Terminé
 
-**J1 : comparaison documentaire de six niches**, présélection de trois pistes pour investigation J2. Le dossier contient méthode, alternatives, critères d'acceptation/refus, pièces à rechercher, tests d'invalidation, sources et limites. Les valeurs financières inconnues restent absentes (`null`), et aucun besoin de financement n'est déclaré vérifié.
+- **J1** : comparaison de six niches; N01 filtration standard non critique, N02 emballages simples sur commande, N03 lots de PC reconditionnés déjà commandés restent des **PROPOSITIONS**, sans niche adoptée. Livrables J1 conservés.
+- **J2** : [répertoire documenté](J2_ENTREPRISES.md), 18 entrées initiales ramenées à **17 fiches** après fusion Ecubel E16 sous E17 avec ITJustGood/Digitalea (groupe ATF déclaré). Répartition N01/N02/N03: **6/6/5**. Rôles proposés: **13 opérateurs à qualifier, trois fournisseurs/comparatifs, une réserve de périmètre**. Ni 17 demandes ni 17 contreparties indépendantes auditées.
 
-Présélection **PROPOSITION**, sans niche adoptée :
+Livrables: synthèse, fiches détaillées, 45 sources J2, données entreprises et six chemins de repérage. Sources primaires d’activité/identité, règles de regroupement, opérations hypothétiques, risques, alternatives et pièces manquantes sont explicites. Une immatriculation ne prouve pas la solidité. Besoin, intérêt ETHIGONE et commande restent non vérifiés; marges `null`.
 
-- N01 : consommables de filtration standards non critiques, sur commande documentable.
-- N02 : emballages industriels simples, référence déjà maîtrisée et commande documentable.
-- N03 : lots de PC professionnels reconditionnés, opérateur existant et commande documentable.
+Un agent **gpt-6.1-sol** a effectivement travaillé sur les PC, sans sous-délégation. Le coordinateur a recherché les deux autres niches, relu les six sites PC, les identités et les sources déterminantes, puis corrigé le regroupement ATF et confirmé l’existence de l’espace B2B Kiatoo. Aucune contre-revue Astra à J2.
 
-N04 cuisine professionnelle reconditionnée, N05 location de matériels productifs et N06 maintenance/installation restent en réserve. Leur réouverture a des conditions explicites. La présence des PC parmi les pistes reflète la qualité des documents trouvés, pas une rentabilité supérieure démontrée.
+## Découvertes et limites importantes
 
-Un agent **gpt-6.1-sol** a été effectivement appelé pour comparer les niches et structurer les données, sans sous-délégation. Le coordinateur a intégré les résultats, corrigé le périmètre J2/J3 et relu cinq sources primaires déterminantes. Aucune contre-revue Astra à J1.
+- Sofise est dans Pemflow; pas de double comptage des sociétés du groupe. FISA Filtration est distinct de FISA France ultrasons. Les chiffres légaux de l’hébergeur CGE ne sont pas attribués au fabricant.
+- Les CGV Poutet distinguent propriété, risque et paiement, et comportent des clauses d’intérêts de retard: version réelle et compatibilité à examiner à J5, aucun contrat adopté.
+- Les stocks d’emballages sur appel exigent un engagement ferme de volume et un calendrier; les collectes PC exigent de distinguer achat, don, cession et propriété.
+- SEPEM: pagination et index discordants. Trois lectures de registre français non obtenues; rapprochements juridiques laissés ouverts. Quelques pages PC uniquement indexées; limites dans le registre de sources.
+- Réseaux blockchain examinés en J2: HAQQ classe Zetl Planned DeFi; fiche ConsolFreight Centrifuge datée de 2020. Aucune entreprise N01–N03 supplémentaire qualifiée par ces voies. Pas d’accès aux dossiers ni de capitaux déduit de ces pages.
 
 ## Vérifications
 
-Voir [preuves/j1-verification.json](preuves/j1-verification.json) et le script [verifier.py](verifier.py). Contrôles de structure JSON, références de sources, trois pistes au maximum, marges inconnues, absence de besoin attribué sans preuve, liens Markdown locaux, calendrier et absence de marqueurs privés dans les fichiers préparés. Aucune modification de l'application, aucun test visuel ou financier réel revendiqué.
+Le contrôle courant est [verifier_j2.py](verifier_j2.py), résultat [preuves/j2-verification.json](preuves/j2-verification.json): JSON, provenance, 17 fiches/18 entrées, regroupements connus, statuts, inconnues financières, liens Markdown, calendrier, marqueurs privés et empreintes. Le script `verifier.py` est le contrôle historique de l’état J1; ne pas l’exécuter pour remplacer sa preuve historique après avancement du sprint.
 
-Sources évolutives : la page SEPEM dont l'URL contient `angers-2025` affiche maintenant une liste Angers 2027 arrêtée au 5 novembre 2026. La fiche Vesto reste un repérage au contenu partiellement accessible. La DAE décrit un marché informatique déjà attribué, pas une commande disponible pour ETHIGONE.
+Aucun test visuel, audit de société, contrôle de solvabilité, avis juridique ou certification charia revendiqué. Aucun contact, achat, mouvement d’argent, collecte, wallet ou modification de l’application.
 
 ## Prochain lot
 
-**J2 — 12 novembre :** répertoire d'environ 18 entreprises sur les trois pistes, avec URLs, identité/activité à rapprocher, territoire, type d'opération, signal public, preuve manquante et raison d'étudier ou d'écarter. Ne pas remplir artificiellement un quota. Aucune entreprise n'est présentée comme demandeuse de financement ou partenaire sans preuve.
+**J3 — 13 novembre :** environ dix acteurs/points d’entrée vers les investisseurs; deux voies prioritaires documentées. Distinguer infrastructure, distributeur, financeur et décisionnaire. Vérifier pays, clientèle retail/professionnelle, instrument, ticket, frais et accès, sans réutiliser une archive comme offre active.
 
-J3 voies d'accès aux investisseurs ; J4 économie ; J5 parcours/contrats ; J6 décision et contre-revue ; J7 HTML interactifs locaux dans `html/`, avec état réellement atteint et sources.
+J4 utilisera trois simulations anonymisées sans attribuer de chiffres aux entreprises de J2. J5 parcours/contrats; J6 confrontation et contre-revue; J7 HTML interactifs hors ligne utilisant ces données et les mêmes statuts. J3–J7 restent à faire.
 
-## Limites et sauvegarde
+## Sauvegarde et périmètre
 
-Aucun contact, dépense, transfert ou collecte. Aucun opérateur, investisseur, partenariat, contrat, marge ou certification acquis. Recherche France/UE initiale ; pays d'exploitation et d'investissement non choisis. Le dépôt public conserve uniquement données publiques et simulations.
+Source durable: `ethigone/Ethigone`, branche `main`, `docs/strategie-modele-3`. Base distante lue avant J2: `2b7af599fbd2e7b1ac4277a846702b7b9839c9a6`. Les dix fichiers locaux J1 ont été comparés aux empreintes Git distantes avant copie isolée. Aucun fichier hors de ce dossier n’est modifié par J2. Le commit contenant ce checkpoint est identifiable dans l’historique Git; la tête et les empreintes doivent être vérifiées après publication avant d’annoncer la sauvegarde distante.
 
-Ce dossier est repris depuis `ethigone/Ethigone`, branche `main`, chemin `docs/strategie-modele-3`. L'historique Git fournit la version de ces fichiers. Base du dépôt avant ce passage : `c41c48a04bcfc13d657102270373f0739ce1c81c`. Le commit de publication doit être confirmé séparément avant d'annoncer la sauvegarde distante.
-
-Ne pas reprendre les anciens sprints automatiques, modifier le Site privé, lancer GitHub Pages, changer d'hébergeur ou traiter une autre tâche.
+Ne pas modifier le Site de démonstration, les anciens sprints, l’hébergement ou d’autres tâches. Pas d’activation GitHub Pages. Pays d’exploitation/investissement non choisis, aucun partenaire ni contrat acquis. Le dossier public conserve uniquement recherche publique, hypothèses et simulations; aucun document commercial confidentiel.

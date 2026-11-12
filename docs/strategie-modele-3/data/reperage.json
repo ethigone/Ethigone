@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-12",
+  "channels": [
+    {
+      "id": "R01",
+      "type": "annuaire_professionnel",
+      "name": "SEPEM — exposants",
+      "source_ids": [
+        "J2-R01",
+        "J2-F06",
+        "J2-F07"
+      ],
+      "status": "PROPOSITION",
+      "method": "Filtrer activité/produit, ouvrir la fiche, puis rapprocher nom, domaine web et mentions. Ne pas inférer une édition à partir de l’URL seule.",
+      "result": "Canal de repérage pertinent, mais pagination instable; le fabricant de filtres est confirmé par son propre site.",
+      "company_ids": [
+        "E03"
+      ],
+      "limit": "Annuaire ne prouve ni trésorerie, ni intérêt, ni statut actuel; ne pas confondre FISA France et FISA Filtration."
+    },
+    {
+      "id": "R02",
+      "type": "fabricants_distributeurs",
+      "name": "Catalogues filtration et implantations",
+      "source_ids": [
+        "J2-F01",
+        "J2-F03",
+        "J2-F08",
+        "J2-F10",
+        "J2-F11",
+        "J2-F13"
+      ],
+      "status": "PROPOSITION",
+      "method": "Partir des tailles/médias et usages, identifier fournisseur et distributeur facturant; comparer achat direct et réassort.",
+      "result": "Six fiches; SIEBEC et HIFI servent d’abord à comparer l’approvisionnement.",
+      "company_ids": [
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05",
+        "E06"
+      ],
+      "limit": "Aucun fichier client ni réseau de distributeurs accessible obtenu; aucune offre de crédit fournisseur confirmée."
+    },
+    {
+      "id": "R03",
+      "type": "fabricants_cas_clients",
+      "name": "Fabricants d’emballages — cas, catalogues et réseaux déclarés",
+      "source_ids": [
+        "J2-E01",
+        "J2-E03",
+        "J2-E04",
+        "J2-E05",
+        "J2-E07",
+        "J2-E09",
+        "J2-E11"
+      ],
+      "status": "PROPOSITION",
+      "method": "Rechercher caisses/intercalaires/calages, une réalisation et une référence répétable; séparer fabrication, stockage et livraison.",
+      "result": "Six fiches; EDC fournit un cas daté, Turdine décrit le stockage à la demande. Arden Plast déclare ARIA Grand Est/GALIA.",
+      "company_ids": [
+        "E07",
+        "E08",
+        "E09",
+        "E10",
+        "E11",
+        "E12"
+      ],
+      "limit": "L’appartenance à un réseau est déclarative ici; ni réseau ouvert ni débouché acquis. Le cas publié ne donne pas de commande accessible."
+    },
+    {
+      "id": "R04",
+      "type": "operateurs_reemploi",
+      "name": "Reconditionneurs — reprise de parcs, ateliers et espaces professionnels",
+      "source_ids": [
+        "J2-PC01",
+        "J2-PC03",
+        "J2-PC05",
+        "J2-PC07",
+        "J2-PC10",
+        "J2-PC16"
+      ],
+      "status": "PROPOSITION",
+      "method": "Croiser atelier et offre B2B; relier enseigne, éditeur, vendeur et groupe; repérer une unité économique par numéros de série.",
+      "result": "Six noms initiaux regroupés en cinq fiches; Ecubel et ITJustGood relèvent du groupe ATF déclaré.",
+      "company_ids": [
+        "E13",
+        "E14",
+        "E15",
+        "E17",
+        "E18"
+      ],
+      "limit": "Une collecte n’est pas nécessairement un achat; don, cession, stock possédé et reprise payante doivent être séparés."
+    },
+    {
+      "id": "R05",
+      "type": "ecosysteme_blockchain",
+      "name": "HAQQ — partenaires et projets annoncés",
+      "source_ids": [
+        "J2-R02"
+      ],
+      "status": "A_VERIFIER",
+      "method": "Lire le statut du projet, puis identifier son opérateur et son activité réelle avant de suivre une piste.",
+      "result": "Zetl figure Planned DeFi, pour créances PME; aucune entreprise supplémentaire N01–N03 ajoutée.",
+      "company_ids": [],
+      "limit": "Pas de preuve d’accès aux dossiers, d’intégration opérationnelle ou de conformité. Ne pas assimiler réseau, financeur et demandeur."
+    },
+    {
+      "id": "R06",
+      "type": "ecosysteme_blockchain",
+      "name": "Centrifuge — dossiers d’émetteurs historiques",
+      "source_ids": [
+        "J2-R03"
+      ],
+      "status": "A_VERIFIER",
+      "method": "Lire date, type d’actif et rôle; rechercher ensuite une preuve primaire actuelle avant toute utilisation.",
+      "result": "Fiche ConsolFreight 2020: commerce/transport et créances. Non comptée parmi les opérateurs ciblés.",
+      "company_ids": [],
+      "limit": "Archive et hors des trois niches; activité actuelle et contrat non validés. Pas de conclusion sur disponibilité de capitaux."
+    }
+  ],
+  "deduplication": [
+    {
+      "status": "CONFIRME",
+      "source_ids": [
+        "J2-F05"
+      ],
+      "decision": "Pemflow/Sofise: une fiche E02; pas d’ajout de Filtration SASU ou Techni-Filtration comme groupes indépendants."
+    },
+    {
+      "status": "CONFIRME",
+      "source_ids": [
+        "J2-PC09",
+        "J2-PC10"
+      ],
+      "decision": "Ecubel E16 fusionnée sous E17 avec ITJustGood/Digitalea; ancien nom Trade Discount non ajouté."
+    },
+    {
+      "status": "CONFIRME",
+      "source_ids": [
+        "J2-F07",
+        "J2-R01"
+      ],
+      "decision": "FISA France ultrasons non retenue; E03 correspond uniquement à FISA Filtration."
+    },
+    {
+      "status": "CONFIRME",
+      "source_ids": [
+        "J2-E12"
+      ],
+      "decision": "Numéro d’hébergeur CGE non attribué à l’opérateur."
+    }
+  ],
+  "screened_not_added": [
+    {
+      "name": "Société Poitevine de Filtration",
+      "status": "PROPOSITION",
+      "result": "Hors présélection N01: la page consultée décrit surtout équipements de station et tamisage, pas un lot de consommables standard qualifié.",
+      "url": "https://spf.fr/spf-a-propos/",
+      "consulted_at": "2026-11-12"
+    },
+    {
+      "name": "ConsolFreight / Zetl",
+      "status": "A_VERIFIER",
+      "result": "Conservés comme pistes de réseaux J3, pas comme fabricants ou demandeurs des niches.",
+      "source_ids": [
+        "J2-R02",
+        "J2-R03"
+      ]
+    }
+  ],
+  "limits": [
+    "Recherche bornée et non exhaustive; biais vers entreprises publiant des informations en français.",
+    "Regroupement des liens connus; pas d’audit des bénéficiaires effectifs ni d’indépendance capitalistique.",
+    "France comme point de départ documentaire, Belgique/Suisse comme liens fournisseurs: aucune juridiction choisie.",
+    "Aucune entreprise repérée via blockchain n’a été qualifiée dans N01–N03 à ce passage; absence de preuve ici ne signifie pas inexistence."
+  ]
+}

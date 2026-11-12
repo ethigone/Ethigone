@@ -1,0 +1,1138 @@
+{
+  "schema_version": 1,
+  "lot": "J2",
+  "as_of": "2026-11-12",
+  "decision_modele": 3,
+  "niche_adoptee": null,
+  "scope": "Repérage documentaire public, pas portefeuille de demandes ni offre d’investissement.",
+  "statuses": [
+    "CONFIRME",
+    "HYPOTHESE",
+    "RISQUE",
+    "A_VERIFIER",
+    "PROPOSITION",
+    "DECIDE",
+    "REJETE"
+  ],
+  "status_note": "CONFIRME: contenu observé et attribué à sa source, non audité. Identité contractuelle toujours A_VERIFIER.",
+  "counting": {
+    "initial_entries": 18,
+    "deduplicated_records": 17,
+    "merged_ids": {
+      "E16": "E17"
+    },
+    "per_niche": {
+      "N01": 6,
+      "N02": 6,
+      "N03": 5
+    },
+    "rule": "Une fiche par groupe repéré; une fiche peut contenir plusieurs entités juridiques. Pas de preuve d’indépendance exhaustive entre les autres fiches."
+  },
+  "financial_unknowns": "Tous besoins, intérêts, commandes et marges inconnus; false signifie non vérifié, jamais absence prouvée.",
+  "common_missing_evidence": [
+    "Identité vendeur/acheteur, registre actuel et pouvoirs de signer; rapprochement avec factures et contrats.",
+    "Commande ferme vérifiable indépendamment, quantités, spécifications, clauses d’annulation et réception.",
+    "Devis fournisseurs, coût complet et dates de décaissement/encaissement; TVA et devise selon situation réelle.",
+    "Preuve de propriété, inventaire de lot et absence de double financement ou de charges incompatibles.",
+    "Dossier passé achevé: coûts, livraison, retours et encaissements rapprochés; aucune donnée confidentielle dans le dépôt public.",
+    "Besoin résiduel après acomptes, paiements fournisseurs et solutions réellement accessibles; coût et raison de préférer ETHIGONE.",
+    "Contrats, propriété/possession/risque, activité, ratios, stablecoins et chaîne complète à examiner juridiquement et au regard de la charia.",
+    "Aucune entreprise n’est sollicitée durant ce passage; ces preuves ne sont pas encore obtenues."
+  ],
+  "companies": [
+    {
+      "id": "E01",
+      "niche_id": "N01",
+      "name": "SIEBEC",
+      "countries": [
+        "France"
+      ],
+      "website": "https://www.siebec.com/fr/produits/medias-consommables/",
+      "identity_declared": "SIEBEC SAS; SIREN déclaré 499473510, Saint-Égrève.",
+      "identity_status": "A_VERIFIER",
+      "group_key": "SIEBEC",
+      "group_deduplication": "Une fiche par groupe connu; liens capitalistiques exhaustifs non audités.",
+      "source_ids": [
+        "J2-F01",
+        "J2-F02"
+      ],
+      "activity_signal": {
+        "status": "CONFIRME",
+        "basis": "source_attribuee",
+        "text": "Fabricant de cartouches et poches industrielles.",
+        "source_ids": [
+          "J2-F01",
+          "J2-F02"
+        ]
+      },
+      "proposal": {
+        "status": "PROPOSITION",
+        "role": "fournisseur_comparatif",
+        "priority": "comparatif",
+        "selection_reason": "Catalogue utile pour spécifications et comparaison achat direct/distribution.",
+        "operation": {
+          "status": "HYPOTHESE",
+          "text": "Un distributeur achète un lot de consommables identifié pour une commande non critique."
+        },
+        "risks": {
+          "status": "RISQUE",
+          "text": "Usages alimentaires ou de sécurité à exclure; ne pas confondre SIEBEC et Quali-filtres comme cibles indépendantes."
+        },
+        "missing_evidence": {
+          "status": "A_VERIFIER",
+          "items": [
+            "Références/usage et non-criticité justifiés",
+            "Devis net de remise et preuve d’achat distributeur",
+            "Commande et réception client"
+          ]
+        },
+        "alternatives": {
+          "status": "A_VERIFIER",
+          "text": "Achat direct au fabricant, livraison directe et crédit fournisseur à vérifier."
+        },
+        "ethigone_reason": {
+          "status": "HYPOTHESE",
+          "text": "Un distributeur pourrait documenter un décalage que le fabricant ne couvre pas."
+        },
+        "invalidation_test": "Écarter le montage si achat direct ou délais fabricant suppriment le besoin ou la valeur de l’intermédiaire."
+      },
+      "finance_need_verified": false,
+      "interest_in_ethigone_verified": false,
+      "order_verified": false,
+      "net_margin": null
+    },
+    {
+      "id": "E02",
+      "niche_id": "N01",
+      "name": "Sofise / Pemflow",
+      "countries": [
+        "France"
+      ],
+      "website": "https://www.sofise-filtration.com/tous-nos-produits/filtration-liquides/cartouche-filtrante",
+      "identity_declared": "SOFISE SOLUTIONS FILTRATION SERVICES SASU; SIREN 479400137, Vénissieux; vendeur actuel à confirmer.",
+      "identity_status": "A_VERIFIER",
+      "group_key": "PEMFLOW",
+      "group_deduplication": "Une fiche par groupe connu; liens capitalistiques exhaustifs non audités.",
+      "source_ids": [
+        "J2-F03",
+        "J2-F04",
+        "J2-F05"
+      ],
+      "activity_signal": {
+        "status": "CONFIRME",
+        "basis": "source_attribuee",
+        "text": "Distribution de consommables; appartenance Pemflow publiée.",
+        "source_ids": [
+          "J2-F03",
+          "J2-F04",
+          "J2-F05"
+        ]
+      },
+      "proposal": {
+        "status": "PROPOSITION",
+        "role": "operateur_a_qualifier",
+        "priority": "a_qualifier",
+        "selection_reason": "Distribution de références identifiables plutôt que financement d’une machine complète.",
+        "operation": {
+          "status": "HYPOTHESE",
+          "text": "Lot de poches ou cartouches usuelles, hors stérilisation, affecté à un acheteur industriel."
+        },
+        "risks": {
+          "status": "RISQUE",
+          "text": "Périmètre groupe, vendeur facturant, qualification matière et usage à établir."
+        },
+        "missing_evidence": {
+          "status": "A_VERIFIER",
+          "items": [
+            "Contrat fournisseur et pouvoir de distribuer",
+            "Achat/vente/encaissement d’un lot passé",
+            "Usage réel et exclusions"
+          ]
+        },
+        "alternatives": {
+          "status": "A_VERIFIER",
+          "text": "Acompte, crédit fournisseur, livraison directe."
+        },
+        "ethigone_reason": {
+          "status": "HYPOTHESE",
+          "text": "Un dossier répété et traçable pourrait réduire le coût documentaire ETHIGONE."
+        },
+        "invalidation_test": "Écarter si soutien/délais groupe suffisent, lot déjà financé ou prestation principalement critique."
+      },
+      "finance_need_verified": false,
+      "interest_in_ethigone_verified": false,
+      "order_verified": false,
+      "net_margin": null
+    },
+    {
+      "id": "E03",
+      "niche_id": "N01",
+      "name": "FISA Filtration",
+      "countries": [
+        "France"
+      ],
+      "website": "https://fisafiltration.fr/cartouches/",
+      "identity_declared": "FISA FILTRATION; numéro déclaré 886080720, La Chapelle-d’Armentières.",
+      "identity_status": "A_VERIFIER",
+      "group_key": "FISA_FILTRATION",
+      "group_deduplication": "Une fiche par groupe connu; liens capitalistiques exhaustifs non audités.",
+      "source_ids": [
+        "J2-F06",
+        "J2-F07"
+      ],
+      "activity_signal": {
+        "status": "CONFIRME",
+        "basis": "source_attribuee",
+        "text": "Cartouches de remplacement et fabrication standard/sur mesure.",
+        "source_ids": [
+          "J2-F06",
+          "J2-F07"
+        ]
+      },
+      "proposal": {
+        "status": "PROPOSITION",
+        "role": "operateur_a_qualifier",
+        "priority": "a_qualifier",
+        "selection_reason": "Références de maintenance identifiables; distinguer le fabricant d’ultrasons homonyme.",
+        "operation": {
+          "status": "HYPOTHESE",
+          "text": "Répétition d’un lot de filtres déjà validé par le client, usage non critique démontré."
+        },
+        "risks": {
+          "status": "RISQUE",
+          "text": "Compatibilité réelle et qualification ne se déduisent pas d’une équivalence catalogue."
+        },
+        "missing_evidence": {
+          "status": "A_VERIFIER",
+          "items": [
+            "Référence de remplacement déjà validée",
+            "Coût matière/main-d’œuvre/rebut",
+            "Historique de retours et délai de règlement"
+          ]
+        },
+        "alternatives": {
+          "status": "A_VERIFIER",
+          "text": "Acompte, commande fractionnée, crédit matière."
+        },
+        "ethigone_reason": {
+          "status": "HYPOTHESE",
+          "text": "Une référence répétée pourrait limiter étude et outillage à chaque lot."
+        },
+        "invalidation_test": "Écarter nouvelle qualification coûteuse, remplacement de sécurité ou absence de commande ferme."
+      },
+      "finance_need_verified": false,
+      "interest_in_ethigone_verified": false,
+      "order_verified": false,
+      "net_margin": null
+    },
+    {
+      "id": "E04",
+      "niche_id": "N01",
+      "name": "HIFI FILTER — relais France",
+      "countries": [
+        "France",
+        "Suisse"
+      ],
+      "website": "https://hifi-filter.com/fr/solutions/liquides/",
+      "identity_declared": "HIFI FILTER FRANCE à Pontarlier; éditeur Hifi Group SA (Suisse), CHE-114.945.835; vendeur à déterminer.",
+      "identity_status": "A_VERIFIER",
+      "group_key": "HIFI_GROUP",
+      "group_deduplication": "Une fiche par groupe connu; liens capitalistiques exhaustifs non audités.",
+      "source_ids": [
+        "J2-F08",
+        "J2-F09",
+        "J2-F10"
+      ],
+      "activity_signal": {
+        "status": "CONFIRME",
+        "basis": "source_attribuee",
+        "text": "Catalogue de filtres liquides et implantation française.",
+        "source_ids": [
+          "J2-F08",
+          "J2-F09",
+          "J2-F10"
+        ]
+      },
+      "proposal": {
+        "status": "PROPOSITION",
+        "role": "fournisseur_comparatif",
+        "priority": "comparatif",
+        "selection_reason": "Point de comparaison d’approvisionnement, pas demandeur confirmé.",
+        "operation": {
+          "status": "HYPOTHESE",
+          "text": "Un revendeur identifié approvisionne des cartouches commandées auprès de l’entité pertinente."
+        },
+        "risks": {
+          "status": "RISQUE",
+          "text": "Déduire à tort identité suisse du contrat français, clientèle accessible ou non-criticité."
+        },
+        "missing_evidence": {
+          "status": "A_VERIFIER",
+          "items": [
+            "Vendeur et devise du devis",
+            "Conditions revendeur et livraison",
+            "Distributeur réel et acheteur engagé"
+          ]
+        },
+        "alternatives": {
+          "status": "A_VERIFIER",
+          "text": "Achat direct, livraison directe et paiement différé fournisseur."
+        },
+        "ethigone_reason": {
+          "status": "HYPOTHESE",
+          "text": "Tester s’il reste un service utile après les solutions déjà proposées par le réseau."
+        },
+        "invalidation_test": "Écarter si l’acheteur peut obtenir la même exécution moins coûteuse directement."
+      },
+      "finance_need_verified": false,
+      "interest_in_ethigone_verified": false,
+      "order_verified": false,
+      "net_margin": null
+    },
+    {
+      "id": "E05",
+      "niche_id": "N01",
+      "name": "Isofilter / FNA",
+      "countries": [
+        "France"
+      ],
+      "website": "https://www.isofilter.fr/produit/chaussette-filtrante/",
+      "identity_declared": "FNA SAS, Pontivy; SIREN déclaré 348809799.",
+      "identity_status": "A_VERIFIER",
+      "group_key": "FNA_ISOFILTER",
+      "group_deduplication": "Une fiche par groupe connu; liens capitalistiques exhaustifs non audités.",
+      "source_ids": [
+        "J2-F11",
+        "J2-F12"
+      ],
+      "activity_signal": {
+        "status": "CONFIRME",
+        "basis": "source_attribuee",
+        "text": "Poches textiles standard avec tailles et médias explicités.",
+        "source_ids": [
+          "J2-F11",
+          "J2-F12"
+        ]
+      },
+      "proposal": {
+        "status": "PROPOSITION",
+        "role": "operateur_a_qualifier",
+        "priority": "a_qualifier",
+        "selection_reason": "Spécifications de lots directement comparables.",
+        "operation": {
+          "status": "HYPOTHESE",
+          "text": "Lot standard de poches pour bains de lavage non critiques, sur commande validée."
+        },
+        "risks": {
+          "status": "RISQUE",
+          "text": "Compatibilité chimique/température et transport; environnement et sécurité à qualifier même pour une taille standard."
+        },
+        "missing_evidence": {
+          "status": "A_VERIFIER",
+          "items": [
+            "Devis lot et prix B2B réel",
+            "Usage final et matériau acceptés",
+            "Calendrier client/fournisseur"
+          ]
+        },
+        "alternatives": {
+          "status": "A_VERIFIER",
+          "text": "Paiement client avant expédition, acompte, crédit fournisseur."
+        },
+        "ethigone_reason": {
+          "status": "HYPOTHESE",
+          "text": "Tester un cycle court documenté si prépaiement et délais ne suffisent pas."
+        },
+        "invalidation_test": "Écarter si usage critique, besoin seulement spéculatif ou coûts de contrôle absorbant l’économie."
+      },
+      "finance_need_verified": false,
+      "interest_in_ethigone_verified": false,
+      "order_verified": false,
+      "net_margin": null
+    },
+    {
+      "id": "E06",
+      "niche_id": "N01",
+      "name": "Poutet Filtration",
+      "countries": [
+        "France"
+      ],
+      "website": "https://www.poutet-filtration.com/",
+      "identity_declared": "SAS Poutet Filtration selon CGV; Martigues; SIREN non retenu faute de rapprochement primaire.",
+      "identity_status": "A_VERIFIER",
+      "group_key": "POUTET",
+      "group_deduplication": "Une fiche par groupe connu; liens capitalistiques exhaustifs non audités.",
+      "source_ids": [
+        "J2-F13",
+        "J2-F14"
+      ],
+      "activity_signal": {
+        "status": "CONFIRME",
+        "basis": "source_attribuee",
+        "text": "Poches/cartouches au sein d’une offre de conception, réparation et fabrication.",
+        "source_ids": [
+          "J2-F13",
+          "J2-F14"
+        ]
+      },
+      "proposal": {
+        "status": "PROPOSITION",
+        "role": "reserve_perimetre",
+        "priority": "reserve",
+        "selection_reason": "Étudier uniquement un consommable standard dissociable de l’installation.",
+        "operation": {
+          "status": "HYPOTHESE",
+          "text": "Réassort non critique déjà qualifié; aucune construction d’équipement de process."
+        },
+        "risks": {
+          "status": "RISQUE",
+          "text": "Usages potentiellement critiques; CGV avec réserve de propriété et risques distincts, ainsi que clauses d’intérêts de retard."
+        },
+        "missing_evidence": {
+          "status": "A_VERIFIER",
+          "items": [
+            "Spécification de consommable hors sécurité/process critique",
+            "Version négociée des clauses propriété/risque/paiement",
+            "Avis juridique et charia sur chaîne contractuelle"
+          ]
+        },
+        "alternatives": {
+          "status": "A_VERIFIER",
+          "text": "Acompte et délai négocié; aucune conformité des CGV présumée."
+        },
+        "ethigone_reason": {
+          "status": "HYPOTHESE",
+          "text": "Valeur envisageable seulement sur un lot traçable à clauses compatibles et besoin résiduel."
+        },
+        "invalidation_test": "Écarter du pilote si clauses incompatibles non résolues ou si le consommable engage une garantie de process."
+      },
+      "finance_need_verified": false,
+      "interest_in_ethigone_verified": false,
+      "order_verified": false,
+      "net_margin": null
+    },
+    {
+      "id": "E07",
+      "niche_id": "N02",
+      "name": "Arden Plast",
+      "countries": [
+        "France"
+      ],
+      "website": "https://www.arden-plast.com/",
+      "identity_declared": "Arden Plast, Mouzon; SIREN à rapprocher.",
+      "identity_status": "A_VERIFIER",
+      "group_key": "ARDEN_PLAST",
+      "group_deduplication": "Une fiche par groupe connu; liens capitalistiques exhaustifs non audités.",
+      "source_ids": [
+        "J2-E01",
+        "J2-E02"
+      ],
+      "activity_signal": {
+        "status": "CONFIRME",
+        "basis": "source_attribuee",
+        "text": "Protections, intercalaires et caisses en polypropylène alvéolaire.",
+        "source_ids": [
+          "J2-E01",
+          "J2-E02"
+        ]
+      },
+      "proposal": {
+        "status": "PROPOSITION",
+        "role": "operateur_a_qualifier",
+        "priority": "a_qualifier",
+        "selection_reason": "Familles simples de calage; piste de réseaux industriels déclarés.",
+        "operation": {
+          "status": "HYPOTHESE",
+          "text": "Reproduction d’une référence connue d’intercalaire ou caisse vendue, commande et plan déjà acceptés."
+        },
+        "risks": {
+          "status": "RISQUE",
+          "text": "Sur-mesure difficile à revendre, prix matière, outillage et confusion vente/parc réutilisable loué."
+        },
+        "missing_evidence": {
+          "status": "A_VERIFIER",
+          "items": [
+            "Plan et ancienne série acceptée",
+            "Devis matière, chutes et outillage",
+            "Coût logistique et réception"
+          ]
+        },
+        "alternatives": {
+          "status": "A_VERIFIER",
+          "text": "Acompte matière, jalons, production/livraison par lots."
+        },
+        "ethigone_reason": {
+          "status": "HYPOTHESE",
+          "text": "Le suivi d’une série répétée pourrait être moins coûteux qu’un développement nouveau."
+        },
+        "invalidation_test": "Écarter si nouveau moule/plan non validé ou si un parc loué remplace la vente ponctuelle étudiée."
+      },
+      "finance_need_verified": false,
+      "interest_in_ethigone_verified": false,
+      "order_verified": false,
+      "net_margin": null
+    },
+    {
+      "id": "E08",
+      "niche_id": "N02",
+      "name": "EDC Transmouss",
+      "countries": [
+        "France"
+      ],
+      "website": "https://www.edc-transmouss.fr/",
+      "identity_declared": "EDC Transmouss, activité dans l’Orne; identité contractuelle et SIREN à rapprocher.",
+      "identity_status": "A_VERIFIER",
+      "group_key": "EDC_TRANSMOUSS",
+      "group_deduplication": "Une fiche par groupe connu; liens capitalistiques exhaustifs non audités.",
+      "source_ids": [
+        "J2-E03",
+        "J2-E04"
+      ],
+      "activity_signal": {
+        "status": "CONFIRME",
+        "basis": "source_attribuee",
+        "text": "Fabrication carton/mousse; exemple daté de calage d’une pièce technique.",
+        "source_ids": [
+          "J2-E03",
+          "J2-E04"
+        ]
+      },
+      "proposal": {
+        "status": "PROPOSITION",
+        "role": "operateur_a_qualifier",
+        "priority": "a_qualifier",
+        "selection_reason": "Cas concret permettant de définir les pièces à examiner; aucune vente acquise pour ETHIGONE.",
+        "operation": {
+          "status": "HYPOTHESE",
+          "text": "Réassort d’une caisse carton et calage déjà conçus et acceptés, hors contraintes médicales/alimentaires."
+        },
+        "risks": {
+          "status": "RISQUE",
+          "text": "Coût de conception, cliché, découpe et calage à ne pas omettre; cas publié ne donne ni client ni volume."
+        },
+        "missing_evidence": {
+          "status": "A_VERIFIER",
+          "items": [
+            "Commande de réassort distincte du cas public",
+            "Plan accepté et coût de première série",
+            "Chutes, coût des reprises et encaissement final"
+          ]
+        },
+        "alternatives": {
+          "status": "A_VERIFIER",
+          "text": "Acompte, facturation d’étude séparée, fractionnement des séries."
+        },
+        "ethigone_reason": {
+          "status": "HYPOTHESE",
+          "text": "Un réassort pourrait isoler le coût marginal réel d’une opération sans réinventer l’emballage."
+        },
+        "invalidation_test": "Écarter si besoin principal de R&D, absence de critères de réception ou transport trop cher."
+      },
+      "finance_need_verified": false,
+      "interest_in_ethigone_verified": false,
+      "order_verified": false,
+      "net_margin": null
+    },
+    {
+      "id": "E09",
+      "niche_id": "N02",
+      "name": "Besset Boudot Cartonnage",
+      "countries": [
+        "France"
+      ],
+      "website": "https://www.besset-boudot.fr/faq-questions-responses-besset-boudot/",
+      "identity_declared": "Besset Boudot; SIRET déclaré 78803835400023, Saint-André-de-Corcy.",
+      "identity_status": "A_VERIFIER",
+      "group_key": "BESSET_BOUDOT",
+      "group_deduplication": "Une fiche par groupe connu; liens capitalistiques exhaustifs non audités.",
+      "source_ids": [
+        "J2-E05",
+        "J2-E06"
+      ],
+      "activity_signal": {
+        "status": "CONFIRME",
+        "basis": "source_attribuee",
+        "text": "Emballages B2B sur mesure, stockage et livraisons cadencées annoncés.",
+        "source_ids": [
+          "J2-E05",
+          "J2-E06"
+        ]
+      },
+      "proposal": {
+        "status": "PROPOSITION",
+        "role": "operateur_a_qualifier",
+        "priority": "a_qualifier",
+        "selection_reason": "Possibilité d’étudier séparément production et cadence des sorties.",
+        "operation": {
+          "status": "HYPOTHESE",
+          "text": "Série d’une référence maîtrisée, avec calendrier de livraisons et engagement ferme client."
+        },
+        "risks": {
+          "status": "RISQUE",
+          "text": "Hors-standard et stock chez fabricant: commande ouverte non ferme, propriété du stock et paiement à définir."
+        },
+        "missing_evidence": {
+          "status": "A_VERIFIER",
+          "items": [
+            "Commande ferme versus appel de livraison",
+            "Inventaire et durée maximale de stockage",
+            "Coûts de manutention et livraison par appel"
+          ]
+        },
+        "alternatives": {
+          "status": "A_VERIFIER",
+          "text": "Acompte, fabrication au fil des appels, facturation par jalons."
+        },
+        "ethigone_reason": {
+          "status": "HYPOTHESE",
+          "text": "Un engagement de volume ferme pourrait permettre un suivi vérifiable du cycle matière-stock-livraisons."
+        },
+        "invalidation_test": "Écarter si volumes seulement prévisionnels ou si charges de stockage annulent le résultat."
+      },
+      "finance_need_verified": false,
+      "interest_in_ethigone_verified": false,
+      "order_verified": false,
+      "net_margin": null
+    },
+    {
+      "id": "E10",
+      "niche_id": "N02",
+      "name": "Cartonnage Turquet",
+      "countries": [
+        "France"
+      ],
+      "website": "https://www.turquet.com/secteurs/industrie-manufacturieres/",
+      "identity_declared": "Cartonnage Turquet, Amblainville; TVA déclarée FR39718200231.",
+      "identity_status": "A_VERIFIER",
+      "group_key": "TURQUET",
+      "group_deduplication": "Une fiche par groupe connu; liens capitalistiques exhaustifs non audités.",
+      "source_ids": [
+        "J2-E07",
+        "J2-E08"
+      ],
+      "activity_signal": {
+        "status": "CONFIRME",
+        "basis": "source_attribuee",
+        "text": "Fabrication d’emballages industriels et calages.",
+        "source_ids": [
+          "J2-E07",
+          "J2-E08"
+        ]
+      },
+      "proposal": {
+        "status": "PROPOSITION",
+        "role": "operateur_a_qualifier",
+        "priority": "a_qualifier",
+        "selection_reason": "Étudier une caisse industrielle déjà validée, sans confondre avec packaging événementiel.",
+        "operation": {
+          "status": "HYPOTHESE",
+          "text": "Réassort de caisses américaines ou calages suivant une référence client existante."
+        },
+        "risks": {
+          "status": "RISQUE",
+          "text": "Conception personnalisée, impression, rebuts et livraison volumineuse."
+        },
+        "missing_evidence": {
+          "status": "A_VERIFIER",
+          "items": [
+            "Bon à tirer/plan final",
+            "Coût complet d’une série répétée",
+            "Acheteur et réception effective"
+          ]
+        },
+        "alternatives": {
+          "status": "A_VERIFIER",
+          "text": "Acompte, crédit matière, paiement par lots réceptionnés."
+        },
+        "ethigone_reason": {
+          "status": "HYPOTHESE",
+          "text": "La répétition pourrait répartir les frais de dossier si une économie nette réelle apparaît."
+        },
+        "invalidation_test": "Écarter commande événementielle spéculative, développement non accepté ou cycle non documentable."
+      },
+      "finance_need_verified": false,
+      "interest_in_ethigone_verified": false,
+      "order_verified": false,
+      "net_margin": null
+    },
+    {
+      "id": "E11",
+      "niche_id": "N02",
+      "name": "Cartonnages de la Turdine",
+      "countries": [
+        "France"
+      ],
+      "website": "https://www.cartonnages-turdine.fr/",
+      "identity_declared": "CARTONNAGES DE LA TURDINE, Sarcey; SIRET déclaré 72668009300036.",
+      "identity_status": "A_VERIFIER",
+      "group_key": "TURDINE",
+      "group_deduplication": "Une fiche par groupe connu; liens capitalistiques exhaustifs non audités.",
+      "source_ids": [
+        "J2-E09",
+        "J2-E10"
+      ],
+      "activity_signal": {
+        "status": "CONFIRME",
+        "basis": "source_attribuee",
+        "text": "Fabrication en série, stockage et livraisons à la demande.",
+        "source_ids": [
+          "J2-E09",
+          "J2-E10"
+        ]
+      },
+      "proposal": {
+        "status": "PROPOSITION",
+        "role": "operateur_a_qualifier",
+        "priority": "a_qualifier",
+        "selection_reason": "Offre permettant de tester l’écart entre fabrication, livraison et encaissement.",
+        "operation": {
+          "status": "HYPOTHESE",
+          "text": "Lot de cartons existants en spécification, vendu sur engagement ferme et libéré selon calendrier."
+        },
+        "risks": {
+          "status": "RISQUE",
+          "text": "Stock sur appel: ne pas compter une prévision comme commande ou confondre expédition et paiement."
+        },
+        "missing_evidence": {
+          "status": "A_VERIFIER",
+          "items": [
+            "Engagement ferme et clause d’annulation",
+            "Propriété et inventaire du stock",
+            "Coût par tournée et dates d’encaissement"
+          ]
+        },
+        "alternatives": {
+          "status": "A_VERIFIER",
+          "text": "Lots plus petits, acompte, achat direct ou stockage financé par client."
+        },
+        "ethigone_reason": {
+          "status": "HYPOTHESE",
+          "text": "Service utile seulement si le besoin résiduel persiste après adaptation de la cadence."
+        },
+        "invalidation_test": "Écarter si appels libres sans minimum ferme, durée de stock inconnue ou recouvrement indémontrable."
+      },
+      "finance_need_verified": false,
+      "interest_in_ethigone_verified": false,
+      "order_verified": false,
+      "net_margin": null
+    },
+    {
+      "id": "E12",
+      "niche_id": "N02",
+      "name": "CGE emballages",
+      "countries": [
+        "France"
+      ],
+      "website": "https://www.cge.fr/",
+      "identity_declared": "CGE emballages, Villeurbanne; identité légale complète/SIREN à rapprocher, pas ceux de l’hébergeur.",
+      "identity_status": "A_VERIFIER",
+      "group_key": "CGE",
+      "group_deduplication": "Une fiche par groupe connu; liens capitalistiques exhaustifs non audités.",
+      "source_ids": [
+        "J2-E11",
+        "J2-E12"
+      ],
+      "activity_signal": {
+        "status": "CONFIRME",
+        "basis": "source_attribuee",
+        "text": "Catalogue de cartons et calages standard ou personnalisés.",
+        "source_ids": [
+          "J2-E11",
+          "J2-E12"
+        ]
+      },
+      "proposal": {
+        "status": "PROPOSITION",
+        "role": "fournisseur_comparatif",
+        "priority": "comparatif",
+        "selection_reason": "Comparer achat standard et fabrication spécifique avant d’ajouter un financement.",
+        "operation": {
+          "status": "HYPOTHESE",
+          "text": "Lot de caisses standard déjà commandé par un client industriel."
+        },
+        "risks": {
+          "status": "RISQUE",
+          "text": "Marge d’intermédiation potentiellement faible; ne pas confondre prix catalogue détail et coût négocié d’un lot."
+        },
+        "missing_evidence": {
+          "status": "A_VERIFIER",
+          "items": [
+            "Identité du vendeur réel",
+            "Devis net et quantité/remise",
+            "Historique commande-livraison-paiement"
+          ]
+        },
+        "alternatives": {
+          "status": "A_VERIFIER",
+          "text": "Achat direct catalogue, paiement client préalable, crédit fournisseur."
+        },
+        "ethigone_reason": {
+          "status": "HYPOTHESE",
+          "text": "Pourrait être pertinent uniquement si consolidation et suivi apportent un gain démontré."
+        },
+        "invalidation_test": "Écarter si l’achat direct satisfait le besoin à moindre coût ou si aucune valeur autre que l’argent n’est établie."
+      },
+      "finance_need_verified": false,
+      "interest_in_ethigone_verified": false,
+      "order_verified": false,
+      "net_margin": null
+    },
+    {
+      "id": "E13",
+      "niche_id": "N03",
+      "name": "Ecodair",
+      "countries": [
+        "France"
+      ],
+      "website": "https://www.ecodair.com/pro",
+      "identity_declared": "Association ECOD'AIR, RNA W751162653, SIREN 452310253 (éditeur); entité opératrice/vendeuse du lot à déterminer",
+      "identity_status": "A_VERIFIER",
+      "group_key": "ECODAIR",
+      "group_deduplication": "Une fiche par groupe connu; liens capitalistiques exhaustifs non audités.",
+      "source_ids": [
+        "J2-PC01",
+        "J2-PC02"
+      ],
+      "activity_signal": {
+        "status": "CONFIRME",
+        "basis": "source_attribuee",
+        "text": "Collecte/reconditionnement interne et offre professionnels explicitement décrits.",
+        "source_ids": [
+          "J2-PC01",
+          "J2-PC02"
+        ]
+      },
+      "proposal": {
+        "status": "PROPOSITION",
+        "role": "operateur_a_qualifier",
+        "priority": "a_qualifier",
+        "selection_reason": "Collecte/reconditionnement interne et offre professionnels explicitement décrits.",
+        "operation": {
+          "status": "HYPOTHESE",
+          "text": "Achat/reconfiguration d'un lot professionnel homogène affecté à une commande B2B déjà signée, si une entité opératrice admissible en apporte les preuves."
+        },
+        "risks": {
+          "status": "RISQUE",
+          "text": "Rapprocher les entités association/EA, propriété et obligations de SAV; ne pas confondre soutien associatif et vente d'actifs."
+        },
+        "missing_evidence": {
+          "status": "A_VERIFIER",
+          "items": [
+            "Commande B2B ferme et identité du client, annulations et réception acceptée",
+            "Provenance, propriété, séries uniques et absence de double affectation/charges",
+            "Tests, batteries, grades, licences et verrouillages; effacement rattaché aux supports",
+            "Devis source/pièces, dates et coût complet incluant rebut, transport, TVA, garantie et SAV",
+            "Opération passée terminée: rapprochement séries-coûts-livraison-retours-encaissements",
+            "Besoin résiduel daté après acomptes et délais effectivement accessibles",
+            "Pouvoirs contractuels, registre actuel, assurance et répartition des responsabilités",
+            "Avis juridique et charia indépendant sur acquisition, possession, risque réel, séquence de vente et admission des particuliers/stablecoins"
+          ]
+        },
+        "alternatives": {
+          "status": "A_VERIFIER",
+          "text": "Acompte de l'acheteur, paiement avant expédition, reprise de parc en compensation et crédit fournisseur."
+        },
+        "ethigone_reason": {
+          "status": "HYPOTHESE",
+          "text": "Les séries et l'atelier pourraient permettre de vérifier un cycle achat-remise en état-livraison chez un opérateur existant; à tester sans présumer de demande."
+        },
+        "invalidation_test": "Arrêt si provenance/propriété/effacement/licences ou commande non vérifiables; abandon de l'hypothèse ETHIGONE si acomptes et crédit fournisseur couvrent le cycle, si coût après SAV/frais n'établit pas une économie viable ou si conformité charia/juridique indispensable non résolue."
+      },
+      "finance_need_verified": false,
+      "interest_in_ethigone_verified": false,
+      "order_verified": false,
+      "net_margin": null
+    },
+    {
+      "id": "E14",
+      "niche_id": "N03",
+      "name": "AfB France",
+      "countries": [
+        "France"
+      ],
+      "website": "https://www.afbshop.fr/boutiques",
+      "identity_declared": "AfB France SAS, SIRET 53992624600031 (déclaré)",
+      "identity_status": "A_VERIFIER",
+      "group_key": "AFB",
+      "group_deduplication": "Une fiche par groupe connu; liens capitalistiques exhaustifs non audités.",
+      "source_ids": [
+        "J2-PC03",
+        "J2-PC04"
+      ],
+      "activity_signal": {
+        "status": "CONFIRME",
+        "basis": "source_attribuee",
+        "text": "Ateliers français annoncés et activité de vente reconditionnée; groupe compté une fois.",
+        "source_ids": [
+          "J2-PC03",
+          "J2-PC04"
+        ]
+      },
+      "proposal": {
+        "status": "PROPOSITION",
+        "role": "operateur_a_qualifier",
+        "priority": "a_qualifier",
+        "selection_reason": "Ateliers français annoncés et activité de vente reconditionnée; groupe compté une fois.",
+        "operation": {
+          "status": "HYPOTHESE",
+          "text": "Lot de PC de gamme professionnelle testé dans l'atelier français concerné et vendu sur commande ferme; éviter stock catalogue à débouché inconnu."
+        },
+        "risks": {
+          "status": "RISQUE",
+          "text": "Répartition France/groupe et engagement de garantie à préciser; capacité disponible et lot homogène inconnus."
+        },
+        "missing_evidence": {
+          "status": "A_VERIFIER",
+          "items": [
+            "Commande B2B ferme et identité du client, annulations et réception acceptée",
+            "Provenance, propriété, séries uniques et absence de double affectation/charges",
+            "Tests, batteries, grades, licences et verrouillages; effacement rattaché aux supports",
+            "Devis source/pièces, dates et coût complet incluant rebut, transport, TVA, garantie et SAV",
+            "Opération passée terminée: rapprochement séries-coûts-livraison-retours-encaissements",
+            "Besoin résiduel daté après acomptes et délais effectivement accessibles",
+            "Pouvoirs contractuels, registre actuel, assurance et répartition des responsabilités",
+            "Avis juridique et charia indépendant sur acquisition, possession, risque réel, séquence de vente et admission des particuliers/stablecoins"
+          ]
+        },
+        "alternatives": {
+          "status": "A_VERIFIER",
+          "text": "Acompte, réemploi d'un stock déjà possédé, crédit vendeur/fournisseur; tester aussi offre de location avec analyse charia distincte."
+        },
+        "ethigone_reason": {
+          "status": "HYPOTHESE",
+          "text": "Processus et implantation pourraient fournir un benchmark de traçabilité et de coût SAV pour un lot sérialisé."
+        },
+        "invalidation_test": "Arrêt si provenance/propriété/effacement/licences ou commande non vérifiables; abandon de l'hypothèse ETHIGONE si acomptes et crédit fournisseur couvrent le cycle, si coût après SAV/frais n'établit pas une économie viable ou si conformité charia/juridique indispensable non résolue."
+      },
+      "finance_need_verified": false,
+      "interest_in_ethigone_verified": false,
+      "order_verified": false,
+      "net_margin": null
+    },
+    {
+      "id": "E15",
+      "niche_id": "N03",
+      "name": "Les Ateliers du Bocage",
+      "countries": [
+        "France"
+      ],
+      "website": "https://boutique.ateliers-du-bocage.fr/content/10-le-reconditionnement-aux-ateliers-du-bocage",
+      "identity_declared": "Les Ateliers du Bocage, SA-SCIC à capital variable, RCS Niort 385253182 (déclaré)",
+      "identity_status": "A_VERIFIER",
+      "group_key": "ATELIERS_BOCAGE",
+      "group_deduplication": "Une fiche par groupe connu; liens capitalistiques exhaustifs non audités.",
+      "source_ids": [
+        "J2-PC05",
+        "J2-PC06"
+      ],
+      "activity_signal": {
+        "status": "CONFIRME",
+        "basis": "source_attribuee",
+        "text": "Flottes d'entreprises/collectivités et tests/effacement en propre décrits.",
+        "source_ids": [
+          "J2-PC05",
+          "J2-PC06"
+        ]
+      },
+      "proposal": {
+        "status": "PROPOSITION",
+        "role": "operateur_a_qualifier",
+        "priority": "a_qualifier",
+        "selection_reason": "Flottes d'entreprises/collectivités et tests/effacement en propre décrits.",
+        "operation": {
+          "status": "HYPOTHESE",
+          "text": "Lot homogène de PC provenant d'une flotte documentée, remis en état puis livré à un client B2B déjà engagé."
+        },
+        "risks": {
+          "status": "RISQUE",
+          "text": "Approvisionnement issu de collecte: cession, don et propriété doivent être distingués; grades et réparabilité hétérogènes."
+        },
+        "missing_evidence": {
+          "status": "A_VERIFIER",
+          "items": [
+            "Commande B2B ferme et identité du client, annulations et réception acceptée",
+            "Provenance, propriété, séries uniques et absence de double affectation/charges",
+            "Tests, batteries, grades, licences et verrouillages; effacement rattaché aux supports",
+            "Devis source/pièces, dates et coût complet incluant rebut, transport, TVA, garantie et SAV",
+            "Opération passée terminée: rapprochement séries-coûts-livraison-retours-encaissements",
+            "Besoin résiduel daté après acomptes et délais effectivement accessibles",
+            "Pouvoirs contractuels, registre actuel, assurance et répartition des responsabilités",
+            "Avis juridique et charia indépendant sur acquisition, possession, risque réel, séquence de vente et admission des particuliers/stablecoins"
+          ]
+        },
+        "alternatives": {
+          "status": "A_VERIFIER",
+          "text": "Acompte client, cession/reprise de parc avec paiement différé, livraison échelonnée et crédit sur pièces."
+        },
+        "ethigone_reason": {
+          "status": "HYPOTHESE",
+          "text": "Chaîne de collecte et atelier pourrait rendre les justificatifs rapprochables, si propriété et coût de remise en état sont établis."
+        },
+        "invalidation_test": "Arrêt si provenance/propriété/effacement/licences ou commande non vérifiables; abandon de l'hypothèse ETHIGONE si acomptes et crédit fournisseur couvrent le cycle, si coût après SAV/frais n'établit pas une économie viable ou si conformité charia/juridique indispensable non résolue."
+      },
+      "finance_need_verified": false,
+      "interest_in_ethigone_verified": false,
+      "order_verified": false,
+      "net_margin": null
+    },
+    {
+      "id": "E17",
+      "niche_id": "N03",
+      "name": "Groupe ATF — ITJustGood / Digitalea et Ecubel",
+      "countries": [
+        "France",
+        "Belgique"
+      ],
+      "website": "https://www.itjustgood.com/qui-sommes-nous",
+      "identity_declared": "DIGITALEA SASU, RCS Grenoble 519216188, SIRET 51921618800036 (déclaré); Ecubel Computer Trading (Belgique), n° 0832.262.869, forme SPRL affichée à actualiser.",
+      "identity_status": "A_VERIFIER",
+      "group_key": "ATF_IRON_MOUNTAIN",
+      "group_deduplication": "E16 (Ecubel) fusionnée sous E17; Trade Discount/ITJustGood/Digitalea comptés une fois. Le périmètre consolidé actuel reste à auditer.",
+      "source_ids": [
+        "J2-PC10",
+        "J2-PC11",
+        "J2-PC12",
+        "J2-PC15",
+        "J2-PC07",
+        "J2-PC08",
+        "J2-PC09"
+      ],
+      "activity_signal": {
+        "status": "CONFIRME",
+        "basis": "source_attribuee",
+        "text": "ITJustGood et Ecubel déclarent tous deux leur appartenance ATF; atelier/vente en France et offre revendeurs belge sont des points d’entrée distincts d’une même fiche groupe.",
+        "source_ids": [
+          "J2-PC10",
+          "J2-PC11",
+          "J2-PC12",
+          "J2-PC15",
+          "J2-PC07",
+          "J2-PC08",
+          "J2-PC09"
+        ]
+      },
+      "proposal": {
+        "status": "PROPOSITION",
+        "role": "operateur_a_qualifier",
+        "priority": "a_qualifier",
+        "selection_reason": "Atelier et chaîne collecte-revente décrits, identité commerciale reliée à DIGITALEA.",
+        "operation": {
+          "status": "HYPOTHESE",
+          "text": "Lot de portables professionnels traité à Voiron pour commande B2B ferme, après confirmation du périmètre atelier et des tests."
+        },
+        "risks": {
+          "status": "RISQUE",
+          "text": "Catalogue peut inclure reconditionnement constructeur: sélectionner un lot réellement traité en propre; adresses légales/CGV à rapprocher. Risque de concentration groupe; approvisionnement belge: transport, clavier, TVA et garanties à chiffrer séparément."
+        },
+        "missing_evidence": {
+          "status": "A_VERIFIER",
+          "items": [
+            "Commande B2B ferme et identité du client, annulations et réception acceptée",
+            "Provenance, propriété, séries uniques et absence de double affectation/charges",
+            "Tests, batteries, grades, licences et verrouillages; effacement rattaché aux supports",
+            "Devis source/pièces, dates et coût complet incluant rebut, transport, TVA, garantie et SAV",
+            "Opération passée terminée: rapprochement séries-coûts-livraison-retours-encaissements",
+            "Besoin résiduel daté après acomptes et délais effectivement accessibles",
+            "Pouvoirs contractuels, registre actuel, assurance et répartition des responsabilités",
+            "Avis juridique et charia indépendant sur acquisition, possession, risque réel, séquence de vente et admission des particuliers/stablecoins"
+          ]
+        },
+        "alternatives": {
+          "status": "A_VERIFIER",
+          "text": "Acompte, crédit fournisseur, stock disponible déjà acquis et livraison par sous-lots. Comparer le devis revendeur Ecubel et l’achat direct; aucune facilité de paiement n’est acquise."
+        },
+        "ethigone_reason": {
+          "status": "HYPOTHESE",
+          "text": "Chaîne technique et SAV annoncée pourrait permettre de comparer prévision et coût réalisé d'une opération fermée."
+        },
+        "invalidation_test": "Arrêt si provenance/propriété/effacement/licences ou commande non vérifiables; abandon de l'hypothèse ETHIGONE si acomptes et crédit fournisseur couvrent le cycle, si coût après SAV/frais n'établit pas une économie viable ou si conformité charia/juridique indispensable non résolue."
+      },
+      "finance_need_verified": false,
+      "interest_in_ethigone_verified": false,
+      "order_verified": false,
+      "net_margin": null,
+      "related_entities": [
+        {
+          "name": "ITJustGood / Digitalea",
+          "country": "France",
+          "url": "https://www.itjustgood.com/qui-sommes-nous",
+          "role": "opérateur à qualifier"
+        },
+        {
+          "name": "Ecubel",
+          "country": "Belgique",
+          "url": "https://www.ecubel.com/fr/vente",
+          "role": "fournisseur comparatif"
+        }
+      ]
+    },
+    {
+      "id": "E18",
+      "niche_id": "N03",
+      "name": "Kiatoo / Atoutek",
+      "countries": [
+        "France"
+      ],
+      "website": "https://www.kiatoo.com/mentions-legales",
+      "identity_declared": "Atoutek, SIRET 80467515500019; forme juridique à rapprocher registre",
+      "identity_status": "A_VERIFIER",
+      "group_key": "ATOUTEK",
+      "group_deduplication": "Une fiche par groupe connu; liens capitalistiques exhaustifs non audités.",
+      "source_ids": [
+        "J2-PC13",
+        "J2-PC14",
+        "J2-PC16"
+      ],
+      "activity_signal": {
+        "status": "CONFIRME",
+        "basis": "source_attribuee",
+        "text": "Atelier français annoncé et espace B2B explicite; les conditions d’un lot précis restent inconnues.",
+        "source_ids": [
+          "J2-PC13",
+          "J2-PC14",
+          "J2-PC16"
+        ]
+      },
+      "proposal": {
+        "status": "PROPOSITION",
+        "role": "operateur_a_qualifier",
+        "priority": "a_qualifier",
+        "selection_reason": "L’offre professionnelle est bien publique; la réserve documentaire porte sur lots et commandes, pas sur l’existence du B2B.",
+        "operation": {
+          "status": "HYPOTHESE",
+          "text": "Lot de PC professionnels homogène livré sur commande B2B déjà reçue, uniquement si atelier et vendeur juridique sont documentés."
+        },
+        "risks": {
+          "status": "RISQUE",
+          "text": "Quantités homogènes, grades, autonomie de batterie, licences, verrouillages et conditions B2B d’un lot à vérifier."
+        },
+        "missing_evidence": {
+          "status": "A_VERIFIER",
+          "items": [
+            "Commande B2B ferme et identité du client, annulations et réception acceptée",
+            "Provenance, propriété, séries uniques et absence de double affectation/charges",
+            "Tests, batteries, grades, licences et verrouillages; effacement rattaché aux supports",
+            "Devis source/pièces, dates et coût complet incluant rebut, transport, TVA, garantie et SAV",
+            "Opération passée terminée: rapprochement séries-coûts-livraison-retours-encaissements",
+            "Besoin résiduel daté après acomptes et délais effectivement accessibles",
+            "Pouvoirs contractuels, registre actuel, assurance et répartition des responsabilités",
+            "Avis juridique et charia indépendant sur acquisition, possession, risque réel, séquence de vente et admission des particuliers/stablecoins"
+          ]
+        },
+        "alternatives": {
+          "status": "A_VERIFIER",
+          "text": "Acompte client, crédit sur pièces/lot source, livraison échelonnée, vente directe sans intermédiaire."
+        },
+        "ethigone_reason": {
+          "status": "HYPOTHESE",
+          "text": "Un opérateur avec atelier pourrait fournir un dossier sérialisé de petite opération; ne vaut rien si le coût documentaire dépasse la valeur créée."
+        },
+        "invalidation_test": "Arrêt si provenance/propriété/effacement/licences ou commande non vérifiables; abandon de l'hypothèse ETHIGONE si acomptes et crédit fournisseur couvrent le cycle, si coût après SAV/frais n'établit pas une économie viable ou si conformité charia/juridique indispensable non résolue."
+      },
+      "finance_need_verified": false,
+      "interest_in_ethigone_verified": false,
+      "order_verified": false,
+      "net_margin": null
+    }
+  ]
+}
