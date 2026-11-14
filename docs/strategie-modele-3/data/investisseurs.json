@@ -1,0 +1,1194 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-14",
+  "statuses": [
+    "CONFIRME",
+    "HYPOTHESE",
+    "RISQUE",
+    "A_VERIFIER",
+    "PROPOSITION",
+    "DECIDE",
+    "REJETE"
+  ],
+  "count": 10,
+  "niche_adoptee": null,
+  "state_semantics": "CONFIRME signifie fait publié observé à la date indiquée, dans ses limites. false = preuve non obtenue, pas preuve d’absence. null = inconnu ou non applicable selon scope.",
+  "counting": "Dix points d’entrée, pas dix groupes indépendants: EthisX/Malaysia liés; Centrifuge/Anemoy liés fonctionnellement. Base/Coinbase regroupés.",
+  "actors": [
+    {
+      "id": "A01",
+      "name": "Centrifuge",
+      "group_key": "A01",
+      "website": "https://centrifuge.io",
+      "category": "infrastructure_et_interface_directe",
+      "retail_access": "SELON_PRODUIT",
+      "stablecoin_access": "DOCUMENTE_PRODUITS_TIERS",
+      "orientation": {
+        "status": "PROPOSITION",
+        "text": "Réserve technique; ne pas compter comme distribution acquise",
+        "reason": "Accès direct documenté mais admission d’un produit PME et réseau de souscripteurs à établir."
+      },
+      "partnership_verified": false,
+      "listing_verified": false,
+      "investors_committed_verified": false,
+      "sharia_ethigone_validated": false,
+      "fields": {
+        "pays_service": {
+          "status": "CONFIRME",
+          "text": "Éditeur indiqué: Centrifuge Network Foundation, îles Caïmans. Entité contractante de services à confirmer.",
+          "source_ids": [
+            "J3-S05"
+          ]
+        },
+        "pays_emetteurs": {
+          "status": "A_VERIFIER",
+          "text": "Aucune liste universelle trouvée; juridique et placement propres à chaque produit.",
+          "source_ids": [
+            "J3-S01",
+            "J3-S02"
+          ]
+        },
+        "pays_investisseurs": {
+          "status": "A_VERIFIER",
+          "text": "Éligibilité par offre; le cas deSPXA exclut les US persons et territoires où l’offre serait illicite. France non validée pour ETHIGONE.",
+          "source_ids": [
+            "J3-S01",
+            "J3-S07"
+          ]
+        },
+        "clientele_instrument": {
+          "status": "CONFIRME",
+          "text": "Produits de tiers, titres tokenisés ou autres stratégies; droits dépendant des contrats. deRWA vise la diffusion de fonds institutionnels dans la DeFi.",
+          "source_ids": [
+            "J3-S01",
+            "J3-S06"
+          ]
+        },
+        "acces_direct_distributeur": {
+          "status": "CONFIRME",
+          "text": "Wallet individuel vers application; autre voie possible par dépositaire/distributeur omnibus. Le gestionnaire approuve classe et réseau.",
+          "source_ids": [
+            "J3-S03"
+          ]
+        },
+        "processus_emetteur": {
+          "status": "CONFIRME",
+          "text": "Entrée Asset Issuer/Originator; examen du projet et paramètres techniques. Inscription d’un pool et diffusion commerciale sont distinctes.",
+          "source_ids": [
+            "J3-S02",
+            "J3-S04"
+          ]
+        },
+        "decisionnaire_financeur": {
+          "status": "CONFIRME",
+          "text": "Gestionnaire/émetteur pour admission; souscripteurs pour capital; le protocole n’est pas l’acheteur des lots J2.",
+          "source_ids": [
+            "J3-S01",
+            "J3-S03"
+          ]
+        },
+        "interlocuteur_fonctionnel": {
+          "status": "CONFIRME",
+          "text": "Équipe émission/origination via page Contact; gestionnaire du produit pour onboarding investisseurs.",
+          "source_ids": [
+            "J3-S04",
+            "J3-S01"
+          ]
+        },
+        "frais_et_ticket": {
+          "status": "A_VERIFIER",
+          "text": "Montants et frais par offre; aucun devis lancement, tenue de registre, distribution ou service investisseurs ETHIGONE.",
+          "source_ids": [
+            "J3-S01",
+            "J3-S04"
+          ]
+        },
+        "stablecoins": {
+          "status": "CONFIRME",
+          "text": "Vaults acceptant actifs choisis par l’émetteur; USDC observé chez Anemoy. Cela ne sélectionne ni stablecoin ni chaîne pour ETHIGONE.",
+          "source_ids": [
+            "J3-S02",
+            "J3-S09"
+          ]
+        },
+        "risque_charia": {
+          "status": "RISQUE",
+          "text": "Examiner droits représentés, propriété et risques, négociabilité des créances, wrappers et usages de lending; outil technique non certificat.",
+          "source_ids": [
+            "J3-S03",
+            "J3-S06"
+          ]
+        }
+      },
+      "ticket": {
+        "amount": null,
+        "currency": null,
+        "status": "A_VERIFIER",
+        "scope": "Aucun minimum universel documenté.",
+        "applicable_ethigone": false
+      },
+      "fees": []
+    },
+    {
+      "id": "A02",
+      "name": "Anemoy",
+      "group_key": "A02",
+      "website": "https://www.anemoy.io",
+      "category": "gestionnaire_et_emetteur_produits",
+      "retail_access": "PROFESSIONNELS_PRODUITS_EXAMINES",
+      "stablecoin_access": "DOCUMENTE_PRODUITS_TIERS",
+      "orientation": {
+        "status": "PROPOSITION",
+        "text": "Comparateur institutionnel; produits étudiés écartés du cas ETHIGONE",
+        "reason": "JTRSY/CLO ne financent pas les opérations ciblées et ne constituent pas une solution charia adoptable."
+      },
+      "partnership_verified": false,
+      "listing_verified": false,
+      "investors_committed_verified": false,
+      "sharia_ethigone_validated": false,
+      "fields": {
+        "pays_service": {
+          "status": "CONFIRME",
+          "text": "Fonds examinés domiciliés aux îles Vierges britanniques; société de services distincte du fonds à identifier contractuellement.",
+          "source_ids": [
+            "J3-S09",
+            "J3-S10"
+          ]
+        },
+        "pays_emetteurs": {
+          "status": "A_VERIFIER",
+          "text": "Prestation sur mesure aux institutions annoncée; admission d’une PME française ou d’ETHIGONE non publiée.",
+          "source_ids": [
+            "J3-S08"
+          ]
+        },
+        "pays_investisseurs": {
+          "status": "CONFIRME",
+          "text": "JAAA: professionnels non-US; index JTRSY également non-US professionnels. Pas accès général particuliers.",
+          "source_ids": [
+            "J3-S10",
+            "J3-S11"
+          ]
+        },
+        "clientele_instrument": {
+          "status": "CONFIRME",
+          "text": "Parts JTRSY exposées aux bons du Trésor; JAAA à des tranches CLO; ce sont des fonds tiers.",
+          "source_ids": [
+            "J3-S09",
+            "J3-S10"
+          ]
+        },
+        "acces_direct_distributeur": {
+          "status": "CONFIRME",
+          "text": "Bouton Get Access; onboarding auprès du gestionnaire puis wallet/produit Centrifuge. Service de distribution institutionnelle annoncé.",
+          "source_ids": [
+            "J3-S08",
+            "J3-S09"
+          ]
+        },
+        "processus_emetteur": {
+          "status": "A_VERIFIER",
+          "text": "Mandat et prix de structuration sur mesure non documentés; ne pas imposer fonds ou SPV à ETHIGONE.",
+          "source_ids": [
+            "J3-S08"
+          ]
+        },
+        "decisionnaire_financeur": {
+          "status": "CONFIRME",
+          "text": "Gestionnaire pour admission produit; investisseurs et allocateurs pour souscrire; aucun capital proposé à ETHIGONE.",
+          "source_ids": [
+            "J3-S08",
+            "J3-S10"
+          ]
+        },
+        "interlocuteur_fonctionnel": {
+          "status": "CONFIRME",
+          "text": "Équipe solutions institutionnelles/émission; onboarding du fonds pour investisseurs.",
+          "source_ids": [
+            "J3-S08",
+            "J3-S09"
+          ]
+        },
+        "frais_et_ticket": {
+          "status": "A_VERIFIER",
+          "text": "Index JTRSY: 500000 USD et zéro entrée/sortie; autres dépenses et devis ETHIGONE inconnus.",
+          "source_ids": [
+            "J3-S11"
+          ]
+        },
+        "stablecoins": {
+          "status": "CONFIRME",
+          "text": "JTRSY mentionne USDC; JAAA des stablecoins. Acceptation limitée aux produits et réseaux prévus.",
+          "source_ids": [
+            "J3-S09",
+            "J3-S10"
+          ]
+        },
+        "risque_charia": {
+          "status": "REJETE",
+          "text": "JTRSY à intérêts et stratégie CLO écartés comme instruments pour ce projet; aucune qualification générale de l’acteur.",
+          "source_ids": [
+            "J3-S09",
+            "J3-S10"
+          ]
+        }
+      },
+      "ticket": {
+        "amount": 500000,
+        "currency": "USD",
+        "status": "A_VERIFIER",
+        "scope": "Minimum JTRSY selon index primaire; pas seuil général Anemoy.",
+        "source_ids": [
+          "J3-S11"
+        ],
+        "applicable_ethigone": false
+      },
+      "fees": []
+    },
+    {
+      "id": "A03",
+      "name": "Base / Coinbase",
+      "group_key": "A03",
+      "website": "https://www.base.org",
+      "category": "infrastructure",
+      "retail_access": "NON_ETABLI",
+      "stablecoin_access": "INFRASTRUCTURE",
+      "orientation": {
+        "status": "PROPOSITION",
+        "text": "Réserve infrastructure et paiement",
+        "reason": "Base ne constitue pas un distributeur d’opérations ETHIGONE."
+      },
+      "partnership_verified": false,
+      "listing_verified": false,
+      "investors_committed_verified": false,
+      "sharia_ethigone_validated": false,
+      "fields": {
+        "pays_service": {
+          "status": "A_VERIFIER",
+          "text": "Réseau sans pays unique; entité Coinbase à contracter dépend du service et du territoire, non déterminée ici.",
+          "source_ids": [
+            "J3-S07"
+          ]
+        },
+        "pays_emetteurs": {
+          "status": "A_VERIFIER",
+          "text": "Déploiement technique ne confirme aucun pays de placement autorisé pour un émetteur.",
+          "source_ids": [
+            "J3-S07"
+          ]
+        },
+        "pays_investisseurs": {
+          "status": "CONFIRME",
+          "text": "L’exemple deSPXA est hors États-Unis/non-US où permis; aucune admission ETHIGONE France ou autre pays établie.",
+          "source_ids": [
+            "J3-S07"
+          ]
+        },
+        "clientele_instrument": {
+          "status": "CONFIRME",
+          "text": "Infrastructure et services techniques; aucun instrument de financement des lots J2 offert par Base dans les pages étudiées.",
+          "source_ids": [
+            "J3-S07",
+            "J3-S12"
+          ]
+        },
+        "acces_direct_distributeur": {
+          "status": "CONFIRME",
+          "text": "L’annonce deSPXA exclut expressément le rôle distributeur, courtier ou émetteur de Coinbase/Base pour ces tokens.",
+          "source_ids": [
+            "J3-S07"
+          ]
+        },
+        "processus_emetteur": {
+          "status": "PROPOSITION",
+          "text": "Conception/intégration technique d’abord; émetteur et distribution à organiser séparément, sans déduire un accès aux clients Coinbase.",
+          "source_ids": [
+            "J3-S07",
+            "J3-S12"
+          ]
+        },
+        "decisionnaire_financeur": {
+          "status": "A_VERIFIER",
+          "text": "Souscription à décider par investisseurs et responsables du produit; ni gas ni wallet ne constituent une levée.",
+          "source_ids": [
+            "J3-S07"
+          ]
+        },
+        "interlocuteur_fonctionnel": {
+          "status": "PROPOSITION",
+          "text": "Documentation et équipes intégration Base; qualification émetteur chez Centrifuge via entrée origination si cette pile est examinée.",
+          "source_ids": [
+            "J3-S12",
+            "J3-S04"
+          ]
+        },
+        "frais_et_ticket": {
+          "status": "CONFIRME",
+          "text": "Pas de ticket d’investissement réseau. Frais variables: exécution L2 + L1 + frais opérateur éventuels; ajouter conversion, service et distribution séparément.",
+          "source_ids": [
+            "J3-S12"
+          ]
+        },
+        "stablecoins": {
+          "status": "CONFIRME",
+          "text": "USDC est un exemple de transfert dans la documentation; disponibilité technique distincte d’une souscription autorisée.",
+          "source_ids": [
+            "J3-S12"
+          ]
+        },
+        "risque_charia": {
+          "status": "RISQUE",
+          "text": "Stablecoin, réserves, conversion, garde et contrat d’investissement non validés; aucune validation déduite de Base.",
+          "source_ids": [
+            "J3-S07",
+            "J3-S12"
+          ]
+        }
+      },
+      "ticket": {
+        "amount": null,
+        "currency": null,
+        "status": "A_VERIFIER",
+        "scope": "Aucun minimum universel documenté.",
+        "applicable_ethigone": false
+      },
+      "fees": []
+    },
+    {
+      "id": "A04",
+      "name": "Polygon",
+      "group_key": "A04",
+      "website": "https://polygon.technology",
+      "category": "infrastructure",
+      "retail_access": "NON_ETABLI",
+      "stablecoin_access": "INFRASTRUCTURE",
+      "orientation": {
+        "status": "PROPOSITION",
+        "text": "Réserve infrastructure",
+        "reason": "Écosystème et outils accessibles, aucune distribution à ETHIGONE acquise."
+      },
+      "partnership_verified": false,
+      "listing_verified": false,
+      "investors_committed_verified": false,
+      "sharia_ethigone_validated": false,
+      "fields": {
+        "pays_service": {
+          "status": "A_VERIFIER",
+          "text": "Réseau international; entité de prestation et pays contractuel non établis par la page de tokenisation.",
+          "source_ids": [
+            "J3-S13"
+          ]
+        },
+        "pays_emetteurs": {
+          "status": "A_VERIFIER",
+          "text": "Pas de liste de pays émetteurs habilités; à traiter avec émetteur et professionnels selon instrument.",
+          "source_ids": [
+            "J3-S13"
+          ]
+        },
+        "pays_investisseurs": {
+          "status": "A_VERIFIER",
+          "text": "Pas de liste d’admission retail/pro par pays; détenteurs de stablecoins cités ne sont pas prospects accessibles.",
+          "source_ids": [
+            "J3-S13"
+          ]
+        },
+        "clientele_instrument": {
+          "status": "CONFIRME",
+          "text": "Outillage institutionnel de tokenisation et paiements, pas titre ETHIGONE préexistant.",
+          "source_ids": [
+            "J3-S13"
+          ]
+        },
+        "acces_direct_distributeur": {
+          "status": "CONFIRME",
+          "text": "Entrée Talk to sales pour intégration; distributeurs des produits cités sont à distinguer du réseau.",
+          "source_ids": [
+            "J3-S13"
+          ]
+        },
+        "processus_emetteur": {
+          "status": "PROPOSITION",
+          "text": "Cadrage technique/commercial puis choix distinct d’émission, garde et distributeur; acceptation non établie.",
+          "source_ids": [
+            "J3-S13"
+          ]
+        },
+        "decisionnaire_financeur": {
+          "status": "A_VERIFIER",
+          "text": "Pas de financeur de lots identifié dans l’offre infrastructure. ETHIGONE doit prouver l’accès à un distributeur réel.",
+          "source_ids": [
+            "J3-S13"
+          ]
+        },
+        "interlocuteur_fonctionnel": {
+          "status": "CONFIRME",
+          "text": "Équipe entreprise/tokenisation via Get in touch de la page officielle.",
+          "source_ids": [
+            "J3-S13"
+          ]
+        },
+        "frais_et_ticket": {
+          "status": "CONFIRME",
+          "text": "Pas de ticket investisseur réseau; POL sert au gas. Prestation, conformité, conversion et distribution: devis inconnus.",
+          "source_ids": [
+            "J3-S13",
+            "J3-S14"
+          ]
+        },
+        "stablecoins": {
+          "status": "CONFIRME",
+          "text": "Fonctions de paiement et conversion décrites; stablecoin et garde admissibles pour ETHIGONE non sélectionnés.",
+          "source_ids": [
+            "J3-S13"
+          ]
+        },
+        "risque_charia": {
+          "status": "RISQUE",
+          "text": "Tokeniser ne garantit ni conformité ni liquidité; droits et actifs doivent être examinés indépendamment.",
+          "source_ids": [
+            "J3-S13"
+          ]
+        }
+      },
+      "ticket": {
+        "amount": null,
+        "currency": null,
+        "status": "A_VERIFIER",
+        "scope": "Aucun minimum universel documenté.",
+        "applicable_ethigone": false
+      },
+      "fees": []
+    },
+    {
+      "id": "A05",
+      "name": "HAQQ / Ethiq",
+      "group_key": "A05",
+      "website": "https://www.haqq.network",
+      "category": "ecosysteme_et_programmes",
+      "retail_access": "NON_ETABLI",
+      "stablecoin_access": "NON_ETABLI",
+      "orientation": {
+        "status": "PROPOSITION",
+        "text": "Réserve réseau et partenaires à qualifier",
+        "reason": "Programmes développeurs, pas guichet de financement des lots industriels."
+      },
+      "partnership_verified": false,
+      "listing_verified": false,
+      "investors_committed_verified": false,
+      "sharia_ethigone_validated": false,
+      "fields": {
+        "pays_service": {
+          "status": "A_VERIFIER",
+          "text": "Écosystème international; pays de l’entité contractante des programmes à confirmer.",
+          "source_ids": [
+            "J3-S17"
+          ]
+        },
+        "pays_emetteurs": {
+          "status": "A_VERIFIER",
+          "text": "Pays acceptés pour opérations PME non établis; programmes décrits pour équipes et produits de l’écosystème.",
+          "source_ids": [
+            "J3-S17"
+          ]
+        },
+        "pays_investisseurs": {
+          "status": "A_VERIFIER",
+          "text": "Aucune liste d’investisseurs retail/pro habilités à souscrire à ETHIGONE; taille communautaire non assimilée à une distribution.",
+          "source_ids": [
+            "J3-S15"
+          ]
+        },
+        "clientele_instrument": {
+          "status": "CONFIRME",
+          "text": "Grants, investissement dans les équipes et partenariats; pas financement public documenté de commandes N01–N03.",
+          "source_ids": [
+            "J3-S17"
+          ]
+        },
+        "acces_direct_distributeur": {
+          "status": "CONFIRME",
+          "text": "Zetl et HaqqPad encore Planned DeFi; Ethiq L2 annoncé lancé le 9 janvier 2026. Ne pas réutiliser une ancienne offre L1 comme service actif identique.",
+          "source_ids": [
+            "J3-S15",
+            "J3-S18"
+          ]
+        },
+        "processus_emetteur": {
+          "status": "CONFIRME",
+          "text": "Programme: candidature, examen interne, évaluation et comité. L’existence du formulaire ne vaut pas acceptation.",
+          "source_ids": [
+            "J3-S17"
+          ]
+        },
+        "decisionnaire_financeur": {
+          "status": "CONFIRME",
+          "text": "Comité du programme pour aides/participations; aucun souscripteur de lots désigné.",
+          "source_ids": [
+            "J3-S17"
+          ]
+        },
+        "interlocuteur_fonctionnel": {
+          "status": "CONFIRME",
+          "text": "Équipe Ecosystem/Partnerships et comité; autorité charia pour nouveaux produits, fonctions distinctes.",
+          "source_ids": [
+            "J3-S17",
+            "J3-S16"
+          ]
+        },
+        "frais_et_ticket": {
+          "status": "A_VERIFIER",
+          "text": "Pas de ticket retail ni barème émission/distribution obtenu. Plafond programme jusqu’à 250000 USD distinct d’une allocation à ETHIGONE.",
+          "source_ids": [
+            "J3-S17"
+          ]
+        },
+        "stablecoins": {
+          "status": "A_VERIFIER",
+          "text": "Aucun circuit complet stablecoin -> opération -> remboursement documenté pour ETHIGONE; L1/Ethiq et jetons à préciser.",
+          "source_ids": [
+            "J3-S18"
+          ]
+        },
+        "risque_charia": {
+          "status": "RISQUE",
+          "text": "L’avis historique exclut les nouveaux produits/contrats; aucun transfert automatique à Ethiq, stablecoins ou ETHIGONE.",
+          "source_ids": [
+            "J3-S16",
+            "J3-S18"
+          ]
+        }
+      },
+      "ticket": {
+        "amount": null,
+        "currency": null,
+        "status": "A_VERIFIER",
+        "scope": "Aucun minimum universel documenté.",
+        "applicable_ethigone": false
+      },
+      "fees": []
+    },
+    {
+      "id": "A06",
+      "name": "Lita / 1001PACT",
+      "group_key": "A06",
+      "website": "https://lita.co/fr",
+      "category": "distributeur_psfp",
+      "retail_access": "DOCUMENTE_CONDITIONNEL",
+      "stablecoin_access": "NON_ETABLI",
+      "orientation": {
+        "status": "PROPOSITION",
+        "text": "Voie prioritaire V02: actions d’une entreprise ciblée",
+        "reason": "Accès retail France et barème documentés; hypothèse actions directes à confirmer, sans imposer de holding."
+      },
+      "partnership_verified": false,
+      "listing_verified": false,
+      "investors_committed_verified": false,
+      "sharia_ethigone_validated": false,
+      "fields": {
+        "pays_service": {
+          "status": "CONFIRME",
+          "text": "1001PACT en France; agrément PSFP décrit par AMF, à recontrôler avant engagement.",
+          "source_ids": [
+            "J3-S19",
+            "J3-S24"
+          ]
+        },
+        "pays_emetteurs": {
+          "status": "CONFIRME",
+          "text": "France: entreprises à impact/transition sélectionnées. Admission d’une entreprise J2 non établie; pas choix du pays d’ETHIGONE.",
+          "source_ids": [
+            "J3-S19",
+            "J3-S22"
+          ]
+        },
+        "pays_investisseurs": {
+          "status": "CONFIRME",
+          "text": "France documentée; majeurs et non-US persons, validation du profil. Autres pays à confirmer; pas passeport déduit pour ETHIGONE.",
+          "source_ids": [
+            "J3-S19",
+            "J3-S24"
+          ]
+        },
+        "clientele_instrument": {
+          "status": "PROPOSITION",
+          "text": "Particuliers, dont non avertis, et personnes morales. Actions retenues pour examen; obligations à intérêts exclues, autres titres non présumés charia.",
+          "source_ids": [
+            "J3-S19"
+          ]
+        },
+        "acces_direct_distributeur": {
+          "status": "CONFIRME",
+          "text": "Lita distribue les campagnes sélectionnées; souscription directe ou indirecte selon offre. Le wallet Mangopay est de monnaie électronique.",
+          "source_ids": [
+            "J3-S19",
+            "J3-S21"
+          ]
+        },
+        "processus_emetteur": {
+          "status": "CONFIRME",
+          "text": "Candidature -> pré-analyse -> comité dealflow -> revue -> comité investissement, puis contrat et campagne.",
+          "source_ids": [
+            "J3-S22",
+            "J3-S19"
+          ]
+        },
+        "decisionnaire_financeur": {
+          "status": "CONFIRME",
+          "text": "Comités Lita pour sélection; investisseurs choisissent; prestataire de paiement reçoit les versements. ETHIGONE n’a aucun mandat.",
+          "source_ids": [
+            "J3-S19",
+            "J3-S22"
+          ]
+        },
+        "interlocuteur_fonctionnel": {
+          "status": "CONFIRME",
+          "text": "Équipe financement/analystes pour dossier; conformité pour pays et instrument; service investisseurs pour admission.",
+          "source_ids": [
+            "J3-S22",
+            "J3-S21"
+          ]
+        },
+        "frais_et_ticket": {
+          "status": "A_VERIFIER",
+          "text": "Barème France public distinct entreprise/investisseur; contrat émetteur et structure réelle à rapprocher avant calcul contractuel.",
+          "source_ids": [
+            "J3-S20",
+            "J3-S19"
+          ]
+        },
+        "stablecoins": {
+          "status": "A_VERIFIER",
+          "text": "Carte ou virement décrits, aucune souscription crypto prouvée. Conversion préalable par un prestataire distinct reste une hypothèse à examiner.",
+          "source_ids": [
+            "J3-S21"
+          ]
+        },
+        "risque_charia": {
+          "status": "RISQUE",
+          "text": "Actions: audit activité, ratios, dettes et revenus, pacte, préférences, propriété et sorties; label impact ne remplace pas revue charia.",
+          "source_ids": [
+            "J3-S19",
+            "J3-S22"
+          ]
+        }
+      },
+      "ticket": {
+        "amount": 100,
+        "currency": "EUR",
+        "status": "CONFIRME",
+        "scope": "Annonce pour la plupart des offres, minimum exact par campagne; hors frais.",
+        "source_ids": [
+          "J3-S23"
+        ],
+        "applicable_ethigone": false
+      },
+      "fees": [
+        {
+          "id": "F-LITA-INV",
+          "status": "CONFIRME",
+          "payer": "investisseur",
+          "basis": "montant souscrit, frais ajoutés",
+          "currency": "EUR",
+          "tax": "TTC",
+          "tiers": [
+            {
+              "min": 0,
+              "max_exclusive": 15000,
+              "rate": 0.035
+            },
+            {
+              "min": 15000,
+              "max_exclusive": 30000,
+              "rate": 0.025
+            },
+            {
+              "min": 30000,
+              "max_exclusive": null,
+              "rate": 0.015
+            }
+          ],
+          "source_ids": [
+            "J3-S20"
+          ],
+          "ethigone_quote": false
+        },
+        {
+          "id": "F-LITA-EMET",
+          "status": "CONFIRME",
+          "payer": "entreprise",
+          "basis": "montant levé si réalisation",
+          "currency": "EUR",
+          "tax": "HT",
+          "fixed_min": 2000,
+          "fixed_max": 3000,
+          "rate": 0.08,
+          "source_ids": [
+            "J3-S20"
+          ],
+          "ethigone_quote": false
+        },
+        {
+          "id": "F-LITA-HOLD",
+          "status": "CONFIRME",
+          "payer": "investisseur",
+          "basis": "inclus dans souscription uniquement si capital via holding dédiée",
+          "rate": 0.05,
+          "tax": "non_précisée_pour_cette_ligne",
+          "source_ids": [
+            "J3-S20",
+            "J3-S21"
+          ],
+          "ethigone_quote": false,
+          "adopted": false
+        }
+      ]
+    },
+    {
+      "id": "A07",
+      "name": "EthisX",
+      "group_key": "ETHIS",
+      "website": "https://ethisx.co",
+      "category": "plateforme_ecf_p2p",
+      "retail_access": "NON_ETABLI",
+      "stablecoin_access": "NON_ETABLI",
+      "orientation": {
+        "status": "PROPOSITION",
+        "text": "Voie prioritaire V01: opération commerciale ciblée",
+        "reason": "Correspondance fonctionnelle avec commandes/factures; pays, retail et coûts encore bloquants."
+      },
+      "partnership_verified": false,
+      "listing_verified": false,
+      "investors_committed_verified": false,
+      "sharia_ethigone_validated": false,
+      "fields": {
+        "pays_service": {
+          "status": "CONFIRME",
+          "text": "Oman, Ethis Investment Platform; Ethis figure dans le communiqué FSA du 28 septembre 2025.",
+          "source_ids": [
+            "J3-P03",
+            "J3-P05"
+          ]
+        },
+        "pays_emetteurs": {
+          "status": "A_VERIFIER",
+          "text": "Financement global annoncé pour sociétés constituées; France/UE non confirmée.",
+          "source_ids": [
+            "J3-P01"
+          ]
+        },
+        "pays_investisseurs": {
+          "status": "A_VERIFIER",
+          "text": "Aucune liste actuelle de résidence/catégorie obtenue; retail français non confirmé.",
+          "source_ids": [
+            "J3-S25",
+            "J3-P06"
+          ]
+        },
+        "clientele_instrument": {
+          "status": "CONFIRME",
+          "text": "ECF en actions; P2P avec structures de partage ou vente citées, visant notamment commandes et factures. Contrat réel à obtenir.",
+          "source_ids": [
+            "J3-P01"
+          ]
+        },
+        "acces_direct_distributeur": {
+          "status": "A_VERIFIER",
+          "text": "Campagne EthisX auprès de sa communauté après acceptation; aucun accord d’apport d’affaires ETHIGONE.",
+          "source_ids": [
+            "J3-P01"
+          ]
+        },
+        "processus_emetteur": {
+          "status": "CONFIRME",
+          "text": "Compte, suivi équipe, due diligence, campagne, financement conditionné au succès; pas collecte simultanée ailleurs.",
+          "source_ids": [
+            "J3-P01"
+          ]
+        },
+        "decisionnaire_financeur": {
+          "status": "A_VERIFIER",
+          "text": "Équipe/comité à identifier pour sélection; participants financent; l’agrément ne fournit pas les capitaux.",
+          "source_ids": [
+            "J3-P01",
+            "J3-P03"
+          ]
+        },
+        "interlocuteur_fonctionnel": {
+          "status": "PROPOSITION",
+          "text": "Entrée publique Contact; fonction financement P2P et conformité pays à solliciter lors d’une phase séparément autorisée.",
+          "source_ids": [
+            "J3-P05"
+          ]
+        },
+        "frais_et_ticket": {
+          "status": "A_VERIFIER",
+          "text": "Ticket investisseur et frais payés par chaque partie non établis. Ne pas reprendre un barème secondaire.",
+          "source_ids": [
+            "J3-P06",
+            "J3-S25"
+          ]
+        },
+        "stablecoins": {
+          "status": "A_VERIFIER",
+          "text": "Aucun paiement stablecoin établi par les pages lues.",
+          "source_ids": [
+            "J3-P01",
+            "J3-S25"
+          ]
+        },
+        "risque_charia": {
+          "status": "RISQUE",
+          "text": "Positionnement charia déclaré; contrat, flux de propriété, créances, retards et stablecoins propres à chaque dossier à faire examiner.",
+          "source_ids": [
+            "J3-P01"
+          ]
+        }
+      },
+      "ticket": {
+        "amount": null,
+        "currency": null,
+        "status": "A_VERIFIER",
+        "scope": "Aucun minimum universel documenté.",
+        "applicable_ethigone": false
+      },
+      "fees": []
+    },
+    {
+      "id": "A08",
+      "name": "Qardus",
+      "group_key": "A08",
+      "website": "https://www.qardus.com",
+      "category": "agent_financement_portefeuille",
+      "retail_access": "RESTREINT",
+      "stablecoin_access": "NON_ETABLI",
+      "orientation": {
+        "status": "PROPOSITION",
+        "text": "Réserve: écart de périmètre et de clientèle",
+        "reason": "UK, SPV/portefeuille et accès restreint; ne pas imposer cette structure au modèle 3."
+      },
+      "partnership_verified": false,
+      "listing_verified": false,
+      "investors_committed_verified": false,
+      "sharia_ethigone_validated": false,
+      "fields": {
+        "pays_service": {
+          "status": "CONFIRME",
+          "text": "Qardus Limited, Angleterre et pays de Galles; le site déclare ne pas offrir ici de services régulés FCA.",
+          "source_ids": [
+            "J3-P08"
+          ]
+        },
+        "pays_emetteurs": {
+          "status": "CONFIRME",
+          "text": "PME UK selon critères publics; entreprises françaises J2 hors périmètre annoncé.",
+          "source_ids": [
+            "J3-P09"
+          ]
+        },
+        "pays_investisseurs": {
+          "status": "CONFIRME",
+          "text": "HNW ou sophisticated; résidence/citoyenneté peuvent motiver refus. France non confirmée.",
+          "source_ids": [
+            "J3-P07",
+            "J3-P08"
+          ]
+        },
+        "clientele_instrument": {
+          "status": "CONFIRME",
+          "text": "Commodity Murabahah au Fundraiser QFL, SPV finançant un portefeuille de PME; pas choix direct d’un lot.",
+          "source_ids": [
+            "J3-P07",
+            "J3-P08"
+          ]
+        },
+        "acces_direct_distributeur": {
+          "status": "CONFIRME",
+          "text": "Membre approuvé, qualification/KYC puis participation à l’offre présentée aux membres; Qardus agent.",
+          "source_ids": [
+            "J3-P07",
+            "J3-P08"
+          ]
+        },
+        "processus_emetteur": {
+          "status": "A_VERIFIER",
+          "text": "Évaluation PME UK par l’équipe financement; canal tiers ETHIGONE non documenté.",
+          "source_ids": [
+            "J3-P09"
+          ]
+        },
+        "decisionnaire_financeur": {
+          "status": "CONFIRME",
+          "text": "Qardus gère sélection; souscripteurs financent QFL, qui traite les PME. Risque du Fundraiser distinct de celui de Qardus.",
+          "source_ids": [
+            "J3-P08"
+          ]
+        },
+        "interlocuteur_fonctionnel": {
+          "status": "PROPOSITION",
+          "text": "Équipes financement PME et admission investisseurs, rôles distincts.",
+          "source_ids": [
+            "J3-P07",
+            "J3-P09"
+          ]
+        },
+        "frais_et_ticket": {
+          "status": "CONFIRME",
+          "text": "Frais déterminés par Information Memorandum; absence habituelle de frais directs financeur n’est pas un zéro contractuel.",
+          "source_ids": [
+            "J3-P08"
+          ]
+        },
+        "stablecoins": {
+          "status": "A_VERIFIER",
+          "text": "Compte bancaire trust décrit; stablecoins non documentés.",
+          "source_ids": [
+            "J3-P08"
+          ]
+        },
+        "risque_charia": {
+          "status": "RISQUE",
+          "text": "Certification revendiquée par la plateforme; clause 5.9 sur intérêts conservables et chaîne Commodity Murabahah à rapprocher de l’avis applicable.",
+          "source_ids": [
+            "J3-P07",
+            "J3-P08"
+          ]
+        }
+      },
+      "ticket": {
+        "amount": 5000,
+        "currency": "GBP",
+        "status": "CONFIRME",
+        "scope": "Offres 12 et 36 mois présentées; risque de perte et remboursement retardé.",
+        "source_ids": [
+          "J3-P07"
+        ],
+        "applicable_ethigone": false
+      },
+      "fees": []
+    },
+    {
+      "id": "A09",
+      "name": "Ethis Malaysia / Ethis Ventures",
+      "group_key": "ETHIS",
+      "website": "https://my.ethis.co",
+      "category": "plateforme_ecf",
+      "retail_access": "DOCUMENTE_CONDITIONNEL",
+      "stablecoin_access": "NON_ETABLI",
+      "orientation": {
+        "status": "PROPOSITION",
+        "text": "Réserve géographique et documentaire",
+        "reason": "Local Malaisie; contradictions non résolues; aucun déplacement de pays imposé."
+      },
+      "partnership_verified": false,
+      "listing_verified": false,
+      "investors_committed_verified": false,
+      "sharia_ethigone_validated": false,
+      "fields": {
+        "pays_service": {
+          "status": "CONFIRME",
+          "text": "Malaisie, Ethis Ventures Sdn Bhd listé comme RMO ECF par la SC.",
+          "source_ids": [
+            "J3-P13"
+          ]
+        },
+        "pays_emetteurs": {
+          "status": "CONFIRME",
+          "text": "Émetteurs locaux selon textes; périmètre de formes juridiques diffère entre Disclosure et Terms. Société française J2 non admise en l’état documentaire.",
+          "source_ids": [
+            "J3-P10",
+            "J3-P11"
+          ]
+        },
+        "pays_investisseurs": {
+          "status": "A_VERIFIER",
+          "text": "Disclosure requiert adresse malaisienne; Terms seulement si Malaisien. Admission française indéterminée.",
+          "source_ids": [
+            "J3-P10",
+            "J3-P11"
+          ]
+        },
+        "clientele_instrument": {
+          "status": "CONFIRME",
+          "text": "ECF actions, directement ou via nominee; catégories retail/angel/sophisticated. Plafonds publiés ≠ ticket minimum.",
+          "source_ids": [
+            "J3-P11"
+          ]
+        },
+        "acces_direct_distributeur": {
+          "status": "CONFIRME",
+          "text": "Membre puis KYC, Investment Agreement; fonds détenus par trustee; nominee possible.",
+          "source_ids": [
+            "J3-P11"
+          ]
+        },
+        "processus_emetteur": {
+          "status": "CONFIRME",
+          "text": "Dossier société, contrôle, sélection et campagne; condition de montant atteint. Aucun accord ETHIGONE.",
+          "source_ids": [
+            "J3-P10",
+            "J3-P11"
+          ]
+        },
+        "decisionnaire_financeur": {
+          "status": "CONFIRME",
+          "text": "Ethis sélectionne; investisseurs souscrivent; trustee/nominee ont des fonctions distinctes.",
+          "source_ids": [
+            "J3-P10",
+            "J3-P11"
+          ]
+        },
+        "interlocuteur_fonctionnel": {
+          "status": "PROPOSITION",
+          "text": "Équipe émetteurs et conformité ECF pour rapprochement des conditions.",
+          "source_ids": [
+            "J3-P10"
+          ]
+        },
+        "frais_et_ticket": {
+          "status": "A_VERIFIER",
+          "text": "Tarif applicable null: Disclosure ≤4500 RM + 8–10%; Terms ≤3500 RM + 6–10%. Suivi ≤3600 RM/an; coûts tiers supplémentaires.",
+          "source_ids": [
+            "J3-P10",
+            "J3-P11"
+          ]
+        },
+        "stablecoins": {
+          "status": "A_VERIFIER",
+          "text": "Virement/passerelle de paiement décrits; acceptation stablecoins non prouvée.",
+          "source_ids": [
+            "J3-P11"
+          ]
+        },
+        "risque_charia": {
+          "status": "RISQUE",
+          "text": "Offres voulues charia; examiner contrats de nominee, fonds en attente et traitement des intérêts éventuels, sans transférer une certification.",
+          "source_ids": [
+            "J3-P10",
+            "J3-P11"
+          ]
+        }
+      },
+      "ticket": {
+        "amount": null,
+        "currency": null,
+        "status": "A_VERIFIER",
+        "scope": "Aucun minimum universel documenté.",
+        "applicable_ethigone": false
+      },
+      "fees": []
+    },
+    {
+      "id": "A10",
+      "name": "Lendahand / Hands-on B.V.",
+      "group_key": "A10",
+      "website": "https://www.lendahand.com",
+      "category": "distributeur_psfp",
+      "retail_access": "DOCUMENTE_CONDITIONNEL",
+      "stablecoin_access": "NON_ETABLI",
+      "orientation": {
+        "status": "PROPOSITION",
+        "text": "Comparateur; offre actuelle exclue",
+        "reason": "Intérêts explicites incompatibles avec la contrainte du programme; aucun contournement proposé."
+      },
+      "partnership_verified": false,
+      "listing_verified": false,
+      "investors_committed_verified": false,
+      "sharia_ethigone_validated": false,
+      "fields": {
+        "pays_service": {
+          "status": "CONFIRME",
+          "text": "Pays-Bas, Hands-on B.V.; AMF indique PSFP européen exerçant en France.",
+          "source_ids": [
+            "J3-P16"
+          ]
+        },
+        "pays_emetteurs": {
+          "status": "CONFIRME",
+          "text": "Marchés émergents, sociétés et institutions financières à impact; pas offre destinée aux PME françaises.",
+          "source_ids": [
+            "J3-P14"
+          ]
+        },
+        "pays_investisseurs": {
+          "status": "CONFIRME",
+          "text": "Particuliers majeurs ou sociétés; pièce d’identité EEE et compte bancaire valides. France incluse, sous réserve du profil.",
+          "source_ids": [
+            "J3-P15",
+            "J3-P16"
+          ]
+        },
+        "clientele_instrument": {
+          "status": "CONFIRME",
+          "text": "Prêts rémunérés à intérêts; dette senior côté bénéficiaires.",
+          "source_ids": [
+            "J3-P14",
+            "J3-P15"
+          ]
+        },
+        "acces_direct_distributeur": {
+          "status": "CONFIRME",
+          "text": "Plateforme distribue projets choisis; inscription, vérification identité/banque puis paiement en EUR.",
+          "source_ids": [
+            "J3-P15"
+          ]
+        },
+        "processus_emetteur": {
+          "status": "CONFIRME",
+          "text": "Demande, contrôle mission/impact, accord préliminaire, due diligence et comités; tirages attendus 1–2,5 M EUR sur 12–18 mois.",
+          "source_ids": [
+            "J3-P14"
+          ]
+        },
+        "decisionnaire_financeur": {
+          "status": "CONFIRME",
+          "text": "Comité interne et comité crédit externe valident; investisseurs financent; intermédiaires financiers peuvent redistribuer aux PME.",
+          "source_ids": [
+            "J3-P14"
+          ]
+        },
+        "interlocuteur_fonctionnel": {
+          "status": "CONFIRME",
+          "text": "Équipe Investment pour admission des entreprises; support pour investisseurs.",
+          "source_ids": [
+            "J3-P14",
+            "J3-P15"
+          ]
+        },
+        "frais_et_ticket": {
+          "status": "A_VERIFIER",
+          "text": "Pas de frais fixes annoncés; FAQ USD contradictoire: 0,30% et 0,4% aux remboursements. Tarif applicable null; rémunération émetteur non devisée.",
+          "source_ids": [
+            "J3-P15"
+          ]
+        },
+        "stablecoins": {
+          "status": "CONFIRME",
+          "text": "Souscription/remboursement EUR, moyens fiat décrits; pas stablecoins documentés.",
+          "source_ids": [
+            "J3-P15"
+          ]
+        },
+        "risque_charia": {
+          "status": "REJETE",
+          "text": "Prêts à intérêts exclus comme instrument pour ETHIGONE en l’état, malgré accès retail européen.",
+          "source_ids": [
+            "J3-P14",
+            "J3-P15"
+          ]
+        }
+      },
+      "ticket": {
+        "amount": 10,
+        "currency": "EUR",
+        "status": "CONFIRME",
+        "scope": "Minimum et multiples de 10 selon FAQ; ne pas adopter comme seuil ETHIGONE.",
+        "source_ids": [
+          "J3-P15"
+        ],
+        "applicable_ethigone": false
+      },
+      "fees": []
+    }
+  ]
+}

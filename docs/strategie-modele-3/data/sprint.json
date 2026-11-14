@@ -41,8 +41,16 @@
       "lot": "J3",
       "date_nominale": "2026-11-13",
       "objet": "Accès aux investisseurs",
-      "etat": "a_faire",
-      "preuves": []
+      "etat": "termine",
+      "preuves": [
+        "J3_ACCES_INVESTISSEURS.md",
+        "REPERTOIRE_INVESTISSEURS.md",
+        "data/investisseurs.json",
+        "data/sources-j3.json",
+        "data/voies-investisseurs.json",
+        "preuves/j3-verification.json"
+      ],
+      "termine_le": "2026-11-14"
     },
     {
       "lot": "J4",

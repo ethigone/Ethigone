@@ -1,0 +1,166 @@
+{
+  "lot": "J3",
+  "date_nominale": "2026-11-13",
+  "completed_on": "2026-11-14",
+  "checked_at": "2026-11-14T07:41:42.819582+00:00",
+  "passed": true,
+  "actors": 10,
+  "priority_routes": 2,
+  "active_ethigone_routes_verified": 0,
+  "sources": 38,
+  "source_access": {
+    "page_ouverte": 29,
+    "index_seulement": 7,
+    "page_sans_contenu_utile": 2
+  },
+  "sources_rechecked_2026_11_14": 8,
+  "provenance_status_counts": {
+    "PROPOSITION": 21,
+    "CONFIRME": 67,
+    "A_VERIFIER": 39,
+    "RISQUE": 8,
+    "REJETE": 2,
+    "HYPOTHESE": 1
+  },
+  "local_markdown_links_checked": 62,
+  "private_marker_scan": "passed; control-script patterns excluded",
+  "agent_research": "gpt-6.1-sol called on 2026-11-13; no relaunch, no subdelegation",
+  "astra_used": false,
+  "visual_check": false,
+  "professional_validation": false,
+  "limitations": [
+    "Admission, partnership and capital not acquired",
+    "Native stablecoin path unproved for the two priorities",
+    "Indexed/inaccessible sources explicitly identified",
+    "Financial economics belongs to J4, still incomplete",
+    "No real contact, account creation, transaction or application change"
+  ],
+  "publication": "Pre-publication file checks only. Remote head, content and hashes must be read after commit.",
+  "manifest": [
+    {
+      "path": "CHECKPOINT.md",
+      "sha256": "08786cab7233cf9e530b71f796e1d9389ec1e6a58fe8c1cfb8fc116716ce9b85",
+      "git_blob_sha1": "97851227e554e1698ee91b51cd46d2804f99b906"
+    },
+    {
+      "path": "J1_DOMAINES.md",
+      "sha256": "0cd4ee5669cf861f97a63c07049ece90def7c2fafddc887238b57bed5bcfcfb5",
+      "git_blob_sha1": "88486cf50e588b0e19b960fb3ce3a631837bacfc"
+    },
+    {
+      "path": "J2_ENTREPRISES.md",
+      "sha256": "69c5926e4e9fff33629c71ac2849503eb5a680bca5390e9c52650fabd6f17fba",
+      "git_blob_sha1": "3c7c32aa27accd3d064db77ad454047c86388d28"
+    },
+    {
+      "path": "J3_ACCES_INVESTISSEURS.md",
+      "sha256": "a3cb0d847cc98aa5eaf98f6386d1cbc0cf7293e1e7c16607368f92e1d193e6fc",
+      "git_blob_sha1": "0eab7324a0aef7fb73fe8ad1b0796b8d2d5d4471"
+    },
+    {
+      "path": "METHODE_VALIDATION.md",
+      "sha256": "7c3e2af1808ea2f97fb2c0bfe06b6d95d5608caa79bc6d86799a5df042911a8c",
+      "git_blob_sha1": "b86cf3416bf8a802461237238e7f2f10765d60db"
+    },
+    {
+      "path": "PLAN_7_JOURS.md",
+      "sha256": "f963050b15234e2f66e975a01e461abdd1dd4b4612712ff44716f05b71586532",
+      "git_blob_sha1": "d37829e0735ee6250c1c6385acdd3725f68d4a47"
+    },
+    {
+      "path": "README.md",
+      "sha256": "a8663f6cb5c668b69baf90a552cb6215f77c6633d0b66c327001b97265eebed1",
+      "git_blob_sha1": "b475803e83c98931633ef5180f8fe81de0e0e681"
+    },
+    {
+      "path": "REPERTOIRE_ENTREPRISES.md",
+      "sha256": "5f5c6cbab599afe0840463d72d19e0ebbe2e4f398d5a8a5cfc0f10ced7f06be8",
+      "git_blob_sha1": "f4e51bae9395e3c1074d80f0de0b9753796f908a"
+    },
+    {
+      "path": "REPERTOIRE_INVESTISSEURS.md",
+      "sha256": "565b8d4748f06e8d25edcb9e241a65a0483d8ec41d879d9771ae9d87825570b5",
+      "git_blob_sha1": "1b02ed831dc767f59f53044dc1c82650ada4aa74"
+    },
+    {
+      "path": "SOURCES_J2.md",
+      "sha256": "921ab8d0148e304f5561e059aefd025523c0c90e1cfdd60edfff35ed5cdd44af",
+      "git_blob_sha1": "9a3f25c33ae9e00f6d9939675e6e88723659671e"
+    },
+    {
+      "path": "SOURCES_J3.md",
+      "sha256": "1066a4653900827fba161b5ac0e8ae6abcacf0ae88fbf14f5997843201f9c507",
+      "git_blob_sha1": "a7831433b98d00b9e3396a6d4de18717ef5c89f9"
+    },
+    {
+      "path": "data/entreprises.json",
+      "sha256": "afb701b7ac11538c855baecb66c0229e037ef36b64cc5895d88a8d6e08ebebce",
+      "git_blob_sha1": "d8ed822f7fb0ebd6e4dbef0dfb34e02c4a5f9f74"
+    },
+    {
+      "path": "data/investisseurs.json",
+      "sha256": "4dafea50b32881790a875d238d5c698f073a12b773046cc291d03c9cbae60aa0",
+      "git_blob_sha1": "7d641e6941f7e8daec4cd8738fd0fe7c245b2bd2"
+    },
+    {
+      "path": "data/niches.json",
+      "sha256": "a4244a79ccc2e94894b2256b935ad79fd81791e0fcc258f08c156b39b62fe9a9",
+      "git_blob_sha1": "1c4a248b31384bb557604a1f978e30d6587ca29b"
+    },
+    {
+      "path": "data/reperage.json",
+      "sha256": "54775be73d8d7a6df694ef4527d53e1cd65337e86c5c10e8daaaaaaa4f5106ef",
+      "git_blob_sha1": "79aa3c55087b92674e5406b2655cd15d334266a0"
+    },
+    {
+      "path": "data/sources-j2.json",
+      "sha256": "6ff0343a7b52c1a5ef7e9cc2fc5dfaf9b989e335da7f15e55f8fbe22a0ed9c1d",
+      "git_blob_sha1": "f6326262a9a93e2f248ab615497f1560e540c002"
+    },
+    {
+      "path": "data/sources-j3.json",
+      "sha256": "0c23ba0dcde312995e5bb2e2f0b9cbb4311f364c2f24e7c7c97b622835ea81b4",
+      "git_blob_sha1": "8a3cdff44e821b109da381a56c4af3edf5e25764"
+    },
+    {
+      "path": "data/sources-transversales.json",
+      "sha256": "5c9d6e7b19ff6b82aaf9333c2d70324186fba8fffe7eefb33d88a1e2d7a1c42c",
+      "git_blob_sha1": "6a549c19878cdb2d380477f58cac7de1d1914097"
+    },
+    {
+      "path": "data/sprint.json",
+      "sha256": "1286968dca1a14811e0cad9b37dffec26b7b702c3511feab6668636d1fcae8c0",
+      "git_blob_sha1": "159f6176ee9f6439a8d66aa394d8243e1684709b"
+    },
+    {
+      "path": "data/voies-investisseurs.json",
+      "sha256": "6af1f823fff1846581f72c8f958c50fafc28f311d91096ef742ce1a56555a491",
+      "git_blob_sha1": "cefa3cc0c063350b7f10f8fc56afdc8244942bde"
+    },
+    {
+      "path": "preuves/j1-verification.json",
+      "sha256": "ee66cea62c4e8fd053f02c23cae858435a003f232e9e1e0902a6646e5961e4c3",
+      "git_blob_sha1": "cf7d019edf58092084feacee2cd3cff1086ad12f"
+    },
+    {
+      "path": "preuves/j2-verification.json",
+      "sha256": "8e27e74ce1a25cea8ffb28044663c37876ae8e16adc2590d99dec31033b48101",
+      "git_blob_sha1": "62a2b2ecc5ed7ed201e699c3153c121bebf7fd93"
+    },
+    {
+      "path": "verifier.py",
+      "sha256": "87fe70534225ec1ec44e8c47f601dfa6dc70de37361c5ae0241de861b2a6d032",
+      "git_blob_sha1": "31287dde47a11011dec4e5e263e8c1fc38967ae6"
+    },
+    {
+      "path": "verifier_j2.py",
+      "sha256": "0edbab652dcc8b4e1da268b5099f8f1ca9353ddfff5469025c2018965802a9fe",
+      "git_blob_sha1": "93d7b811c820a10832f574fdde7723c1b3b0c92d"
+    },
+    {
+      "path": "verifier_j3.py",
+      "sha256": "96ddd1f72164b7ead7c047a4eb58d03ff381e265a6b8693020fd9c4eb34ec239",
+      "git_blob_sha1": "a65adfd013e61e0d011ad8f73c566046f9f4194f"
+    }
+  ]
+}

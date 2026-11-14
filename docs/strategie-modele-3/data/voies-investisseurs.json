@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-14",
+  "status": "PROPOSITION",
+  "active_routes_verified": 0,
+  "priority_route_ids": [
+    "V01",
+    "V02"
+  ],
+  "selection_rule": "Priorité documentaire = pertinence d’un instrument ciblé + processus de distribution observable. Ce n’est ni admission, ni choix de pays, ni validation charia. Le critère stablecoin reste ouvert pour les deux voies.",
+  "routes": [
+    {
+      "id": "V01",
+      "name": "Opération commerciale via EthisX P2P",
+      "status": "PROPOSITION",
+      "actor_ids": [
+        "A07"
+      ],
+      "source_ids": [
+        "J3-P01",
+        "J3-P03",
+        "J3-P05",
+        "J3-P06",
+        "J3-S25"
+      ],
+      "fit": "Financement annoncé de commandes/factures: proximité N01/N02/N03, à condition de documenter l’opération et les contrats.",
+      "audience": "Communauté de la plateforme, via campagne sélectionnée. Retail et résidence des souscripteurs à établir; aucune audience livrée à ETHIGONE.",
+      "functional_entry": {
+        "url": "https://ethisx.co/contact-us",
+        "team": "Financement P2P / conformité pays",
+        "action_taken": "Lecture seulement; aucun envoi."
+      },
+      "mechanism": [
+        "Éligibilité entreprise/pays et contrat précis à confirmer",
+        "Dossier de commande et achat, propriété/risques, usage des fonds",
+        "Sélection plateforme et revue charia distinctes",
+        "Convention définissant rôle ETHIGONE puis campagne autorisée",
+        "Admission des investisseurs puis souscriptions conditionnelles"
+      ],
+      "gates": [
+        "Liste écrite des pays émetteurs et investisseurs, dont France si envisagée",
+        "Admission de particuliers éligibles et ticket effectif",
+        "Contrat spécifique, droits sur actifs, traitement des créances et incidents",
+        "Acceptation d’un apporteur/servicer ETHIGONE et rémunération admissible",
+        "Tarif complet payé par chaque partie, TVA/change/frais externes",
+        "Stablecoin accepté ou conversion préalable admissible, garde, remboursement et réconciliation"
+      ],
+      "stop_if": [
+        "Pays ou particuliers visés exclus",
+        "Contrat non compatible charia après examen professionnel",
+        "Coûts ou délais supérieurs à la valeur créée",
+        "Aucun rôle utile ETHIGONE au-delà d’un simple renvoi vers plateforme"
+      ],
+      "stablecoin_path": "HYPOTHESE: conversion préalable via prestataire distinct si acceptée, sans ETHIGONE dépositaire. Souscription native non prouvée.",
+      "ethigone_value_hypothesis": "Préparation et contrôle de petits dossiers opérationnels, preuve commande/propriété et suivi; le canal doit accepter et rémunérer ce service.",
+      "fees_for_ethigone": null,
+      "listing_verified": false,
+      "professional_validation_complete": false
+    },
+    {
+      "id": "V02",
+      "name": "Entreprise ciblée via Lita, actions directes à examiner",
+      "status": "PROPOSITION",
+      "actor_ids": [
+        "A06"
+      ],
+      "source_ids": [
+        "J3-S19",
+        "J3-S20",
+        "J3-S21",
+        "J3-S22",
+        "J3-S23",
+        "J3-S24"
+      ],
+      "fit": "Accès retail France documenté; entreprise à impact/transition sélectionnable. N03 offre un angle réemploi à prouver; N01/N02 doivent démontrer un impact, sans niche adoptée.",
+      "audience": "Membres de Lita via campagne sélectionnée; catalogue, intentions non engageantes, informations puis souscriptions. Pas accès à une liste de clients.",
+      "functional_entry": {
+        "url": "https://lita.co/fr/lever-des-fonds",
+        "team": "Équipe financement / analystes, puis comité et conformité",
+        "action_taken": "Lecture seulement; aucune candidature."
+      },
+      "mechanism": [
+        "Qualification impact, société et usage précis des fonds",
+        "Vérification que des actions directes conviennent sans véhicule imposé",
+        "Audit charia activité/ratios/pacte et examen juridique",
+        "Sélection et contrat PSFP, répartition du rôle ETHIGONE",
+        "Campagne, profil investisseur validé, paiement fiat, suivi de la société"
+      ],
+      "gates": [
+        "Instrument réellement disponible sans imposer holding/fonds/SPV",
+        "Activité, ratios et clauses acceptables après revue charia indépendante",
+        "Droit et rôle ETHIGONE distincts de l’agrément Lita",
+        "Service investisseurs et acquisition non déjà couverts à meilleur coût par Lita",
+        "Minimum campagne, durée, frais HT/TTC et assiettes contractuelles",
+        "Conversion de stablecoins et acceptation des fonds à examiner séparément"
+      ],
+      "stop_if": [
+        "Seule une obligation à intérêts répond au besoin",
+        "Véhicule imposé sans décision distincte",
+        "Opérateur refuse la dilution ou horizon trop long pour l’opération",
+        "Absence d’impact admissible ou frais sans valeur additionnelle"
+      ],
+      "stablecoin_path": "HYPOTHESE: détenteur de stablecoins convertit en EUR avec prestataire distinct autorisé et piste de fonds acceptée. Ni paiement crypto ni disponibilité de conversion acquis.",
+      "ethigone_value_hypothesis": "Apporter un dossier d’entreprise/opération contrôlé et un suivi spécifique charia/actifs. Si Lita ou opérateur fait déjà cela sans ETHIGONE, ne pas ajouter une couche de frais.",
+      "fees_for_ethigone": null,
+      "listing_verified": false,
+      "professional_validation_complete": false
+    }
+  ],
+  "direct_onchain_comparator": {
+    "status": "PROPOSITION",
+    "actor_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A04",
+      "A05"
+    ],
+    "source_ids": [
+      "J3-S01",
+      "J3-S03",
+      "J3-S06",
+      "J3-S07",
+      "J3-S13",
+      "J3-S16"
+    ],
+    "path": "Émetteur et droits définis -> produit accepté -> éventuel distributeur mandaté -> investisseur admissible -> wallet autorisé -> souscription. L’ordre peut varier; aucun raccourci de conformité par tokenisation.",
+    "reason_not_priority": "Souscription technique documentée, mais pas distribution d’un petit dossier PME charia à des particuliers des pays visés. deRWA ajoute un instrument à analyser; pas présumé substituable.",
+    "reactivation_evidence": "Acceptation écrite du périmètre PME/retail/pays, instrument validable sans véhicule imposé, distributeur ou audience prouvée, devis complet et circuit stablecoins validé."
+  },
+  "j4_inputs": {
+    "status": "HYPOTHESE",
+    "source_ids": [
+      "J3-S20",
+      "J3-S12",
+      "J3-P06",
+      "J3-P08",
+      "J3-P10",
+      "J3-P11",
+      "J3-P15"
+    ],
+    "use": "Trois opérations anonymisées. Les barèmes tiers sont comparateurs; aucun tarif ni ticket ETHIGONE adopté.",
+    "unknown_costs": [
+      "Admission dossier refusé",
+      "Sélection/revue juridique et charia",
+      "Création et maintenance instrument",
+      "Distribution et acquisition",
+      "KYC et service par investisseur",
+      "Garde/paiement/conversion et change",
+      "Suivi, incidents et recouvrement",
+      "Coût collecte insuffisante et remboursements"
+    ],
+    "guardrails": [
+      "Ne pas mettre zéro pour un devis absent",
+      "Séparer commission investisseur ajoutée et frais entreprise déduits",
+      "Ne pas empiler Lita et EthisX comme étapes d’un même circuit",
+      "Scénario holding comparatif seulement si explicitement utile, pas adopté",
+      "Gas marginal ≠ coût complet",
+      "Participation minimum est résultat J4, non ticket comparateur",
+      "Acomptes, crédit fournisseur, apport opérateur et vente directe à comparer sans accès ou conformité présumés"
+    ]
+  }
+}
