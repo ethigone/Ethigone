@@ -10,11 +10,18 @@ Sept passages bornés, du 11 au 17 novembre 2026 : [plan détaillé](PLAN_7_JOUR
 
 | Document | Utilité |
 | --- | --- |
+| [J4_ECONOMIE.md](J4_ECONOMIE.md) | Trois opérations, scénarios, économie des trois parties et seuils conditionnels. |
+| [modele-economique-j4.xlsx](modele-economique-j4.xlsx) | Tableur modifiable, quatre scénarios, formules et comparateur distinct. |
+| [MODELE_CALCULS_J4.md](MODELE_CALCULS_J4.md) | Hypothèses, cash/TVA/actifs, partage, coûts des refus et mode d’emploi. |
+| [SOURCES_J4.md](SOURCES_J4.md) | Deux pages primaires relues et registre des hypothèses ; [JSON](data/sources-j4.json). |
+| [data/operations-j4.json](data/operations-j4.json) | Entrées réutilisables ; [résultats](data/resultats-j4.json) et [expressions](data/formules-j4.json). |
+| [calculer_j4.mjs](calculer_j4.mjs) | Moteur autonome pour J7, sans réseau ; [générateur](generer_resultats_j4.mjs) et [tests](test_calculs_j4.mjs). |
+| [preuves/j4-verification.json](preuves/j4-verification.json) | Contrôle courant via [verifier_j4.py](verifier_j4.py), [preuves calculs](preuves/j4-calculs.json) et [tableur](preuves/j4-tableur.json). |
 | [J3_ACCES_INVESTISSEURS.md](J3_ACCES_INVESTISSEURS.md) | Dix points d’entrée, deux voies conditionnelles et obstacles d’accès réels. |
 | [REPERTOIRE_INVESTISSEURS.md](REPERTOIRE_INVESTISSEURS.md) | Rôles et points d’entrée; fiches pays/tickets/frais dans [data/investisseurs.json](data/investisseurs.json). |
 | [SOURCES_J3.md](SOURCES_J3.md) | Sources primaires, dates et limites; registre [JSON](data/sources-j3.json). |
 | [data/voies-investisseurs.json](data/voies-investisseurs.json) | V01 EthisX, V02 Lita: conditions, critères d’arrêt, coûts à transmettre à J4. |
-| [preuves/j3-verification.json](preuves/j3-verification.json) | Contrôles du lot courant via [verifier_j3.py](verifier_j3.py). |
+| [preuves/j3-verification.json](preuves/j3-verification.json) | Contrôles historiques J3 via [verifier_j3.py](verifier_j3.py). |
 | [J2_ENTREPRISES.md](J2_ENTREPRISES.md) | Synthèse J2: 17 fiches après regroupement, chemins de repérage, priorités documentaires et alternatives. |
 | [REPERTOIRE_ENTREPRISES.md](REPERTOIRE_ENTREPRISES.md) | Identité à rapprocher, opération hypothétique, risques et pièces manquantes par fiche. |
 | [data/entreprises.json](data/entreprises.json) | Données dédoublonnées réutilisables dans les HTML J7. |
@@ -28,7 +35,7 @@ Sept passages bornés, du 11 au 17 novembre 2026 : [plan détaillé](PLAN_7_JOUR
 | [data/sprint.json](data/sprint.json) | Dates et état vérifié des lots. |
 | [preuves/j1-verification.json](preuves/j1-verification.json) | Contrôles de cohérence et de publication documentaire de J1. |
 
-J1 à J3 sont livrés; les livrables de J4 à J6 seront ajoutés dans ce dossier. À J7, un sous-dossier `html/` rassemblera un index de navigation, la comparaison des niches, le répertoire sourcé, les voies d'accès aux investisseurs, le simulateur économique et le parcours opérationnel. Ces HTML devront fonctionner localement sans dépendance à un serveur ni envoi de données à un tiers. Ils ne sont pas encore livrés à J3.
+J1 à J4 sont livrés; les livrables de J5 et J6 restent à produire. À J7, un sous-dossier `html/` rassemblera un index de navigation, la comparaison des niches, le répertoire sourcé, les voies d'accès aux investisseurs, le simulateur économique et le parcours opérationnel. Ces HTML devront fonctionner localement sans dépendance à un serveur ni envoi de données à un tiers. Ils ne sont pas encore livrés à J4. Le retard ne prolonge pas le programme au-delà du 17 novembre.
 
 ## Lire les conclusions correctement
 

@@ -56,8 +56,20 @@
       "lot": "J4",
       "date_nominale": "2026-11-14",
       "objet": "Modèle économique",
-      "etat": "a_faire",
-      "preuves": []
+      "etat": "termine",
+      "preuves": [
+        "J4_ECONOMIE.md",
+        "modele-economique-j4.xlsx",
+        "MODELE_CALCULS_J4.md",
+        "data/operations-j4.json",
+        "data/resultats-j4.json",
+        "data/formules-j4.json",
+        "data/sources-j4.json",
+        "preuves/j4-calculs.json",
+        "preuves/j4-tableur.json",
+        "preuves/j4-verification.json"
+      ],
+      "termine_le": "2026-11-15"
     },
     {
       "lot": "J5",

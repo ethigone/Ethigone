@@ -1,0 +1,904 @@
+{
+  "schema_version": 1,
+  "version": "J4-1.0",
+  "as_of": "2026-11-15",
+  "nominal_date": "2026-11-14",
+  "status": "HYPOTHESE",
+  "currency": "EUR",
+  "scope": "Simulations anonymisées de lots commerciaux; aucune entreprise de J2 ne fournit ces chiffres.",
+  "all_numeric_inputs_are_hypotheses": true,
+  "contract_validated": false,
+  "sharia_validated": false,
+  "distribution_route_validated": false,
+  "price_or_ticket_adopted": false,
+  "operations": [
+    {
+      "id": "O1",
+      "niche_id": "N01",
+      "name": "Filtration standard non critique",
+      "description": "600 consommables vendus par un opérateur existant; commande seulement supposée."
+    },
+    {
+      "id": "O2",
+      "niche_id": "N02",
+      "name": "Emballages industriels simples",
+      "description": "20 000 unités d’emballage sur commande fictive, sans réglementation spéciale supposée."
+    },
+    {
+      "id": "O3",
+      "niche_id": "N03",
+      "name": "PC professionnels reconditionnés",
+      "description": "150 PC vendus en lot fictif par un opérateur existant; SAV décaissé simulé."
+    }
+  ],
+  "parameters": [
+    {
+      "key": "quantity",
+      "label": "Quantité du lot",
+      "unit": "nombre",
+      "values": {
+        "O1": 600,
+        "O2": 20000,
+        "O3": 150
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 1,
+      "max": 100000000,
+      "integer": true
+    },
+    {
+      "key": "sale_unit",
+      "label": "Prix de vente unitaire HT",
+      "unit": "EUR/unité",
+      "values": {
+        "O1": 60,
+        "O2": 3,
+        "O3": 300
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0.01,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "purchase_unit",
+      "label": "Prix d’achat unitaire HT",
+      "unit": "EUR/unité",
+      "values": {
+        "O1": 40,
+        "O2": 2.1,
+        "O3": 200
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0.01,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "logistics",
+      "label": "Transport, manutention, stockage initial HT",
+      "unit": "EUR",
+      "values": {
+        "O1": 1000,
+        "O2": 1600,
+        "O3": 700
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "inspection",
+      "label": "Contrôles et préparation externes HT",
+      "unit": "EUR",
+      "values": {
+        "O1": 300,
+        "O2": 500,
+        "O3": 1200
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "warranty_paid",
+      "label": "Coût SAV effectivement décaissé HT",
+      "unit": "EUR",
+      "values": {
+        "O1": 100,
+        "O2": 150,
+        "O3": 900
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "operator_fee",
+      "label": "Prestation opérateur facturée HT",
+      "unit": "EUR",
+      "values": {
+        "O1": 1500,
+        "O2": 2200,
+        "O3": 2500
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "operator_internal_cost",
+      "label": "Coût interne de cette prestation opérateur",
+      "unit": "EUR",
+      "values": {
+        "O1": 1200,
+        "O2": 1800,
+        "O3": 2100
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "external_project",
+      "label": "Provision devis externes dossier, juridique, charia, paiement HT",
+      "unit": "EUR",
+      "values": {
+        "O1": 1000,
+        "O2": 1400,
+        "O3": 1300
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "ethi_fixed",
+      "label": "Honoraires ETHIGONE fixes HT simulés",
+      "unit": "EUR",
+      "values": {
+        "O1": 900,
+        "O2": 900,
+        "O3": 900
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "ethi_rate",
+      "label": "Honoraires ETHIGONE variables / ventes budgétées HT",
+      "unit": "ratio",
+      "values": {
+        "O1": 0.03,
+        "O2": 0.03,
+        "O3": 0.03
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 1,
+      "integer": false
+    },
+    {
+      "key": "vat_goods",
+      "label": "TVA achat biens (convention de calcul)",
+      "unit": "ratio",
+      "values": {
+        "O1": 0.2,
+        "O2": 0.2,
+        "O3": 0.2
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 1,
+      "integer": false
+    },
+    {
+      "key": "vat_services",
+      "label": "TVA services (convention de calcul)",
+      "unit": "ratio",
+      "values": {
+        "O1": 0.2,
+        "O2": 0.2,
+        "O3": 0.2
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 1,
+      "integer": false
+    },
+    {
+      "key": "vat_sales",
+      "label": "TVA ventes (convention de calcul)",
+      "unit": "ratio",
+      "values": {
+        "O1": 0.2,
+        "O2": 0.2,
+        "O3": 0.2
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 1,
+      "integer": false
+    },
+    {
+      "key": "vat_recovery",
+      "label": "Fraction de TVA déductible (à confirmer)",
+      "unit": "ratio",
+      "values": {
+        "O1": 1,
+        "O2": 1,
+        "O3": 1
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 1,
+      "integer": false
+    },
+    {
+      "key": "deposit_rate",
+      "label": "Acompte client / prix TTC budgété",
+      "unit": "ratio",
+      "values": {
+        "O1": 0.2,
+        "O2": 0.3,
+        "O3": 0.1
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 0.9,
+      "integer": false
+    },
+    {
+      "key": "supplier_credit_rate",
+      "label": "Part des achats TTC payée plus tard",
+      "unit": "ratio",
+      "values": {
+        "O1": 0.25,
+        "O2": 0.3,
+        "O3": 0.2
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 1,
+      "integer": false
+    },
+    {
+      "key": "supplier_late",
+      "label": "Échéance fournisseur différée : 0 J45 / 1 J90",
+      "unit": "binaire",
+      "values": {
+        "O1": 0,
+        "O2": 0,
+        "O3": 0
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 1,
+      "integer": true
+    },
+    {
+      "key": "operator_capital",
+      "label": "Capital opérateur disponible dès J0",
+      "unit": "EUR",
+      "values": {
+        "O1": 6000,
+        "O2": 8000,
+        "O3": 7000
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "target_ticket",
+      "label": "Ticket indicatif pour compter les participants",
+      "unit": "EUR",
+      "values": {
+        "O1": 500,
+        "O2": 500,
+        "O3": 500
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0.01,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "investor_profit_share",
+      "label": "Part investisseurs du bénéfice positif (hypothèse)",
+      "unit": "ratio",
+      "values": {
+        "O1": 0.6,
+        "O2": 0.6,
+        "O3": 0.6
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 1,
+      "integer": false
+    },
+    {
+      "key": "holding_per_day",
+      "label": "Stockage / gestion incident par jour HT",
+      "unit": "EUR",
+      "values": {
+        "O1": 12,
+        "O2": 18,
+        "O3": 20
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "operator_abort_cost",
+      "label": "Frais opérateur perdus si abandon",
+      "unit": "EUR",
+      "values": {
+        "O1": 200,
+        "O2": 250,
+        "O3": 300
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "stable_share",
+      "label": "Fraction du capital convertie depuis stablecoins",
+      "unit": "ratio",
+      "values": {
+        "O1": 0.5,
+        "O2": 0.5,
+        "O3": 0.5
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 1,
+      "integer": false
+    },
+    {
+      "key": "conversion_rate",
+      "label": "Provision conversion en EUR / montant brut converti",
+      "unit": "ratio",
+      "values": {
+        "O1": 0.008,
+        "O2": 0.008,
+        "O3": 0.008
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 0.5,
+      "integer": false
+    },
+    {
+      "key": "network_eur",
+      "label": "Provision frais réseau par conversion",
+      "unit": "EUR",
+      "values": {
+        "O1": 2,
+        "O2": 2,
+        "O3": 2
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0.01,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "eur_per_usd",
+      "label": "EUR par USD au budget (taux fictif)",
+      "unit": "EUR/USD",
+      "values": {
+        "O1": 0.92,
+        "O2": 0.92,
+        "O3": 0.92
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0.001,
+      "max": 10,
+      "integer": false
+    },
+    {
+      "key": "accepted_cost",
+      "label": "Instruction interne d’un dossier accepté",
+      "unit": "EUR",
+      "values": {
+        "O1": 600,
+        "O2": 600,
+        "O3": 600
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "acceptance_rate",
+      "label": "Dossiers acceptés / dossiers examinés",
+      "unit": "ratio",
+      "values": {
+        "O1": 0.4,
+        "O2": 0.4,
+        "O3": 0.4
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0.001,
+      "max": 1,
+      "integer": false
+    },
+    {
+      "key": "rejected_cost",
+      "label": "Coût interne par dossier refusé",
+      "unit": "EUR",
+      "values": {
+        "O1": 150,
+        "O2": 150,
+        "O3": 150
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "onboarding_cost",
+      "label": "Éligibilité / KYC provision par investisseur",
+      "unit": "EUR",
+      "values": {
+        "O1": 12,
+        "O2": 12,
+        "O3": 12
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0.01,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "investor_service_cost",
+      "label": "Suivi, documents, support par investisseur",
+      "unit": "EUR",
+      "values": {
+        "O1": 18,
+        "O2": 18,
+        "O3": 18
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0.01,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "refund_cost",
+      "label": "Paiement externe par remboursement abandonné",
+      "unit": "EUR",
+      "values": {
+        "O1": 3,
+        "O2": 3,
+        "O3": 3
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0.01,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "cancel_external",
+      "label": "Autres frais externes irrécouvrables d’abandon",
+      "unit": "EUR",
+      "values": {
+        "O1": 250,
+        "O2": 250,
+        "O3": 250
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "funding_success_rate",
+      "label": "Collectes abouties / dossiers acceptés",
+      "unit": "ratio",
+      "values": {
+        "O1": 0.8,
+        "O2": 0.8,
+        "O3": 0.8
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0.001,
+      "max": 1,
+      "integer": false
+    },
+    {
+      "key": "monthly_overhead",
+      "label": "Charges fixes mensuelles ETHIGONE",
+      "unit": "EUR",
+      "values": {
+        "O1": 3000,
+        "O2": 3000,
+        "O3": 3000
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 100000000,
+      "integer": false
+    },
+    {
+      "key": "monthly_operations",
+      "label": "Nombre mensuel d’opérations abouties prévu",
+      "unit": "nombre",
+      "values": {
+        "O1": 6,
+        "O2": 6,
+        "O3": 6
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 1,
+      "max": 1000,
+      "integer": true
+    },
+    {
+      "key": "ethi_delay_per_day",
+      "label": "Suivi interne ETHIGONE par jour de retard",
+      "unit": "EUR",
+      "values": {
+        "O1": 4,
+        "O2": 4,
+        "O3": 4
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "min": 0,
+      "max": 100000000,
+      "integer": false
+    }
+  ],
+  "case_parameters": [
+    {
+      "key": "price_factor",
+      "label": "Prix réalisé / prix budgété",
+      "min": 0.1,
+      "max": 2,
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "unit": "ratio"
+    },
+    {
+      "key": "bad_debt_rate",
+      "label": "Perte définitive sur solde TTC client",
+      "min": 0,
+      "max": 1,
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "unit": "ratio"
+    },
+    {
+      "key": "due_fraction",
+      "label": "Part du recouvrable encaissée à J60",
+      "min": 0,
+      "max": 1,
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "unit": "ratio"
+    },
+    {
+      "key": "delay_days",
+      "label": "Jours de coûts de retard (solde à J120)",
+      "min": 0,
+      "max": 60,
+      "integer": true,
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "unit": "jours"
+    },
+    {
+      "key": "collection_ratio",
+      "label": "Capital reçu / cible",
+      "min": 0,
+      "max": 1,
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "unit": "ratio"
+    },
+    {
+      "key": "fx_factor",
+      "label": "Change EUR/USD / taux budgété",
+      "min": 0.1,
+      "max": 2,
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "unit": "ratio"
+    },
+    {
+      "key": "depeg_rate",
+      "label": "Décote stablecoin USD à la conversion",
+      "min": 0,
+      "max": 0.9,
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ],
+      "unit": "ratio"
+    }
+  ],
+  "cases": [
+    {
+      "id": "base",
+      "name": "Base hypothétique",
+      "values": {
+        "price_factor": 1,
+        "bad_debt_rate": 0,
+        "due_fraction": 1,
+        "delay_days": 0,
+        "collection_ratio": 1,
+        "fx_factor": 1,
+        "depeg_rate": 0
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ]
+    },
+    {
+      "id": "perte",
+      "name": "Baisse de prix et défaut client",
+      "values": {
+        "price_factor": 0.9,
+        "bad_debt_rate": 0.15,
+        "due_fraction": 1,
+        "delay_days": 0,
+        "collection_ratio": 1,
+        "fx_factor": 0.9,
+        "depeg_rate": 0.05
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ]
+    },
+    {
+      "id": "retard",
+      "name": "60 jours de retard partiel",
+      "values": {
+        "price_factor": 1,
+        "bad_debt_rate": 0,
+        "due_fraction": 0.4,
+        "delay_days": 60,
+        "collection_ratio": 1,
+        "fx_factor": 0.95,
+        "depeg_rate": 0.02
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ]
+    },
+    {
+      "id": "collecte",
+      "name": "Collecte limitée à 80 %",
+      "values": {
+        "price_factor": 1,
+        "bad_debt_rate": 0,
+        "due_fraction": 1,
+        "delay_days": 0,
+        "collection_ratio": 0.8,
+        "fx_factor": 1,
+        "depeg_rate": 0
+      },
+      "status": "HYPOTHESE",
+      "source_ids": [
+        "J4-H00"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "day": 0,
+      "event": "Capitaux, acompte et achats. Tous les services initiaux payés; fournisseur différé exclu."
+    },
+    {
+      "day": 30,
+      "event": "Livraison et facturation. Tout le lot vendu, aucun stock final."
+    },
+    {
+      "day": 45,
+      "event": "TVA positive payée et dette fournisseur standard réglée."
+    },
+    {
+      "day": 60,
+      "event": "Encaissement client à échéance, selon fraction de scénario."
+    },
+    {
+      "day": 90,
+      "event": "Dette fournisseur si alternative de paiement après encaissement nominal."
+    },
+    {
+      "day": 120,
+      "event": "Solde client retardé de 60 jours et frais du retard."
+    },
+    {
+      "day": 150,
+      "event": "Crédits TVA supposés remboursés; clôture avant tout partage simulé."
+    }
+  ],
+  "unknowns": [
+    {
+      "key": "real_operator_prices",
+      "value": null,
+      "status": "A_VERIFIER",
+      "meaning": "Aucun devis, achat ni vente réel vérifié."
+    },
+    {
+      "key": "tax_treatment_and_income_tax",
+      "value": null,
+      "status": "A_VERIFIER",
+      "meaning": "Régime TVA, déductibilité, date de remboursement, impôts sur bénéfices et fiscalité individuelle inconnus. Résultats avant impôt."
+    },
+    {
+      "key": "ethisx_total_fees",
+      "value": null,
+      "status": "A_VERIFIER",
+      "meaning": "Provision générique externe; aucun tarif EthisX attesté."
+    },
+    {
+      "key": "stablecoin_full_route",
+      "value": null,
+      "status": "A_VERIFIER",
+      "meaning": "Conversion préalable hypothétique via prestataire distinct; stablecoin, éligibilité, chaîne, spread et frais non validés."
+    },
+    {
+      "key": "external_quotes",
+      "value": null,
+      "status": "A_VERIFIER",
+      "meaning": "Les provisions non nulles remplacent des devis manquants pour simuler, sans devenir des prix confirmés."
+    }
+  ],
+  "limits": [
+    "Les prix ne sont ni des prix de marché ni des marges observées.",
+    "Les conventions TVA ne décrivent pas un régime fiscal applicable. Tous les achats sont libellés EUR; aucun import ni droit douanier supposé.",
+    "Le résultat économique avant impôt ne vaut pas trésorerie disponible ni valeur liquidative garantie.",
+    "Aucun intérêt sur retard; seuls des coûts de service et stockage hypothétiques. La répartition profits/pertes exige une revue juridique et charia du contrat.",
+    "La sous-collecte arrête l’achat, ne reçoit aucun acompte client et rembourse le capital EUR reçu dans la simulation; les frais externes exigent une trésorerie ETHIGONE distincte non prouvée.",
+    "Les frais de conversion restent à la charge de l’investisseur même en abandon. Une conversion inverse éventuelle n’est pas modélisée ni promise.",
+    "Les montants de capital, d’honoraires et de ticket sont des résultats ou entrées de simulation, jamais des prix adoptés.",
+    "Le seuil mensuel suppose des opérations comparables et une capacité suffisante; aucune demande commerciale n’est prouvée."
+  ]
+}

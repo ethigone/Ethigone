@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-15",
+  "sources": [
+    {
+      "id": "J4-H00",
+      "type": "hypothese_de_simulation",
+      "status": "HYPOTHESE",
+      "title": "Paramètres anonymisés construits pour éprouver l’économie du modèle 3",
+      "url": null,
+      "accessed_at": "2026-11-15",
+      "scope": "Toutes les valeurs de data/operations-j4.json et toutes les règles de partage, calendriers, provisions, volumes, probabilités, change et TVA.",
+      "limits": "Aucune valeur n’est un devis, une donnée d’entreprise, un régime fiscal constaté, un prix ETHIGONE adopté ni une validation juridique/charia."
+    },
+    {
+      "id": "J4-S01",
+      "type": "source_primaire",
+      "status": "CONFIRME",
+      "publisher": "Lita",
+      "title": "Politique de prix France",
+      "url": "https://lita.co/fr/prix",
+      "accessed_at": "2026-11-15",
+      "access": "page_ouverte",
+      "facts": {
+        "investor_added_fees_ttc": [
+          {
+            "min": 0,
+            "max_exclusive": 15000,
+            "rate": 0.035
+          },
+          {
+            "min": 15000,
+            "max_exclusive": 30000,
+            "rate": 0.025
+          },
+          {
+            "min": 30000,
+            "max_exclusive": null,
+            "rate": 0.015
+          }
+        ],
+        "enterprise_if_project_realized_ht": {
+          "fixed_min": 2000,
+          "fixed_max": 3000,
+          "rate": 0.08
+        },
+        "dedicated_holding_followup": {
+          "rate": 0.05,
+          "included_in_subscription": true,
+          "adopted": false
+        }
+      },
+      "limits": "Comparateur de barème public uniquement. Admission, mandat, instrument et devis non acquis. La TVA sur frais HT n’est pas précisée sur cette page. La ligne holding reste exclue, aucun véhicule imposé."
+    },
+    {
+      "id": "J4-S02",
+      "type": "source_primaire",
+      "status": "CONFIRME",
+      "publisher": "Lita",
+      "title": "CGU, version affichée du 1 octobre 2026",
+      "url": "https://lita.co/fr/cgu",
+      "accessed_at": "2026-11-15",
+      "access": "page_ouverte",
+      "scope": "Article 9 : rémunération, commissions investisseurs ajoutées; conditions contractuelles du projet à vérifier.",
+      "limits": "Les CGU ne valident ni ETHIGONE ni une opération courte. Elles ne remplacent pas contrat de prestation, dossier ou revue charia."
+    }
+  ],
+  "inherited_dependencies": [
+    "data/voies-investisseurs.json",
+    "data/investisseurs.json",
+    "data/entreprises.json"
+  ],
+  "unverified_prices_not_zero": true
+}

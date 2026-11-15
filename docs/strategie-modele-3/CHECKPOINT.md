@@ -1,35 +1,40 @@
 # État de reprise — Modèle 3
 
-Date : **14 novembre 2026**. J3, prévu le 13, finalisé après reprise; J4 non commencé. Programme autorisé : [sept passages](PLAN_7_JOURS.md), fin le 17 novembre sans prolongation automatique.
+Date : **15 novembre 2026**. J4, prévu le 14, réalisé. [Programme](PLAN_7_JOURS.md) inchangé, fin le **17 novembre**, sans prolongation automatique.
 
 ## Terminé
 
-- **J1** : six niches comparées; N01 filtration non critique, N02 emballages sur commande, N03 lots PC reconditionnés commandés restent PROPOSITIONS. Aucune niche adoptée.
-- **J2** : 17 fiches sur 18 entrées après fusion Ecubel E16 sous E17/ITJustGood/Digitalea, groupe ATF déclaré. N01/N02/N03: 6/6/5; 13 opérateurs à qualifier, trois fournisseurs/comparatifs, une réserve. Besoin, commande, intérêt et marges non vérifiés. Les sources et preuves J1/J2 sont conservées.
-- **J3** : [dix points d’entrée investisseurs](J3_ACCES_INVESTISSEURS.md), [répertoire](REPERTOIRE_INVESTISSEURS.md), 38 sources primaires avec limites, données réutilisables pour J7 et **deux voies PROPOSITIONS conditionnelles**. V01 EthisX pour opérations commerciales; V02 Lita pour actions d’une entreprise ciblée, en examinant l’accès direct sans véhicule imposé. **Zéro voie ETHIGONE entièrement validée ou ouverte.**
+- **J1** : six niches comparées. N01 filtration standard non critique, N02 emballages simples sur commande et N03 PC reconditionnés commandés restent PROPOSITIONS ; aucune niche adoptée.
+- **J2** : 17 fiches après regroupement de 18 entrées, répartition 6/6/5. Ecubel E16 fusionnée sous E17/ITJustGood/Digitalea, groupe ATF déclaré. Besoin, commande, intérêt et marge non vérifiés.
+- **J3** : dix points d’entrée, 38 sources primaires et deux voies PROPOSITIONS conditionnelles : EthisX pour opérations commerciales et Lita pour actions d’entreprise ciblée. Zéro voie ETHIGONE entièrement validée. Aucun accord, capital ou véhicule acquis. Les limites d’accès, barèmes contradictoires et archives restent documentés dans les fichiers J3, préservés.
+- **J4** : [trois simulations anonymisées](J4_ECONOMIE.md), [tableur modifiable](modele-economique-j4.xlsx), [règles de calcul](MODELE_CALCULS_J4.md), 12 résultats de scénarios, 18 variantes et trois comparateurs. Entrées, résultats et expressions JSON sauvegardés pour J7. Toutes les valeurs économiques du modèle sont HYPOTHÈSES, sans attribution aux entreprises J2.
 
-## Résultats et dépendances
+## Résultats J4 à conserver
 
-EthisX décrit commandes/factures mais pays France/UE, retail, tickets, frais et stablecoins restent inconnus. Lita documente distribution retail France et barème; admission de dossier, actions directes, rôle ETHIGONE et revue charia restent bloquants. Aucun de ces canaux n’est un partenariat acquis. Pas d’agrément, pays, fonds, holding ou SPV choisi pour ETHIGONE.
+Au ticket indicatif de 500 EUR, les besoins investisseurs sont 22 440 / 32 950 / 35 450 EUR. Le résultat des lots est 6 120 / 9 450 / 6 150 EUR avant impôt ; ETHIGONE perd 1 132,50 / 1 121,25 / 1 740 EUR après coûts complets. Ce bénéfice de lot n’est ni une marge constatée ni une garantie.
 
-Centrifuge permet une souscription technique directe et propose deRWA; cela ne donne ni référencement ni investisseur acquis. L’annonce deSPXA précise que Coinbase/Base est infrastructure, sans rôle distributeur pour ces tokens. Polygon reste infrastructure. HAQQ/Ethiq: lancement L2 de janvier 2026 distingué du L1; Zetl/HaqqPad encore Planned dans l’annuaire, avis charia historique non transférable aux nouveaux contrats.
+Tickets moyens économiques calculés : 2 040 / 1 029,69 / 1 865,79 EUR, soit au maximum 11 / 32 / 19 participants. Aucun ticket adopté. La répartition au centime distingue souscription régulière et dernier ajustement. Au seuil, la marge ETHIGONE reste seulement 15 / 26,25 / 15 EUR par lot, sous hypothèse de six opérations abouties mensuelles. Au ticket testé de 500 EUR, la contribution avant charges fixes est négative : aucun volume fini n’équilibre ces coûts inchangés.
 
-Anemoy: produits Treasury/CLO non retenus. Qardus: portefeuille via QFL, HNW/sophisticated, PME UK, statut déclaré non FCA pour le contrat étudié; clause 5.9 et frais §7 à examiner. Ethis Malaysia: résidence et tarifs divergents entre deux textes. Lendahand: retail EEE documenté mais prêts à intérêts exclus; frais USD discordants. Les inconnues ne sont pas remplacées par zéro.
+Perte : prix −10 % et défaut de 15 % du solde TTC rendent les trois lots déficitaires. Retard : encaissement partiel réellement décalé de J60 à J120, frais de stockage/gestion et de suivi supplémentaires, aucun intérêt. Sous-collecte 80 % : pas d’achat, pas d’acompte client ; remboursement du capital EUR reçu hors cash du lot, frais irrécouvrables à financer par ETHIGONE dont la trésorerie disponible n’est pas prouvée. Les frais de conversion restent perdus pour l’investisseur.
 
-Pour J4, conserver barèmes tiers comme comparateurs, séparer payeurs/HT/TTC/assiettes, calculer coûts de dossiers refusés et de service investisseurs, collecte insuffisante, change, pertes et retards. Aucun tarif ou ticket ETHIGONE adopté. Acompte, crédit fournisseur et apport opérateur restent alternatives à examiner. Stablecoins natifs non prouvés dans les deux voies; conversion préalable seulement HYPOTHÈSE.
+Le crédit fournisseur payé J45 ne réduit pas le pic avant encaissement client J60. Payé J90, il réduit fortement le besoin et peut le supprimer dans l’exemple N02. Acompte 40 %, apport opérateur doublé et accès direct à plateforme sont comparés sans accès ni conformité présumés. Il reste à prouver pourquoi ETHIGONE serait préférable.
 
-## Vérifications et limites
+TVA à 20 %, déductibilité et dates sont des conventions séparées, pas un régime validé ; PC d’occasion notamment à examiner. Achats en EUR, aucun import imposé. Stablecoin USD converti avant collecte : change/décote/unités et provisions de frais explicites, aucune chaîne ou voie native validée. Les résultats investisseurs en EUR ne chiffrent pas la variation patrimoniale d’un solde de stablecoins antérieur.
 
-Contrôle courant: [verifier_j3.py](verifier_j3.py), preuve [j3-verification.json](preuves/j3-verification.json). Contrôles: JSON, dix acteurs, deux voies, provenance/statuts, inconnues, frais comparateurs, liens, calendrier, marqueurs privés et empreintes. `verifier.py` et `verifier_j2.py` sont historiques; ne pas remplacer leurs preuves en les exécutant sur l’état courant.
+Lita France : deux pages primaires relues le 15. Barème seulement comparateur séparé, aucun cumul automatique avec ETHIGONE ; frais investisseurs ajoutés TTC, entreprise HT, ligne holding exclue. EthisX et devis externes restent inconnus, sans remplacement par un coût réel nul. Les prestations, partage de bénéfice et pertes exigent une revue juridique/charia du contrat et de la chaîne complète.
 
-Un agent **gpt-6.1-sol** appelé le 13 novembre pour quatre plateformes, sans sous-délégation; coordinateur recherche, intègre et contre-vérifie. Aucun Astra. Aucun contact, compte créé, collecte, transaction, wallet ou modification d’application. Aucun test visuel, avis professionnel ni certification charia revendiqué. Pages manquantes/indexées et contradictions explicitement conservées dans [SOURCES_J3.md](SOURCES_J3.md).
+## Contrôles réalisés
 
-## Prochain lot
+[verifier_j4.py](verifier_j4.py) est le contrôle courant. [Preuve générale](preuves/j4-verification.json), [calculs](preuves/j4-calculs.json), [tableur](preuves/j4-tableur.json). 177 contrôles du moteur, 15 valeurs de référence indépendantes ; 1 596 comparaisons dans le moteur XLSX, changement de cas et d’entrée, champ manquant actif/inactif. Quatre scénarios recalculés par LibreOffice Calc : 1 368 valeurs concordantes. Six plages des quatre feuilles rendues et relues ; aucune erreur de formule dans l’état livré. Aucun test visuel de navigateur revendiqué.
 
-**Prochain lot J4 — jalon nominal du 14 novembre, restant à exécuter :** tableur modifiable et données de trois opérations anonymisées; économie opérateur/investisseurs/ETHIGONE, seuils et participation minimum issus des hypothèses. J5 parcours/contrats, J6 décision et contre-revue, J7 HTML complets hors ligne. **J4–J7 restent à faire.** Le retard d’un passage est explicite; aucun rattrapage fictif. J7 doit présenter l’état réel, même incomplet, puis arrêter le 17 novembre.
+Un agent **gpt-6.1-sol** effectivement appelé pour logique et contre-calculs, sans sous-délégation. Le coordinateur a intégré les corrections : pic financé au centime supérieur, cible et collecte comparées en centimes. Aucun ancien agent relancé, aucun Astra. Ces contrôles ne valent ni avis professionnel ni certification. Les scripts et preuves J1–J3 restent historiques et ne sont pas réécrits.
+
+## Prochain passage et fin
+
+**J5 prochain**, parcours et responsabilités : candidature, sélection, information, éligibilité, contrats, flux, suivi, incident et sortie. J5 et J6 restent à faire. Le décalage d’un passage est explicite. **Le 17 novembre, J7 doit livrer les HTML hors ligne avec l’état réel, même si J5/J6 restent incomplets, puis arrêter.** Ne pas retarder J7 au-delà de cette fin ni déclarer un lot réalisé sur la seule base de sa date.
 
 ## Sauvegarde et périmètre
 
-Source durable: `ethigone/Ethigone`, `main`, `docs/strategie-modele-3`. Base distante J3: `7223e2415d5dd2708eca8e378f345efc9cda7954`, arbre `a2c3d3990900a6b538e89c7def8608e1e959e89c`. Les 18 fichiers sources locaux ont été comparés aux blobs distants avant copie isolée. Aucune modification hors dossier. Le commit contenant ce checkpoint est identifiable dans l’historique; vérifier tête et empreintes distantes après publication avant de l’annoncer.
+Source durable : `ethigone/Ethigone`, branche `main`, dossier `docs/strategie-modele-3`. Base distante J4 : `34fad62efc1f42798aa0e40017aedcb13452c48e`, arbre `16b8f20463c4af9d0bdf80d149428ae1f5e4e2ce`. Les 26 fichiers du dossier à cette base ont été rapprochés de leurs blobs distants avant copie isolée. Le commit contenant ce checkpoint est identifiable dans l’historique ; vérifier la tête et les empreintes après publication.
 
-Préserver travaux parallèles, anciens sprints et application. Aucun hébergement ou GitHub Pages activé. Dépôt public: seulement sources publiques, hypothèses et données destinées au partage; aucun contact personnel ou document confidentiel.
+Aucun contact, compte créé, collecte, transaction, wallet, achat ou service payant. Aucun changement de l’application, du Site, des anciens sprints, du déploiement ou de l’hébergement ; aucun GitHub Pages activé. Aucun document confidentiel, coordonnée personnelle, secret ou identifiant privé publié. Préserver les autres fichiers et toute modification parallèle ; aucune mise à jour forcée.

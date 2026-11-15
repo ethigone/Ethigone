@@ -1,0 +1,2474 @@
+{
+  "schema_version": 1,
+  "model_version": "J4-1.0",
+  "description": "Arbres d’expression communs au moteur JavaScript et aux formules XLSX; aucune requête réseau.",
+  "rows": [
+    {
+      "key": "sales_budget",
+      "label": "Ventes budgétées HT",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "*",
+        "args": [
+          "quantity",
+          "sale_unit"
+        ]
+      }
+    },
+    {
+      "key": "goods",
+      "label": "Achats HT",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "*",
+        "args": [
+          "quantity",
+          "purchase_unit"
+        ]
+      }
+    },
+    {
+      "key": "ethi_fee",
+      "label": "Honoraires ETHIGONE HT hypothétiques",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "ethi_fixed",
+          {
+            "op": "*",
+            "args": [
+              "ethi_rate",
+              "sales_budget"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "services",
+      "label": "Services externes et prestations HT",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "logistics",
+          "inspection",
+          "warranty_paid",
+          "operator_fee",
+          "external_project",
+          "ethi_fee"
+        ]
+      }
+    },
+    {
+      "key": "cost_ht",
+      "label": "Coût opération HT",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "goods",
+          "services"
+        ]
+      }
+    },
+    {
+      "key": "input_vat",
+      "label": "TVA facturée sur achats et services",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          {
+            "op": "*",
+            "args": [
+              "goods",
+              "vat_goods"
+            ]
+          },
+          {
+            "op": "*",
+            "args": [
+              "services",
+              "vat_services"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "deductible_vat",
+      "label": "TVA déductible HYPOTHÈSE",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "*",
+        "args": [
+          "input_vat",
+          "vat_recovery"
+        ]
+      }
+    },
+    {
+      "key": "economic_cost",
+      "label": "Coût économique avant incident",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "cost_ht",
+          {
+            "op": "-",
+            "args": [
+              "input_vat",
+              "deductible_vat"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "cash_cost",
+      "label": "Décaissements TTC avant retard",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "cost_ht",
+          "input_vat"
+        ]
+      }
+    },
+    {
+      "key": "deposit",
+      "label": "Acompte client TTC (conditionnel)",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "*",
+        "args": [
+          "sales_budget",
+          {
+            "op": "SUM",
+            "args": [
+              1,
+              "vat_sales"
+            ]
+          },
+          "deposit_rate"
+        ]
+      }
+    },
+    {
+      "key": "supplier_credit",
+      "label": "Part des achats TTC différée",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "*",
+        "args": [
+          "goods",
+          {
+            "op": "SUM",
+            "args": [
+              1,
+              "vat_goods"
+            ]
+          },
+          "supplier_credit_rate"
+        ]
+      }
+    },
+    {
+      "key": "baseline_vat_balance",
+      "label": "Solde TVA nominal",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "-",
+        "args": [
+          {
+            "op": "*",
+            "args": [
+              "sales_budget",
+              "vat_sales"
+            ]
+          },
+          "deductible_vat"
+        ]
+      }
+    },
+    {
+      "key": "b0",
+      "label": "Flux nominal J0 hors capitaux",
+      "unit": "EUR",
+      "section": "Financement nominal",
+      "expr": {
+        "op": "-",
+        "args": [
+          "deposit",
+          {
+            "op": "-",
+            "args": [
+              "cash_cost",
+              "supplier_credit"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "b45",
+      "label": "Flux nominal J45",
+      "unit": "EUR",
+      "section": "Financement nominal",
+      "expr": {
+        "op": "-",
+        "args": [
+          0,
+          {
+            "op": "SUM",
+            "args": [
+              {
+                "op": "*",
+                "args": [
+                  "supplier_credit",
+                  {
+                    "op": "-",
+                    "args": [
+                      1,
+                      "supplier_late"
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "MAX",
+                "args": [
+                  0,
+                  "baseline_vat_balance"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "b60",
+      "label": "Flux nominal J60",
+      "unit": "EUR",
+      "section": "Financement nominal",
+      "expr": {
+        "op": "-",
+        "args": [
+          {
+            "op": "*",
+            "args": [
+              "sales_budget",
+              {
+                "op": "SUM",
+                "args": [
+                  1,
+                  "vat_sales"
+                ]
+              }
+            ]
+          },
+          "deposit"
+        ]
+      }
+    },
+    {
+      "key": "b90",
+      "label": "Flux nominal J90",
+      "unit": "EUR",
+      "section": "Financement nominal",
+      "expr": {
+        "op": "-",
+        "args": [
+          0,
+          {
+            "op": "*",
+            "args": [
+              "supplier_credit",
+              "supplier_late"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "b150",
+      "label": "Flux nominal J150 (crédit TVA)",
+      "unit": "EUR",
+      "section": "Financement nominal",
+      "expr": {
+        "op": "MAX",
+        "args": [
+          0,
+          {
+            "op": "-",
+            "args": [
+              0,
+              "baseline_vat_balance"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "bc0",
+      "label": "Cumul nominal J0",
+      "unit": "EUR",
+      "section": "Financement nominal",
+      "expr": "b0"
+    },
+    {
+      "key": "bc45",
+      "label": "Cumul nominal J45",
+      "unit": "EUR",
+      "section": "Financement nominal",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "bc0",
+          "b45"
+        ]
+      }
+    },
+    {
+      "key": "bc60",
+      "label": "Cumul nominal J60",
+      "unit": "EUR",
+      "section": "Financement nominal",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "bc45",
+          "b60"
+        ]
+      }
+    },
+    {
+      "key": "bc90",
+      "label": "Cumul nominal J90",
+      "unit": "EUR",
+      "section": "Financement nominal",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "bc60",
+          "b90"
+        ]
+      }
+    },
+    {
+      "key": "bc150",
+      "label": "Cumul nominal J150",
+      "unit": "EUR",
+      "section": "Financement nominal",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "bc90",
+          "b150"
+        ]
+      }
+    },
+    {
+      "key": "capital_required",
+      "label": "Pic de financement nominal arrondi au centime supérieur",
+      "unit": "EUR",
+      "section": "Financement nominal",
+      "expr": {
+        "op": "/",
+        "args": [
+          {
+            "op": "ROUNDUP",
+            "args": [
+              {
+                "op": "*",
+                "args": [
+                  100,
+                  {
+                    "op": "MAX",
+                    "args": [
+                      0,
+                      {
+                        "op": "-",
+                        "args": [
+                          0,
+                          {
+                            "op": "MIN",
+                            "args": [
+                              "bc0",
+                              "bc45",
+                              "bc60",
+                              "bc90",
+                              "bc150"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              0
+            ]
+          },
+          100
+        ]
+      }
+    },
+    {
+      "key": "investor_target",
+      "label": "Capital investisseurs cible",
+      "unit": "EUR",
+      "section": "Financement nominal",
+      "expr": {
+        "op": "/",
+        "args": [
+          {
+            "op": "ROUNDUP",
+            "args": [
+              {
+                "op": "*",
+                "args": [
+                  100,
+                  {
+                    "op": "MAX",
+                    "args": [
+                      0,
+                      {
+                        "op": "-",
+                        "args": [
+                          "capital_required",
+                          "operator_capital"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              0
+            ]
+          },
+          100
+        ]
+      }
+    },
+    {
+      "key": "investor_count",
+      "label": "Nombre entier de participants",
+      "unit": "nombre",
+      "section": "Financement nominal",
+      "expr": {
+        "op": "IF",
+        "args": [
+          {
+            "op": ">",
+            "args": [
+              "investor_target",
+              0
+            ]
+          },
+          {
+            "op": "ROUNDUP",
+            "args": [
+              {
+                "op": "/",
+                "args": [
+                  "investor_target",
+                  "target_ticket"
+                ]
+              },
+              0
+            ]
+          },
+          0
+        ]
+      }
+    },
+    {
+      "key": "regular_ticket",
+      "label": "Souscription égale arrondie au centime inférieur",
+      "unit": "EUR",
+      "section": "Financement nominal",
+      "expr": {
+        "op": "IF",
+        "args": [
+          {
+            "op": ">",
+            "args": [
+              "investor_count",
+              0
+            ]
+          },
+          {
+            "op": "/",
+            "args": [
+              {
+                "op": "ROUNDDOWN",
+                "args": [
+                  {
+                    "op": "/",
+                    "args": [
+                      {
+                        "op": "*",
+                        "args": [
+                          "investor_target",
+                          100
+                        ]
+                      },
+                      "investor_count"
+                    ]
+                  },
+                  0
+                ]
+              },
+              100
+            ]
+          },
+          0
+        ]
+      }
+    },
+    {
+      "key": "last_ticket",
+      "label": "Dernière souscription, ajustement centimes",
+      "unit": "EUR",
+      "section": "Financement nominal",
+      "expr": {
+        "op": "IF",
+        "args": [
+          {
+            "op": ">",
+            "args": [
+              "investor_count",
+              0
+            ]
+          },
+          {
+            "op": "-",
+            "args": [
+              "investor_target",
+              {
+                "op": "*",
+                "args": [
+                  {
+                    "op": "-",
+                    "args": [
+                      "investor_count",
+                      1
+                    ]
+                  },
+                  "regular_ticket"
+                ]
+              }
+            ]
+          },
+          0
+        ]
+      }
+    },
+    {
+      "key": "capital_collected",
+      "label": "Capital reçu après conversion",
+      "unit": "EUR",
+      "section": "Financement nominal",
+      "expr": {
+        "op": "ROUND",
+        "args": [
+          {
+            "op": "*",
+            "args": [
+              "investor_target",
+              "collection_ratio"
+            ]
+          },
+          2
+        ]
+      }
+    },
+    {
+      "key": "execute",
+      "label": "Exécution financée : 1 oui / 0 non",
+      "unit": "binaire",
+      "section": "Financement nominal",
+      "expr": {
+        "op": "IF",
+        "args": [
+          {
+            "op": ">=",
+            "args": [
+              {
+                "op": "ROUND",
+                "args": [
+                  {
+                    "op": "*",
+                    "args": [
+                      "capital_collected",
+                      100
+                    ]
+                  },
+                  0
+                ]
+              },
+              {
+                "op": "ROUND",
+                "args": [
+                  {
+                    "op": "*",
+                    "args": [
+                      "investor_target",
+                      100
+                    ]
+                  },
+                  0
+                ]
+              }
+            ]
+          },
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "key": "capital_used",
+      "label": "Capitaux engagés si exécution",
+      "unit": "EUR",
+      "section": "Financement nominal",
+      "expr": {
+        "op": "*",
+        "args": [
+          "execute",
+          {
+            "op": "SUM",
+            "args": [
+              "operator_capital",
+              "capital_collected"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "sales",
+      "label": "Ventes HT réalisées dans le scénario",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "*",
+        "args": [
+          "execute",
+          "sales_budget",
+          "price_factor"
+        ]
+      }
+    },
+    {
+      "key": "balance_customer",
+      "label": "Solde client TTC facturé",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "*",
+        "args": [
+          "execute",
+          {
+            "op": "-",
+            "args": [
+              {
+                "op": "*",
+                "args": [
+                  "sales_budget",
+                  "price_factor",
+                  {
+                    "op": "SUM",
+                    "args": [
+                      1,
+                      "vat_sales"
+                    ]
+                  }
+                ]
+              },
+              "deposit"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "bad_debt",
+      "label": "Perte client TTC, sans reprise de TVA",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "*",
+        "args": [
+          "balance_customer",
+          "bad_debt_rate"
+        ]
+      }
+    },
+    {
+      "key": "receivable_collectible",
+      "label": "Solde client recouvrable HYPOTHÈSE",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "-",
+        "args": [
+          "balance_customer",
+          "bad_debt"
+        ]
+      }
+    },
+    {
+      "key": "late_cost",
+      "label": "Frais de retard HT, coûts réels simulés",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "*",
+        "args": [
+          "delay_days",
+          "holding_per_day",
+          "execute"
+        ]
+      }
+    },
+    {
+      "key": "late_vat",
+      "label": "TVA sur frais de retard",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "*",
+        "args": [
+          "late_cost",
+          "vat_services"
+        ]
+      }
+    },
+    {
+      "key": "late_vat_credit",
+      "label": "Crédit TVA sur retard HYPOTHÈSE",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "*",
+        "args": [
+          "late_vat",
+          "vat_recovery"
+        ]
+      }
+    },
+    {
+      "key": "total_economic_cost",
+      "label": "Coût économique du scénario",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          {
+            "op": "*",
+            "args": [
+              "execute",
+              "economic_cost"
+            ]
+          },
+          "late_cost",
+          {
+            "op": "-",
+            "args": [
+              "late_vat",
+              "late_vat_credit"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "project_profit",
+      "label": "Résultat opération avant impôt",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "-",
+        "args": [
+          {
+            "op": "-",
+            "args": [
+              "sales",
+              "total_economic_cost"
+            ]
+          },
+          "bad_debt"
+        ]
+      }
+    },
+    {
+      "key": "vat_balance",
+      "label": "Solde TVA J45 du scénario",
+      "unit": "EUR",
+      "section": "Opération",
+      "expr": {
+        "op": "*",
+        "args": [
+          "execute",
+          {
+            "op": "-",
+            "args": [
+              {
+                "op": "*",
+                "args": [
+                  "sales_budget",
+                  "price_factor",
+                  "vat_sales"
+                ]
+              },
+              "deductible_vat"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "cf0",
+      "label": "Flux J0 (acompte et dépenses)",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "*",
+        "args": [
+          "execute",
+          "b0"
+        ]
+      }
+    },
+    {
+      "key": "cf30",
+      "label": "Flux J30 (livraison sans encaissement)",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": 0
+    },
+    {
+      "key": "cf45",
+      "label": "Flux J45 (TVA et fournisseur)",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "-",
+        "args": [
+          0,
+          {
+            "op": "SUM",
+            "args": [
+              {
+                "op": "*",
+                "args": [
+                  "execute",
+                  "supplier_credit",
+                  {
+                    "op": "-",
+                    "args": [
+                      1,
+                      "supplier_late"
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "MAX",
+                "args": [
+                  0,
+                  "vat_balance"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "cf60",
+      "label": "Flux J60 (client à échéance)",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "*",
+        "args": [
+          "receivable_collectible",
+          "due_fraction"
+        ]
+      }
+    },
+    {
+      "key": "cf90",
+      "label": "Flux J90 (fournisseur différé)",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "-",
+        "args": [
+          0,
+          {
+            "op": "*",
+            "args": [
+              "execute",
+              "supplier_credit",
+              "supplier_late"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "cf120",
+      "label": "Flux J120 (retard client et coûts)",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "-",
+        "args": [
+          {
+            "op": "*",
+            "args": [
+              "receivable_collectible",
+              {
+                "op": "-",
+                "args": [
+                  1,
+                  "due_fraction"
+                ]
+              }
+            ]
+          },
+          {
+            "op": "SUM",
+            "args": [
+              "late_cost",
+              "late_vat"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "cf150",
+      "label": "Flux J150 (crédits TVA supposés reçus)",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          {
+            "op": "MAX",
+            "args": [
+              0,
+              {
+                "op": "-",
+                "args": [
+                  0,
+                  "vat_balance"
+                ]
+              }
+            ]
+          },
+          "late_vat_credit"
+        ]
+      }
+    },
+    {
+      "key": "cum0",
+      "label": "Cumul hors capitaux J0",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": "cf0"
+    },
+    {
+      "key": "cash0",
+      "label": "Trésorerie après capitaux J0",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "capital_used",
+          "cum0"
+        ]
+      }
+    },
+    {
+      "key": "cum30",
+      "label": "Cumul hors capitaux J30",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "cum0",
+          "cf30"
+        ]
+      }
+    },
+    {
+      "key": "cash30",
+      "label": "Trésorerie après capitaux J30",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "capital_used",
+          "cum30"
+        ]
+      }
+    },
+    {
+      "key": "cum45",
+      "label": "Cumul hors capitaux J45",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "cum30",
+          "cf45"
+        ]
+      }
+    },
+    {
+      "key": "cash45",
+      "label": "Trésorerie après capitaux J45",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "capital_used",
+          "cum45"
+        ]
+      }
+    },
+    {
+      "key": "cum60",
+      "label": "Cumul hors capitaux J60",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "cum45",
+          "cf60"
+        ]
+      }
+    },
+    {
+      "key": "cash60",
+      "label": "Trésorerie après capitaux J60",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "capital_used",
+          "cum60"
+        ]
+      }
+    },
+    {
+      "key": "cum90",
+      "label": "Cumul hors capitaux J90",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "cum60",
+          "cf90"
+        ]
+      }
+    },
+    {
+      "key": "cash90",
+      "label": "Trésorerie après capitaux J90",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "capital_used",
+          "cum90"
+        ]
+      }
+    },
+    {
+      "key": "cum120",
+      "label": "Cumul hors capitaux J120",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "cum90",
+          "cf120"
+        ]
+      }
+    },
+    {
+      "key": "cash120",
+      "label": "Trésorerie après capitaux J120",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "capital_used",
+          "cum120"
+        ]
+      }
+    },
+    {
+      "key": "cum150",
+      "label": "Cumul hors capitaux J150",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "cum120",
+          "cf150"
+        ]
+      }
+    },
+    {
+      "key": "cash150",
+      "label": "Trésorerie après capitaux J150",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "capital_used",
+          "cum150"
+        ]
+      }
+    },
+    {
+      "key": "actual_peak",
+      "label": "Pic de besoin du scénario, centime supérieur",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "/",
+        "args": [
+          {
+            "op": "ROUNDUP",
+            "args": [
+              {
+                "op": "*",
+                "args": [
+                  100,
+                  {
+                    "op": "MAX",
+                    "args": [
+                      0,
+                      {
+                        "op": "-",
+                        "args": [
+                          0,
+                          {
+                            "op": "MIN",
+                            "args": [
+                              "cum0",
+                              "cum30",
+                              "cum45",
+                              "cum60",
+                              "cum90",
+                              "cum120",
+                              "cum150"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              0
+            ]
+          },
+          100
+        ]
+      }
+    },
+    {
+      "key": "funding_gap",
+      "label": "Besoin complémentaire non financé",
+      "unit": "EUR",
+      "section": "Trésorerie",
+      "expr": {
+        "op": "/",
+        "args": [
+          {
+            "op": "ROUNDUP",
+            "args": [
+              {
+                "op": "*",
+                "args": [
+                  100,
+                  {
+                    "op": "MAX",
+                    "args": [
+                      0,
+                      {
+                        "op": "-",
+                        "args": [
+                          "actual_peak",
+                          "capital_used"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              0
+            ]
+          },
+          100
+        ]
+      }
+    },
+    {
+      "key": "ar60_gross",
+      "label": "Créance client brute à J60",
+      "unit": "EUR",
+      "section": "Actifs",
+      "expr": {
+        "op": "-",
+        "args": [
+          "balance_customer",
+          "cf60"
+        ]
+      }
+    },
+    {
+      "key": "ar60_net",
+      "label": "Créance nette estimée à J60",
+      "unit": "EUR",
+      "section": "Actifs",
+      "expr": {
+        "op": "-",
+        "args": [
+          "ar60_gross",
+          "bad_debt"
+        ]
+      }
+    },
+    {
+      "key": "stock0",
+      "label": "Stock HT initial (pas un encaissement)",
+      "unit": "EUR",
+      "section": "Actifs",
+      "expr": {
+        "op": "*",
+        "args": [
+          "execute",
+          "goods"
+        ]
+      }
+    },
+    {
+      "key": "stock150",
+      "label": "Stock final : tout livré dans ces cas",
+      "unit": "EUR",
+      "section": "Actifs",
+      "expr": 0
+    },
+    {
+      "key": "ar150",
+      "label": "Créance finale : encaissée ou passée en perte",
+      "unit": "EUR",
+      "section": "Actifs",
+      "expr": 0
+    },
+    {
+      "key": "investor_cap_share",
+      "label": "Part des capitaux à risque investisseurs",
+      "unit": "ratio",
+      "section": "Partage hypothétique",
+      "expr": {
+        "op": "IF",
+        "args": [
+          {
+            "op": ">",
+            "args": [
+              "capital_used",
+              0
+            ]
+          },
+          {
+            "op": "/",
+            "args": [
+              {
+                "op": "*",
+                "args": [
+                  "execute",
+                  "capital_collected"
+                ]
+              },
+              "capital_used"
+            ]
+          },
+          0
+        ]
+      }
+    },
+    {
+      "key": "investor_gain",
+      "label": "Bénéfice investisseurs avant frais et impôt",
+      "unit": "EUR",
+      "section": "Partage hypothétique",
+      "expr": {
+        "op": "IF",
+        "args": [
+          {
+            "op": ">",
+            "args": [
+              "investor_target",
+              0
+            ]
+          },
+          {
+            "op": "ROUND",
+            "args": [
+              {
+                "op": "*",
+                "args": [
+                  {
+                    "op": "MAX",
+                    "args": [
+                      0,
+                      "project_profit"
+                    ]
+                  },
+                  "investor_profit_share"
+                ]
+              },
+              2
+            ]
+          },
+          0
+        ]
+      }
+    },
+    {
+      "key": "investor_loss",
+      "label": "Perte investisseurs limitée aux capitaux",
+      "unit": "EUR",
+      "section": "Partage hypothétique",
+      "expr": {
+        "op": "ROUND",
+        "args": [
+          {
+            "op": "*",
+            "args": [
+              {
+                "op": "MIN",
+                "args": [
+                  {
+                    "op": "MAX",
+                    "args": [
+                      0,
+                      {
+                        "op": "-",
+                        "args": [
+                          0,
+                          "project_profit"
+                        ]
+                      }
+                    ]
+                  },
+                  "capital_used"
+                ]
+              },
+              "investor_cap_share"
+            ]
+          },
+          2
+        ]
+      }
+    },
+    {
+      "key": "operator_gain",
+      "label": "Bénéfice résiduel opérateur",
+      "unit": "EUR",
+      "section": "Partage hypothétique",
+      "expr": {
+        "op": "-",
+        "args": [
+          {
+            "op": "MAX",
+            "args": [
+              0,
+              "project_profit"
+            ]
+          },
+          "investor_gain"
+        ]
+      }
+    },
+    {
+      "key": "operator_loss",
+      "label": "Perte opérateur sur capital",
+      "unit": "EUR",
+      "section": "Partage hypothétique",
+      "expr": {
+        "op": "-",
+        "args": [
+          {
+            "op": "MIN",
+            "args": [
+              {
+                "op": "MAX",
+                "args": [
+                  0,
+                  {
+                    "op": "-",
+                    "args": [
+                      0,
+                      "project_profit"
+                    ]
+                  }
+                ]
+              },
+              "capital_used"
+            ]
+          },
+          "investor_loss"
+        ]
+      }
+    },
+    {
+      "key": "uncovered_liabilities",
+      "label": "Pertes excédant les capitaux",
+      "unit": "EUR",
+      "section": "Partage hypothétique",
+      "expr": {
+        "op": "MAX",
+        "args": [
+          0,
+          {
+            "op": "-",
+            "args": [
+              {
+                "op": "-",
+                "args": [
+                  0,
+                  "project_profit"
+                ]
+              },
+              "capital_used"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "investor_entitlement",
+      "label": "Solde économique investisseurs (pas liquidité)",
+      "unit": "EUR",
+      "section": "Partage hypothétique",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          {
+            "op": "*",
+            "args": [
+              "execute",
+              "capital_collected"
+            ]
+          },
+          "investor_gain",
+          {
+            "op": "-",
+            "args": [
+              0,
+              "investor_loss"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "operator_entitlement",
+      "label": "Solde économique capital opérateur",
+      "unit": "EUR",
+      "section": "Partage hypothétique",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          {
+            "op": "*",
+            "args": [
+              "execute",
+              "operator_capital"
+            ]
+          },
+          "operator_gain",
+          {
+            "op": "-",
+            "args": [
+              0,
+              "operator_loss"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "distribution_possible",
+      "label": "Distribution simulable sans déficit : 1 / 0",
+      "unit": "binaire",
+      "section": "Partage hypothétique",
+      "expr": {
+        "op": "IF",
+        "args": [
+          {
+            "op": "=",
+            "args": [
+              "funding_gap",
+              0
+            ]
+          },
+          "execute",
+          0
+        ]
+      }
+    },
+    {
+      "key": "investor_distribution",
+      "label": "Versement simulé après clôture",
+      "unit": "EUR",
+      "section": "Partage hypothétique",
+      "expr": {
+        "op": "*",
+        "args": [
+          "distribution_possible",
+          "investor_entitlement"
+        ]
+      }
+    },
+    {
+      "key": "operator_distribution",
+      "label": "Versement simulé au capital opérateur",
+      "unit": "EUR",
+      "section": "Partage hypothétique",
+      "expr": {
+        "op": "*",
+        "args": [
+          "distribution_possible",
+          "operator_entitlement"
+        ]
+      }
+    },
+    {
+      "key": "operator_service_profit",
+      "label": "Résultat prestation opérateur",
+      "unit": "EUR",
+      "section": "Opérateur",
+      "expr": {
+        "op": "*",
+        "args": [
+          "execute",
+          {
+            "op": "-",
+            "args": [
+              "operator_fee",
+              "operator_internal_cost"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "operator_profit",
+      "label": "Résultat opérateur avant impôt",
+      "unit": "EUR",
+      "section": "Opérateur",
+      "expr": {
+        "op": "-",
+        "args": [
+          {
+            "op": "SUM",
+            "args": [
+              "operator_service_profit",
+              "operator_gain"
+            ]
+          },
+          {
+            "op": "SUM",
+            "args": [
+              "operator_loss",
+              {
+                "op": "*",
+                "args": [
+                  {
+                    "op": "-",
+                    "args": [
+                      1,
+                      "execute"
+                    ]
+                  },
+                  "operator_abort_cost"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "stable_capital",
+      "label": "Part du capital reçue après conversion",
+      "unit": "EUR",
+      "section": "Investisseurs",
+      "expr": {
+        "op": "*",
+        "args": [
+          "capital_collected",
+          "stable_share"
+        ]
+      }
+    },
+    {
+      "key": "stable_wallets",
+      "label": "Nombre estimé de conversions",
+      "unit": "nombre",
+      "section": "Investisseurs",
+      "expr": {
+        "op": "IF",
+        "args": [
+          {
+            "op": ">",
+            "args": [
+              "stable_capital",
+              0
+            ]
+          },
+          {
+            "op": "ROUNDUP",
+            "args": [
+              {
+                "op": "*",
+                "args": [
+                  "investor_count",
+                  "stable_share"
+                ]
+              },
+              0
+            ]
+          },
+          0
+        ]
+      }
+    },
+    {
+      "key": "conversion_cost",
+      "label": "Frais de conversion et réseau payés en plus",
+      "unit": "EUR",
+      "section": "Investisseurs",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          {
+            "op": "/",
+            "args": [
+              {
+                "op": "*",
+                "args": [
+                  "stable_capital",
+                  "conversion_rate"
+                ]
+              },
+              {
+                "op": "-",
+                "args": [
+                  1,
+                  "conversion_rate"
+                ]
+              }
+            ]
+          },
+          {
+            "op": "*",
+            "args": [
+              "stable_wallets",
+              "network_eur"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "fx_effective",
+      "label": "EUR par unité stablecoin USD HYPOTHÈSE",
+      "unit": "EUR/unité",
+      "section": "Investisseurs",
+      "expr": {
+        "op": "*",
+        "args": [
+          "eur_per_usd",
+          "fx_factor",
+          {
+            "op": "-",
+            "args": [
+              1,
+              "depeg_rate"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "stable_units",
+      "label": "Unités stablecoin nécessaires, frais inclus",
+      "unit": "unités",
+      "section": "Investisseurs",
+      "expr": {
+        "op": "/",
+        "args": [
+          {
+            "op": "SUM",
+            "args": [
+              "stable_capital",
+              "conversion_cost"
+            ]
+          },
+          "fx_effective"
+        ]
+      }
+    },
+    {
+      "key": "investor_refund",
+      "label": "Capital reçu remboursé si sous-collecte",
+      "unit": "EUR",
+      "section": "Investisseurs",
+      "expr": {
+        "op": "*",
+        "args": [
+          {
+            "op": "-",
+            "args": [
+              1,
+              "execute"
+            ]
+          },
+          "capital_collected"
+        ]
+      }
+    },
+    {
+      "key": "investor_profit_net",
+      "label": "Résultat investisseurs après conversion, avant impôt",
+      "unit": "EUR",
+      "section": "Investisseurs",
+      "expr": {
+        "op": "-",
+        "args": [
+          {
+            "op": "-",
+            "args": [
+              "investor_gain",
+              "investor_loss"
+            ]
+          },
+          "conversion_cost"
+        ]
+      }
+    },
+    {
+      "key": "investor_cash_out",
+      "label": "Mise et frais externes investisseurs",
+      "unit": "EUR",
+      "section": "Investisseurs",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "capital_collected",
+          "conversion_cost"
+        ]
+      }
+    },
+    {
+      "key": "investor_return",
+      "label": "Résultat / mise et frais, non annualisé",
+      "unit": "ratio",
+      "section": "Investisseurs",
+      "expr": {
+        "op": "IF",
+        "args": [
+          {
+            "op": ">",
+            "args": [
+              "investor_cash_out",
+              0
+            ]
+          },
+          {
+            "op": "/",
+            "args": [
+              "investor_profit_net",
+              "investor_cash_out"
+            ]
+          },
+          null
+        ]
+      }
+    },
+    {
+      "key": "rejected_per_approved",
+      "label": "Dossiers refusés / dossier accepté",
+      "unit": "nombre",
+      "section": "ETHIGONE",
+      "expr": {
+        "op": "/",
+        "args": [
+          {
+            "op": "-",
+            "args": [
+              1,
+              "acceptance_rate"
+            ]
+          },
+          "acceptance_rate"
+        ]
+      }
+    },
+    {
+      "key": "rejection_allocation",
+      "label": "Coût des refus imputé par dossier",
+      "unit": "EUR",
+      "section": "ETHIGONE",
+      "expr": {
+        "op": "*",
+        "args": [
+          "rejected_per_approved",
+          "rejected_cost"
+        ]
+      }
+    },
+    {
+      "key": "abort_cost",
+      "label": "Coût ETHIGONE d’une collecte abandonnée",
+      "unit": "EUR",
+      "section": "ETHIGONE",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "accepted_cost",
+          "rejection_allocation",
+          "cancel_external",
+          {
+            "op": "*",
+            "args": [
+              "investor_count",
+              {
+                "op": "SUM",
+                "args": [
+                  "onboarding_cost",
+                  "refund_cost"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "failures_per_success",
+      "label": "Collectes abandonnées / collecte aboutie",
+      "unit": "nombre",
+      "section": "ETHIGONE",
+      "expr": {
+        "op": "/",
+        "args": [
+          {
+            "op": "-",
+            "args": [
+              1,
+              "funding_success_rate"
+            ]
+          },
+          "funding_success_rate"
+        ]
+      }
+    },
+    {
+      "key": "failure_allocation",
+      "label": "Coût des abandons imputé à un succès",
+      "unit": "EUR",
+      "section": "ETHIGONE",
+      "expr": {
+        "op": "*",
+        "args": [
+          "abort_cost",
+          "failures_per_success"
+        ]
+      }
+    },
+    {
+      "key": "overhead_allocation",
+      "label": "Charges fixes mensuelles / opérations prévues",
+      "unit": "EUR",
+      "section": "ETHIGONE",
+      "expr": {
+        "op": "/",
+        "args": [
+          "monthly_overhead",
+          "monthly_operations"
+        ]
+      }
+    },
+    {
+      "key": "ethi_delay",
+      "label": "Coût interne de suivi du retard",
+      "unit": "EUR",
+      "section": "ETHIGONE",
+      "expr": {
+        "op": "*",
+        "args": [
+          "delay_days",
+          "ethi_delay_per_day"
+        ]
+      }
+    },
+    {
+      "key": "ethi_variable_total",
+      "label": "Coûts directs et refus sur opération réussie",
+      "unit": "EUR",
+      "section": "ETHIGONE",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "accepted_cost",
+          "rejection_allocation",
+          {
+            "op": "*",
+            "args": [
+              "investor_count",
+              {
+                "op": "SUM",
+                "args": [
+                  "onboarding_cost",
+                  "investor_service_cost"
+                ]
+              }
+            ]
+          },
+          "ethi_delay"
+        ]
+      }
+    },
+    {
+      "key": "ethi_revenue",
+      "label": "Chiffre d’affaires ETHIGONE HT",
+      "unit": "EUR",
+      "section": "ETHIGONE",
+      "expr": {
+        "op": "*",
+        "args": [
+          "execute",
+          "ethi_fee"
+        ]
+      }
+    },
+    {
+      "key": "ethi_cost",
+      "label": "Coût ETHIGONE complet imputé",
+      "unit": "EUR",
+      "section": "ETHIGONE",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          {
+            "op": "IF",
+            "args": [
+              {
+                "op": "=",
+                "args": [
+                  "execute",
+                  1
+                ]
+              },
+              {
+                "op": "SUM",
+                "args": [
+                  "ethi_variable_total",
+                  "failure_allocation"
+                ]
+              },
+              "abort_cost"
+            ]
+          },
+          "overhead_allocation"
+        ]
+      }
+    },
+    {
+      "key": "ethi_profit",
+      "label": "Résultat ETHIGONE avant impôt",
+      "unit": "EUR",
+      "section": "ETHIGONE",
+      "expr": {
+        "op": "-",
+        "args": [
+          "ethi_revenue",
+          "ethi_cost"
+        ]
+      }
+    },
+    {
+      "key": "ethi_contribution",
+      "label": "Contribution avant charges fixes mensuelles",
+      "unit": "EUR",
+      "section": "Seuils",
+      "expr": {
+        "op": "-",
+        "args": [
+          "ethi_fee",
+          {
+            "op": "SUM",
+            "args": [
+              "ethi_variable_total",
+              "failure_allocation"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "break_even_operations",
+      "label": "Opérations réussies / mois pour équilibre",
+      "unit": "nombre",
+      "section": "Seuils",
+      "expr": {
+        "op": "IF",
+        "args": [
+          {
+            "op": ">",
+            "args": [
+              "ethi_contribution",
+              0
+            ]
+          },
+          {
+            "op": "ROUNDUP",
+            "args": [
+              {
+                "op": "/",
+                "args": [
+                  "monthly_overhead",
+                  "ethi_contribution"
+                ]
+              },
+              0
+            ]
+          },
+          null
+        ]
+      }
+    },
+    {
+      "key": "fixed_cost_for_ticket",
+      "label": "Coût par opération hors nombre de participants",
+      "unit": "EUR",
+      "section": "Seuils",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "accepted_cost",
+          "rejection_allocation",
+          "ethi_delay",
+          "overhead_allocation",
+          {
+            "op": "*",
+            "args": [
+              {
+                "op": "SUM",
+                "args": [
+                  "accepted_cost",
+                  "rejection_allocation",
+                  "cancel_external"
+                ]
+              },
+              "failures_per_success"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "cost_per_investor",
+      "label": "Coût marginal complet par participant",
+      "unit": "EUR",
+      "section": "Seuils",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "onboarding_cost",
+          "investor_service_cost",
+          {
+            "op": "*",
+            "args": [
+              {
+                "op": "SUM",
+                "args": [
+                  "onboarding_cost",
+                  "refund_cost"
+                ]
+              },
+              "failures_per_success"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "max_investors",
+      "label": "Participants maximum à résultat ETHIGONE >= 0",
+      "unit": "nombre",
+      "section": "Seuils",
+      "expr": {
+        "op": "MAX",
+        "args": [
+          0,
+          {
+            "op": "ROUNDDOWN",
+            "args": [
+              {
+                "op": "/",
+                "args": [
+                  {
+                    "op": "-",
+                    "args": [
+                      "ethi_fee",
+                      "fixed_cost_for_ticket"
+                    ]
+                  },
+                  "cost_per_investor"
+                ]
+              },
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "minimum_ticket",
+      "label": "Ticket économique minimum moyen (égalitaire)",
+      "unit": "EUR",
+      "section": "Seuils",
+      "expr": {
+        "op": "IF",
+        "args": [
+          {
+            "op": ">",
+            "args": [
+              "investor_target",
+              0
+            ]
+          },
+          {
+            "op": "IF",
+            "args": [
+              {
+                "op": ">",
+                "args": [
+                  "max_investors",
+                  0
+                ]
+              },
+              {
+                "op": "/",
+                "args": [
+                  {
+                    "op": "ROUNDUP",
+                    "args": [
+                      {
+                        "op": "/",
+                        "args": [
+                          {
+                            "op": "*",
+                            "args": [
+                              "investor_target",
+                              100
+                            ]
+                          },
+                          "max_investors"
+                        ]
+                      },
+                      0
+                    ]
+                  },
+                  100
+                ]
+              },
+              null
+            ]
+          },
+          null
+        ]
+      }
+    },
+    {
+      "key": "fee_break_even",
+      "label": "Honoraires HT nécessaires à équilibre ETHIGONE",
+      "unit": "EUR",
+      "section": "Seuils",
+      "expr": {
+        "op": "SUM",
+        "args": [
+          "ethi_variable_total",
+          "failure_allocation",
+          "overhead_allocation"
+        ]
+      }
+    },
+    {
+      "key": "break_even_denominator",
+      "label": "Coefficient de vente après défaut",
+      "unit": "ratio",
+      "section": "Seuils",
+      "expr": {
+        "op": "-",
+        "args": [
+          1,
+          {
+            "op": "*",
+            "args": [
+              "bad_debt_rate",
+              {
+                "op": "SUM",
+                "args": [
+                  1,
+                  "vat_sales"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "break_even_unit_price",
+      "label": "Prix de vente HT pour équilibre opération",
+      "unit": "EUR/unité",
+      "section": "Seuils",
+      "expr": {
+        "op": "IF",
+        "args": [
+          {
+            "op": ">",
+            "args": [
+              "break_even_denominator",
+              0
+            ]
+          },
+          {
+            "op": "MAX",
+            "args": [
+              {
+                "op": "/",
+                "args": [
+                  "deposit",
+                  {
+                    "op": "*",
+                    "args": [
+                      "quantity",
+                      {
+                        "op": "SUM",
+                        "args": [
+                          1,
+                          "vat_sales"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "/",
+                "args": [
+                  {
+                    "op": "-",
+                    "args": [
+                      {
+                        "op": "SUM",
+                        "args": [
+                          "economic_cost",
+                          "late_cost",
+                          {
+                            "op": "-",
+                            "args": [
+                              "late_vat",
+                              "late_vat_credit"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "op": "*",
+                        "args": [
+                          "deposit",
+                          "bad_debt_rate"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "op": "*",
+                    "args": [
+                      "quantity",
+                      "break_even_denominator"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          null
+        ]
+      }
+    },
+    {
+      "key": "refund_external_need",
+      "label": "Frais externes d’abandon à financer par ETHIGONE",
+      "unit": "EUR",
+      "section": "Collecte insuffisante",
+      "expr": {
+        "op": "*",
+        "args": [
+          {
+            "op": "-",
+            "args": [
+              1,
+              "execute"
+            ]
+          },
+          {
+            "op": "SUM",
+            "args": [
+              "cancel_external",
+              {
+                "op": "*",
+                "args": [
+                  "investor_count",
+                  "refund_cost"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "check_cash_profit",
+      "label": "Écart capitaux + résultat = trésorerie finale",
+      "unit": "EUR",
+      "section": "Contrôles",
+      "expr": {
+        "op": "-",
+        "args": [
+          "cash150",
+          {
+            "op": "SUM",
+            "args": [
+              "capital_used",
+              "project_profit"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "check_capital_split",
+      "label": "Écart partage économique et trésorerie finale",
+      "unit": "EUR",
+      "section": "Contrôles",
+      "expr": {
+        "op": "-",
+        "args": [
+          {
+            "op": "SUM",
+            "args": [
+              "investor_entitlement",
+              "operator_entitlement"
+            ]
+          },
+          {
+            "op": "SUM",
+            "args": [
+              "cash150",
+              "uncovered_liabilities"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "check_tickets",
+      "label": "Écart total souscriptions au centime",
+      "unit": "EUR",
+      "section": "Contrôles",
+      "expr": {
+        "op": "-",
+        "args": [
+          {
+            "op": "SUM",
+            "args": [
+              {
+                "op": "*",
+                "args": [
+                  {
+                    "op": "MAX",
+                    "args": [
+                      0,
+                      {
+                        "op": "-",
+                        "args": [
+                          "investor_count",
+                          1
+                        ]
+                      }
+                    ]
+                  },
+                  "regular_ticket"
+                ]
+              },
+              "last_ticket"
+            ]
+          },
+          "investor_target"
+        ]
+      }
+    }
+  ]
+}

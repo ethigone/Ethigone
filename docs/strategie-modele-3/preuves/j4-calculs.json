@@ -1,0 +1,7 @@
+{
+  "as_of": "2026-11-15",
+  "checks": 177,
+  "passed": true,
+  "independent_oracles": 15,
+  "scope": "Conservation, capitaux au centime, scénarios, actifs, TVA, refus, seuils entiers, alternatives, change, cas invalides."
+}
