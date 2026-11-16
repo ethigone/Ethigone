@@ -1,0 +1,405 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-16",
+  "model_reference": {
+    "version": "J4-1.0",
+    "inputs_sha256": "fd4f3b3dc221d908891b6c419994875099785e6da482836b76f467f81ee3c8a2",
+    "reference": "O1/ticket_minimum",
+    "investor_target_cents": 2244000,
+    "operator_required_cents": 600000,
+    "deposit_required_cents": 864000,
+    "ethi_profit_cents": 1500,
+    "funding_gap_cents": 0
+  },
+  "money_semantics": "Centimes EUR entiers. cash_available est le cash avant le mouvement examiné ; remaining_cash est le solde après la sortie envisagée. La démonstration acquisition représente 22 440 + 6 000 + 8 640 EUR avant dépenses. Les tests de distribution changent explicitement de phase.",
+  "dossiers": [
+    {
+      "id": "ETAT-DOCUMENTAIRE-ETHIGONE",
+      "synthetic": false,
+      "status": "A_VERIFIER",
+      "action": "presenter",
+      "contract": null,
+      "route": null,
+      "pack_sha256": null,
+      "version": null,
+      "as_of": "2026-11-16",
+      "evidence": [],
+      "scope": {},
+      "money": {},
+      "economics": {},
+      "flags": {},
+      "notes": "État du projet : documents de recherche J1–J5 disponibles ; zéro preuve professionnelle/commerciale validante. Aucun dossier réel introduit dans le moteur de simulation."
+    },
+    {
+      "id": "DEMO-ACQUISITION",
+      "synthetic": true,
+      "status": "HYPOTHESE",
+      "action": "acquerir",
+      "contract": "C01",
+      "route": "V01",
+      "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "version": "DEMO-1",
+      "as_of": "2026-11-16",
+      "evidence": [
+        {
+          "id": "SYNTHETIC-company_identity",
+          "type": "company_identity",
+          "issuer_role": "R02",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-order",
+          "type": "order",
+          "issuer_role": "R02",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-supplier_quote",
+          "type": "supplier_quote",
+          "issuer_role": "R02",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-alternatives",
+          "type": "alternatives",
+          "issuer_role": "R01",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-economics",
+          "type": "economics",
+          "issuer_role": "R10",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-legal_opinion",
+          "type": "legal_opinion",
+          "issuer_role": "R08",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-sharia_opinion",
+          "type": "sharia_opinion",
+          "issuer_role": "R09",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-distribution_mandate",
+          "type": "distribution_mandate",
+          "issuer_role": "R04",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-investor_information",
+          "type": "investor_information",
+          "issuer_role": "R04",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-complaints_policy",
+          "type": "complaints_policy",
+          "issuer_role": "R04",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-eligibility",
+          "type": "eligibility",
+          "issuer_role": "R04",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-origin_control",
+          "type": "origin_control",
+          "issuer_role": "R05",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-contract",
+          "type": "contract",
+          "issuer_role": "R11",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-fees_review",
+          "type": "fees_review",
+          "issuer_role": "R09",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-ownership_map",
+          "type": "ownership_map",
+          "issuer_role": "R08",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-exit_terms",
+          "type": "exit_terms",
+          "issuer_role": "R08",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-incident_policy",
+          "type": "incident_policy",
+          "issuer_role": "R12",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-psp_account",
+          "type": "psp_account",
+          "issuer_role": "R05",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-refund_terms",
+          "type": "refund_terms",
+          "issuer_role": "R05",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-capital_proof",
+          "type": "capital_proof",
+          "issuer_role": "R05",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-purchase_terms",
+          "type": "purchase_terms",
+          "issuer_role": "R11",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-title",
+          "type": "title",
+          "issuer_role": "R11",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-delivery",
+          "type": "delivery",
+          "issuer_role": "R02",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-ledger",
+          "type": "ledger",
+          "issuer_role": "R10",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-distribution_statement",
+          "type": "distribution_statement",
+          "issuer_role": "R10",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-closure",
+          "type": "closure",
+          "issuer_role": "R10",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-refund_release",
+          "type": "refund_release",
+          "issuer_role": "R05",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-fx_review",
+          "type": "fx_review",
+          "issuer_role": "R06",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-token_rights",
+          "type": "token_rights",
+          "issuer_role": "R08",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-equity_documents",
+          "type": "equity_documents",
+          "issuer_role": "R08",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        },
+        {
+          "id": "SYNTHETIC-murabaha_sequence",
+          "type": "murabaha_sequence",
+          "issuer_role": "R09",
+          "synthetic": true,
+          "status": "HYPOTHESE",
+          "pack_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "version": "DEMO-1",
+          "valid_until": "2026-12-31"
+        }
+      ],
+      "scope": {
+        "countries_reviewed": true,
+        "retail_reviewed": true,
+        "mandates_reviewed": true,
+        "professional_reviews_actual": false
+      },
+      "money": {
+        "target_cents": 2244000,
+        "collected_cents": 2244000,
+        "operator_required_cents": 600000,
+        "operator_received_cents": 600000,
+        "deposit_required_cents": 864000,
+        "deposit_received_cents": 864000,
+        "refund_cost_cents": 38500,
+        "external_refund_budget_cents": 38500,
+        "cash_available_cents": 3708000,
+        "liabilities_and_reserves_cents": 0,
+        "distribution_cents": 0,
+        "refund_cents": 2244000,
+        "remaining_cash_cents": 3708000,
+        "remaining_stock_cents": 0,
+        "remaining_receivables_cents": 0,
+        "remaining_liabilities_cents": 0
+      },
+      "economics": {
+        "model_version": "J4-1.0",
+        "inputs_sha256": "fd4f3b3dc221d908891b6c419994875099785e6da482836b76f467f81ee3c8a2",
+        "reference": "O1/ticket_minimum",
+        "ethi_profit_cents": 1500,
+        "funding_gap_cents": 0,
+        "inputs_changed": false
+      },
+      "flags": {
+        "stablecoin_conversion": true,
+        "onchain_record": false,
+        "parallel_campaign": false,
+        "reflection_expired": true,
+        "legal_hold": false,
+        "incident_open": false,
+        "operation_started": false,
+        "refund_origin_verified": true,
+        "ownership_verified": true,
+        "possession_verified": true,
+        "acquisition_at": "2026-11-15T12:00:00Z",
+        "resale_at": "2026-11-16T12:00:00Z"
+      },
+      "notes": "Tous les documents, habilitations, soldes et dates sont fictifs. Chiffres du seuil O1 J4 recopiés uniquement pour tester les contrôles. La provision de remboursement est une hypothèse de test distincte, pas un devis. Aucun avis, compte ou droit réel n’existe."
+    }
+  ],
+  "limit": "Données fictives ou état documentaire public. Ne jamais y ajouter identité, contrat commercial, pièce KYC, compte ou wallet réels."
+}

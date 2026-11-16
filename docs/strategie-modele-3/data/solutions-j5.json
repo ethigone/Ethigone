@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-16",
+  "solutions": [
+    {
+      "id": "S01",
+      "name": "EthisX P2P / V01",
+      "role": "Plateforme potentielle ; relation à obtenir",
+      "instrument": "Commandes/factures et plusieurs contrats cités.",
+      "process": "Candidature → analyse → campagne → financement si succès, selon la page publique.",
+      "rights": "Choix du contrat, acceptation pays/retail et droits investisseur non établis.",
+      "critical_difference": "Pas de levée parallèle sur une autre plateforme selon FAQ ; pas de copie automatique du partage J4.",
+      "missing": [
+        "Pays France/UE",
+        "Retail admissible",
+        "Mandats et contrats",
+        "Tickets/frais/PSP",
+        "Stablecoins et fiscalité"
+      ],
+      "sources": [
+        "J5S16"
+      ],
+      "route_id": "V01",
+      "status": "PROPOSITION",
+      "access_verified": false,
+      "partnership_acquired": false,
+      "sharia_validated": false
+    },
+    {
+      "id": "S02",
+      "name": "Lita actions / V02",
+      "role": "Distributeur potentiel et prestataire de paiement distinct",
+      "instrument": "Actions d’une entreprise ciblée à examiner ; autres instruments du catalogue non adoptés.",
+      "process": "Sélection/mandat puis information et contrôles ; souscription et paiement via le parcours Lita.",
+      "rights": "Actionnaire de l’entreprise, pas propriétaire automatique du lot.",
+      "critical_difference": "Actions directes et admission spécifiques non établies ; économie/dividende/sortie à refaire, charia indépendante.",
+      "missing": [
+        "Admission et impact",
+        "Actions directes sans véhicule imposé",
+        "Rôle et rémunération ETHIGONE",
+        "Comptes/pacte/ratios",
+        "Budget complet et horizon"
+      ],
+      "sources": [
+        "J5S15"
+      ],
+      "route_id": "V02",
+      "status": "PROPOSITION",
+      "access_verified": false,
+      "partnership_acquired": false,
+      "sharia_validated": false
+    },
+    {
+      "id": "S03",
+      "name": "Centrifuge",
+      "role": "Infrastructure technique ; émetteur/distributeur à nommer séparément",
+      "instrument": "Jeton représentant le droit que les documents lui attribuent.",
+      "process": "Configuration, règles d’accès, registre et conservation ; entrée investisseur conditionnelle au produit.",
+      "rights": "Titulaire juridique et registre faisant foi définis hors du code.",
+      "critical_difference": "Permissions, gel et transfert forcé nécessitent une matrice de droits ; aucune communauté d’investisseurs captée automatiquement.",
+      "missing": [
+        "Émetteur/propriétaire",
+        "Distributeur mandaté",
+        "Pays/instrument/retail",
+        "PSP/crypto/conservation",
+        "Contrats, coût complet et valeur ajoutée"
+      ],
+      "sources": [
+        "J5S17",
+        "J5S18"
+      ],
+      "route_id": null,
+      "status": "PROPOSITION",
+      "access_verified": false,
+      "partnership_acquired": false,
+      "sharia_validated": false
+    },
+    {
+      "id": "S04",
+      "name": "Plateforme directe sans ETHIGONE",
+      "role": "Alternative organisationnelle",
+      "instrument": "L’opérateur présente directement son dossier à une plateforme admissible.",
+      "process": "Même sélection, contrats et contrôles, sans supposer admission.",
+      "rights": "Selon instrument et conditions négociées.",
+      "critical_difference": "Comparer coût de préparation/suivi interne et qualité ; supprimer les commissions ETHIGONE si service distinct sans utilité démontrée.",
+      "missing": [
+        "Devis direct",
+        "Charge interne",
+        "Besoin de coordination",
+        "Comparaison charia complète"
+      ],
+      "sources": [
+        "J5S15",
+        "J5S16"
+      ],
+      "route_id": null,
+      "status": "PROPOSITION",
+      "access_verified": false,
+      "partnership_acquired": false,
+      "sharia_validated": false
+    },
+    {
+      "id": "S05",
+      "name": "Acompte client",
+      "role": "Alternative commerciale à négocier",
+      "instrument": "Fraction du prix et obligation de livraison/éventuelle restitution à qualifier.",
+      "process": "Commande → conditions d’acompte → paiement disponible selon contrat.",
+      "rights": "Propriété/risque du bien ne se déduisent pas de l’acompte.",
+      "critical_difference": "Acompte 40 % J4 hypothétique ; vérifier acceptation, dates et remboursement, pas une ressource acquise.",
+      "missing": [
+        "Commande ferme",
+        "Montant/date",
+        "Capacité de livraison",
+        "Traitement annulation"
+      ],
+      "sources": [],
+      "route_id": null,
+      "status": "PROPOSITION",
+      "access_verified": false,
+      "partnership_acquired": false,
+      "sharia_validated": false
+    },
+    {
+      "id": "S06",
+      "name": "Crédit fournisseur",
+      "role": "Alternative commerciale à négocier",
+      "instrument": "Prix différé et échéances à qualifier, sans intérêt de retard adopté.",
+      "process": "Accord de paiement → acquisition/livraison → règlement au terme convenu.",
+      "rights": "Réserve de propriété, risque et paiement se rapprochent séparément.",
+      "critical_difference": "J4 : échéance J45 ne réduit pas le pic ; J90 peut supprimer le besoin N02, mais accès et charia non prouvés.",
+      "missing": [
+        "Accord signé",
+        "Dates client/fournisseur",
+        "Clauses de retard",
+        "Régime de propriété"
+      ],
+      "sources": [
+        "J5S02"
+      ],
+      "route_id": null,
+      "status": "PROPOSITION",
+      "access_verified": false,
+      "partnership_acquired": false,
+      "sharia_validated": false
+    },
+    {
+      "id": "S07",
+      "name": "Apport opérateur",
+      "role": "Alternative de capital à prouver",
+      "instrument": "Ressource propre effectivement disponible et immobilisée.",
+      "process": "Preuve d’origine/capacité → apport → comptabilisation et partage cohérents.",
+      "rights": "Droits proportionnés aux apports selon contrat, pas une garantie des autres participants.",
+      "critical_difference": "Apport doublé J4 n’est pas une capacité constatée ; vérifier coûts et trésorerie de l’activité existante.",
+      "missing": [
+        "Relevés hors dépôt",
+        "Origine",
+        "Droits/pertes",
+        "Trésorerie disponible"
+      ],
+      "sources": [
+        "J5S03",
+        "J5S05"
+      ],
+      "route_id": null,
+      "status": "PROPOSITION",
+      "access_verified": false,
+      "partnership_acquired": false,
+      "sharia_validated": false
+    }
+  ],
+  "priority_routes_changed": false,
+  "reason_to_prefer_ethigone": {
+    "status": "HYPOTHESE",
+    "claim": "Coordination spécialisée de lots et preuves, suivi des actifs et coûts d’accès réduits par service commun.",
+    "proof_needed": "Devis comparatifs, tâche réellement additionnelle, économie totale positive à volume crédible et préférence documentée de l’opérateur/investisseurs.",
+    "observed": false
+  },
+  "limits": [
+    "Base/Coinbase, Polygon et HAQQ restent les points d’entrée J3, pas des distributeurs acquis ; aucune intégration ajoutée à J5.",
+    "V01/V02 sont des alternatives conditionnelles, pas deux campagnes à mener simultanément.",
+    "Aucun pays, instrument, contrat, niche ou véhicule adopté."
+  ]
+}

@@ -1,6 +1,6 @@
 # État de reprise — Modèle 3
 
-Date : **15 novembre 2026**. J4, prévu le 14, réalisé. [Programme](PLAN_7_JOURS.md) inchangé, fin le **17 novembre**, sans prolongation automatique.
+Date : **16 novembre 2026**. J5, prévu le 15, réalisé. Publication J4 du 15 vérifiée après reprise le 16 (20 fichiers relus, contenu exact et empreintes Git concordants). [Programme](PLAN_7_JOURS.md) inchangé, fin le **17 novembre**, sans prolongation automatique.
 
 ## Terminé
 
@@ -8,6 +8,18 @@ Date : **15 novembre 2026**. J4, prévu le 14, réalisé. [Programme](PLAN_7_JOU
 - **J2** : 17 fiches après regroupement de 18 entrées, répartition 6/6/5. Ecubel E16 fusionnée sous E17/ITJustGood/Digitalea, groupe ATF déclaré. Besoin, commande, intérêt et marge non vérifiés.
 - **J3** : dix points d’entrée, 38 sources primaires et deux voies PROPOSITIONS conditionnelles : EthisX pour opérations commerciales et Lita pour actions d’entreprise ciblée. Zéro voie ETHIGONE entièrement validée. Aucun accord, capital ou véhicule acquis. Les limites d’accès, barèmes contradictoires et archives restent documentés dans les fichiers J3, préservés.
 - **J4** : [trois simulations anonymisées](J4_ECONOMIE.md), [tableur modifiable](modele-economique-j4.xlsx), [règles de calcul](MODELE_CALCULS_J4.md), 12 résultats de scénarios, 18 variantes et trois comparateurs. Entrées, résultats et expressions JSON sauvegardés pour J7. Toutes les valeurs économiques du modèle sont HYPOTHÈSES, sans attribution aux entreprises J2.
+
+- **J5** : [parcours documentaire](J5_PARCOURS.md), 12 étapes et 12 rôles, 3 branches contractuelles, 7 solutions/alternatives et [20 questions juridiques/charia](CONTRATS_ET_QUESTIONS_J5.md). Dix-huit sources primaires relues (15 accès utiles, 3 accès partiels/indexés explicités). Données JSON et contrôleur autonome pour J7 ; 49 tests de simulation réussis, aucune exécution financière autorisée.
+
+## Résultats J5 et blocages à conserver
+
+C01 participation au lot, C02 acquisition/vente différée et C03 actions d’entreprise impliquent des droits, propriétaires et sorties différents. Le partage J4 n’est pas transférable à C02/C03. Apport opérateur réel, frais des tâches distinctes et règles de faute sont à vérifier ; BNM Mudarabah ne valide pas les actions Lita. Une clé de gel ou un token Centrifuge ne prouve pas le titre des biens ni le droit d’agir.
+
+Lita décrit une plateforme et un prestataire de paiement distincts ; EthisX indique ne pas accepter de levée simultanée sur une autre plateforme. V01/V02 restent alternatives conditionnelles. Pays, retail, mandats, contrats signables, frais complets, fiscalité, prestataires et chaîne charia/stablecoin non validés. ETHIGONE ne reçoit pas les fonds clients par défaut ; aucune collecte ni offre activée. L’utilité payante d’ETHIGONE face aux alternatives reste HYPOTHÈSE.
+
+Le contrôleur vérifie présence, rôles déclarés, dates/versions/empreintes, budget, sous-collecte au centime, frais de remboursement séparés, séquence de propriété, incidents et cash de sortie. Il ne vérifie pas l’authenticité ou la conformité de pièces. Démonstrations entièrement fictives ; l’état documentaire réel sans pièces est bloqué. Même une simulation cohérente conserve `financial_execution_authorized: false`.
+
+Contrôles J5 : [preuves parcours](preuves/j5-parcours.json), [preuve générale](preuves/j5-verification.json). Un agent **gpt-6.1-sol** appelé pour contrats/charia, contribution intégrée et sources déterminantes relues par le coordinateur ; aucune sous-délégation, ancien agent relancé, contre-revue Astra, certification ou consultation professionnelle. Aucun test visuel revendiqué pour J5.
 
 ## Résultats J4 à conserver
 
@@ -31,10 +43,11 @@ Un agent **gpt-6.1-sol** effectivement appelé pour logique et contre-calculs, s
 
 ## Prochain passage et fin
 
-**J5 prochain**, parcours et responsabilités : candidature, sélection, information, éligibilité, contrats, flux, suivi, incident et sortie. J5 et J6 restent à faire. Le décalage d’un passage est explicite. **Le 17 novembre, J7 doit livrer les HTML hors ligne avec l’état réel, même si J5/J6 restent incomplets, puis arrêter.** Ne pas retarder J7 au-delà de cette fin ni déclarer un lot réalisé sur la seule base de sa date.
+**J7 prochain, le 17 novembre** : livrer les HTML interactifs hors ligne avec les données J1–J5, leur navigation, filtres, simulateur et parcours ; signaler honnêtement **J6 non réalisé**, l’absence de recommandation finale et de contre-revue ciblée Astra. Le retard d’un passage demeure. Ne pas remplacer J7 par un nouveau plan ou prolonger pour rattraper J6. Présenter l’état réel, puis arrêter cette tâche au 17 novembre.
 
 ## Sauvegarde et périmètre
 
-Source durable : `ethigone/Ethigone`, branche `main`, dossier `docs/strategie-modele-3`. Base distante J4 : `34fad62efc1f42798aa0e40017aedcb13452c48e`, arbre `16b8f20463c4af9d0bdf80d149428ae1f5e4e2ce`. Les 26 fichiers du dossier à cette base ont été rapprochés de leurs blobs distants avant copie isolée. Le commit contenant ce checkpoint est identifiable dans l’historique ; vérifier la tête et les empreintes après publication.
+Source durable : `ethigone/Ethigone`, branche `main`, dossier `docs/strategie-modele-3`. Base distante J5 : `6d2e25aaa3b96b595172c4910a3e1e40e0db6f4f`, arbre `5c23baf38ff34e8b780d5b19497698148d2fb06a`. Les 43 fichiers du dossier ont été rapprochés de leurs blobs avant copie isolée. Les 20 fichiers de la publication J4 ont en outre été relus à distance, dont le tableur binaire ; 228 autres fichiers de sa base préservés. J5 ajoute 14 fichiers et met à jour seulement ce checkpoint, le README du dossier et sprint.json ; 245 fichiers existants, dont 40 du dossier, sont à préserver. Le commit contenant ce checkpoint est identifiable dans l’historique ; contrôle de tête, contenu et empreintes distantes à effectuer après publication, sans prétendre qu’un fichier peut contenir sa propre empreinte de commit finale.
+
 
 Aucun contact, compte créé, collecte, transaction, wallet, achat ou service payant. Aucun changement de l’application, du Site, des anciens sprints, du déploiement ou de l’hébergement ; aucun GitHub Pages activé. Aucun document confidentiel, coordonnée personnelle, secret ou identifiant privé publié. Préserver les autres fichiers et toute modification parallèle ; aucune mise à jour forcée.

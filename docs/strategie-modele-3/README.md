@@ -10,6 +10,12 @@ Sept passages bornés, du 11 au 17 novembre 2026 : [plan détaillé](PLAN_7_JOUR
 
 | Document | Utilité |
 | --- | --- |
+| [J5_PARCOURS.md](J5_PARCOURS.md) | Douze étapes, responsabilités, propriété, flux et incidents ; [données](data/parcours-j5.json). |
+| [CONTRATS_ET_QUESTIONS_J5.md](CONTRATS_ET_QUESTIONS_J5.md) | Trois branches et vingt questions précises ; [JSON](data/questions-j5.json). |
+| [COMPARAISON_SOLUTIONS_J5.md](COMPARAISON_SOLUTIONS_J5.md) | Sept solutions/alternatives, droits et preuves manquantes ; [JSON](data/solutions-j5.json). |
+| [SOURCES_J5.md](SOURCES_J5.md) | Dix-huit sources primaires et limites de lecture ; [registre](data/sources-j5.json). |
+| [evaluer_parcours_j5.mjs](evaluer_parcours_j5.mjs) | Contrôleur hors ligne de simulations ; [dossiers fictifs](data/dossiers-j5.json) et [tests](test_parcours_j5.mjs). |
+| [preuves/j5-verification.json](preuves/j5-verification.json) | Contrôles via [verifier_j5.py](verifier_j5.py) et [49 cas du parcours](preuves/j5-parcours.json). |
 | [J4_ECONOMIE.md](J4_ECONOMIE.md) | Trois opérations, scénarios, économie des trois parties et seuils conditionnels. |
 | [modele-economique-j4.xlsx](modele-economique-j4.xlsx) | Tableur modifiable, quatre scénarios, formules et comparateur distinct. |
 | [MODELE_CALCULS_J4.md](MODELE_CALCULS_J4.md) | Hypothèses, cash/TVA/actifs, partage, coûts des refus et mode d’emploi. |
@@ -35,7 +41,7 @@ Sept passages bornés, du 11 au 17 novembre 2026 : [plan détaillé](PLAN_7_JOUR
 | [data/sprint.json](data/sprint.json) | Dates et état vérifié des lots. |
 | [preuves/j1-verification.json](preuves/j1-verification.json) | Contrôles de cohérence et de publication documentaire de J1. |
 
-J1 à J4 sont livrés; les livrables de J5 et J6 restent à produire. À J7, un sous-dossier `html/` rassemblera un index de navigation, la comparaison des niches, le répertoire sourcé, les voies d'accès aux investisseurs, le simulateur économique et le parcours opérationnel. Ces HTML devront fonctionner localement sans dépendance à un serveur ni envoi de données à un tiers. Ils ne sont pas encore livrés à J4. Le retard ne prolonge pas le programme au-delà du 17 novembre.
+J1 à J5 sont livrés ; J6 reste non réalisé, sans recommandation finale de niche ni contre-revue Astra. À J7, un sous-dossier `html/` rassemblera un index de navigation, la comparaison des niches, le répertoire sourcé, les voies d'accès aux investisseurs, le simulateur économique et le parcours opérationnel. Ces HTML devront fonctionner localement sans dépendance à un serveur ni envoi de données à un tiers. Ils ne sont pas encore livrés à J5. Le prochain passage du 17 novembre est réservé à J7 avec les manques signalés. Le retard ne prolonge pas le programme au-delà du 17 novembre.
 
 ## Lire les conclusions correctement
 

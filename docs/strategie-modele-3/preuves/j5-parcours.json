@@ -1,0 +1,621 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-16",
+  "tests_count": 49,
+  "passed": true,
+  "financial_execution_authorized": false,
+  "tests": [
+    {
+      "name": "Acquisition fictive complète au seuil O1 : cohérence seulement",
+      "expected_codes": [],
+      "observed_codes": [],
+      "passed": true
+    },
+    {
+      "name": "État réel sans pièces : jamais validé",
+      "expected_codes": [
+        "DOSSIER_REEL_NON_PRIS_EN_CHARGE",
+        "CONTRAT_NON_DEFINI",
+        "PREUVE_MANQUANTE_OU_DUPLIQUEE"
+      ],
+      "observed_codes": [
+        "DOSSIER_REEL_NON_PRIS_EN_CHARGE",
+        "STATUT_SIMULATION_REQUIS",
+        "CONTRAT_NON_DEFINI",
+        "VOIE_NON_DEFINIE",
+        "DOSSIER_NON_VERSIONNE",
+        "PREUVE_MANQUANTE_OU_DUPLIQUEE",
+        "PERIMETRE_NON_EXAMINE",
+        "MODELE_NON_RAPPROCHE",
+        "RECALCUL_ET_REINFORMATION_REQUIS",
+        "ECONOMIE_ETHIGONE_NON_VIABLE",
+        "RESULTATS_NON_RAPPROCHES",
+        "DEFICIT_TRESORERIE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Une commande absente bloque la présentation",
+      "expected_codes": [
+        "PREUVE_MANQUANTE_OU_DUPLIQUEE"
+      ],
+      "observed_codes": [
+        "PREUVE_MANQUANTE_OU_DUPLIQUEE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Une allowlist seule ne vaut pas éligibilité",
+      "expected_codes": [
+        "PREUVE_MANQUANTE_OU_DUPLIQUEE"
+      ],
+      "observed_codes": [
+        "PREUVE_MANQUANTE_OU_DUPLIQUEE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "L’opérateur ne signe pas l’avis juridique",
+      "expected_codes": [
+        "ROLE_PREUVE_INCORRECT"
+      ],
+      "observed_codes": [
+        "ROLE_PREUVE_INCORRECT"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Éligibilité expirée",
+      "expected_codes": [
+        "PREUVE_EXPIREE_OU_NON_DATEE"
+      ],
+      "observed_codes": [
+        "PREUVE_EXPIREE_OU_NON_DATEE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Date d’éligibilité impossible",
+      "expected_codes": [
+        "PREUVE_EXPIREE_OU_NON_DATEE"
+      ],
+      "observed_codes": [
+        "PREUVE_EXPIREE_OU_NON_DATEE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Avis attaché à une autre empreinte",
+      "expected_codes": [
+        "VERSION_PREUVE_INCOHERENTE"
+      ],
+      "observed_codes": [
+        "VERSION_PREUVE_INCOHERENTE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Contrat remplacé sans nouvelle information",
+      "expected_codes": [
+        "VERSION_PREUVE_INCOHERENTE"
+      ],
+      "observed_codes": [
+        "VERSION_PREUVE_INCOHERENTE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Preuve faussement déclarée confirmée",
+      "expected_codes": [
+        "PREUVE_NON_SYNTHETIQUE"
+      ],
+      "observed_codes": [
+        "PREUVE_NON_SYNTHETIQUE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Deux attestations concurrentes du même type",
+      "expected_codes": [
+        "PREUVE_MANQUANTE_OU_DUPLIQUEE"
+      ],
+      "observed_codes": [
+        "PREUVE_MANQUANTE_OU_DUPLIQUEE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Identifiants de preuves en doublon",
+      "expected_codes": [
+        "PREUVE_ID_DUPLIQUE"
+      ],
+      "observed_codes": [
+        "PREUVE_ID_DUPLIQUE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Pays non examinés",
+      "expected_codes": [
+        "PERIMETRE_NON_EXAMINE"
+      ],
+      "observed_codes": [
+        "PERIMETRE_NON_EXAMINE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Deux campagnes simultanées EthisX",
+      "expected_codes": [
+        "CAMPAGNE_PARALLELE_ETHISX"
+      ],
+      "observed_codes": [
+        "CAMPAGNE_PARALLELE_ETHISX"
+      ],
+      "passed": true
+    },
+    {
+      "name": "V02 actions ne finance pas automatiquement C01",
+      "expected_codes": [
+        "LITA_ACTIONS_DROITS_INCOHERENTS"
+      ],
+      "observed_codes": [
+        "LITA_ACTIONS_DROITS_INCOHERENTS"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Économie de base O1 déficitaire malgré budget de caisse",
+      "expected_codes": [
+        "ECONOMIE_ETHIGONE_NON_VIABLE"
+      ],
+      "observed_codes": [
+        "ECONOMIE_ETHIGONE_NON_VIABLE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Résultat annoncé différent de la référence",
+      "expected_codes": [
+        "RESULTATS_NON_RAPPROCHES"
+      ],
+      "observed_codes": [
+        "RESULTATS_NON_RAPPROCHES"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Prix ou TVA modifiés sans recalcul",
+      "expected_codes": [
+        "RECALCUL_ET_REINFORMATION_REQUIS"
+      ],
+      "observed_codes": [
+        "RECALCUL_ET_REINFORMATION_REQUIS"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Empreinte du modèle changée",
+      "expected_codes": [
+        "MODELE_NON_RAPPROCHE"
+      ],
+      "observed_codes": [
+        "MODELE_NON_RAPPROCHE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "J4 n’est pas un modèle de murabaha",
+      "expected_codes": [
+        "J4_INCOMPATIBLE_AVEC_CONTRAT"
+      ],
+      "observed_codes": [
+        "J4_INCOMPATIBLE_AVEC_CONTRAT"
+      ],
+      "passed": true
+    },
+    {
+      "name": "J4 n’est pas un modèle de dividende Lita",
+      "expected_codes": [
+        "J4_INCOMPATIBLE_AVEC_CONTRAT"
+      ],
+      "observed_codes": [
+        "J4_INCOMPATIBLE_AVEC_CONTRAT"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Manque un centime de collecte",
+      "expected_codes": [
+        "COLLECTE_INSUFFISANTE"
+      ],
+      "observed_codes": [
+        "COLLECTE_INSUFFISANTE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Collecte à 80 % sans achat",
+      "expected_codes": [
+        "COLLECTE_INSUFFISANTE"
+      ],
+      "observed_codes": [
+        "COLLECTE_INSUFFISANTE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Surcollecte à traiter",
+      "expected_codes": [
+        "SURCOLLECTE_NON_TRAITEE"
+      ],
+      "observed_codes": [
+        "SURCOLLECTE_NON_TRAITEE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Besoin investisseurs nul : ne pas lever inutilement",
+      "expected_codes": [
+        "OBJECTIF_NON_RAPPROCHE"
+      ],
+      "observed_codes": [
+        "OBJECTIF_NON_RAPPROCHE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Apport opérateur promis mais non versé",
+      "expected_codes": [
+        "APPORT_OPERATEUR_MANQUANT"
+      ],
+      "observed_codes": [
+        "APPORT_OPERATEUR_MANQUANT"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Acompte client attendu absent",
+      "expected_codes": [
+        "ACOMPTE_CLIENT_MANQUANT"
+      ],
+      "observed_codes": [
+        "ACOMPTE_CLIENT_MANQUANT"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Apport cible effacé ne masque pas le manque",
+      "expected_codes": [
+        "APPORT_OU_ACOMPTE_CIBLE_MODIFIE"
+      ],
+      "observed_codes": [
+        "APPORT_OU_ACOMPTE_CIBLE_MODIFIE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Acompte cible effacé exige recalcul",
+      "expected_codes": [
+        "APPORT_OU_ACOMPTE_CIBLE_MODIFIE"
+      ],
+      "observed_codes": [
+        "APPORT_OU_ACOMPTE_CIBLE_MODIFIE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Frais externes d’échec sans trésorerie séparée",
+      "expected_codes": [
+        "FRAIS_REMBOURSEMENT_NON_FINANCES"
+      ],
+      "observed_codes": [
+        "FRAIS_REMBOURSEMENT_NON_FINANCES"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Réflexion non achevée avant achat",
+      "expected_codes": [
+        "DELAI_REFLEXION_NON_TERMINE"
+      ],
+      "observed_codes": [
+        "DELAI_REFLEXION_NON_TERMINE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Gel légal interdit remboursement automatique",
+      "expected_codes": [
+        "GEL_LEGAL_OU_STATUT_INCONNU"
+      ],
+      "observed_codes": [
+        "GEL_LEGAL_OU_STATUT_INCONNU"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Chiffre manquant ne devient pas zéro",
+      "expected_codes": [
+        "MONTANT_INVALIDE"
+      ],
+      "observed_codes": [
+        "MONTANT_INVALIDE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Fraction de centime rejetée",
+      "expected_codes": [
+        "MONTANT_INVALIDE"
+      ],
+      "observed_codes": [
+        "MONTANT_INVALIDE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Montant négatif rejeté",
+      "expected_codes": [
+        "MONTANT_INVALIDE"
+      ],
+      "observed_codes": [
+        "MONTANT_INVALIDE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Vente avant preuve de propriété",
+      "expected_codes": [
+        "PROPRIETE_POSSESSION_NON_ETABLIES"
+      ],
+      "observed_codes": [
+        "PROPRIETE_POSSESSION_NON_ETABLIES"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Séquence achat après revente murabaha",
+      "expected_codes": [
+        "SEQUENCE_MURABAHA_INVALIDE",
+        "J4_INCOMPATIBLE_AVEC_CONTRAT"
+      ],
+      "observed_codes": [
+        "J4_INCOMPATIBLE_AVEC_CONTRAT",
+        "SEQUENCE_MURABAHA_INVALIDE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Incident ouvert bloque distribution",
+      "expected_codes": [
+        "INCIDENT_NON_RESOLU"
+      ],
+      "observed_codes": [
+        "INCIDENT_NON_RESOLU"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Distribution supérieure au cash libre de 1 centime",
+      "expected_codes": [
+        "DISTRIBUTION_SUPERIEURE_AU_CASH_LIBRE"
+      ],
+      "observed_codes": [
+        "DISTRIBUTION_SUPERIEURE_AU_CASH_LIBRE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Créance en attente n’est pas du cash de sortie",
+      "expected_codes": [
+        "ACTIFS_NON_LIQUIDES"
+      ],
+      "observed_codes": [
+        "ACTIFS_NON_LIQUIDES"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Réserve encore ouverte empêche clôture",
+      "expected_codes": [
+        "SOLDES_NON_CLOTURES"
+      ],
+      "observed_codes": [
+        "SOLDES_NON_CLOTURES"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Clôture fictive équilibrée",
+      "expected_codes": [],
+      "observed_codes": [],
+      "passed": true
+    },
+    {
+      "name": "Remboursement fictif EUR d’une sous-collecte",
+      "expected_codes": [],
+      "observed_codes": [],
+      "passed": true
+    },
+    {
+      "name": "Frais retenus sur remboursement non prévus",
+      "expected_codes": [
+        "REMBOURSEMENT_CAPITAL_INCOHERENT"
+      ],
+      "observed_codes": [
+        "REMBOURSEMENT_CAPITAL_INCOHERENT"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Cash de remboursement insuffisant",
+      "expected_codes": [
+        "CASH_REMBOURSEMENT_INSUFFISANT"
+      ],
+      "observed_codes": [
+        "CASH_REMBOURSEMENT_INSUFFISANT"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Remboursement vers autre destinataire non vérifié",
+      "expected_codes": [
+        "DESTINATION_REMBOURSEMENT_NON_VERIFIEE"
+      ],
+      "observed_codes": [
+        "DESTINATION_REMBOURSEMENT_NON_VERIFIEE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Achat déjà engagé ne vaut pas collecte annulée",
+      "expected_codes": [
+        "OPERATION_DEJA_ENGAGEE"
+      ],
+      "observed_codes": [
+        "OPERATION_DEJA_ENGAGEE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Action inconnue",
+      "expected_codes": [
+        "ACTION_INCONNUE"
+      ],
+      "observed_codes": [
+        "ACTION_INCONNUE"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Date de contrôle impossible",
+      "expected_codes": [
+        "DATE_CONTROLE_INVALIDE"
+      ],
+      "observed_codes": [
+        "DATE_CONTROLE_INVALIDE",
+        "PREUVE_EXPIREE_OU_NON_DATEE"
+      ],
+      "passed": true
+    }
+  ],
+  "actual_documentary_state": {
+    "schema_version": 1,
+    "dossier_id": "ETAT-DOCUMENTAIRE-ETHIGONE",
+    "action": "presenter",
+    "checked_on": "2026-11-16",
+    "simulation_only": true,
+    "financial_execution_authorized": false,
+    "professional_validation": false,
+    "result": "SIMULATION_BLOQUEE",
+    "required_evidence": [
+      "alternatives",
+      "company_identity",
+      "complaints_policy",
+      "distribution_mandate",
+      "economics",
+      "investor_information",
+      "legal_opinion",
+      "order",
+      "sharia_opinion",
+      "supplier_quote"
+    ],
+    "errors": [
+      {
+        "code": "DOSSIER_REEL_NON_PRIS_EN_CHARGE",
+        "detail": "Moteur réservé aux simulations publiques anonymes."
+      },
+      {
+        "code": "STATUT_SIMULATION_REQUIS",
+        "detail": "Une simulation ne peut valoir fait validé."
+      },
+      {
+        "code": "CONTRAT_NON_DEFINI",
+        "detail": "C01/C02/C03 à distinguer."
+      },
+      {
+        "code": "VOIE_NON_DEFINIE",
+        "detail": "La voie doit être documentée sans admission présumée."
+      },
+      {
+        "code": "DOSSIER_NON_VERSIONNE",
+        "detail": "Version et empreinte déclarée requises."
+      },
+      {
+        "code": "PREUVE_MANQUANTE_OU_DUPLIQUEE",
+        "detail": "company_identity"
+      },
+      {
+        "code": "PREUVE_MANQUANTE_OU_DUPLIQUEE",
+        "detail": "order"
+      },
+      {
+        "code": "PREUVE_MANQUANTE_OU_DUPLIQUEE",
+        "detail": "supplier_quote"
+      },
+      {
+        "code": "PREUVE_MANQUANTE_OU_DUPLIQUEE",
+        "detail": "alternatives"
+      },
+      {
+        "code": "PREUVE_MANQUANTE_OU_DUPLIQUEE",
+        "detail": "economics"
+      },
+      {
+        "code": "PREUVE_MANQUANTE_OU_DUPLIQUEE",
+        "detail": "legal_opinion"
+      },
+      {
+        "code": "PREUVE_MANQUANTE_OU_DUPLIQUEE",
+        "detail": "sharia_opinion"
+      },
+      {
+        "code": "PREUVE_MANQUANTE_OU_DUPLIQUEE",
+        "detail": "distribution_mandate"
+      },
+      {
+        "code": "PREUVE_MANQUANTE_OU_DUPLIQUEE",
+        "detail": "investor_information"
+      },
+      {
+        "code": "PREUVE_MANQUANTE_OU_DUPLIQUEE",
+        "detail": "complaints_policy"
+      },
+      {
+        "code": "PERIMETRE_NON_EXAMINE",
+        "detail": "countries_reviewed"
+      },
+      {
+        "code": "PERIMETRE_NON_EXAMINE",
+        "detail": "retail_reviewed"
+      },
+      {
+        "code": "PERIMETRE_NON_EXAMINE",
+        "detail": "mandates_reviewed"
+      },
+      {
+        "code": "MODELE_NON_RAPPROCHE",
+        "detail": "Le budget et sa version doivent correspondre aux références."
+      },
+      {
+        "code": "RECALCUL_ET_REINFORMATION_REQUIS",
+        "detail": "Prix, TVA, frais ou contrat modifiés."
+      },
+      {
+        "code": "ECONOMIE_ETHIGONE_NON_VIABLE",
+        "detail": "Coût complet négatif ou inconnu."
+      },
+      {
+        "code": "RESULTATS_NON_RAPPROCHES",
+        "detail": "Les résultats déclarés diffèrent du modèle de référence."
+      },
+      {
+        "code": "DEFICIT_TRESORERIE",
+        "detail": "Besoin de trésorerie non couvert ou inconnu."
+      }
+    ],
+    "warning": "Contrôle de cohérence de déclarations fictives ; aucun avis, signature, autorisation ou preuve réelle authentifiés."
+  },
+  "limit": "Contrôles logiciels uniquement, aucun avis ou acte professionnel, aucun test de transaction."
+}

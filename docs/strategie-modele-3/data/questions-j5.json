@@ -1,0 +1,439 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-16",
+  "status": "A_VERIFIER",
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "Qualification complète",
+      "question": "Qui finance, achète, vend, gère et distribue ; quelle qualification décrit les mêmes droits dans les trois documents information/contrat/flux ?",
+      "evidence_required": "Schéma des parties et avis comparant C01/C02/C03, pays et compétence.",
+      "stop": "Droits contradictoires ou véhicule imposé sans nécessité démontrée.",
+      "owner_roles": [
+        "R08",
+        "R09"
+      ],
+      "sources": [
+        "J5S11",
+        "J5S13"
+      ],
+      "stages": [
+        "P03",
+        "P05"
+      ],
+      "status": "A_VERIFIER",
+      "professional_answer_received": false
+    },
+    {
+      "id": "Q02",
+      "title": "Propriété et risque",
+      "question": "À quelle étape chaque partie acquiert-elle titre, possession et risque ; que changent livraison directe, réserves de propriété, défauts et biens à fabriquer ?",
+      "evidence_required": "Contrats fournisseur/client, preuves datées de transfert et réception, références de lot et titre opposable.",
+      "stop": "Revente avant possession requise, bien indéterminé ou personne portant le risque non définie.",
+      "owner_roles": [
+        "R08",
+        "R09",
+        "R11"
+      ],
+      "sources": [
+        "J5S01"
+      ],
+      "stages": [
+        "P05",
+        "P07",
+        "P08"
+      ],
+      "status": "A_VERIFIER",
+      "professional_answer_received": false
+    },
+    {
+      "id": "Q03",
+      "title": "Apports et bénéfice",
+      "question": "Quels apports réellement encaissés et quelle définition du résultat permettent le partage envisagé ?",
+      "evidence_required": "Registre apports, base de calcul après charges admissibles, comptes et règle de liquidation.",
+      "stop": "Apport fictif ou pourcentage du capital/chiffre d’affaires présenté comme partage du bénéfice.",
+      "owner_roles": [
+        "R09",
+        "R10"
+      ],
+      "sources": [
+        "J5S03",
+        "J5S04",
+        "J5S05"
+      ],
+      "stages": [
+        "P05",
+        "P07",
+        "P11"
+      ],
+      "status": "A_VERIFIER",
+      "professional_answer_received": false
+    },
+    {
+      "id": "Q04",
+      "title": "Perte et faute",
+      "question": "Comment distinguer perte commerciale, défaut client et perte imputable à faute ou dépassement de mandat ?",
+      "evidence_required": "Définition, preuves, procédure contradictoire et décision sur responsabilité.",
+      "stop": "Garantie générale du gestionnaire ou répartition des pertes sans apports correspondants.",
+      "owner_roles": [
+        "R08",
+        "R09"
+      ],
+      "sources": [
+        "J5S05"
+      ],
+      "stages": [
+        "P05",
+        "P10"
+      ],
+      "status": "A_VERIFIER",
+      "professional_answer_received": false
+    },
+    {
+      "id": "Q05",
+      "title": "Frais et travail",
+      "question": "Quelles tâches opérateur/ETHIGONE sont distinctes du travail déjà rémunéré par leur part de profit ?",
+      "evidence_required": "Périmètres de prestations, devis, livrables et approbation motivée de chaque rémunération.",
+      "stop": "Double rémunération injustifiée ; recalcul J4 et nouvelle revue si frais changent.",
+      "owner_roles": [
+        "R09",
+        "R10"
+      ],
+      "sources": [
+        "J5S05",
+        "J5S06"
+      ],
+      "stages": [
+        "P02",
+        "P05"
+      ],
+      "status": "A_VERIFIER",
+      "professional_answer_received": false
+    },
+    {
+      "id": "Q06",
+      "title": "Mandats et conflits",
+      "question": "Qui approuve fournisseur lié, double mandat, choix des prestataires et fixation des propres frais de l’agent ?",
+      "evidence_required": "Mandats bornés, registre des liens, consentements et approbation indépendante.",
+      "stop": "Auto-approbation sans mandat ou conflit non traité.",
+      "owner_roles": [
+        "R08",
+        "R09"
+      ],
+      "sources": [
+        "J5S06"
+      ],
+      "stages": [
+        "P03",
+        "P05",
+        "P07"
+      ],
+      "status": "A_VERIFIER",
+      "professional_answer_received": false
+    },
+    {
+      "id": "Q07",
+      "title": "Prix différé",
+      "question": "Pour C02, quel coût révélé si murabaha, prix ferme et échéancier remplacent le partage J4 ?",
+      "evidence_required": "Séquence des ventes, coût documenté, échéancier unique et modèle recalculé.",
+      "stop": "Prix non arrêté ou augmentation de dette contre un délai supplémentaire.",
+      "owner_roles": [
+        "R08",
+        "R09"
+      ],
+      "sources": [
+        "J5S02",
+        "J5S07"
+      ],
+      "stages": [
+        "P05",
+        "P08"
+      ],
+      "status": "A_VERIFIER",
+      "professional_answer_received": false
+    },
+    {
+      "id": "Q08",
+      "title": "Garanties et sûretés",
+      "question": "Quel événement, quel garant réellement indépendant et quel recours sous-tendent chaque sûreté ?",
+      "evidence_required": "Acte distinct et examen des liens, déclencheurs et rangs.",
+      "stop": "Garantie de capital/rendement du gestionnaire déguisée en sûreté ou tiers indépendant artificiel.",
+      "owner_roles": [
+        "R08",
+        "R09"
+      ],
+      "sources": [
+        "J5S03",
+        "J5S04",
+        "J5S05"
+      ],
+      "stages": [
+        "P05",
+        "P10"
+      ],
+      "status": "A_VERIFIER",
+      "professional_answer_received": false
+    },
+    {
+      "id": "Q09",
+      "title": "Transfert et créances",
+      "question": "Que peut céder le participant quand le lot devient majoritairement créances ou cash ?",
+      "evidence_required": "État des actifs, droits cessibles, mode de prix et analyse séparant mandat, transfert et vente de dette.",
+      "stop": "Marché secondaire ou sortie au pair promis sans validation du droit et de l’actif cédé.",
+      "owner_roles": [
+        "R08",
+        "R09"
+      ],
+      "sources": [
+        "J5S07",
+        "J5S09"
+      ],
+      "stages": [
+        "P09",
+        "P11"
+      ],
+      "status": "A_VERIFIER",
+      "professional_answer_received": false
+    },
+    {
+      "id": "Q10",
+      "title": "Retard et insolvabilité",
+      "question": "Quels coûts réels, recouvrements et éventuelles pénalités restent compatibles avec droit local et charia ?",
+      "evidence_required": "Clauses de retard, bénéficiaires, preuves des coûts et procédure de décision.",
+      "stop": "Rémunération du seul temps écoulé sur la dette ou contradiction juridique/charia non résolue.",
+      "owner_roles": [
+        "R08",
+        "R09",
+        "R12"
+      ],
+      "sources": [
+        "J5S02",
+        "J5S07",
+        "J5S09"
+      ],
+      "stages": [
+        "P05",
+        "P10"
+      ],
+      "status": "A_VERIFIER",
+      "professional_answer_received": false
+    },
+    {
+      "id": "Q11",
+      "title": "Actions et ratios",
+      "question": "Pour C03, quelles activités, ratios, dettes, trésorerie et préférences de titres sont admissibles selon une méthode explicitée ?",
+      "evidence_required": "Comptes, statuts/pacte, capitalisation, avis motivé sur méthode et clauses, droits et liquidité.",
+      "stop": "Sélection Lita prise pour certification, clauses incompatibles ou remboursement des actions assimilé au lot J4.",
+      "owner_roles": [
+        "R08",
+        "R09",
+        "R10"
+      ],
+      "sources": [
+        "J5S09",
+        "J5S15"
+      ],
+      "stages": [
+        "P03",
+        "P05",
+        "P11"
+      ],
+      "status": "A_VERIFIER",
+      "professional_answer_received": false
+    },
+    {
+      "id": "Q12",
+      "title": "Stablecoin et change",
+      "question": "Quel jeton exact, réserve, droit au rachat, revenu éventuel, possession lors du change et source des fonds rendent la chaîne acceptable ?",
+      "evidence_required": "Identification émetteur/chaîne/jeton, avis spécifique, conversion EUR nette et traitement des frais/échec.",
+      "stop": "Licéité déduite de MiCA ou d’un ancien avis HAQQ ; remboursement en jetons non couvert ou EUR indisponibles.",
+      "owner_roles": [
+        "R06",
+        "R08",
+        "R09"
+      ],
+      "sources": [
+        "J5S08",
+        "J5S13",
+        "J5S14"
+      ],
+      "stages": [
+        "P04",
+        "P06"
+      ],
+      "status": "A_VERIFIER",
+      "professional_answer_received": false
+    },
+    {
+      "id": "Q13",
+      "title": "Pays et commercialisation",
+      "question": "Quels pays concernent chaque partie, chaque investisseur et l’activité offerte ; quels droits autorisent information et souscription dans chacun ?",
+      "evidence_required": "Matrice pays/service/instrument/clientèle, registre daté et avis territorial du conseil.",
+      "stop": "Accès France/UE déduit d’une marque globale, d’une inscription ou d’une possibilité technique.",
+      "owner_roles": [
+        "R04",
+        "R08"
+      ],
+      "sources": [
+        "J5S11",
+        "J5S16"
+      ],
+      "stages": [
+        "P03",
+        "P04"
+      ],
+      "status": "A_VERIFIER",
+      "professional_answer_received": false
+    },
+    {
+      "id": "Q14",
+      "title": "Instrument et périmètre",
+      "question": "Le partage C01 est-il un titre, un autre contrat ou un service réglementé ; quelles conséquences sur distribution, gestion et éventuelle qualification collective ?",
+      "evidence_required": "Avis sur les droits réellement offerts, pas seulement leur nom ; solution proportionnée sans présumer fonds, holding ou SPV.",
+      "stop": "Prêt ECSPR à intérêts copié pour contourner la qualification, ou jeton présenté comme exemption.",
+      "owner_roles": [
+        "R08",
+        "R09"
+      ],
+      "sources": [
+        "J5S11",
+        "J5S13"
+      ],
+      "stages": [
+        "P03",
+        "P05"
+      ],
+      "status": "A_VERIFIER",
+      "professional_answer_received": false
+    },
+    {
+      "id": "Q15",
+      "title": "Paiement et rémunération ETHIGONE",
+      "question": "Qui reçoit, conserve, libère et restitue les fonds, et quelles prestations/commissions ETHIGONE peut-il exercer sous quel mandat ?",
+      "evidence_required": "Contrats plateforme/PSP/porteur, comptes, droits d’instruction et rémunérations permises.",
+      "stop": "Compte d’exploitation ETHIGONE utilisé comme collecte, absence de mandat ou autorisation du seul fournisseur technique.",
+      "owner_roles": [
+        "R04",
+        "R05",
+        "R08"
+      ],
+      "sources": [
+        "J5S12",
+        "J5S15"
+      ],
+      "stages": [
+        "P03",
+        "P06",
+        "P07"
+      ],
+      "status": "A_VERIFIER",
+      "professional_answer_received": false
+    },
+    {
+      "id": "Q16",
+      "title": "Protection des investisseurs",
+      "question": "Quels contrôles, information, tests, consentements et délais s’appliquent à chaque catégorie et chaque offre ?",
+      "evidence_required": "Procédure du distributeur et preuve datée, période de réflexion applicable, gestion des changements matériels.",
+      "stop": "Délai supposé universel, profil périmé, information ancienne ou consentement assimilé à signature automatique.",
+      "owner_roles": [
+        "R04",
+        "R08"
+      ],
+      "sources": [
+        "J5S15"
+      ],
+      "stages": [
+        "P03",
+        "P04",
+        "P06"
+      ],
+      "status": "A_VERIFIER",
+      "professional_answer_received": false
+    },
+    {
+      "id": "Q17",
+      "title": "Prestataire crypto actuel",
+      "question": "Quelle entité et quels services/pays sont couverts par une autorisation ou notification applicable au 16 novembre et à l’exécution ?",
+      "evidence_required": "Vérification registre de l’entité contractante, périmètre des services et mandat de conversion/conservation.",
+      "stop": "Ancien statut PSAN pris pour une autorisation actuelle, ou autorisation d’une société du groupe transférée à une autre.",
+      "owner_roles": [
+        "R06",
+        "R08"
+      ],
+      "sources": [
+        "J5S14"
+      ],
+      "stages": [
+        "P04",
+        "P06"
+      ],
+      "status": "A_VERIFIER",
+      "professional_answer_received": false
+    },
+    {
+      "id": "Q18",
+      "title": "Données et preuve",
+      "question": "Qui traite, conserve et communique identités et justificatifs ; quelles bases, durées, accès et transferts sont applicables ?",
+      "evidence_required": "Analyse dédiée par conseil et responsables des données ; archive sécurisée, journal d’accès et procédure droits/réclamation.",
+      "stop": "Données sensibles, KYC ou documents commerciaux réels publiés dans GitHub ; base juridique et responsabilités inconnues.",
+      "owner_roles": [
+        "R04",
+        "R05",
+        "R08"
+      ],
+      "sources": [],
+      "stages": [
+        "P01",
+        "P04",
+        "P12"
+      ],
+      "status": "A_VERIFIER",
+      "professional_answer_received": false
+    },
+    {
+      "id": "Q19",
+      "title": "TVA, comptabilité et passifs",
+      "question": "Quel régime s’applique à chaque achat/vente/prestation, notamment PC d’occasion, et qui avance la TVA et les charges de retard ?",
+      "evidence_required": "Avis fiscal, factures, droits à déduction, calendrier et comptes du titulaire réel ; modèle J4 recalculé.",
+      "stop": "TVA 20 %/déduction totale et dates J4 prises comme règles acquises, passif ou coût externe omis.",
+      "owner_roles": [
+        "R10",
+        "R08"
+      ],
+      "sources": [],
+      "stages": [
+        "P02",
+        "P07",
+        "P09",
+        "P11"
+      ],
+      "status": "A_VERIFIER",
+      "professional_answer_received": false
+    },
+    {
+      "id": "Q20",
+      "title": "Registres et défaillance prestataire",
+      "question": "Quel registre fait foi et quels droits subsistent en conservation omnibus, gel, transfert forcé ou faillite d’un acteur ?",
+      "evidence_required": "Contrats de conservation/registre, rapprochements, habilitations et plan de continuité/recours avec responsables indépendants.",
+      "stop": "Clé d’administration assimilée à propriété, rapprochement impossible ou sortie forcée sans droit opposable.",
+      "owner_roles": [
+        "R07",
+        "R08",
+        "R12"
+      ],
+      "sources": [
+        "J5S17",
+        "J5S18"
+      ],
+      "stages": [
+        "P05",
+        "P09",
+        "P10",
+        "P12"
+      ],
+      "status": "A_VERIFIER",
+      "professional_answer_received": false
+    }
+  ],
+  "limit": "Questions préparatoires, pas avis ni clauses réputées valides. Les deux questions de méthode sans source externe sont des exigences de preuve propres au dossier, pas des affirmations légales."
+}

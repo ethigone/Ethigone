@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-16",
+  "passed": true,
+  "tests": 49,
+  "counts": {
+    "stages": 12,
+    "roles": 12,
+    "contracts": 3,
+    "questions": 20,
+    "solutions": 7,
+    "sources": 18
+  },
+  "json_parsed": 25,
+  "local_markdown_links": 128,
+  "source_provenance_checked": true,
+  "j4_references_checked": true,
+  "calendar_checked": true,
+  "private_marker_scan_passed": true,
+  "financial_execution_authorized": false,
+  "visual_test_performed": false,
+  "preservation": {
+    "base_commit": "6d2e25aaa3b96b595172c4910a3e1e40e0db6f4f",
+    "base_tree": "5c23baf38ff34e8b780d5b19497698148d2fb06a",
+    "base_repository_files": 248,
+    "folder_files_preserved": 40,
+    "repository_files_to_preserve": 245,
+    "new_files": 14,
+    "updated_files": 3,
+    "scope": "docs/strategie-modele-3/",
+    "remote_after_commit": "À vérifier séparément après publication ; aucune preuve distante prétendue par ce script."
+  },
+  "artifacts": [
+    {
+      "path": "CHECKPOINT.md",
+      "sha256": "cfcceaf33993c8e048f6b6a797b64ffa6d8dc8b7078ab480d205e384b38d8311",
+      "git_blob": "619d372ad73a21521318ec49d1074500e762accc"
+    },
+    {
+      "path": "COMPARAISON_SOLUTIONS_J5.md",
+      "sha256": "e7715b364b2b00507fa7f5f8a0d397736b48b5b0b6aca7f21591da4c7d53453c",
+      "git_blob": "f89abba6bdc981538459e516029cfc94edfd0ad0"
+    },
+    {
+      "path": "CONTRATS_ET_QUESTIONS_J5.md",
+      "sha256": "40bb994edf2e901c89d05e257f7ce811e9330de8df879f1198f9942c5ca92542",
+      "git_blob": "ca107aa85ee61f188a4fedc9d5f8941890cff45c"
+    },
+    {
+      "path": "J5_PARCOURS.md",
+      "sha256": "4bff176850bd1eb3fbf11514b30995f4bcaa43d1946e1c317d3817cbdaf270af",
+      "git_blob": "2328b8e75b97f539c80d5db0433fae3d60ceecf5"
+    },
+    {
+      "path": "README.md",
+      "sha256": "27bde657ac620d712065cf919c07d63d9de95434037bdca9afeb0dbcab7d48b4",
+      "git_blob": "bc3805fa2c842c4c89dec3a8cda4f8451f48fd29"
+    },
+    {
+      "path": "SOURCES_J5.md",
+      "sha256": "0aaf0affcea66c44e132425cd29a7fa79a880dd17596470900460112879000e0",
+      "git_blob": "be74cd4a09d1b3149864e9890cbb74700d5ff700"
+    },
+    {
+      "path": "data/dossiers-j5.json",
+      "sha256": "fdac35c0376bebc77276773a6d901a67edfd5e825c0919e5066a757e247db477",
+      "git_blob": "a4072681133341aefa73a82d9e87c20de2b52f4a"
+    },
+    {
+      "path": "data/parcours-j5.json",
+      "sha256": "4f845142024d430c4bfe102779b0097b227c82a596bea83b70808041d641d6bd",
+      "git_blob": "7eb16ef9ae0ecfc323b2433e9df40d0500596422"
+    },
+    {
+      "path": "data/questions-j5.json",
+      "sha256": "49964078d99bbb36d751c227fb59c373a4bf54134b828785725343266582e29a",
+      "git_blob": "c098ab4996b15061ad06e6ea891629608996facf"
+    },
+    {
+      "path": "data/solutions-j5.json",
+      "sha256": "47ef94535a4b99e6734b699b1a21bf93b9e59b9a4546f4ef387782a3631a48a5",
+      "git_blob": "2cb8d1ce0280ea3c9ef1fa2ea9ac1799094a06ca"
+    },
+    {
+      "path": "data/sources-j5.json",
+      "sha256": "e8ee45480822e213cf59472955c7060612cf877b940bf823331f5af879ba2a5d",
+      "git_blob": "b4abdd7e08a2d90b6ae65be340408f9afa587bf3"
+    },
+    {
+      "path": "data/sprint.json",
+      "sha256": "f50e3634484c4b4fba11ab4a2cad748653806ff584c39480a0a6c633ca141e5b",
+      "git_blob": "950eaccd5c50f13822f7ba3efe2f68a79ed157b9"
+    },
+    {
+      "path": "evaluer_parcours_j5.mjs",
+      "sha256": "2f292a729280870979bbea03b0358a747032e367f750a3e57b261d624db09d53",
+      "git_blob": "317639b48e1c78110360e34d0732a9fe5cc4c068"
+    },
+    {
+      "path": "preuves/j5-parcours.json",
+      "sha256": "7c6f80fcade28aed44292a9ad551d86a8a5b09c039788106c2a0c8b93f5be216",
+      "git_blob": "7a2d9e8437328fb27d4c87047f90cde1885c8c8c"
+    },
+    {
+      "path": "test_parcours_j5.mjs",
+      "sha256": "aaef22bfbbbd77927c39922e0c1703f8f77841b53213ce561c3a473a33f05f85",
+      "git_blob": "c7e9edbd51e0b49fe36841bf0108071307bdb495"
+    },
+    {
+      "path": "verifier_j5.py",
+      "sha256": "b1c8258806d7ed0938fe4f24bc194a216b8a7b6907692e2e9ebf1186bb8f70e5",
+      "git_blob": "2a2e388575e7b06e925cfedb4b6ddd79b6afcc85"
+    }
+  ],
+  "limits": [
+    "Contrôles documentaires/logiciels, pas expertise juridique ni charia.",
+    "Les anciennes preuves J1–J4 sont conservées sans réexécution ou réécriture.",
+    "Aucun test visuel nécessaire au lot textuel J5 ; J7 HTML reste à produire."
+  ]
+}

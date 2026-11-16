@@ -1,0 +1,700 @@
+{
+  "schema_version": 1,
+  "version": "J5-1.0",
+  "as_of": "2026-11-16",
+  "status": "PROPOSITION",
+  "scope": "Parcours documentaire et simulations hors ligne ; aucune autorisation d’exécuter une opération.",
+  "financial_execution_authorized": false,
+  "real_dossier_validated": false,
+  "niche_adopted": null,
+  "contract_adopted": null,
+  "roles": [
+    {
+      "id": "R01",
+      "name": "ETHIGONE",
+      "task": "Prépare le dossier, compare les alternatives et suit les pièces sous mandat à définir.",
+      "limit": "Ne décide ni de l’éligibilité réglementaire ni de l’investissement ; ne reçoit pas les fonds clients.",
+      "risk": "Frais de dossier refusé, échec de collecte et coûts propres ; responsabilité de ses prestations selon contrat.",
+      "status": "PROPOSITION"
+    },
+    {
+      "id": "R02",
+      "name": "Opérateur",
+      "task": "Identifie commande, fournisseur et références ; apporte son capital prévu et exécute les tâches mandatées.",
+      "limit": "Ne certifie pas seul ses frais, son apport, la livraison ou sa propre absence de faute.",
+      "risk": "Risque commercial lié à son apport et engagements ; faute à établir séparément, pas garantie générale.",
+      "status": "PROPOSITION"
+    },
+    {
+      "id": "R03",
+      "name": "Investisseur",
+      "task": "Décide personnellement après information et éligibilité ; choisit de participer ou de renoncer.",
+      "limit": "Aucune obligation de souscrire ; aucun capital disponible déduit d’un écosystème.",
+      "risk": "Perte de capital selon contrat, illiquidité et frais explicités ; risque de conversion éventuel.",
+      "status": "PROPOSITION"
+    },
+    {
+      "id": "R04",
+      "name": "Distributeur / plateforme",
+      "task": "Qualifie le périmètre autorisé, accepte ou refuse le dossier, maîtrise information, souscriptions et éligibilité.",
+      "limit": "Mandat et capacité pays/instrument/clientèle à prouver ; ETHIGONE n’hérite pas de son autorisation.",
+      "risk": "Responsabilités réglementaires et contractuelles propres, sans garantie de succès de collecte.",
+      "status": "PROPOSITION"
+    },
+    {
+      "id": "R05",
+      "name": "Prestataire de paiement / teneur de comptes",
+      "task": "Tient les comptes et registres de paiements, contrôle les conditions de libération/remboursement.",
+      "limit": "Entité exacte, habilitation, protection des fonds et traitement d’insolvabilité à vérifier ; pas un compte ETHIGONE ordinaire.",
+      "risk": "Risque opérationnel et de défaillance à documenter ; protection des fonds non assimilée à garantie de l’investissement.",
+      "status": "PROPOSITION"
+    },
+    {
+      "id": "R06",
+      "name": "Prestataire de conversion / conservation crypto",
+      "task": "Si retenu : contrôle l’origine, convertit et rapproche EUR/jetons selon mandat.",
+      "limit": "Le jeton, la chaîne, l’entité, les services et pays autorisés restent inconnus ; aucune connexion wallet.",
+      "risk": "Change, décote, frais, rachat et conservation ; responsabilité selon contrat et droit applicable.",
+      "status": "PROPOSITION"
+    },
+    {
+      "id": "R07",
+      "name": "Infrastructure technique / administrateur",
+      "task": "Implémente permissions, registre et rapprochements si une chaîne est réellement nécessaire.",
+      "limit": "Pouvoir de gel/transfert ≠ décision commerciale ou droit de propriété ; contrôle des clés et délégations distinct.",
+      "risk": "Disponibilité, erreurs et compromission ; pas de transfert automatique du risque commercial à l’infrastructure.",
+      "status": "PROPOSITION"
+    },
+    {
+      "id": "R08",
+      "name": "Juriste des pays effectivement retenus",
+      "task": "Qualifie droits, instrument, offre, mandats, propriété, voies de recours et documents signables.",
+      "limit": "Avis écrit et périmètre daté ; le présent travail ne le remplace pas.",
+      "risk": "Responsabilité professionnelle dans son mandat ; ne décide pas de l’investissement.",
+      "status": "PROPOSITION"
+    },
+    {
+      "id": "R09",
+      "name": "Revue charia indépendante",
+      "task": "Examine contrats, ratios si pertinents, frais, actifs, flux et stablecoin exact dans leur ensemble.",
+      "limit": "Avis motivé attaché aux versions ; une marque, une ancienne certification ou un agent ne suffisent pas.",
+      "risk": "Conditions, réserves et suivi de conformité à expliciter ; aucun avis acquis.",
+      "status": "PROPOSITION"
+    },
+    {
+      "id": "R10",
+      "name": "Comptable / fiscaliste",
+      "task": "Rapproche cash, résultat, actifs, passifs, TVA et comptes de distribution.",
+      "limit": "Vérifie notamment régime TVA des PC, déduction, calendrier et assiette des frais.",
+      "risk": "Écart fiscal ou comptable à corriger ; pas de validation économique automatique.",
+      "status": "PROPOSITION"
+    },
+    {
+      "id": "R11",
+      "name": "Propriétaire / acquéreur désigné au contrat",
+      "task": "Détient le titre des biens ou la créance selon la phase et donne les mandats nécessaires.",
+      "limit": "Identité et opposabilité à déterminer sans imposer un véhicule ; jamais déduites du solde d’un token.",
+      "risk": "Risque du bien avant transfert et risque de créance ensuite selon le contrat.",
+      "status": "PROPOSITION"
+    },
+    {
+      "id": "R12",
+      "name": "Responsable incident et recouvrement",
+      "task": "Centralise faits et pièces, sollicite les décisions des parties compétentes sous mandat.",
+      "limit": "Aucune saisie, restructuration, cession ou remboursement contraire à un gel légal par simple script.",
+      "risk": "Coûts et pertes ventilés par cause ; aucune promesse de récupération.",
+      "status": "PROPOSITION"
+    }
+  ],
+  "contracts": [
+    {
+      "id": "C01",
+      "name": "Participation à une opération commerciale",
+      "status": "PROPOSITION",
+      "right": "Droits contractuels sur capital et bénéfice réel de l’activité définie ; propriété directe des biens à établir séparément.",
+      "before": "Le fournisseur possède ses biens ; les apports non libérés restent selon le contrat de paiement conditionnel.",
+      "during": "Acquéreur désigné et titre opposable à prouver ; opérateur éventuellement mandataire, sans propriété automatique.",
+      "after": "La créance client appartient à la partie désignée ; comptes du lot puis liquidation selon droits prouvés.",
+      "loss": "Apports effectivement versés et perte commerciale répartie selon qualification validée ; faute instruite séparément.",
+      "j4": "Le partage 60/40 est une hypothèse, pertes prorata supposent de vrais apports. Mudaraba sans capital opérateur : recalcul obligatoire.",
+      "sources": [
+        "J5S03",
+        "J5S04",
+        "J5S05",
+        "J5S06"
+      ]
+    },
+    {
+      "id": "C02",
+      "name": "Acquisition puis vente à prix différé",
+      "status": "PROPOSITION",
+      "right": "Avant revente : droit réel de l’acquéreur ; après vente : créance de prix, si chaîne contractuelle valide.",
+      "before": "Le vendeur financeur doit acquérir/posséder réellement selon les règles applicables avant de revendre.",
+      "during": "Il supporte le risque du bien pendant sa détention ; transfert à l’acheteur selon vente et livraison documentées.",
+      "after": "L’acheteur possède le bien ; le vendeur détient une créance. Recouvrement et sûretés à qualifier.",
+      "loss": "Risque du bien avant vente puis défaut sur prix ; pas majoration automatique pour retard.",
+      "j4": "Le résultat de lot partagé 60/40 ne décrit pas ce contrat : nouveau modèle de vente et flux à établir. Biens à fabriquer N02 : qualification distincte à étudier.",
+      "sources": [
+        "J5S01",
+        "J5S02",
+        "J5S07"
+      ]
+    },
+    {
+      "id": "C03",
+      "name": "Actions directes de l’entreprise ciblée",
+      "status": "PROPOSITION",
+      "right": "L’investisseur possède des actions ; l’entreprise possède ses biens. Droits sociaux et rang résultent des statuts et du pacte.",
+      "before": "Souscriptions conditionnelles, documents sociaux et admission de l’émetteur à vérifier.",
+      "during": "Fonds reçus par l’émetteur selon le processus retenu ; emploi et contrôle définis, sans propriété directe des lots pour les actionnaires.",
+      "after": "Dividende seulement selon résultats distribuables et décisions compétentes ; vente de titres soumise aux droits et à un acheteur.",
+      "loss": "Risque de l’entreprise, dilution et illiquidité ; aucune sortie à une date ou un prix promis.",
+      "j4": "Le flux de liquidation J150 et le partage du lot ne deviennent pas un dividende ou un remboursement d’actions. Modèle d’entreprise distinct requis.",
+      "sources": [
+        "J5S09",
+        "J5S15"
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "id": "P01",
+      "name": "Candidature",
+      "status": "PROPOSITION",
+      "accountable_role": "R02",
+      "review_roles": [
+        "R01"
+      ],
+      "inputs": "Identité entreprise/mandataire, activité, comptes, lot et besoin décrit.",
+      "checks": "Rapprocher J2 avec identité légale ; vérifier propriétaire/relations et demander une preuve de commande sans la supposer.",
+      "output": "Dossier daté, pièces manquantes et autorisation future de traiter les données.",
+      "ownership_money_risk": "Fournisseur propriétaire ; aucune somme ni aucun engagement reçu.",
+      "stop": "Absence de besoin ou de commande prouvés : suspendre ; aucune entreprise J2 n’est admise.",
+      "evidence_types": [
+        "company_identity",
+        "order"
+      ],
+      "sources": [
+        "J5S16"
+      ]
+    },
+    {
+      "id": "P02",
+      "name": "Sélection de l’opération",
+      "status": "PROPOSITION",
+      "accountable_role": "R01",
+      "review_roles": [
+        "R02",
+        "R08",
+        "R09",
+        "R10"
+      ],
+      "inputs": "Devis, vente, alternatives et coûts complets.",
+      "checks": "Comparer acompte, crédit fournisseur avec date, apport et plateforme directe ; valider l’intérêt propre ETHIGONE, risques, régime fiscal et marge de sécurité.",
+      "output": "Fiche d’acceptation/refus motivée ; budget et stress datés, versions attachées.",
+      "ownership_money_risk": "Les coûts de sélection/refus sont à la charge convenue ; pas de financement client acquis.",
+      "stop": "Économie négative, coûts inconnus non provisionnés ou solution simple suffisante sans valeur ajoutée prouvée : ne pas proposer.",
+      "evidence_types": [
+        "supplier_quote",
+        "alternatives",
+        "economics"
+      ],
+      "sources": []
+    },
+    {
+      "id": "P03",
+      "name": "Information et qualification",
+      "status": "PROPOSITION",
+      "accountable_role": "R04",
+      "review_roles": [
+        "R08",
+        "R09",
+        "R01"
+      ],
+      "inputs": "Contrat envisagé, pays parties/investisseurs, droits, tous frais et risques.",
+      "checks": "Qualifier instrument/offre/rôles ; examiner charia et mandats avant toute communication constituant une offre.",
+      "output": "Dossier d’information versionné, fiche réglementaire si applicable, refus motivés et procédure réclamation.",
+      "ownership_money_risk": "Ni le dépôt GitHub ni une présence dans un catalogue ne reçoivent des ordres.",
+      "stop": "Pays, autorisation, droits, charia ou rémunérations incohérents : suspendre.",
+      "evidence_types": [
+        "legal_opinion",
+        "sharia_opinion",
+        "distribution_mandate",
+        "investor_information",
+        "complaints_policy"
+      ],
+      "sources": [
+        "J5S11",
+        "J5S12",
+        "J5S15"
+      ]
+    },
+    {
+      "id": "P04",
+      "name": "Éligibilité et décision personnelle",
+      "status": "PROPOSITION",
+      "accountable_role": "R04",
+      "review_roles": [
+        "R03",
+        "R05",
+        "R06"
+      ],
+      "inputs": "Contrôles identité/résidence/origine, catégorie, connaissance, capacité de perte et restrictions applicables.",
+      "checks": "Prestataires compétents contrôlent leurs périmètres ; investisseur prend sa décision. Aucun agrément technique de wallet ne remplace ces contrôles.",
+      "output": "Décision d’éligibilité datée/expirante et preuve d’information/consentement conservées hors dépôt.",
+      "ownership_money_risk": "EUR/jetons restent chez leur détenteur/prestataire tant que les mandats ne sont pas exécutés.",
+      "stop": "Refus, expiration, pays non admis ou gel légal : ne pas accepter ; consigner sans publier données sensibles.",
+      "evidence_types": [
+        "eligibility",
+        "origin_control"
+      ],
+      "sources": [
+        "J5S14",
+        "J5S15",
+        "J5S17"
+      ]
+    },
+    {
+      "id": "P05",
+      "name": "Contrats et conditions suspensives",
+      "status": "PROPOSITION",
+      "accountable_role": "R11",
+      "review_roles": [
+        "R02",
+        "R03",
+        "R04",
+        "R08",
+        "R09"
+      ],
+      "inputs": "Versions finales de tous contrats, mandats, frais et schéma des actifs.",
+      "checks": "Faire coïncider informations, signatures, budget, bénéficiaires, comptes et contrôles. Séparer apports/pertes/faute et travail/commission/profit.",
+      "output": "Dossier contractuel cohérent ; parties signent seulement dans un futur périmètre autorisé.",
+      "ownership_money_risk": "Propriété et risques définis par phase ; aucun droit de propriété déduit d’un token.",
+      "stop": "Version modifiée, frais de gestion doublonnés, garantie implicite ou titulaire indéterminé : nouvelle revue.",
+      "evidence_types": [
+        "contract",
+        "fees_review",
+        "ownership_map",
+        "exit_terms",
+        "incident_policy"
+      ],
+      "sources": [
+        "J5S01",
+        "J5S05",
+        "J5S06",
+        "J5S18"
+      ]
+    },
+    {
+      "id": "P06",
+      "name": "Collecte conditionnelle",
+      "status": "PROPOSITION",
+      "accountable_role": "R05",
+      "review_roles": [
+        "R04",
+        "R03"
+      ],
+      "inputs": "Compte et mandats de paiement, seuil contractuel, délai de réflexion applicable et remboursement financé.",
+      "checks": "Recevoir uniquement selon la voie autorisée ; rapprocher montants EUR nets disponibles, sans compter intentions ni tokens avant conversion.",
+      "output": "Registre souscriptions/annulations et rapprochement distinct par opération ; statut seuil atteint ou échec.",
+      "ownership_money_risk": "Fonds détenus selon le contrat PSP, hors compte d’exploitation ETHIGONE ; protection/insolvabilité à confirmer.",
+      "stop": "Seuil incomplet à échéance : annulation et remboursement par le prestataire, sous réserve des gels légaux ; pas d’achat.",
+      "evidence_types": [
+        "psp_account",
+        "refund_terms"
+      ],
+      "sources": [
+        "J5S12",
+        "J5S15",
+        "J5S16"
+      ]
+    },
+    {
+      "id": "P07",
+      "name": "Acquisition et libération",
+      "status": "PROPOSITION",
+      "accountable_role": "R11",
+      "review_roles": [
+        "R05",
+        "R02",
+        "R10"
+      ],
+      "inputs": "Capital/apport/acompte disponibles, budget approuvé, contrat fournisseur et conditions de transfert.",
+      "checks": "Vérifier le pic de trésorerie et réserves ; contrôler bénéficiaire fournisseur et double validation sous mandat avant paiement.",
+      "output": "Ordre conditionnel documenté puis facture/preuve de transfert et possession à rapprocher ; aucune exécution par le contrôleur.",
+      "ownership_money_risk": "Acquéreur contractuel reçoit le titre ; opérateur ne détient que les droits de son mandat.",
+      "stop": "Acompte/apport absent, collecte insuffisante, économie non viable ou prix/TVA modifiés sans recalcul : bloquer.",
+      "evidence_types": [
+        "capital_proof",
+        "purchase_terms"
+      ],
+      "sources": [
+        "J5S01",
+        "J5S06"
+      ]
+    },
+    {
+      "id": "P08",
+      "name": "Livraison et vente",
+      "status": "PROPOSITION",
+      "accountable_role": "R02",
+      "review_roles": [
+        "R11",
+        "R10"
+      ],
+      "inputs": "Lots identifiés, preuve de possession, contrôle qualité et contrat client.",
+      "checks": "Rapprocher réception, vente, livraison/acceptation et transfert des risques ; C02 : séquence acquisition puis revente prouvée.",
+      "output": "État stock/retours/garantie, facture client et créance enregistrée au bon titulaire.",
+      "ownership_money_risk": "Biens/risques transférés selon contrat ; après vente, créance portée par son titulaire, pas cash disponible.",
+      "stop": "Vente prématurée, quantité ou qualité contestée, titre non prouvé : incident et suspension appropriée.",
+      "evidence_types": [
+        "title",
+        "delivery"
+      ],
+      "sources": [
+        "J5S01",
+        "J5S02"
+      ]
+    },
+    {
+      "id": "P09",
+      "name": "Suivi et comptes",
+      "status": "PROPOSITION",
+      "accountable_role": "R01",
+      "review_roles": [
+        "R02",
+        "R05",
+        "R10"
+      ],
+      "inputs": "Relevés PSP/banque, stocks, factures, créances, dettes, TVA et coûts.",
+      "checks": "Rapprocher périodiquement cash/résultat/actifs ; comparer échéancier J4 et réalisés sans remplacer recette attendue par solde disponible.",
+      "output": "Rapport daté par opération et nouvelles réserves ; fréquence contractuelle à fixer, alerte à tout écart matériel.",
+      "ownership_money_risk": "Compte du propriétaire/titulaire désigné ; frais payés seulement au bon bénéficiaire et pour le service prévu.",
+      "stop": "Retard, perte, fiscalité, prestataire ou change hors hypothèse : P10 ; nouvelles distributions suspendues si justification manquante.",
+      "evidence_types": [
+        "ledger"
+      ],
+      "sources": [
+        "J5S04",
+        "J5S18"
+      ]
+    },
+    {
+      "id": "P10",
+      "name": "Incident — branche exceptionnelle",
+      "status": "PROPOSITION",
+      "accountable_role": "R12",
+      "review_roles": [
+        "R08",
+        "R09",
+        "R04",
+        "R05",
+        "R10"
+      ],
+      "inputs": "Faits, montants, titres, échéances et déclencheur ; pertes estimées séparées du recouvrable.",
+      "checks": "Préserver preuves ; geler actions concernées dans les pouvoirs permis ; distinguer défaut, faute, contrôle technique, insolvabilité et blocage légal.",
+      "output": "Décision documentée des acteurs compétents : réserve, recouvrement, modification soumise aux consentements ou arrêt.",
+      "ownership_money_risk": "Le droit de gel/transfert forcé doit correspondre au mandat ; aucune clé technique n’autorise une saisie juridique.",
+      "stop": "Aucun intérêt de retard ajouté, rachat automatique, compensation cachée ou recours aux nouveaux investisseurs.",
+      "evidence_types": [
+        "incident_policy"
+      ],
+      "sources": [
+        "J5S02",
+        "J5S05",
+        "J5S07",
+        "J5S17"
+      ]
+    },
+    {
+      "id": "P11",
+      "name": "Sortie et distribution",
+      "status": "PROPOSITION",
+      "accountable_role": "R11",
+      "review_roles": [
+        "R03",
+        "R05",
+        "R08",
+        "R09",
+        "R10"
+      ],
+      "inputs": "État final cash/actifs/passifs, droits, coûts et décision de distribution.",
+      "checks": "C01 : liquidation contrôlée ; C02 : recouvrement du prix ; C03 : droits sociaux, dividende ou cession réelle. Ne pas substituer une branche à une autre.",
+      "output": "Calcul approuvé et paiement rapproché ; solde retenu expliqué si actif/recours non soldé.",
+      "ownership_money_risk": "Cash distribuable après passifs/réserves ; titres/stock/créances non convertis ne sont pas une sortie en cash.",
+      "stop": "Liquidité absente, incident ouvert ou cession de créance non validée : pas de sortie artificielle ni date garantie.",
+      "evidence_types": [
+        "distribution_statement"
+      ],
+      "sources": [
+        "J5S04",
+        "J5S07",
+        "J5S15"
+      ]
+    },
+    {
+      "id": "P12",
+      "name": "Clôture et archivage",
+      "status": "PROPOSITION",
+      "accountable_role": "R10",
+      "review_roles": [
+        "R01",
+        "R04",
+        "R05",
+        "R11"
+      ],
+      "inputs": "Preuves de règlements, apports/restitutions, frais, fiscalité et fin des engagements.",
+      "checks": "Rapprocher tous soldes ; clôturer seulement quand aucune créance, dette, stock, réserve ou litige non traité ne reste.",
+      "output": "Procès-verbal de clôture et conservation sécurisée selon durées validées ; export public uniquement anonymisé.",
+      "ownership_money_risk": "Plus de solde dû dans le périmètre clôturé ; sinon dossier maintenu ouvert.",
+      "stop": "Écart de caisse, réserve ou garantie restante : maintien du suivi ; aucune suppression de preuve.",
+      "evidence_types": [
+        "closure"
+      ],
+      "sources": [
+        "J5S18"
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "id": "F01",
+      "from_role": "R03",
+      "to_role": "R06",
+      "asset": "Stablecoins → EUR, seulement si conversion retenue",
+      "condition": "Jeton/chaîne/émetteur, licéité, prestataire, origine et frais documentés. EUR nets et unité de remboursement distincts.",
+      "control_role": "R03",
+      "status": "PROPOSITION",
+      "sources": [
+        "J5S14"
+      ]
+    },
+    {
+      "id": "F02",
+      "from_role": "R03",
+      "to_role": "R05",
+      "asset": "EUR en collecte conditionnelle",
+      "condition": "Éligibilité, contrats et compte autorisé ; fonds séparés du compte ETHIGONE, statut juridique de détention à confirmer.",
+      "control_role": "R05",
+      "status": "PROPOSITION",
+      "sources": [
+        "J5S12"
+      ]
+    },
+    {
+      "id": "F03",
+      "from_role": "R02",
+      "to_role": "R05",
+      "asset": "Apport opérateur réel",
+      "condition": "Preuve de disponibilité ; un travail futur ou une promesse ne constitue pas automatiquement le capital J4.",
+      "control_role": "R02",
+      "status": "PROPOSITION",
+      "sources": [
+        "J5S05"
+      ]
+    },
+    {
+      "id": "F04",
+      "from_role": "R05",
+      "to_role": "R11",
+      "asset": "Fonds libérés vers acquéreur / fournisseur désigné",
+      "condition": "Seuil complet, réflexion achevée, budget et transfert contractuel ; bénéficiaire vérifié. Pas de versement aveugle au coordinateur.",
+      "control_role": "R11",
+      "status": "PROPOSITION",
+      "sources": [
+        "J5S01"
+      ]
+    },
+    {
+      "id": "F05",
+      "from_role": "Client du lot",
+      "to_role": "R11",
+      "asset": "Acompte et prix de vente",
+      "condition": "Acompte J4 à prouver et rapprocher ; titulaire de la vente/créance exact ; encaissement chez son prestataire selon mandat.",
+      "control_role": "R11",
+      "status": "PROPOSITION",
+      "sources": [
+        "J5S02"
+      ]
+    },
+    {
+      "id": "F06",
+      "from_role": "R11",
+      "to_role": "Prestataires / fisc / fournisseur",
+      "asset": "Charges et passifs",
+      "condition": "Factures, assiettes HT/TTC, réserves et échéances rapprochées ; même dépense non déduite deux fois.",
+      "control_role": "R10",
+      "status": "PROPOSITION",
+      "sources": [
+        "J5S06"
+      ]
+    },
+    {
+      "id": "F07",
+      "from_role": "R11",
+      "to_role": "R01 / R02",
+      "asset": "Prestations et commissions distinctes",
+      "condition": "Mandats, service rendu, approbation des conflits et revue frais/profit ; aucun tarif adopté.",
+      "control_role": "R09",
+      "status": "PROPOSITION",
+      "sources": [
+        "J5S05"
+      ]
+    },
+    {
+      "id": "F08",
+      "from_role": "R11",
+      "to_role": "R03 / R02",
+      "asset": "Distribution après comptes",
+      "condition": "Droits de la branche choisie, cash disponible, réserves et approbations ; pas de sortie garantie.",
+      "control_role": "R10",
+      "status": "PROPOSITION",
+      "sources": [
+        "J5S04"
+      ]
+    },
+    {
+      "id": "F09",
+      "from_role": "R05",
+      "to_role": "R03",
+      "asset": "Remboursement d’une collecte annulée",
+      "condition": "EUR effectivement reçus vers destination contrôlée, sous réserve des gels légaux ; frais externes financés séparément. Pas de retour en stablecoins promis.",
+      "control_role": "R05",
+      "status": "PROPOSITION",
+      "sources": [
+        "J5S15"
+      ]
+    }
+  ],
+  "normal_path": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "P08",
+    "P09",
+    "P11",
+    "P12"
+  ],
+  "incident_path": {
+    "from_stages": [
+      "P06",
+      "P07",
+      "P08",
+      "P09",
+      "P11"
+    ],
+    "to_stage": "P10",
+    "return_condition": "Décision documentée et droits de reprise validés par les acteurs compétents ; sinon maintien du blocage."
+  },
+  "evidence_roles": {
+    "company_identity": "R02",
+    "order": "R02",
+    "supplier_quote": "R02",
+    "alternatives": "R01",
+    "economics": "R10",
+    "legal_opinion": "R08",
+    "sharia_opinion": "R09",
+    "distribution_mandate": "R04",
+    "investor_information": "R04",
+    "complaints_policy": "R04",
+    "eligibility": "R04",
+    "origin_control": "R05",
+    "contract": "R11",
+    "fees_review": "R09",
+    "ownership_map": "R08",
+    "exit_terms": "R08",
+    "incident_policy": "R12",
+    "psp_account": "R05",
+    "refund_terms": "R05",
+    "capital_proof": "R05",
+    "purchase_terms": "R11",
+    "title": "R11",
+    "delivery": "R02",
+    "ledger": "R10",
+    "distribution_statement": "R10",
+    "closure": "R10",
+    "refund_release": "R05",
+    "fx_review": "R06",
+    "token_rights": "R08",
+    "equity_documents": "R08",
+    "murabaha_sequence": "R09"
+  },
+  "required_evidence_by_action": {
+    "presenter": [
+      "P01",
+      "P02",
+      "P03"
+    ],
+    "collecter": [
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05",
+      "P06"
+    ],
+    "acquerir": [
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05",
+      "P06",
+      "P07"
+    ],
+    "revendre": [
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05",
+      "P06",
+      "P07",
+      "P08"
+    ],
+    "distribuer": [
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05",
+      "P06",
+      "P07",
+      "P08",
+      "P09",
+      "P11"
+    ],
+    "cloturer": [
+      "P01",
+      "P02",
+      "P03",
+      "P04",
+      "P05",
+      "P06",
+      "P07",
+      "P08",
+      "P09",
+      "P11",
+      "P12"
+    ],
+    "rembourser": []
+  },
+  "refund_evidence": [
+    "psp_account",
+    "refund_terms",
+    "origin_control",
+    "refund_release",
+    "ledger"
+  ],
+  "limits": [
+    "Les rôles sont fonctionnels, non des partenaires acquis.",
+    "Les étapes proposent des contrôles ; les avis, signatures, agréments et pièces commerciales restent absents.",
+    "Le contrôleur vérifie des champs et la concordance de versions déclarées, pas leur authenticité, une signature électronique ni une conformité juridique/charia.",
+    "Les pièces réelles, KYC, coordonnées, wallets et contrats confidentiels resteraient hors du dépôt public.",
+    "France/UE est un cas comparatif documenté, aucun pays ni véhicule choisi."
+  ]
+}
