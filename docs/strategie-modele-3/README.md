@@ -6,7 +6,7 @@ Ce dossier contient un travail de recherche et des simulations. Il ne présente 
 
 ## Programme autorisé
 
-Sept passages bornés, du 11 au 17 novembre 2026 : [plan détaillé](PLAN_7_JOURS.md). Le premier passage est exécuté lors du lancement, les six suivants sont prévus le matin. La date indique un jalon ; seul le [checkpoint](CHECKPOINT.md) indique le travail réellement vérifié.
+Programme initial du 11 au 17 novembre, report autorisé le 16 novembre : HTML à J8 le 18 novembre 2026 : [plan détaillé](PLAN_7_JOURS.md). Le premier passage est exécuté lors du lancement, les six suivants sont prévus le matin. La date indique un jalon ; seul le [checkpoint](CHECKPOINT.md) indique le travail réellement vérifié.
 
 | Document | Utilité |
 | --- | --- |
@@ -41,7 +41,9 @@ Sept passages bornés, du 11 au 17 novembre 2026 : [plan détaillé](PLAN_7_JOUR
 | [data/sprint.json](data/sprint.json) | Dates et état vérifié des lots. |
 | [preuves/j1-verification.json](preuves/j1-verification.json) | Contrôles de cohérence et de publication documentaire de J1. |
 
-J1 à J5 sont livrés ; J6 reste non réalisé, sans recommandation finale de niche ni contre-revue Astra. À J7, un sous-dossier `html/` rassemblera un index de navigation, la comparaison des niches, le répertoire sourcé, les voies d'accès aux investisseurs, le simulateur économique et le parcours opérationnel. Ces HTML devront fonctionner localement sans dépendance à un serveur ni envoi de données à un tiers. Ils ne sont pas encore livrés à J5. Le prochain passage du 17 novembre est réservé à J7 avec les manques signalés. Le retard ne prolonge pas le programme au-delà du 17 novembre.
+**J1 à J6 sont livrés.** [Recommandation J6](J6_RECOMMANDATION.md) : N02 emballages en réassort à examiner d'abord, N01 en repli, aucun marché validé. [Contre-revue](CONTRE_REVUE_J6.md), [dossier d'entretien non envoyé](DOSSIER_TERRAIN_J6.md), [sources](SOURCES_J6.md), [décision structurée](data/decision-j6.json) et [21 sensibilités](data/sensibilites-j6.json). La revue est celle du coordinateur ; aucun second agent/Astra revendiqué.
+
+Le 17 novembre est réservé au contrôle/préparation. Les HTML initialement prévus à J7 sont reportés à **J8, le 18 novembre**, sur instruction du fondateur le 16. Ils ne sont pas encore livrés. Ils regrouperont navigation, niches, entreprises, accès investisseurs, simulateur et parcours, hors ligne. Aucune prolongation automatique après le 18.
 
 ## Lire les conclusions correctement
 

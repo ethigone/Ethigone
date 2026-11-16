@@ -1,0 +1,21 @@
+{
+  "as_of": "2026-11-16",
+  "passed": true,
+  "calculation_cases": 21,
+  "independent_arithmetic_checks": 21,
+  "reference_values_checked": 15,
+  "calendar_end": "2026-11-18",
+  "niche_adopted": null,
+  "independent_agent_review": false,
+  "external_contacts": 0,
+  "financial_execution_authorized": false,
+  "base_commit": "3dd8972ddf580b0321158580ed64c1eeb2cfa7bf",
+  "base_tree": "4735de0c0c6d5aa55f60b06ccf9a1a70a83891ff",
+  "scope": "docs/strategie-modele-3",
+  "private_marker_check": true,
+  "limits": [
+    "Revue du coordinateur, pas audit indépendant ou professionnel.",
+    "21 variantes sont des hypothèses économiques.",
+    "Publication et relecture distante contrôlées séparément après création du commit."
+  ]
+}

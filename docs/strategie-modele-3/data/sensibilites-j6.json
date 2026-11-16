@@ -1,0 +1,398 @@
+{
+  "as_of": "2026-11-16",
+  "status": "HYPOTHESE",
+  "tests_passed": true,
+  "cases": 21,
+  "financial_execution_authorized": false,
+  "price_or_ticket_adopted": false,
+  "method": "Moteur J4 inchangé + contre-calcul arithmétique distinct des coûts ETHIGONE pour 21 variantes. Les seuils de volonté de payer ne sont pas validés.",
+  "results": [
+    {
+      "operation_id": "O1",
+      "niche_id": "N01",
+      "variant": "base",
+      "scenario": "base",
+      "overrides": {},
+      "status": "HYPOTHESE",
+      "investor_target": 22440,
+      "participants": 45,
+      "regular_ticket": 498.66,
+      "last_ticket": 498.9599999999991,
+      "ethi_fee": 1980,
+      "ethi_profit": -1132.5,
+      "independent_profit": -1132.5,
+      "passed": true
+    },
+    {
+      "operation_id": "O2",
+      "niche_id": "N02",
+      "variant": "base",
+      "scenario": "base",
+      "overrides": {},
+      "status": "HYPOTHESE",
+      "investor_target": 32950,
+      "participants": 66,
+      "regular_ticket": 499.24,
+      "last_ticket": 499.3999999999978,
+      "ethi_fee": 2700,
+      "ethi_profit": -1121.25,
+      "independent_profit": -1121.25,
+      "passed": true
+    },
+    {
+      "operation_id": "O3",
+      "niche_id": "N03",
+      "variant": "base",
+      "scenario": "base",
+      "overrides": {},
+      "status": "HYPOTHESE",
+      "investor_target": 35450,
+      "participants": 71,
+      "regular_ticket": 499.29,
+      "last_ticket": 499.6999999999971,
+      "ethi_fee": 2250,
+      "ethi_profit": -1740,
+      "independent_profit": -1740,
+      "passed": true
+    },
+    {
+      "operation_id": "O1",
+      "niche_id": "N01",
+      "variant": "ticket_2500",
+      "scenario": "base",
+      "overrides": {
+        "target_ticket": 2500
+      },
+      "status": "HYPOTHESE",
+      "investor_target": 22440,
+      "participants": 9,
+      "regular_ticket": 2493.33,
+      "last_ticket": 2493.3600000000006,
+      "ethi_fee": 1980,
+      "ethi_profit": 82.5,
+      "independent_profit": 82.5,
+      "passed": true
+    },
+    {
+      "operation_id": "O2",
+      "niche_id": "N02",
+      "variant": "ticket_2500",
+      "scenario": "base",
+      "overrides": {
+        "target_ticket": 2500
+      },
+      "status": "HYPOTHESE",
+      "investor_target": 32950,
+      "participants": 14,
+      "regular_ticket": 2353.57,
+      "last_ticket": 2353.5899999999965,
+      "ethi_fee": 2700,
+      "ethi_profit": 633.75,
+      "independent_profit": 633.75,
+      "passed": true
+    },
+    {
+      "operation_id": "O3",
+      "niche_id": "N03",
+      "variant": "ticket_2500",
+      "scenario": "base",
+      "overrides": {
+        "target_ticket": 2500
+      },
+      "status": "HYPOTHESE",
+      "investor_target": 35450,
+      "participants": 15,
+      "regular_ticket": 2363.33,
+      "last_ticket": 2363.3800000000047,
+      "ethi_fee": 2250,
+      "ethi_profit": 150,
+      "independent_profit": 150,
+      "passed": true
+    },
+    {
+      "operation_id": "O1",
+      "niche_id": "N01",
+      "variant": "ticket_2500_volume_3",
+      "scenario": "base",
+      "overrides": {
+        "target_ticket": 2500,
+        "monthly_operations": 3
+      },
+      "status": "HYPOTHESE",
+      "investor_target": 22440,
+      "participants": 9,
+      "regular_ticket": 2493.33,
+      "last_ticket": 2493.3600000000006,
+      "ethi_fee": 1980,
+      "ethi_profit": -417.5,
+      "independent_profit": -417.5,
+      "passed": true
+    },
+    {
+      "operation_id": "O2",
+      "niche_id": "N02",
+      "variant": "ticket_2500_volume_3",
+      "scenario": "base",
+      "overrides": {
+        "target_ticket": 2500,
+        "monthly_operations": 3
+      },
+      "status": "HYPOTHESE",
+      "investor_target": 32950,
+      "participants": 14,
+      "regular_ticket": 2353.57,
+      "last_ticket": 2353.5899999999965,
+      "ethi_fee": 2700,
+      "ethi_profit": 133.75,
+      "independent_profit": 133.75,
+      "passed": true
+    },
+    {
+      "operation_id": "O3",
+      "niche_id": "N03",
+      "variant": "ticket_2500_volume_3",
+      "scenario": "base",
+      "overrides": {
+        "target_ticket": 2500,
+        "monthly_operations": 3
+      },
+      "status": "HYPOTHESE",
+      "investor_target": 35450,
+      "participants": 15,
+      "regular_ticket": 2363.33,
+      "last_ticket": 2363.3800000000047,
+      "ethi_fee": 2250,
+      "ethi_profit": -350,
+      "independent_profit": -350,
+      "passed": true
+    },
+    {
+      "operation_id": "O1",
+      "niche_id": "N01",
+      "variant": "ticket_2500_acceptation_20pct",
+      "scenario": "base",
+      "overrides": {
+        "target_ticket": 2500,
+        "acceptance_rate": 0.2
+      },
+      "status": "HYPOTHESE",
+      "investor_target": 22440,
+      "participants": 9,
+      "regular_ticket": 2493.33,
+      "last_ticket": 2493.3600000000006,
+      "ethi_fee": 1980,
+      "ethi_profit": -386.25,
+      "independent_profit": -386.25,
+      "passed": true
+    },
+    {
+      "operation_id": "O2",
+      "niche_id": "N02",
+      "variant": "ticket_2500_acceptation_20pct",
+      "scenario": "base",
+      "overrides": {
+        "target_ticket": 2500,
+        "acceptance_rate": 0.2
+      },
+      "status": "HYPOTHESE",
+      "investor_target": 32950,
+      "participants": 14,
+      "regular_ticket": 2353.57,
+      "last_ticket": 2353.5899999999965,
+      "ethi_fee": 2700,
+      "ethi_profit": 165,
+      "independent_profit": 165,
+      "passed": true
+    },
+    {
+      "operation_id": "O3",
+      "niche_id": "N03",
+      "variant": "ticket_2500_acceptation_20pct",
+      "scenario": "base",
+      "overrides": {
+        "target_ticket": 2500,
+        "acceptance_rate": 0.2
+      },
+      "status": "HYPOTHESE",
+      "investor_target": 35450,
+      "participants": 15,
+      "regular_ticket": 2363.33,
+      "last_ticket": 2363.3800000000047,
+      "ethi_fee": 2250,
+      "ethi_profit": -318.75,
+      "independent_profit": -318.75,
+      "passed": true
+    },
+    {
+      "operation_id": "O1",
+      "niche_id": "N01",
+      "variant": "ticket_500_service_10",
+      "scenario": "base",
+      "overrides": {
+        "onboarding_cost": 4,
+        "investor_service_cost": 6
+      },
+      "status": "HYPOTHESE",
+      "investor_target": 22440,
+      "participants": 45,
+      "regular_ticket": 498.66,
+      "last_ticket": 498.9599999999991,
+      "ethi_fee": 1980,
+      "ethi_profit": -142.5,
+      "independent_profit": -142.5,
+      "passed": true
+    },
+    {
+      "operation_id": "O2",
+      "niche_id": "N02",
+      "variant": "ticket_500_service_10",
+      "scenario": "base",
+      "overrides": {
+        "onboarding_cost": 4,
+        "investor_service_cost": 6
+      },
+      "status": "HYPOTHESE",
+      "investor_target": 32950,
+      "participants": 66,
+      "regular_ticket": 499.24,
+      "last_ticket": 499.3999999999978,
+      "ethi_fee": 2700,
+      "ethi_profit": 330.75,
+      "independent_profit": 330.75,
+      "passed": true
+    },
+    {
+      "operation_id": "O3",
+      "niche_id": "N03",
+      "variant": "ticket_500_service_10",
+      "scenario": "base",
+      "overrides": {
+        "onboarding_cost": 4,
+        "investor_service_cost": 6
+      },
+      "status": "HYPOTHESE",
+      "investor_target": 35450,
+      "participants": 71,
+      "regular_ticket": 499.29,
+      "last_ticket": 499.6999999999971,
+      "ethi_fee": 2250,
+      "ethi_profit": -178,
+      "independent_profit": -178,
+      "passed": true
+    },
+    {
+      "operation_id": "O1",
+      "niche_id": "N01",
+      "variant": "ticket_2500_volume_3_acceptation_20pct",
+      "scenario": "base",
+      "overrides": {
+        "target_ticket": 2500,
+        "monthly_operations": 3,
+        "acceptance_rate": 0.2
+      },
+      "status": "HYPOTHESE",
+      "investor_target": 22440,
+      "participants": 9,
+      "regular_ticket": 2493.33,
+      "last_ticket": 2493.3600000000006,
+      "ethi_fee": 1980,
+      "ethi_profit": -886.25,
+      "independent_profit": -886.25,
+      "passed": true
+    },
+    {
+      "operation_id": "O2",
+      "niche_id": "N02",
+      "variant": "ticket_2500_volume_3_acceptation_20pct",
+      "scenario": "base",
+      "overrides": {
+        "target_ticket": 2500,
+        "monthly_operations": 3,
+        "acceptance_rate": 0.2
+      },
+      "status": "HYPOTHESE",
+      "investor_target": 32950,
+      "participants": 14,
+      "regular_ticket": 2353.57,
+      "last_ticket": 2353.5899999999965,
+      "ethi_fee": 2700,
+      "ethi_profit": -335,
+      "independent_profit": -335,
+      "passed": true
+    },
+    {
+      "operation_id": "O3",
+      "niche_id": "N03",
+      "variant": "ticket_2500_volume_3_acceptation_20pct",
+      "scenario": "base",
+      "overrides": {
+        "target_ticket": 2500,
+        "monthly_operations": 3,
+        "acceptance_rate": 0.2
+      },
+      "status": "HYPOTHESE",
+      "investor_target": 35450,
+      "participants": 15,
+      "regular_ticket": 2363.33,
+      "last_ticket": 2363.3800000000047,
+      "ethi_fee": 2250,
+      "ethi_profit": -818.75,
+      "independent_profit": -818.75,
+      "passed": true
+    },
+    {
+      "operation_id": "O1",
+      "niche_id": "N01",
+      "variant": "ticket_2500_retard",
+      "scenario": "retard",
+      "overrides": {
+        "target_ticket": 2500
+      },
+      "status": "HYPOTHESE",
+      "investor_target": 22440,
+      "participants": 9,
+      "regular_ticket": 2493.33,
+      "last_ticket": 2493.3600000000006,
+      "ethi_fee": 1980,
+      "ethi_profit": -157.5,
+      "independent_profit": -157.5,
+      "passed": true
+    },
+    {
+      "operation_id": "O2",
+      "niche_id": "N02",
+      "variant": "ticket_2500_retard",
+      "scenario": "retard",
+      "overrides": {
+        "target_ticket": 2500
+      },
+      "status": "HYPOTHESE",
+      "investor_target": 32950,
+      "participants": 14,
+      "regular_ticket": 2353.57,
+      "last_ticket": 2353.5899999999965,
+      "ethi_fee": 2700,
+      "ethi_profit": 393.75,
+      "independent_profit": 393.75,
+      "passed": true
+    },
+    {
+      "operation_id": "O3",
+      "niche_id": "N03",
+      "variant": "ticket_2500_retard",
+      "scenario": "retard",
+      "overrides": {
+        "target_ticket": 2500
+      },
+      "status": "HYPOTHESE",
+      "investor_target": 35450,
+      "participants": 15,
+      "regular_ticket": 2363.33,
+      "last_ticket": 2363.3800000000047,
+      "ethi_fee": 2250,
+      "ethi_profit": -90,
+      "independent_profit": -90,
+      "passed": true
+    }
+  ]
+}

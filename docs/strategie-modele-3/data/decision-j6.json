@@ -1,0 +1,40 @@
+{
+  "as_of": "2026-11-16",
+  "status": "PROPOSITION",
+  "documentary_work_completed": true,
+  "primary_niche": "N02",
+  "fallback_niche": "N01",
+  "reserve_niche": "N03",
+  "niche_adopted": null,
+  "financial_execution_authorized": false,
+  "external_contact_made": false,
+  "independent_agent_review": false,
+  "review_method": "Contre-revue du coordinateur et contre-calcul distinct ; pas d'Astra ni second agent.",
+  "scope": "Réassort B2B de références acceptées ; achat/revente de lots finis, hors usages spéciaux et stock spéculatif.",
+  "stop_conditions": [
+    "Besoin résiduel nul après alternatives accessibles",
+    "Commande, propriété ou usage non vérifiable",
+    "Économie réelle insuffisante après coûts et stress combiné",
+    "Aucune voie retail/contrat/charia/paiements admissible"
+  ],
+  "operator_candidates": [
+    "E10",
+    "E09",
+    "E11"
+  ],
+  "fallback_candidate": "E03",
+  "sources": [
+    "S6-01",
+    "S6-02",
+    "S6-03",
+    "S6-04",
+    "S6-05"
+  ],
+  "reference_documents": [
+    "J6_RECOMMANDATION.md",
+    "CONTRE_REVUE_J6.md",
+    "DOSSIER_TERRAIN_J6.md",
+    "SOURCES_J6.md",
+    "data/sensibilites-j6.json"
+  ]
+}

@@ -7,7 +7,7 @@
     "description": "Entreprises et opérations ciblées ; particuliers éligibles, notamment détenteurs de stablecoins."
   },
   "niche_adoptee": null,
-  "date_limite": "2026-11-17",
+  "date_limite": "2026-11-18",
   "repertoire": "docs/strategie-modele-3",
   "extension_automatique": false,
   "stages": [
@@ -96,21 +96,43 @@
       "lot": "J6",
       "date_nominale": "2026-11-16",
       "objet": "Décision et validation terrain",
-      "etat": "a_faire",
-      "preuves": []
+      "etat": "termine",
+      "preuves": [
+        "J6_RECOMMANDATION.md",
+        "CONTRE_REVUE_J6.md",
+        "DOSSIER_TERRAIN_J6.md",
+        "SOURCES_J6.md",
+        "data/decision-j6.json",
+        "data/sensibilites-j6.json",
+        "calculer_sensibilites_j6.mjs"
+      ],
+      "termine_le": "2026-11-16",
+      "limites": "Revue par coordinateur, aucun agent indépendant/Astra ; validation terrain et professionnelle absente."
     },
     {
       "lot": "J7",
       "date_nominale": "2026-11-17",
-      "objet": "Documents HTML interactifs",
+      "objet": "Contrôle de cohérence et préparation J8 ; rattrapage J6 seulement si nécessaire",
       "etat": "a_faire",
       "preuves": []
+    },
+    {
+      "lot": "J8",
+      "date_nominale": "2026-11-18",
+      "objet": "Documents HTML interactifs",
+      "etat": "a_faire",
+      "preuves": [],
+      "lot_initial": "J7"
     }
   ],
   "prochain_passage": {
     "lot": "J7",
     "date": "2026-11-17",
-    "motif": "Fin inchangée : livrer les HTML avec J1–J5 et signaler J6 non réalisé ; aucun rattrapage automatique ni prolongation.",
-    "J6_etat": "a_faire"
+    "motif": "Contrôler J6 et préparer J8. Ne pas refaire le lot terminé.",
+    "J6_etat": "termine"
+  },
+  "modification_autorisee": {
+    "date": "2026-11-16",
+    "objet": "Rattraper J6 aujourd'hui sinon demain ; reporter HTML J7 à J8 le 18 novembre."
   }
 }

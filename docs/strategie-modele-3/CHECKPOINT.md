@@ -1,3 +1,27 @@
+# État de reprise — J6 terminé, calendrier révisé
+
+16 novembre 2026. **J1–J6 documentaires terminés.** Le fondateur a demandé le rattrapage aujourd'hui sinon demain et le report des HTML à **J8, le 18 novembre**. Ce bloc remplace les anciennes dates et l'ancien état J6 conservés plus bas pour traçabilité.
+
+## Livraison actuelle
+
+- [Recommandation](J6_RECOMMANDATION.md) : N02 emballages simples en réassort, achat/revente de lot fini, comme priorité d'enquête ; N01 filtration non critique en repli ; N03 en réserve. Statut PROPOSITION, aucune niche adoptée.
+- [Contre-revue](CONTRE_REVUE_J6.md) : besoin/valeur payante, économie fragile, accès retail/contrats/charia/propriété. Coordinateur seul, pas de second agent ni Astra. Aucun avis professionnel.
+- [Dossier terrain](DOSSIER_TERRAIN_J6.md) : E10/E09/E11 puis E03 en repli, entretien, preuves, questions plateforme et critères d'arrêt ; aucun contact effectué.
+- [Calculs](data/sensibilites-j6.json) : 21 cas moteur J4 inchangé + contre-calcul arithmétique des coûts ETHIGONE. N02 à ticket indicatif 2 500 : +633,75 EUR ; avec trois opérations/mois et 20 % acceptation : −335 EUR. Tous paramètres HYPOTHÈSES.
+- [Sources J6](SOURCES_J6.md) : quatre pages primaires accessibles, une tentative échouée identifiée. Pas de besoin, partenariat, conformité, prix ou ticket adopté.
+- Sources J1–J5 et moteurs historiques préservés. Les contrôles historiques J4/J5 comprennent des assertions d'ancien calendrier ; ne pas confondre leurs preuves datées avec l'état actuel.
+
+## Prochains passages autorisés
+
+**17 novembre — J7 :** vérifier la cohérence de J6, préparer les données à embarquer ; ne pas refaire le lot terminé. Si une publication manquait, terminer ce point.
+**18 novembre — J8 (ancien lot HTML J7) :** créer les HTML COMPLETS dans html/, index, navigation, niches, entreprises, voies investisseurs, simulateur et parcours. Embarquer les données J1–J6, y compris decision-j6 et sensibilites-j6 ; hors ligne, sans fetch/CDN/collecte/wallet. Afficher propositions et validations absentes. Tester exports, calculs, liens, clavier, mobile/impression et rendu si navigateur disponible ; publier et vérifier, puis arrêter.
+
+Ni site, ni sept pages V8.2, ni hébergement modifiés. Aucune autorisation de contact ou de collecte ajoutée.
+
+---
+
+## Historique J5 (état daté, calendrier remplacé ci-dessus)
+
 # État de reprise — Modèle 3
 
 Date : **16 novembre 2026**. J5, prévu le 15, réalisé. Publication J4 du 15 vérifiée après reprise le 16 (20 fichiers relus, contenu exact et empreintes Git concordants). [Programme](PLAN_7_JOURS.md) inchangé, fin le **17 novembre**, sans prolongation automatique.
