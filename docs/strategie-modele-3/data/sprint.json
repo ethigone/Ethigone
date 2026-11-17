@@ -113,8 +113,18 @@
       "lot": "J7",
       "date_nominale": "2026-11-17",
       "objet": "Contrôle de cohérence et préparation J8 ; rattrapage J6 seulement si nécessaire",
-      "etat": "a_faire",
-      "preuves": []
+      "etat": "termine",
+      "preuves": [
+        "J7_COHERENCE_ET_PREPARATION.md",
+        "data/presentation-j8.json",
+        "data/sources-j6.json",
+        "data/manifest-j8.json",
+        "preparer_j8.mjs",
+        "verifier_j7.mjs",
+        "preuves/j7-verification.json"
+      ],
+      "termine_le": "2026-11-17",
+      "limites": "Contrôle de cohérence et préparation hors ligne ; HTML et tests visuels réservés à J8. Aucune nouvelle consultation web."
     },
     {
       "lot": "J8",
@@ -126,10 +136,11 @@
     }
   ],
   "prochain_passage": {
-    "lot": "J7",
-    "date": "2026-11-17",
-    "motif": "Contrôler J6 et préparer J8. Ne pas refaire le lot terminé.",
-    "J6_etat": "termine"
+    "lot": "J8",
+    "date": "2026-11-18",
+    "motif": "Créer, publier et vérifier les HTML complets avec les données J1–J6 préparées par J7 ; présenter l’état atteint puis arrêter, sans prolongation.",
+    "J6_etat": "termine",
+    "J7_etat": "termine"
   },
   "modification_autorisee": {
     "date": "2026-11-16",

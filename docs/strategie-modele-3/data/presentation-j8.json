@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "prepared_on": "2026-11-17",
+  "status": "PROPOSITION",
+  "purpose": "Règles de lecture et correspondances pour les HTML J8 ; aucune nouvelle décision commerciale.",
+  "status_labels": {
+    "CONFIRME": "CONFIRMÉ",
+    "CONFIRMÉ": "CONFIRMÉ",
+    "HYPOTHESE": "HYPOTHÈSE",
+    "HYPOTHÈSE": "HYPOTHÈSE",
+    "RISQUE": "RISQUE",
+    "A_VERIFIER": "À VÉRIFIER",
+    "À VÉRIFIER": "À VÉRIFIER",
+    "PROPOSITION": "PROPOSITION",
+    "DECIDE": "DÉCIDÉ",
+    "DÉCIDÉ": "DÉCIDÉ",
+    "REJETE": "REJETÉ",
+    "REJETÉ": "REJETÉ"
+  },
+  "value_semantics": {
+    "false_verification": "Preuve non obtenue ; ne signifie pas absence démontrée.",
+    "null_economic_input": "Inconnu ou non applicable selon le champ ; jamais remplacé par zéro.",
+    "confirmed": "Contenu publié observé à la date de sa source, dans ses limites ; pas audit de l'entreprise.",
+    "completed_stage": "Travail documentaire livré ; pas validation commerciale, professionnelle ou financière.",
+    "simulation": "Tous les paramètres économiques J4/J6 sont des hypothèses, sans attribution aux entreprises J2.",
+    "source_date": "Date de consultation historique affichée ; la préparation J7 ne renouvelle pas la source."
+  },
+  "latest_recommendation": {
+    "source": "data/decision-j6.json",
+    "status": "PROPOSITION",
+    "primary_niche": "N02",
+    "fallback_niche": "N01",
+    "reserve_niche": "N03",
+    "niche_adopted": null,
+    "scope": "Réassort B2B, achat/revente de lots finis sur commande ferme ; aucun fabricant repéré présumé revendeur.",
+    "warning": "J1 compare six niches, J2 en explore trois et J6 propose un ordre d'enquête. Ne pas remplacer l'historique J1 par un classement de rentabilité prouvée."
+  },
+  "routes": [
+    {
+      "id": "V01",
+      "actor_id": "A07",
+      "label": "EthisX — lot commercial à instruire",
+      "status": "PROPOSITION",
+      "contract_mapping": "Aucun contrat C01/C02 admis ou validé ; correspondance à établir.",
+      "access_verified": false
+    },
+    {
+      "id": "V02",
+      "actor_id": "A06",
+      "label": "Lita — actions d'entreprise, autre instrument",
+      "status": "PROPOSITION",
+      "contract_mapping": "C03 comparatif ; pas substitution à une participation C01 de lot court.",
+      "access_verified": false
+    },
+    {
+      "id": "COMPARATEUR_ONCHAIN",
+      "actor_id": "A01",
+      "label": "Centrifuge — infrastructure et accès direct à documenter",
+      "status": "PROPOSITION",
+      "contract_mapping": "Droits hors chaîne et distributeur à définir ; pas de partenaire acquis.",
+      "access_verified": false
+    }
+  ],
+  "simulator": {
+    "engine": "calculer_j4.mjs",
+    "inputs": "data/operations-j4.json",
+    "baseline_results": "data/resultats-j4.json",
+    "sensitivities": "data/sensibilites-j6.json",
+    "supported_contract": "C01 — participation hypothétique au lot uniquement",
+    "unsupported_contracts": [
+      "C02",
+      "C03"
+    ],
+    "default_operation": "O2",
+    "default_case": "base",
+    "default_overrides": {},
+    "default_note": "Conserver la base publiée à ticket indicatif 500 EUR. Le test à 2 500 EUR est une variante sélectionnable, pas un ticket adopté.",
+    "constraints": [
+      "Séparer résultat du lot, résultat opérateur, résultat investisseurs et résultat ETHIGONE ; ne pas les additionner.",
+      "Afficher écart de trésorerie, actifs et besoins complémentaires ; un bénéfice ne vaut pas disponibilité du cash.",
+      "Si la collecte est insuffisante, aucun achat ; remboursement EUR et frais de conversion perdus restent distincts.",
+      "Ne pas convertir un retour non annualisé en promesse ; coûts tiers inconnus ne valent pas zéro réel.",
+      "Afficher nombre entier de participants, participation régulière et dernier ajustement ; target_ticket n'est pas une souscription minimale imposée.",
+      "Afficher les erreurs de validation du moteur et effacer tout résultat périmé après entrée invalide."
+    ]
+  },
+  "workflow": {
+    "engine": "evaluer_parcours_j5.mjs",
+    "rules": "data/parcours-j5.json",
+    "examples": "data/dossiers-j5.json",
+    "example_date": "2026-11-16",
+    "warning": "Exemples fictifs évalués à leur date déclarée. Une cohérence simulée n'autorise aucune exécution ; état réel sans pièces bloqué.",
+    "endpoint_labels": {
+      "Client du lot": {
+        "kind": "external",
+        "label": "Client du lot"
+      },
+      "Prestataires / fisc / fournisseur": {
+        "kind": "external_group",
+        "label": "Prestataires / fisc / fournisseur"
+      },
+      "R01 / R02": {
+        "kind": "role_group",
+        "role_ids": [
+          "R01",
+          "R02"
+        ]
+      },
+      "R03 / R02": {
+        "kind": "role_group",
+        "role_ids": [
+          "R03",
+          "R02"
+        ]
+      }
+    }
+  },
+  "html_delivery": {
+    "due": "2026-11-18",
+    "completed": false,
+    "views": [
+      "synthese",
+      "niches",
+      "entreprises",
+      "investisseurs",
+      "simulateur",
+      "parcours"
+    ],
+    "requirements": [
+      "données embarquées",
+      "aucun fetch ni CDN",
+      "aucune collecte ni wallet",
+      "filtres",
+      "export local utile",
+      "mobile",
+      "clavier",
+      "impression",
+      "lecture utile sans JavaScript"
+    ]
+  },
+  "editorial_overlays": [
+    {
+      "id": "J7-01",
+      "status": "A_VERIFIER",
+      "subject": "E09",
+      "title": "Deux URL historiques non rapprochées",
+      "source_j2": "https://www.besset-boudot.fr/faq-questions-responses-besset-boudot/",
+      "source_j6": "https://www.besset-boudot.fr/faq-questions-reponses-besset-boudot/",
+      "note": "La tentative J6 a échoué. Aucun lien actif reconfirmé le 17 ; conserver les observations J2 datées sans les requalifier."
+    },
+    {
+      "id": "J7-02",
+      "status": "PROPOSITION",
+      "subject": "N02",
+      "title": "Périmètre J6 plus étroit que J1/J2",
+      "note": "J1/J2 examinaient aussi matière/fabrication. Priorité J6 limitée à achat/revente de lots finis. Cinq opérateurs N02 à qualifier, pas cinq revendeurs identifiés."
+    },
+    {
+      "id": "J7-03",
+      "status": "CONFIRME",
+      "subject": "calendrier",
+      "title": "État courant distinct des documents historiques",
+      "note": "J4/J5 peuvent évoquer J6 non réalisé et une fin le 17. Calendrier remplacé le 16 : J6 livré, contrôle J7 le 17 et HTML J8 le 18. Lire sprint.json pour avancement courant."
+    },
+    {
+      "id": "J7-04",
+      "status": "CONFIRME",
+      "subject": "sensibilites-j6",
+      "title": "Contre-calcul, pas audit indépendant",
+      "note": "Afficher independent_profit comme contre-calcul arithmétique distinct. La contribution d’un agent J7 ne transforme pas la contre-revue J6 historique en audit indépendant."
+    }
+  ],
+  "number_format": {
+    "locale": "fr-FR",
+    "currency": "EUR",
+    "human_money_fraction_digits": 2,
+    "raw_values_preserved": true,
+    "note": "Formater les euros au centime dans affichage/CSV ; conserver les nombres bruts dans exports JSON. Ne pas propager les artefacts flottants dans le texte."
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "as_of": "2026-11-17",
+  "passed": true,
+  "scope": "Cohérence J6 et préparation J8 uniquement",
+  "base_commit": "d81bdcc8ec0553694010ec65c70690117da057ff",
+  "counts": {
+    "datasets": 22,
+    "niches": 6,
+    "companies": 17,
+    "investor_entry_points": 10,
+    "baseline_scenarios": 12,
+    "alternatives": 18,
+    "sensitivities": 21,
+    "workflow_stages": 12,
+    "professional_questions": 20,
+    "source_records": 124,
+    "source_references": 695
+  },
+  "numeric_comparisons": 5416,
+  "classic_bundle_bytes": 447462,
+  "checks": [
+    {
+      "name": "Modèle décidé, niche proposée et calendrier courant",
+      "passed": true
+    },
+    {
+      "name": "Entités reliées sans ressusciter E16 ni inventer de besoin",
+      "passed": true
+    },
+    {
+      "name": "Sources J6 transcrites exactement sans nouvelle consultation",
+      "passed": true
+    },
+    {
+      "name": "Toutes expressions et douze résultats J4 concordent",
+      "passed": true
+    },
+    {
+      "name": "Dix-huit alternatives et vingt-et-une sensibilités rapprochées",
+      "passed": true
+    },
+    {
+      "name": "Script classique embarqué sans réseau ni imports et données identiques",
+      "passed": true
+    },
+    {
+      "name": "Même moteur embarqué sur scénarios, variantes et erreurs",
+      "passed": true
+    },
+    {
+      "name": "Parcours, rôles et exemples cohérents ; exécution toujours interdite",
+      "passed": true
+    },
+    {
+      "name": "Contenu échappé pour insertion dans HTML",
+      "passed": true
+    },
+    {
+      "name": "Tests historiques rejoués en copie temporaire uniquement",
+      "passed": true
+    },
+    {
+      "name": "Manifest exact et toutes preuves déclarées présentes",
+      "passed": true
+    }
+  ],
+  "historical": {
+    "j4_checks": 177,
+    "j5_cases": 49,
+    "j6_sensitivities": 21,
+    "original_proofs_unchanged": true
+  },
+  "execution": "Node.js et VM JavaScript sans réseau ; pas contrôle visuel navigateur",
+  "html_created": false,
+  "visual_browser_check": false,
+  "financial_execution_authorized": false,
+  "limits": [
+    "Sources publiques non reconsultées le 17 ; dates historiques conservées.",
+    "Ni validation commerciale ni avis professionnel. Publication distante vérifiée séparément après commit."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-16",
+  "prepared_on": "2026-11-17",
+  "method": "Transcription des cinq lignes de SOURCES_J6.md pour indexation hors ligne. Aucune nouvelle consultation web le 17 novembre. Conserver les dates et limites historiques.",
+  "sources": [
+    {
+      "id": "S6-01",
+      "url": "https://www.turquet.com/secteurs/industrie-manufacturieres/",
+      "consulted_on": "2026-11-16",
+      "access": "RELUE",
+      "observation": "Emballages industriels sur mesure, conception et validation avant fabrication",
+      "limit": "Offre fournisseur, ni commande ETHIGONE ni besoin ni coût prouvés",
+      "source_document": "SOURCES_J6.md",
+      "extracted_on": "2026-11-17"
+    },
+    {
+      "id": "S6-02",
+      "url": "https://ethisx.co/how-it-works-issuers",
+      "consulted_on": "2026-11-16",
+      "access": "RELUE",
+      "observation": "Offre P2P commandes/commerce ; sélection et campagne ; absence de campagne concurrente selon conditions publiées",
+      "limit": "Pas d'acceptation ETHIGONE, ni admission France/UE ou barème complet",
+      "source_document": "SOURCES_J6.md",
+      "extracted_on": "2026-11-17"
+    },
+    {
+      "id": "S6-03",
+      "url": "https://docs.centrifuge.io/user/manager/",
+      "consulted_on": "2026-11-16",
+      "access": "RELUE",
+      "observation": "Gestionnaire, structure hors chaîne et gestion des admissions/vaults documentés",
+      "limit": "Fonctionnalités, aucun mandat, clientèle ou conformité du produit acquis",
+      "source_document": "SOURCES_J6.md",
+      "extracted_on": "2026-11-17"
+    },
+    {
+      "id": "S6-04",
+      "url": "https://www.sofise-filtration.com/tous-nos-produits/filtration-liquides/cartouche-filtrante",
+      "consulted_on": "2026-11-16",
+      "access": "RELUE",
+      "observation": "Catalogue de consommables et applications de filtration",
+      "limit": "Catalogue ne prouve pas usage non critique ni besoin de financement",
+      "source_document": "SOURCES_J6.md",
+      "extracted_on": "2026-11-17"
+    },
+    {
+      "id": "S6-05",
+      "url": "https://www.besset-boudot.fr/faq-questions-reponses-besset-boudot/",
+      "consulted_on": "2026-11-16",
+      "access": "ECHEC",
+      "observation": "Tentative de relecture échouée",
+      "limit": "Aucun fait nouveau tiré de cette page ; fiche historique J2 conservée avec sa date",
+      "source_document": "SOURCES_J6.md",
+      "extracted_on": "2026-11-17"
+    }
+  ]
+}

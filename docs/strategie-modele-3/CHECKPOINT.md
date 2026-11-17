@@ -1,3 +1,33 @@
+# État de reprise — J7 terminé, HTML à J8
+
+17 novembre 2026. **J1–J6 documentaires terminés et contrôle/préparation J7 terminé. Les HTML ne sont pas encore livrés.** Ce bloc est l'état courant ; les calendriers antérieurs ci-dessous sont conservés comme historiques.
+
+## Livraison J7
+
+- [Compte rendu et mode d'emploi](J7_COHERENCE_ET_PREPARATION.md) : J6 relu, pas refait ; aucune contradiction substantielle de décision ou de chiffres.
+- [Préparateur](preparer_j8.mjs), [manifest](data/manifest-j8.json), [règles de présentation](data/presentation-j8.json), [sources J6 structurées](data/sources-j6.json) et [preuve](preuves/j7-verification.json).
+- 22 jeux de données, cinq documents et deux moteurs préparés pour embarquement classique hors ligne ; six niches, 17 entreprises, dix points d'entrée, 124 notices de provenance et 695 références internes résolues. Les notices ne sont pas toutes des sources externes indépendantes.
+- 5 416 comparaisons numériques réussies ; 177 contrôles J4, 49 tests J5 et 21 sensibilités J6 rejoués en copie temporaire, preuves et moteurs historiques préservés. Aucun HTML ni test visuel revendiqué.
+- Revue éditoriale J7 avec un agent gpt-6.1-sol effectivement appelé, intégrée par le coordinateur. Aucune sous-délégation ; pas d'Astra. La revue historique J6 reste coordinateur seul, pas audit indépendant.
+
+## Conclusion et précautions
+
+N02 emballages B2B en réassort achat/revente de lots finis reste PROPOSITION ; N01 repli, N03 réserve, aucune niche adoptée. Les fabricants J2 ne sont pas réputés revendeurs ou demandeurs. Les textes J1/J2 plus larges ne remplacent pas le périmètre J6. Les deux variantes d'URL E09 et l'échec d'accès J6 sont signalés sans résolution web nouvelle. Les dates des sources restent celles de leur lecture historique.
+
+V01 EthisX reste à instruire ; V02 Lita actions n'est pas interchangeable avec un lot court ; Centrifuge ne fournit pas automatiquement la distribution. Chiffres J4/J6 toujours HYPOTHÈSES. À ticket indicatif 2 500, O2 +633,75 EUR ; à trois opérations/mois et acceptation 20 %, −335 EUR. Besoin, prix, tickets, partenaires, charia et chaîne stablecoin non validés. Aucun contact ni exécution financière.
+
+## Prochain et dernier passage autorisé
+
+**18 novembre — J8 :** lire cet état et `data/sprint.json`, puis créer les HTML COMPLETS dans `html/`. Utiliser `preparer_j8.mjs` pour embarquer sources et mêmes moteurs, les documents J6 et règles de présentation. Ne pas reconstruire les résultats à la main. Six vues, navigation, filtres, simulateur modifiable, exports locaux, mobile/clavier/impression, lecture utile sans JavaScript ; aucun fetch/CDN/collecte/wallet.
+
+Contrôler calculs, liens, erreurs et rendu si navigateur disponible ; publier sans force sur la tête courante, relire contenu/empreintes distantes. Présenter honnêtement l'état atteint puis arrêter la tâche le 18, sans prolongation. Aucun changement Site/démonstration/hébergement. Les contrôles historiques J4/J5 à ancien calendrier ne sont pas à réécrire.
+
+Base J7 récupérée : commit `d81bdcc8ec0553694010ec65c70690117da057ff`, arbre `7371ad519d8e11356dfd8ce219455651afa47d5a`, 65 fichiers du dossier vérifiés avant travail. La publication et sa tête sont à vérifier après création du commit ; ce fichier ne prétend pas contenir sa propre empreinte finale.
+
+---
+
+## Historique J6 — état du 16 novembre, remplacé ci-dessus pour l'avancement
+
 # État de reprise — J6 terminé, calendrier révisé
 
 16 novembre 2026. **J1–J6 documentaires terminés.** Le fondateur a demandé le rattrapage aujourd'hui sinon demain et le report des HTML à **J8, le 18 novembre**. Ce bloc remplace les anciennes dates et l'ancien état J6 conservés plus bas pour traçabilité.
