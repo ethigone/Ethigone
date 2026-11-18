@@ -130,20 +130,31 @@
       "lot": "J8",
       "date_nominale": "2026-11-18",
       "objet": "Documents HTML interactifs",
-      "etat": "a_faire",
-      "preuves": [],
-      "lot_initial": "J7"
+      "etat": "termine",
+      "preuves": [
+        "J8_HTML.md",
+        "html/index.html",
+        "html/niches.html",
+        "html/entreprises.html",
+        "html/investisseurs.html",
+        "html/simulateur.html",
+        "html/parcours.html",
+        "html/sources.html",
+        "html/LISEZ-MOI.md",
+        "data/manifest-livraison-j8.json",
+        "preuves/j8-html.json",
+        "preuves/j8-verification.json"
+      ],
+      "lot_initial": "J7",
+      "termine_le": "2026-11-18",
+      "limites": "HTML construits et tests structure/Node/VM réussis ; aucun contrôle visuel navigateur, mobile/clavier/impression réels non vérifiés. Aucune validation professionnelle ou commerciale."
     }
   ],
-  "prochain_passage": {
-    "lot": "J8",
-    "date": "2026-11-18",
-    "motif": "Créer, publier et vérifier les HTML complets avec les données J1–J6 préparées par J7 ; présenter l’état atteint puis arrêter, sans prolongation.",
-    "J6_etat": "termine",
-    "J7_etat": "termine"
-  },
+  "prochain_passage": null,
   "modification_autorisee": {
     "date": "2026-11-16",
     "objet": "Rattraper J6 aujourd'hui sinon demain ; reporter HTML J7 à J8 le 18 novembre."
-  }
+  },
+  "programme_termine_le": "2026-11-18",
+  "arret_demande": true
 }

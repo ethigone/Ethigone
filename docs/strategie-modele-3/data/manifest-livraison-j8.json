@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "prepared_on": "2026-11-18",
+  "scope": "Livraison HTML J8 hors ligne",
+  "base_commit": "331ba846823715417fd52e367f2c484a5b97b2ea",
+  "all_source_dates_preserved": true,
+  "html_completed": true,
+  "financial_execution_authorized": false,
+  "data_files": [
+    {
+      "path": "data/sprint.json",
+      "bytes": 4872,
+      "sha256": "ef4b6258692d9ea9948369013531563514943843317034ffa6cec8d0b507cd24",
+      "git_blob_sha1": "5cd0c3e3c8ad421851826dcab2c7197036032f37"
+    },
+    {
+      "path": "data/niches.json",
+      "bytes": 45739,
+      "sha256": "a4244a79ccc2e94894b2256b935ad79fd81791e0fcc258f08c156b39b62fe9a9",
+      "git_blob_sha1": "1c4a248b31384bb557604a1f978e30d6587ca29b"
+    },
+    {
+      "path": "data/sources-transversales.json",
+      "bytes": 2090,
+      "sha256": "5c9d6e7b19ff6b82aaf9333c2d70324186fba8fffe7eefb33d88a1e2d7a1c42c",
+      "git_blob_sha1": "6a549c19878cdb2d380477f58cac7de1d1914097"
+    },
+    {
+      "path": "data/entreprises.json",
+      "bytes": 48165,
+      "sha256": "afb701b7ac11538c855baecb66c0229e037ef36b64cc5895d88a8d6e08ebebce",
+      "git_blob_sha1": "d8ed822f7fb0ebd6e4dbef0dfb34e02c4a5f9f74"
+    },
+    {
+      "path": "data/sources-j2.json",
+      "bytes": 24763,
+      "sha256": "6ff0343a7b52c1a5ef7e9cc2fc5dfaf9b989e335da7f15e55f8fbe22a0ed9c1d",
+      "git_blob_sha1": "f6326262a9a93e2f248ab615497f1560e540c002"
+    },
+    {
+      "path": "data/reperage.json",
+      "bytes": 6614,
+      "sha256": "54775be73d8d7a6df694ef4527d53e1cd65337e86c5c10e8daaaaaaa4f5106ef",
+      "git_blob_sha1": "79aa3c55087b92674e5406b2655cd15d334266a0"
+    },
+    {
+      "path": "data/investisseurs.json",
+      "bytes": 42415,
+      "sha256": "4dafea50b32881790a875d238d5c698f073a12b773046cc291d03c9cbae60aa0",
+      "git_blob_sha1": "7d641e6941f7e8daec4cd8738fd0fe7c245b2bd2"
+    },
+    {
+      "path": "data/sources-j3.json",
+      "bytes": 21529,
+      "sha256": "0c23ba0dcde312995e5bb2e2f0b9cbb4311f364c2f24e7c7c97b622835ea81b4",
+      "git_blob_sha1": "8a3cdff44e821b109da381a56c4af3edf5e25764"
+    },
+    {
+      "path": "data/voies-investisseurs.json",
+      "bytes": 7776,
+      "sha256": "6af1f823fff1846581f72c8f958c50fafc28f311d91096ef742ce1a56555a491",
+      "git_blob_sha1": "cefa3cc0c063350b7f10f8fc56afdc8244942bde"
+    },
+    {
+      "path": "data/operations-j4.json",
+      "bytes": 20495,
+      "sha256": "fd4f3b3dc221d908891b6c419994875099785e6da482836b76f467f81ee3c8a2",
+      "git_blob_sha1": "a98bf61a564a75b305eb53e85a18a448ded9380e"
+    },
+    {
+      "path": "data/resultats-j4.json",
+      "bytes": 53715,
+      "sha256": "02515c8dbef2d4ecdb8adf7d3d3bfda5dcc92660e1c11c7916f39b0d9b4da112",
+      "git_blob_sha1": "fa90ed87919f1d10f9bc288fc5714644c49f7023"
+    },
+    {
+      "path": "data/formules-j4.json",
+      "bytes": 53068,
+      "sha256": "9a03cf83950ce6cf86a138ac83354264b3747d40405910a9115c7b196aeb3c41",
+      "git_blob_sha1": "609e0afa48931d1b53a8efd3dac40dc0f7e149f8"
+    },
+    {
+      "path": "data/sources-j4.json",
+      "bytes": 2582,
+      "sha256": "6b3f79d38a609bc0e20de4d5b6b7280de4d88a818f8e13d674b3dcddd65b5571",
+      "git_blob_sha1": "565b822f1632cc90ea813e7669b303d0a38c0569"
+    },
+    {
+      "path": "data/parcours-j5.json",
+      "bytes": 27646,
+      "sha256": "4f845142024d430c4bfe102779b0097b227c82a596bea83b70808041d641d6bd",
+      "git_blob_sha1": "7eb16ef9ae0ecfc323b2433e9df40d0500596422"
+    },
+    {
+      "path": "data/questions-j5.json",
+      "bytes": 14899,
+      "sha256": "49964078d99bbb36d751c227fb59c373a4bf54134b828785725343266582e29a",
+      "git_blob_sha1": "c098ab4996b15061ad06e6ea891629608996facf"
+    },
+    {
+      "path": "data/solutions-j5.json",
+      "bytes": 7462,
+      "sha256": "47ef94535a4b99e6734b699b1a21bf93b9e59b9a4546f4ef387782a3631a48a5",
+      "git_blob_sha1": "2cb8d1ce0280ea3c9ef1fa2ea9ac1799094a06ca"
+    },
+    {
+      "path": "data/sources-j5.json",
+      "bytes": 13484,
+      "sha256": "e8ee45480822e213cf59472955c7060612cf877b940bf823331f5af879ba2a5d",
+      "git_blob_sha1": "b4abdd7e08a2d90b6ae65be340408f9afa587bf3"
+    },
+    {
+      "path": "data/dossiers-j5.json",
+      "bytes": 14650,
+      "sha256": "fdac35c0376bebc77276773a6d901a67edfd5e825c0919e5066a757e247db477",
+      "git_blob_sha1": "a4072681133341aefa73a82d9e87c20de2b52f4a"
+    },
+    {
+      "path": "data/decision-j6.json",
+      "bytes": 1170,
+      "sha256": "9deccfbcf52f883a74d68aff9460ab7cc5356d8cf82b9d783c36c073db5a2464",
+      "git_blob_sha1": "14b398747173775c639823e55ff9bce3106f5309"
+    },
+    {
+      "path": "data/sensibilites-j6.json",
+      "bytes": 10455,
+      "sha256": "936ae30abab32d9c99060c0b2d9a350aeed797c3aa1dfe45672f629b5c33a4ae",
+      "git_blob_sha1": "ffd465ec400aa4203509e5572b9de1a2cdad2df1"
+    },
+    {
+      "path": "data/sources-j6.json",
+      "bytes": 2464,
+      "sha256": "cc37aa148f6b7ba36a0e03722b7057941b8c4b602742a5d58dcd071cceb5950a",
+      "git_blob_sha1": "f29933fd63b9ed163e61dee976e8cf690e1704ee"
+    },
+    {
+      "path": "data/presentation-j8.json",
+      "bytes": 7372,
+      "sha256": "4bdd93873925484f1be98b69e4a17823549ae7eb18298160858c1518758a8430",
+      "git_blob_sha1": "50737de4829120885901cbdf473e0f6b18647319"
+    }
+  ],
+  "engines": [
+    {
+      "path": "calculer_j4.mjs",
+      "bytes": 17171,
+      "sha256": "e4c183ff06ee10b94fefea2df4bc7651717e600ca3b1677eca17ce9e8f5b8573",
+      "git_blob_sha1": "d9336be811a0ca49e2f0fea7b1651c296add5217"
+    },
+    {
+      "path": "evaluer_parcours_j5.mjs",
+      "bytes": 8946,
+      "sha256": "2f292a729280870979bbea03b0358a747032e367f750a3e57b261d624db09d53",
+      "git_blob_sha1": "317639b48e1c78110360e34d0732a9fe5cc4c068"
+    }
+  ],
+  "documents": [
+    {
+      "path": "J6_RECOMMANDATION.md",
+      "bytes": 9537,
+      "sha256": "8cd0686bcab3ff5e08d4af323872fd9d6e8d472717bd6b2842c73534d5bba37d",
+      "git_blob_sha1": "be18c5a2733a583b96581365f00b86af3f4b24b2"
+    },
+    {
+      "path": "CONTRE_REVUE_J6.md",
+      "bytes": 4735,
+      "sha256": "70dc99b5744e7cab9a0b53e0927edc579c4f02a6654c3ceacea1bace4b4a3136",
+      "git_blob_sha1": "da8ffc5dae24fb6ed74224e62ab641117a5f340e"
+    },
+    {
+      "path": "DOSSIER_TERRAIN_J6.md",
+      "bytes": 6765,
+      "sha256": "a63a6ea2c04c9cb55e86a713014318a0cc36060e893f4d1e06925b968a6a92da",
+      "git_blob_sha1": "4bfa4c6ef329f3e758c30856aa121d18b38cfdca"
+    },
+    {
+      "path": "SOURCES_J6.md",
+      "bytes": 2095,
+      "sha256": "91fd9f836bd24b9242d5d9046cdcfc8b39f1a82247952d38ca0d77821f3de1cd",
+      "git_blob_sha1": "07e1dcde2ef68876db7f62432a1906621f9276bd"
+    },
+    {
+      "path": "MODELE_CALCULS_J4.md",
+      "bytes": 12782,
+      "sha256": "1763a01a2386963f7d218df11fd3a308464fae4a13cc65d99f81c975cf4794e4",
+      "git_blob_sha1": "bdd0eeb02013c2e356c4e64849a5ed5ddda1b0a6"
+    }
+  ],
+  "counts": {
+    "datasets": 22,
+    "niches": 6,
+    "companies": 17,
+    "investor_entry_points": 10,
+    "baseline_scenarios": 12,
+    "alternatives": 18,
+    "sensitivities": 21,
+    "workflow_stages": 12,
+    "professional_questions": 20,
+    "source_records": 124,
+    "source_references": 695
+  },
+  "source_note": "124 notices ne signifient pas 124 sites ou confirmations indépendantes ; mandats/hypothèses sans URL et tentatives échouées inclus.",
+  "visual_browser_check": false
+}

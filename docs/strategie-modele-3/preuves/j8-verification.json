@@ -1,0 +1,54 @@
+{
+  "as_of": "2026-11-18",
+  "passed": true,
+  "numeric_comparisons": 5219,
+  "checks": [
+    {
+      "name": "Données sources exactes et dates historiques conservées",
+      "passed": true
+    },
+    {
+      "name": "Douze scénarios et 21 sensibilités : toutes sorties moteur identiques",
+      "passed": true
+    },
+    {
+      "name": "Erreurs de paramètres et inconnues conservées",
+      "passed": true
+    },
+    {
+      "name": "Interface simulateur : base, variante, stress, reset, tous cas, export exact et erreur sans résultat périmé",
+      "passed": true
+    },
+    {
+      "name": "Filtres sur les textes HTML réels, sélections et exports cohérents",
+      "passed": true
+    },
+    {
+      "name": "Contrôleur documentaire : cas réel bloqué et scénarios fictifs sans autorisation",
+      "passed": true
+    },
+    {
+      "name": "Ouverture et restauration des détails pour impression (simulation DOM)",
+      "passed": true
+    },
+    {
+      "name": "177 contrôles J4, 49 cas J5 et 21 sensibilités J6 en copie temporaire",
+      "passed": true
+    }
+  ],
+  "historical": {
+    "j4_checks": 177,
+    "j5_cases": 49,
+    "j6_cases": 21
+  },
+  "execution": "Node.js VM avec DOM minimal simulé ; pas navigateur ni moteur de mise en page",
+  "visual_browser_check": false,
+  "keyboard_mobile_print_browser_check": false,
+  "limitations": [
+    "Chromium local non lancé : socket système non permis.",
+    "Extension navigateur indisponible.",
+    "Navigateur disponible : ouverture file: refusée ; aucun contournement.",
+    "Les styles mobile/focus/impression sont présents ; rendu et accessibilité réelle non validés."
+  ],
+  "financial_execution_authorized": false
+}

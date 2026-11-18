@@ -1,3 +1,36 @@
+# État de reprise — J8 livré, programme documentaire terminé
+
+18 novembre 2026. **J1–J8 documentaires terminés. Aucun prochain lot automatique.** Ce bloc remplace les états historiques conservés ci-dessous.
+
+## Dossier HTML
+
+[Mode d’emploi](html/LISEZ-MOI.md) · [Index](html/index.html) · [Compte rendu J8](J8_HTML.md).
+
+Sept pages : synthèse, domaines, entreprises, accès investisseurs, simulateur, fonctionnement et sources. Six vues métier plus registre des sources. Données/moteurs embarqués, fiches et textes J6 lisibles sans JavaScript ; filtres et exports JSON locaux. Trois opérations, quatre scénarios, tous paramètres modifiables, variantes J6 explicites, alternatives et comparateur Lita distinct. Contrôleur de parcours fictifs : aucune exécution financière autorisée. Aucun fetch, CDN, collecte ou wallet.
+
+Base initiale O2 à ticket indicatif 500 conservée : −1 121,25 EUR pour ETHIGONE. À 2 500 : +633,75 EUR ; stress trois opérations/mois et 20 % acceptation : −335 EUR. Tous chiffres HYPOTHÈSES. N02 reste priorité d’enquête, N01 repli, N03 réserve ; aucune niche adoptée, besoin payant ni partenaire confirmé.
+
+## Vérifications et limite explicite
+
+- 749 liens/ressources locaux et 636 références d’ancres contrôlés, sept pages complètes, identifiants uniques, fiches/source dates conservées.
+- 5 219 comparaisons numériques ; tests filtres/recherche/export, champs invalides sans résultat périmé, parcours et expansion/restauration d’impression en **DOM minimal simulé Node/VM**.
+- 177 contrôles J4, 49 cas J5 et 21 sensibilités J6 rejoués en copie temporaire. Moteurs, données économiques et preuves historiques préservés.
+- **Aucun contrôle visuel navigateur** : lancement Chromium local indisponible et accès file: refusé par le navigateur disponible. Pas de contournement. Styles mobile, focus clavier et impression présents ; rendu réel et accessibilité non certifiés.
+- Pas de consultation web nouvelle : les sources gardent leurs dates du 11 au 16 novembre. E09 : divergence d’URL et accès J6 échoué conservés.
+- Un agent gpt-6.1-sol effectivement appelé pour le simulateur, intégré par le coordinateur, sans sous-délégation. Aucun Astra ; la contre-revue historique J6 reste coordinateur seul.
+
+## Publication et reprise
+
+Base distante vérifiée : `331ba846823715417fd52e367f2c484a5b97b2ea`. Travail limité à `docs/strategie-modele-3`. Le commit qui contient ce fichier doit être contrôlé après publication avec son parent, arbre, contenu et empreintes ; il ne peut contenir sa propre empreinte finale.
+
+Les scripts J7 restent historiques (ils attendent notamment HTML non livré) ; utiliser désormais `python verifier_html_j8.py` et `node verifier_j8.mjs`. Construire avec `python construire_html_j8.py` (Python 3, pandoc, Node.js). Le manifest J7 est préservé ; `data/manifest-livraison-j8.json` décrit le nouvel embarquement.
+
+Programme arrêté au 18 novembre comme demandé, sans prolongation. Une future validation terrain nécessiterait une autorisation distincte de contacts. Aucun message tiers, déploiement, application de démonstration, hébergement, ancien sprint ou autre tâche modifié. Aucun GitHub Pages, aucun mouvement financier.
+
+---
+
+## Historique J7 — état daté, remplacé ci-dessus
+
 # État de reprise — J7 terminé, HTML à J8
 
 17 novembre 2026. **J1–J6 documentaires terminés et contrôle/préparation J7 terminé. Les HTML ne sont pas encore livrés.** Ce bloc est l'état courant ; les calendriers antérieurs ci-dessous sont conservés comme historiques.

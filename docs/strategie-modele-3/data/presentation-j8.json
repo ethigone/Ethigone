@@ -117,7 +117,7 @@
   },
   "html_delivery": {
     "due": "2026-11-18",
-    "completed": false,
+    "completed": true,
     "views": [
       "synthese",
       "niches",
@@ -136,7 +136,10 @@
       "clavier",
       "impression",
       "lecture utile sans JavaScript"
-    ]
+    ],
+    "delivered_on": "2026-11-18",
+    "visual_browser_check": false,
+    "browser_limit": "Ouverture locale indisponible ; contrôles Node/VM et structure HTML uniquement."
   },
   "editorial_overlays": [
     {

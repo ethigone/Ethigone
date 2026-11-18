@@ -1,0 +1,29 @@
+<section aria-labelledby="simulation-title">
+  <h2 id="simulation-title">Explorer les trois lots fictifs</h2>
+  <p class="badge">HYPOTHÈSES • C01 uniquement • résultats avant impôt</p>
+  <p>Explorez trois lots fictifs et quatre scénarios avec le moteur historique J4. Aucun chiffre ne provient des entreprises repérées. Le partage de participation au lot C01 ne se transfère pas aux contrats C02 ou C03. Aucun rendement, capital, accès plateforme ou ticket n’est garanti ou adopté.</p>
+  <div class="callout"><strong>Lecture statique — base publiée à ticket indicatif de 500 EUR.</strong>
+    <div class="table-wrap"><table><caption>Hypothèses J4, sans modification</caption><thead><tr><th scope="col">Lot</th><th scope="col">Cible investisseurs</th><th scope="col">Résultat lot</th><th scope="col">Résultat ETHIGONE</th><th scope="col">Ticket moyen économique</th></tr></thead><tbody>
+      <tr><th scope="row">O1 — filtration</th><td>22 440,00 EUR</td><td>6 120,00 EUR</td><td>−1 132,50 EUR</td><td>2 040,00 EUR</td></tr>
+      <tr><th scope="row">O2 — emballages</th><td>32 950,00 EUR</td><td>9 450,00 EUR</td><td>−1 121,25 EUR</td><td>1 029,69 EUR</td></tr>
+      <tr><th scope="row">O3 — PC reconditionnés</th><td>35 450,00 EUR</td><td>6 150,00 EUR</td><td>−1 740,00 EUR</td><td>1 865,79 EUR</td></tr>
+    </tbody></table></div>
+    <p>O2, base à 2 500 EUR indicatifs : résultat ETHIGONE +633,75 EUR ; avec trois opérations abouties/mois et 20 % d’acceptation : −335,00 EUR. Un bénéfice de lot ne démontre pas la viabilité d’ETHIGONE.</p>
+  </div>
+  <noscript><p class="callout">JavaScript est désactivé : les repères ci-dessus restent lisibles. Consultez <a href="../MODELE_CALCULS_J4.md">les règles J4</a> et <a href="../J6_RECOMMANDATION.md">la recommandation J6</a> pour les limites. Les contrôles interactifs ne sont pas disponibles.</p></noscript>
+  <div id="simulator-app" hidden>
+    <form id="simulator-form" novalidate>
+      <div class="grid"><p><label for="sim-operation">Lot fictif</label><br><select id="sim-operation" name="operation"></select></p><p><label for="sim-case">Scénario</label><br><select id="sim-case" name="scenario"></select></p></div>
+      <p id="sim-description"></p>
+      <div class="toolbar"><button type="button" id="sim-ticket">Tester le ticket indicatif 2 500 EUR</button><button type="button" id="sim-stress">Charger le stress J6 : ticket 2 500, 3 opérations/mois, acceptation 20 %</button><button type="button" id="sim-reset">Réinitialiser toute la base O2 / 500 EUR</button></div>
+      <p>Les raccourcis changent uniquement les paramètres annoncés ; le stress charge aussi O2 et le scénario de base. Changer de lot ou de scénario recharge toutes ses hypothèses d’origine. Les ratios se saisissent en décimal : 0,20 signifie 20 %. Une case vide est inconnue et bloque le calcul, jamais zéro.</p>
+      <div id="sim-parameters"></div>
+      <button type="submit">Recalculer les hypothèses</button>
+    </form>
+    <p id="sim-error" class="callout" role="alert" hidden></p>
+    <div id="sim-results" aria-live="polite" aria-atomic="false"></div>
+    <div class="toolbar"><button type="button" id="sim-export" disabled>Exporter ces hypothèses et résultats en JSON</button></div>
+    <p>L’export est un fichier local créé dans votre navigateur, sans transmission ni sauvegarde automatique de vos saisies.</p>
+  </div>
+  <section class="card"><h2>Ce que le calcul ne valide pas</h2><p>TVA, déductibilité et remboursement sont des conventions ; le régime des PC d’occasion reste notamment à instruire. Les frais tiers sont des provisions, pas des devis EthisX ni des prix connus. La conversion de stablecoins en EUR précède la collecte dans l’hypothèse ; aucune chaîne ni voie stablecoin n’est validée. Les résultats EUR ne mesurent pas la variation patrimoniale d’un solde de stablecoins antérieur.</p><p>Une valeur inconnue reste <code>null</code>. Un indicateur de validation <code>false</code> signifie « preuve non obtenue », jamais absence démontrée. Aucune collecte, transaction ou exécution financière n’est autorisée par ce simulateur.</p></section>
+</section>

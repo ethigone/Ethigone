@@ -4,6 +4,14 @@
 
 Ce dossier contient un travail de recherche et des simulations. Il ne présente aucune offre d'investissement. Les laveries étaient l'exemple fictif du prototype ; ni ce secteur ni l'importation ne constituent une spécialisation décidée.
 
+## Dossier interactif livré le 18 novembre
+
+**[Mode d’emploi pour ouvrir les HTML](html/LISEZ-MOI.md)** · [Fichiers HTML](html/) · [Compte rendu et limites des tests](J8_HTML.md).
+
+Télécharger le dépôt avec **Code → Download ZIP**, décompresser, puis ouvrir `docs/strategie-modele-3/html/index.html`. Les pages fonctionnent hors ligne ; GitHub affiche leur code, pas un site hébergé. Aucun GitHub Pages activé.
+
+Synthèse, domaines, 17 entreprises, 10 points d’entrée investisseurs, simulateur modifiable, parcours et sources. Filtres/export JSON locaux, textes utiles sans JavaScript. **Rendu navigateur non vérifié** : restriction d’accès local ; calculs, structure, liens et interactions simulées contrôlés. Le programme documentaire se termine le 18 novembre, sans prochain lot.
+
 ## Programme autorisé
 
 Programme initial du 11 au 17 novembre, report autorisé le 16 novembre : HTML à J8 le 18 novembre 2026 : [plan détaillé](PLAN_7_JOURS.md). Le programme révisé ajoute le contrôle J7 et reporte les HTML au 18 novembre. La date indique un jalon ; seul le [checkpoint](CHECKPOINT.md) indique le travail réellement vérifié.
@@ -45,7 +53,7 @@ Programme initial du 11 au 17 novembre, report autorisé le 16 novembre : HTML �
 
 **J1 à J6 sont livrés.** [Recommandation J6](J6_RECOMMANDATION.md) : N02 emballages en réassort à examiner d'abord, N01 en repli, aucun marché validé. [Contre-revue](CONTRE_REVUE_J6.md), [dossier d'entretien non envoyé](DOSSIER_TERRAIN_J6.md), [sources](SOURCES_J6.md), [décision structurée](data/decision-j6.json) et [21 sensibilités](data/sensibilites-j6.json). La revue est celle du coordinateur ; aucun second agent/Astra revendiqué.
 
-**Le contrôle/préparation J7 du 17 novembre est terminé** : sources et identifiants reliés, calculs rapprochés et données embarquables préparées. Les HTML initialement prévus à J7 sont reportés à **J8, le 18 novembre**, sur instruction du fondateur le 16. Ils ne sont pas encore livrés. Ils regrouperont navigation, niches, entreprises, accès investisseurs, simulateur et parcours, hors ligne. Aucune prolongation automatique après le 18.
+**J7 (17 novembre) et J8 (18 novembre) sont terminés.** Les HTML reprennent J1–J6 et la recommandation J6 sans la transformer en validation commerciale. [Générateur](construire_html_j8.py), [assemblage des moteurs](assembler_html_j8.mjs), [tests structurels](verifier_html_j8.py), [tests calculs/interactions simulées](verifier_j8.mjs). Pas de relecture web ni de contrôle visuel navigateur revendiqué. Aucune prolongation après le 18 novembre.
 
 ## Lire les conclusions correctement
 

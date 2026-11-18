@@ -1,0 +1,300 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Modifier les hypothèses et séparer le résultat du lot, des investisseurs, de l’opérateur et d’ETHIGONE."><title>Tester l’économie sans masquer les pertes — ETHIGONE</title><link rel="stylesheet" href="assets/style.css"><script defer src="assets/donnees-et-moteurs.js"></script><script defer src="assets/app.js"></script><script defer src="assets/simulateur.js"></script></head><body data-page="simulateur"><a class="skip" href="#contenu">Aller au contenu</a><header><a class="brand" href="index.html">ETHIGONE <span>Étude du modèle 3</span></a><div class="edition">Dossier de décision · 18 novembre 2026<br>Recherche et simulations, aucune offre d’investissement</div></header><nav aria-label="Rubriques"><a href="index.html">Synthèse</a><a href="niches.html">Domaines</a><a href="entreprises.html">Entreprises</a><a href="investisseurs.html">Accès investisseurs</a><a aria-current="page" href="simulateur.html">Simulateur</a><a href="parcours.html">Fonctionnement</a><a href="sources.html">Sources</a></nav><main id="contenu"><div class="page-heading"><p class="eyebrow">Dossier documentaire · J8</p><h1>Tester l’économie sans masquer les pertes</h1><p class="lead">Modifier les hypothèses et séparer le résultat du lot, des investisseurs, de l’opérateur et d’ETHIGONE.</p></div><noscript><p class="callout">Lecture complète disponible sans JavaScript. Les filtres, exports et simulations modifiables nécessitent JavaScript ; les références de base restent lisibles.</p></noscript><section aria-labelledby="simulation-title">
+  <h2 id="simulation-title">Explorer les trois lots fictifs</h2>
+  <p class="badge">HYPOTHÈSES • C01 uniquement • résultats avant impôt</p>
+  <p>Explorez trois lots fictifs et quatre scénarios avec le moteur historique J4. Aucun chiffre ne provient des entreprises repérées. Le partage de participation au lot C01 ne se transfère pas aux contrats C02 ou C03. Aucun rendement, capital, accès plateforme ou ticket n’est garanti ou adopté.</p>
+  <div class="callout"><strong>Lecture statique — base publiée à ticket indicatif de 500 EUR.</strong>
+    <div class="table-wrap"><table><caption>Hypothèses J4, sans modification</caption><thead><tr><th scope="col">Lot</th><th scope="col">Cible investisseurs</th><th scope="col">Résultat lot</th><th scope="col">Résultat ETHIGONE</th><th scope="col">Ticket moyen économique</th></tr></thead><tbody>
+      <tr><th scope="row">O1 — filtration</th><td>22 440,00 EUR</td><td>6 120,00 EUR</td><td>−1 132,50 EUR</td><td>2 040,00 EUR</td></tr>
+      <tr><th scope="row">O2 — emballages</th><td>32 950,00 EUR</td><td>9 450,00 EUR</td><td>−1 121,25 EUR</td><td>1 029,69 EUR</td></tr>
+      <tr><th scope="row">O3 — PC reconditionnés</th><td>35 450,00 EUR</td><td>6 150,00 EUR</td><td>−1 740,00 EUR</td><td>1 865,79 EUR</td></tr>
+    </tbody></table></div>
+    <p>O2, base à 2 500 EUR indicatifs : résultat ETHIGONE +633,75 EUR ; avec trois opérations abouties/mois et 20 % d’acceptation : −335,00 EUR. Un bénéfice de lot ne démontre pas la viabilité d’ETHIGONE.</p>
+  </div>
+  <noscript><p class="callout">JavaScript est désactivé : les repères ci-dessus restent lisibles. Consultez <a href="../MODELE_CALCULS_J4.md">les règles J4</a> et <a href="../J6_RECOMMANDATION.md">la recommandation J6</a> pour les limites. Les contrôles interactifs ne sont pas disponibles.</p></noscript>
+  <div id="simulator-app" hidden>
+    <form id="simulator-form" novalidate>
+      <div class="grid"><p><label for="sim-operation">Lot fictif</label><br><select id="sim-operation" name="operation"></select></p><p><label for="sim-case">Scénario</label><br><select id="sim-case" name="scenario"></select></p></div>
+      <p id="sim-description"></p>
+      <div class="toolbar"><button type="button" id="sim-ticket">Tester le ticket indicatif 2 500 EUR</button><button type="button" id="sim-stress">Charger le stress J6 : ticket 2 500, 3 opérations/mois, acceptation 20 %</button><button type="button" id="sim-reset">Réinitialiser toute la base O2 / 500 EUR</button></div>
+      <p>Les raccourcis changent uniquement les paramètres annoncés ; le stress charge aussi O2 et le scénario de base. Changer de lot ou de scénario recharge toutes ses hypothèses d’origine. Les ratios se saisissent en décimal : 0,20 signifie 20 %. Une case vide est inconnue et bloque le calcul, jamais zéro.</p>
+      <div id="sim-parameters"></div>
+      <button type="submit">Recalculer les hypothèses</button>
+    </form>
+    <p id="sim-error" class="callout" role="alert" hidden></p>
+    <div id="sim-results" aria-live="polite" aria-atomic="false"></div>
+    <div class="toolbar"><button type="button" id="sim-export" disabled>Exporter ces hypothèses et résultats en JSON</button></div>
+    <p>L’export est un fichier local créé dans votre navigateur, sans transmission ni sauvegarde automatique de vos saisies.</p>
+  </div>
+  <section class="card"><h2>Ce que le calcul ne valide pas</h2><p>TVA, déductibilité et remboursement sont des conventions ; le régime des PC d’occasion reste notamment à instruire. Les frais tiers sont des provisions, pas des devis EthisX ni des prix connus. La conversion de stablecoins en EUR précède la collecte dans l’hypothèse ; aucune chaîne ni voie stablecoin n’est validée. Les résultats EUR ne mesurent pas la variation patrimoniale d’un solde de stablecoins antérieur.</p><p>Une valeur inconnue reste <code>null</code>. Un indicateur de validation <code>false</code> signifie « preuve non obtenue », jamais absence démontrée. Aucune collecte, transaction ou exécution financière n’est autorisée par ce simulateur.</p></section>
+</section>
+<h2>Règles et hypothèses détaillées</h2><details class="document"><summary>MODELE CALCULS J4 — texte intégral daté</summary><p class="muted">Document historique. L’état courant du programme figure en tête de cette page ; les faits restent datés.</p><h3 id="j4--règles-de-calcul-et-mode-demploi">J4 — règles de calcul et
+mode d’emploi</h3>
+<p>Date de production : <strong>15 novembre 2026</strong>. Jalon nominal
+: 14 novembre. Statut des paramètres et résultats :
+<strong>HYPOTHÈSE</strong>. Ces trois opérations anonymisées ne
+proviennent d’aucune entreprise du répertoire J2. Aucun tarif, ticket,
+contrat, pays, véhicule ou partenariat n’est adopté.</p>
+<p>Le <a href="../modele-economique-j4.xlsx">tableur modifiable</a>, les <a
+href="../data/operations-j4.json">entrées JSON</a>, les <a
+href="../data/resultats-j4.json">résultats</a> et le <a
+href="../calculer_j4.mjs">moteur</a> décrivent le même modèle. Les <a
+href="../data/formules-j4.json">expressions</a> sont communes aux formules
+XLSX et au calcul JavaScript. Le tableur est autonome après
+téléchargement. Il n’a ni macro, ni liaison à un autre classeur, ni
+appel réseau.</p>
+<h4 id="modifier-et-interpréter">Modifier et interpréter</h4>
+<p>Dans <code>Hypotheses!D4</code>, choisir 1 Base, 2 Perte, 3 Retard ou
+4 Collecte. Les cellules jaunes sont modifiables. Les paramètres actifs
+de chaque scénario se trouvent au-dessus de ses quatre jeux d’entrées.
+Un seul calcul alimente <code>Synthese</code> et <code>Calculs</code>.
+Les erreurs d’entrée restent visibles ; elles ne deviennent pas des
+frais nuls. Le comparateur Lita est séparé du modèle principal.</p>
+<p>Les jours J0 à J150 sont <strong>relatifs à une opération
+fictive</strong>, pas les dates du programme. Les trois colonnes
+représentent les trois lots, pas trois offres d’investissement. Les
+résultats sont avant impôt sur les bénéfices et avant fiscalité
+personnelle. Ce ne sont pas des marges nettes constatées.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Cas</th>
+<th>Hypothèse appliquée</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Base</td>
+<td>Prix budgété réalisé, client payé à J60, collecte complète.</td>
+</tr>
+<tr class="even">
+<td>Perte</td>
+<td>Prix −10 %, perte définitive de 15 % du solde client TTC ; aucune
+récupération de TVA sur cette perte. Change EUR/USD −10 %, décote du
+stablecoin de 5 % à la conversion.</td>
+</tr>
+<tr class="odd">
+<td>Retard</td>
+<td>40 % du solde recouvrable payé à J60, 60 % à J120. Soixante jours de
+stockage/gestion et de suivi ETHIGONE supplémentaires. Change −5 %,
+décote stablecoin 2 %. Aucun intérêt de retard.</td>
+</tr>
+<tr class="even">
+<td>Collecte</td>
+<td>80 % du capital EUR cible reçu ; aucun achat, vente ou acompte
+client exécuté. Capital reçu remboursé dans la simulation. Frais de
+conversion non remboursés.</td>
+</tr>
+</tbody>
+</table>
+<p>Les tableaux publiés dans les Markdown et le JSON sont des résultats
+datés de ces entrées, pas une deuxième feuille de prévision. Après
+modification, le XLSX recalcule ; pour mettre à jour le JSON, modifier
+les entrées JSON puis exécuter le générateur décrit plus bas.</p>
+<h4 id="quatre-comptes-séparés">Quatre comptes séparés</h4>
+<p><strong>Opération.</strong> Ventes HT moins achats consommés,
+logistique, contrôles, SAV payé, prestations opérateur, honoraires
+ETHIGONE, frais externes, TVA non déductible et pertes clients. Les
+frais externes sont des enveloppes hypothétiques
+<strong>décaissées</strong>, même lorsqu’on les appelle provisions pour
+devis : ce ne sont pas des provisions comptables sans paiement. Tous les
+biens sont livrés dans les quatre cas. Les invendus, dépréciations de
+stock et obligations SAV au-delà du budget ne sont pas chiffrés ici ;
+leur absence n’est pas une preuve de risque nul.</p>
+<p><strong>Opérateur.</strong> Résultat de sa prestation facturée moins
+son coût interne, plus sa part de bénéfice ou moins sa perte en capital.
+Son apport reste distinct du revenu de prestation. Le coût interne de la
+prestation n’est pas déduit une deuxième fois du résultat du lot. Les
+frais opérateur perdus en cas d’abandon sont montrés séparément.</p>
+<p><strong>Investisseurs.</strong> Capital souscrit, part de bénéfice ou
+perte de capital, frais personnels de conversion/réseau payés en plus.
+Le taux affiché dans le détail est un résultat simulé rapporté à la mise
+et aux frais, <strong>non annualisé</strong>. Le capital restitué n’est
+pas un revenu.</p>
+<p><strong>ETHIGONE.</strong> Honoraires HT facturés à l’opération moins
+instruction, refus, service investisseurs, abandons imputés, suivi du
+retard et quote-part des charges fixes. La facture ETHIGONE est une
+charge du lot et une recette d’ETHIGONE : on ne peut pas additionner
+tous les résultats sans éliminer cette relation et distinguer coûts
+internes/externes. Les encaissements TTC de prestations ne sont pas du
+bénéfice disponible ; les propres échéances fiscales et réserves de
+trésorerie des prestataires ne sont pas validées par ce modèle.</p>
+<h4 id="trésorerie-tva-et-actifs">Trésorerie, TVA et actifs</h4>
+<p>Le pic de financement est l’opposé du minimum des flux cumulés
+<strong>hors capitaux</strong>. L’apport opérateur est supposé
+disponible dès J0. Le besoin investisseurs est le pic moins cet apport,
+avec plancher zéro et arrondi au centime supérieur. Le capital reçu est
+comparé à la cible en centimes. Le scénario de perte ou de retard ne
+crée pas automatiquement une nouvelle souscription : tout dépassement du
+capital nominal apparaît en besoin complémentaire non financé et bloque
+la distribution simulée.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Date relative</th>
+<th>Flux et état</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>J0</td>
+<td>Capitaux, acompte client, achats et services initiaux payés ; la
+part fournisseur différée reste une dette. Le stock HT constitue un
+actif.</td>
+</tr>
+<tr class="even">
+<td>J30</td>
+<td>Livraison et facturation. Stock final nul par construction ; créance
+client à encaisser.</td>
+</tr>
+<tr class="odd">
+<td>J45</td>
+<td>Paiement du solde TVA positif et de la dette fournisseur
+standard.</td>
+</tr>
+<tr class="even">
+<td>J60</td>
+<td>Encaissement de la fraction du solde client prévue au cas choisi.
+Créance brute et perte estimée sont distinctes.</td>
+</tr>
+<tr class="odd">
+<td>J90</td>
+<td>Paiement fournisseur si l’alternative de délai après encaissement
+nominal a été sélectionnée.</td>
+</tr>
+<tr class="even">
+<td>J120</td>
+<td>Encaissement retardé et paiement des coûts du retard.</td>
+</tr>
+<tr class="odd">
+<td>J150</td>
+<td>Remboursement hypothétique des crédits TVA puis clôture avant
+partage.</td>
+</tr>
+</tbody>
+</table>
+<p>TVA : taux biens, services et ventes séparés, récupération
+modifiable. Les valeurs de 20 %, la déductibilité et les dates de
+paiement/remboursement sont <strong>des conventions</strong>, pas une
+position fiscale. La TVA sur marge des biens d’occasion, les acomptes,
+les prestations financières exonérées ou taxées et les régimes
+applicables aux opérateurs restent <strong>À VÉRIFIER</strong>. Le
+crédit TVA n’est encaissé qu’à J150. Une fraction non récupérable
+devient une charge. Le modèle ne déduit pas un régime français
+applicable d’un taux choisi pour le calcul.</p>
+<p>Les achats sont tous libellés en EUR. Aucun import ni droit de douane
+n’est présumé. Une opération réelle en devise ou à l’import imposerait
+d’ajouter ses devis logistiques, droits et calendrier fiscal avant
+validation.</p>
+<p>À la clôture,
+<code>cash final = capitaux engagés + résultat opération</code>. En cas
+de perte supérieure au capital, un passif non couvert apparaît. À J60,
+le cash et la créance nette estimée sont affichés séparément. Une
+créance n’autorise pas une sortie en espèces. La valeur de recouvrement
+reste hypothétique.</p>
+<h4 id="partage-et-arrondis">Partage et arrondis</h4>
+<p>La simulation affecte 60 % du bénéfice positif aux investisseurs et
+le reliquat à l’opérateur. Les pertes ordinaires en capital sont
+réparties au prorata des apports ; les arrondis résiduels sont affectés
+à l’opérateur. Les pertes ne sont jamais ajoutées une deuxième fois
+après avoir réduit le résultat. Les capitaux restituables sont limités
+au solde économique, et les versements sont bloqués si un manque de cash
+subsiste.</p>
+<p><strong>À VÉRIFIER :</strong> nature du contrat, propriété effective
+des biens, risque supporté, mandat, rémunération de prestation avec
+participation au bénéfice, responsabilité pour faute, droits des
+souscripteurs, recouvrement et traitement fiscal. Cette règle
+pédagogique n’est ni un contrat signé ni une certification charia. Aucun
+remboursement, rendement ou délai de sortie n’est garanti.</p>
+<p>Pour compter les participants,
+<code>N = plafond(capital cible / ticket indicatif)</code>. Le capital
+est ensuite réparti en souscriptions presque égales : montant au centime
+inférieur pour N−1 participants et ajustement sur le dernier. Le ticket
+indicatif sert au calcul du nombre ; ce n’est pas un minimum individuel.
+Le seuil présenté est un <strong>ticket moyen économique arrondi au
+centime supérieur</strong>, sous cette convention. Il ne constitue pas
+une règle commerciale d’admission.</p>
+<h4 id="coût-des-refus-abandons-et-seuils">Coût des refus, abandons et
+seuils</h4>
+<p>Avec acceptation <code>a = 40 %</code>, le modèle impute
+<code>(1−a)/a = 1,5</code> refus par accepté, soit 225 EUR à 150 EUR par
+refus. Instruction accepté : 600 EUR. Service par investisseur : 12 EUR
+d’entrée et 18 EUR de suivi. Avec succès de collecte
+<code>q = 80 %</code>, il faut imputer 0,25 abandon par collecte
+aboutie.</p>
+<p>Coût d’un abandon : <code>600 + 225 + 250 + N × (12 + 3)</code>. Les
+250 EUR et 3 EUR par participant sont des frais externes irrécouvrables
+; ils sont <strong>déjà inclus</strong> dans ce coût. Les coûts des
+cohortes abandonnées utilisent par hypothèse le même nombre cible de
+participants ; ce n’est pas un nombre observé.</p>
+<p>En base, coût ETHIGONE par opération aboutie :
+<code>1 593,75 + 33,75 × N</code>, dont 500 EUR de charges fixes
+mensuelles réparties sur six opérations. D’où :</p>
+<ul>
+<li><code>Nmax = plancher((honoraires − coût hors participants) / coût marginal complet)</code>,
+avec plancher zéro ;</li>
+<li>ticket moyen minimum = capital cible / Nmax, arrondi vers le haut ;
+si Nmax &lt; 1, aucun seuil fini ;</li>
+<li>honoraires d’équilibre = coûts directs + refus + abandons imputés +
+charges fixes réparties ;</li>
+<li>opérations mensuelles d’équilibre = plafond(charges fixes /
+contribution avant charges fixes), seulement si cette contribution est
+positive.</li>
+</ul>
+<p>Ces seuils décrivent une <strong>opération aboutie</strong> même
+quand le sélecteur affiche un abandon. Ils ne rendent pas une collecte
+abandonnée rentable. Les cas sans aucun dossier accepté ou sans aucune
+collecte aboutie rendent le coût par succès indéfini : <code>a=0</code>
+et <code>q=0</code> sont refusés, sans transformer leurs dépenses de
+période en zéro. Aucun portefeuille complet sans succès n’est chiffré
+ici.</p>
+<p>Le seuil de prix de vente conserve les frais au montant du budget
+contractuel hypothétique. Il tient compte de la perte TTC sur le solde
+après acompte. Il ne réévalue pas automatiquement les honoraires en
+fonction de ce nouveau prix. À coefficient de recouvrement non positif,
+le seuil est indisponible.</p>
+<h4 id="sous-collecte-et-stablecoins">Sous-collecte et stablecoins</h4>
+<p>Les sommes EUR reçues avant exécution restent dans un <strong>compte
+de collecte distinct modélisé</strong>, pas dans le cash du lot. Aucun
+prestataire, compte ou mécanisme de ségrégation réel n’est acquis. À 80
+%, elles ne financent pas l’achat. Le remboursement intégral du montant
+EUR reçu suppose que les frais d’abandon soient payés par une trésorerie
+ETHIGONE séparée, <strong>dont l’existence n’est pas prouvée</strong>.
+Les frais de conversion déjà payés par les investisseurs restent perdus.
+Le modèle ne promet pas une conversion inverse en stablecoins.</p>
+<p>La moitié du capital est supposée arriver après conversion d’un
+stablecoin USD vers EUR. La provision de conversion est 0,8 % du brut,
+plus 2 EUR par conversion. Le nombre de conversions est estimé par
+plafond de N × 50 %, sous hypothèse de tickets homogènes. Change, décote
+et frais sont séparés. Une baisse du change ou un décrochage augmente le
+nombre d’unités nécessaires pour fournir le capital EUR demandé ; sans
+complément, il faut tester la collecte insuffisante. Ni stablecoin, ni
+chaîne, ni prestataire, ni frais exacts, ni accès retail n’est validé.
+Le coût réseau seul ne représente pas le coût du service.</p>
+<p>Le résultat investisseurs est mesuré en EUR après conversion
+d’entrée. Il n’inclut pas la variation patrimoniale d’un solde de
+stablecoins détenu auparavant : cette exposition est montrée par les
+unités nécessaires, pas ajoutée arbitrairement au résultat du lot. Une
+mesure du résultat dans la devise d’origine exigerait les dates et coûts
+réels d’entrée et de sortie.</p>
+<h4 id="reproduire-et-transmettre-à-j7">Reproduire et transmettre à
+J7</h4>
+<p>Avec Node.js, depuis ce dossier :</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">node</span> generer_resultats_j4.mjs</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">node</span> test_calculs_j4.mjs</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> verifier_xlsx_j4.py</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> verifier_j4.py</span></code></pre></div>
+<p>Le générateur écrit 12 résultats de scénarios, 18 variantes et trois
+comparateurs. <code>calculer_j4.mjs</code> est pur, sans entrée/sortie
+réseau. Pour les HTML J7, embarquer les données et les expressions dans
+les fichiers, avec le même évaluateur ; ne pas remplacer cela par un
+<code>fetch</code>, un import distant ou des valeurs codées
+indépendamment. Les exemples de tests servent de références de
+calcul.</p>
+<p>Le <a href="../construire_tableur_j4.mjs">constructeur XLSX</a> utilise
+<code>@oai/artifact-tool</code> : lui passer ce dossier puis un dossier
+de sortie. Cette dépendance est requise pour reconstruire le fichier,
+pas pour l’ouvrir ou utiliser les données/moteur autonomes. Les <a
+href="../preuves/j4-tableur.json">preuves du tableur</a> distinguent
+contrôle des formules, rendu statique et recalcul par LibreOffice.
+Aucune revue d’agent ne remplace l’avis d’un professionnel.</p>
+</details><h2>Sensibilités J6 publiées</h2><p>Toutes HYPOTHÈSES. Le contre-calcul est arithmétique, pas un audit indépendant. Aucun ticket adopté.</p><div class="table-wrap"><table><thead><tr><th>Opération</th><th>Variante</th><th>Participants</th><th>Résultat ETHIGONE</th></tr></thead><tbody><tr><td>O1</td><td>base</td><td>45</td><td>-1 132,50 €</td></tr><tr><td>O2</td><td>base</td><td>66</td><td>-1 121,25 €</td></tr><tr><td>O3</td><td>base</td><td>71</td><td>-1 740,00 €</td></tr><tr><td>O1</td><td>ticket 2500</td><td>9</td><td>82,50 €</td></tr><tr><td>O2</td><td>ticket 2500</td><td>14</td><td>633,75 €</td></tr><tr><td>O3</td><td>ticket 2500</td><td>15</td><td>150,00 €</td></tr><tr><td>O1</td><td>ticket 2500 volume 3</td><td>9</td><td>-417,50 €</td></tr><tr><td>O2</td><td>ticket 2500 volume 3</td><td>14</td><td>133,75 €</td></tr><tr><td>O3</td><td>ticket 2500 volume 3</td><td>15</td><td>-350,00 €</td></tr><tr><td>O1</td><td>ticket 2500 acceptation 20pct</td><td>9</td><td>-386,25 €</td></tr><tr><td>O2</td><td>ticket 2500 acceptation 20pct</td><td>14</td><td>165,00 €</td></tr><tr><td>O3</td><td>ticket 2500 acceptation 20pct</td><td>15</td><td>-318,75 €</td></tr><tr><td>O1</td><td>ticket 500 service 10</td><td>45</td><td>-142,50 €</td></tr><tr><td>O2</td><td>ticket 500 service 10</td><td>66</td><td>330,75 €</td></tr><tr><td>O3</td><td>ticket 500 service 10</td><td>71</td><td>-178,00 €</td></tr><tr><td>O1</td><td>ticket 2500 volume 3 acceptation 20pct</td><td>9</td><td>-886,25 €</td></tr><tr><td>O2</td><td>ticket 2500 volume 3 acceptation 20pct</td><td>14</td><td>-335,00 €</td></tr><tr><td>O3</td><td>ticket 2500 volume 3 acceptation 20pct</td><td>15</td><td>-818,75 €</td></tr><tr><td>O1</td><td>ticket 2500 retard</td><td>9</td><td>-157,50 €</td></tr><tr><td>O2</td><td>ticket 2500 retard</td><td>14</td><td>393,75 €</td></tr><tr><td>O3</td><td>ticket 2500 retard</td><td>15</td><td>-90,00 €</td></tr></tbody></table></div><h2>Comparer les alternatives avant de financer</h2><p>Hypothèses J4 : disponibilité et charia non validées. Paramètres comparés séparément ; aucune alternative présumée accessible.</p><div class="table-wrap"><table><thead><tr><th>Lot</th><th>Alternative</th><th>Cible investisseurs</th><th>Résultat ETHIGONE</th></tr></thead><tbody><tr><td>O1</td><td>Hypothèses de base</td><td>22 440,00 €</td><td>-1 132,50 €</td></tr><tr><td>O1</td><td>Acompte client de 40 %</td><td>13 800,00 €</td><td>-558,75 €</td></tr><tr><td>O1</td><td>75 % achat différé, paiement J45</td><td>22 440,00 €</td><td>-1 132,50 €</td></tr><tr><td>O1</td><td>75 % achat différé, paiement J90</td><td>840,00 €</td><td>318,75 €</td></tr><tr><td>O1</td><td>Apport opérateur doublé</td><td>16 440,00 €</td><td>-727,50 €</td></tr><tr><td>O1</td><td>Ticket au seuil économique calculé</td><td>22 440,00 €</td><td>15,00 €</td></tr><tr><td>O2</td><td>Hypothèses de base</td><td>32 950,00 €</td><td>-1 121,25 €</td></tr><tr><td>O2</td><td>Acompte client de 40 %</td><td>25 750,00 €</td><td>-648,75 €</td></tr><tr><td>O2</td><td>75 % achat différé, paiement J45</td><td>32 950,00 €</td><td>-1 121,25 €</td></tr><tr><td>O2</td><td>75 % achat différé, paiement J90</td><td>0,00 €</td><td>1 106,25 €</td></tr><tr><td>O2</td><td>Apport opérateur doublé</td><td>24 950,00 €</td><td>-581,25 €</td></tr><tr><td>O2</td><td>Ticket au seuil économique calculé</td><td>32 950,00 €</td><td>26,25 €</td></tr><tr><td>O3</td><td>Hypothèses de base</td><td>35 450,00 €</td><td>-1 740,00 €</td></tr><tr><td>O3</td><td>Acompte client de 40 %</td><td>19 250,00 €</td><td>-660,00 €</td></tr><tr><td>O3</td><td>75 % achat différé, paiement J45</td><td>35 450,00 €</td><td>-1 740,00 €</td></tr><tr><td>O3</td><td>75 % achat différé, paiement J90</td><td>8 450,00 €</td><td>82,50 €</td></tr><tr><td>O3</td><td>Apport opérateur doublé</td><td>28 450,00 €</td><td>-1 267,50 €</td></tr><tr><td>O3</td><td>Ticket au seuil économique calculé</td><td>35 450,00 €</td><td>15,00 €</td></tr></tbody></table></div><h2>Barème Lita : comparateur distinct</h2><p>Application arithmétique historique, sans admission ni devis. Ne pas cumuler automatiquement avec le modèle principal. Instrument actions différent de C01 ; frais entreprise HT et investisseurs TTC séparés.</p><ul><li><dl><div><dt>Opération</dt><dd>O1</dd></div><div><dt>Sources</dt><dd><a href="sources.html#J4-S01">J4-S01</a> · <a href="sources.html#J4-S02">J4-S02</a></dd></div><div><dt>Statut</dt><dd><span class="badge">HYPOTHÈSE</span></dd></div><div><dt>Base de calcul EUR</dt><dd>22 440,00 EUR</dd></div><div><dt>Description</dt><dd>Application arithmétique du barème public Lita, sans admission, devis ni adoption. Ne pas additionner au modèle principal.</dd></div><div><dt>Frais entreprise bas HT</dt><dd>3 795,20 EUR</dd></div><div><dt>Frais entreprise hauts HT</dt><dd>4 795,20 EUR</dd></div><div><dt>Frais investisseurs ajoutés TTC</dt><dd>785,40 EUR</dd></div><div><dt>Frais de holding inclus</dt><dd>Non</dd></div><div><dt>Devis ETHIGONE obtenu</dt><dd>Non</dd></div></dl></li><li><dl><div><dt>Opération</dt><dd>O2</dd></div><div><dt>Sources</dt><dd><a href="sources.html#J4-S01">J4-S01</a> · <a href="sources.html#J4-S02">J4-S02</a></dd></div><div><dt>Statut</dt><dd><span class="badge">HYPOTHÈSE</span></dd></div><div><dt>Base de calcul EUR</dt><dd>32 950,00 EUR</dd></div><div><dt>Description</dt><dd>Application arithmétique du barème public Lita, sans admission, devis ni adoption. Ne pas additionner au modèle principal.</dd></div><div><dt>Frais entreprise bas HT</dt><dd>4 636,00 EUR</dd></div><div><dt>Frais entreprise hauts HT</dt><dd>5 636,00 EUR</dd></div><div><dt>Frais investisseurs ajoutés TTC</dt><dd>1 153,25 EUR</dd></div><div><dt>Frais de holding inclus</dt><dd>Non</dd></div><div><dt>Devis ETHIGONE obtenu</dt><dd>Non</dd></div></dl></li><li><dl><div><dt>Opération</dt><dd>O3</dd></div><div><dt>Sources</dt><dd><a href="sources.html#J4-S01">J4-S01</a> · <a href="sources.html#J4-S02">J4-S02</a></dd></div><div><dt>Statut</dt><dd><span class="badge">HYPOTHÈSE</span></dd></div><div><dt>Base de calcul EUR</dt><dd>35 450,00 EUR</dd></div><div><dt>Description</dt><dd>Application arithmétique du barème public Lita, sans admission, devis ni adoption. Ne pas additionner au modèle principal.</dd></div><div><dt>Frais entreprise bas HT</dt><dd>4 836,00 EUR</dd></div><div><dt>Frais entreprise hauts HT</dt><dd>5 836,00 EUR</dd></div><div><dt>Frais investisseurs ajoutés TTC</dt><dd>1 240,75 EUR</dd></div><div><dt>Frais de holding inclus</dt><dd>Non</dd></div><div><dt>Devis ETHIGONE obtenu</dt><dd>Non</dd></div></dl></li></ul></main><footer><p>Modèle 3 décidé · aucune niche adoptée · aucune validation commerciale, juridique ou charia acquise.</p><p>Documents et moteurs locaux. Les liens externes nécessitent internet et s’ouvrent seulement sur votre clic. Sources consultées entre le 11 et le 16 novembre 2026, sans actualisation web à J8.</p><button class="interactive" hidden type="button" id="print">Imprimer / enregistrer en PDF</button> <a href="LISEZ-MOI.md">Mode d’emploi</a></footer></body></html>
